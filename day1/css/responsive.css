@@ -1,0 +1,152 @@
+
+@media (max-width: 3000px) {
+
+    h1,h2 {
+        width: 960px;
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    h1,h2 {
+        width: 700px;
+    }
+}
+
+
+@media (max-width: 680px){
+    header h1 {
+        font-size: 390%;
+        left: 1%;
+    }
+
+    h1,h2 {
+        width: 500px;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+    header h2#intro, header h2#project {
+        font-weight: 500;
+        padding: 10px;
+        padding-left: 0;
+        width: 450px;
+        left: 2%;
+    }
+}
+
+
+
+@media (max-width: 440px) {
+
+    header h1 {
+        font-size: 450%;
+        left: 1%;
+    }
+
+    h2 {
+        font-size: 1.25em;
+        width: 380px;
+    }
+    header h2#intro, header h2#project {
+        font-weight: 500;
+        padding: 10px;
+        padding-left: 0;
+        width: 350px;
+        left: 2%;
+    }
+
+    .head-title {
+        font-size: 3rem;
+    }
+
+    .profile-image img {
+        width: 70%;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .about-text h3 {
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    header h1 {
+        font-size: 400%;
+    }
+
+    h2 {
+        font-size: 1em;
+        width: 350px;
+    }
+    header h2#intro, header h2#project {
+        font-weight: 500;
+        padding: 10px;
+        padding-left: 0;
+        width: 300px;
+        left: 2%;
+    }
+
+    .head-title {
+        font-size: 3rem;
+    }
+
+    .profile-image img {
+        width: 60%;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .about-text h3 {
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    header h1 {
+        font-size: 360%;
+    }
+
+    h2 {
+        font-size: 1em;
+        width: 300px;
+    }
+    header h2#intro, header h2#project {
+        font-weight: 500;
+        padding: 10px;
+        width: 300px;
+        padding-left: 0;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .head-title {
+        font-size: 3rem;
+    }
+
+    .profile-image img {
+        width: 70%;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .about-text h3 {
+        text-align: left;
+    }
+
+}

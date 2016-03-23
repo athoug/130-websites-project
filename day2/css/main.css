@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f76f59;
+    color: #fff;
+}
+
+img {
+    max-width:100%!important;
+    height:auto!important;
+}
+
+
+
+.wrapper {
+    max-width: 960px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.wrapper h1 {
+    margin-top: 5%;
+    font-size: 3rem;
+    text-shadow: 0 5px 0 #e46550;
+}
+
+.paper{
+    float: left;
+}
+
+.rock {
+    margin: 0 auto !important;
+    display: inline-block;
+}
+.rock img {
+    margin-top: 48px;
+}
+.scissor {
+    float: right;
+    margin-top: -7px;
+}
+
+.paper img, .rock img, .scissor img {
+  text-align: center;
+  -webkit-animation: appear 2.5s;
+  animation: appear 2.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appear {
+   0% { left: 500px; opacity: 0; }
+   100% { left: 16px; opacity: 1; }
+}
+
+@keyframes appear {
+   0% { left: 500px; opacity: 0; }
+   100% { left: 16px; opacity: 1; }
+}
+
+p.speech {
+    position: relative;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #e46550;
+    border: 2px solid #fff;
+    color: #fff;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+p.speech:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 25px;
+    top: -20px;
+    border: 10px solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+p.speech:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 28px;
+    top: -14px;
+    border: 7px solid;
+    border-color: transparent transparent #e46550 transparent;
+
+}
+
+#paper {
+    margin-left: 32%;
+    margin-top: -2%;
+}
+
+#rock {
+    margin-left: 36%;
+    margin-top: -19%;
+}
+
+#scissor {
+    margin-left: 42%;
+    margin-top: 1%;
+}
+
+.speech {
+    display: none;
+}
+
+.paper:hover #paper {
+    display: block;
+    transition-delay: 2s;
+}
+
+.rock:hover #rock {
+    display: block;
+}
+
+.scissor:hover #scissor {
+    display: block;
+}
+
+#result {
+    display: none;
+    width: 100%;
+    height: 200px;
+    border: 5px solid #fff;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 3rem;
+    line-height: 300%;
+}
+
+.button {
+    margin: 0 auto;
+    margin-top: -10px;
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 200%;
+    background-color: #fff;
+    color: #e46550;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.button:hover {
+    background-color: #e46550;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #e46550;
+    border-bottom: 1px solid #e46550;
+}

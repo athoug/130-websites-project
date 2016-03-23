@@ -1,0 +1,216 @@
+/* General settings */
+* {
+    /* Resteting browser style */
+    margin: 0;
+    padding: 0;
+
+    /* Browser compatability */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Yantramanav', Helvetica, Arial, sans-serif;
+    width: 100%;
+}
+
+
+
+/* Header Section */
+header {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: #222;
+}
+
+#about-header {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #222;
+}
+
+nav ul {
+    float: right;
+    margin-top: 10px;
+}
+
+nav li {
+    margin-top: 1%;
+    display: inline-block;
+    padding-right: 15px;;
+    padding-left: 35px;
+}
+
+li#about {
+    background-image: url('../img/profile.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+li#github {
+    background-image: url('../img/github.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+li#email {
+    background-image: url('../img/email.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+li a {
+    color: #feed90;
+    font-size: 1rem;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #fede32;
+    border-bottom: 1px solid #fede32;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    right: 50%;
+    top: 65%;
+    background-color: #fff;
+    border-radius: 100%;
+    background-image: url('../img/athoug.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.text {
+    position: relative;
+    top: 100px;
+    padding: 5px;
+}
+
+header h1 {
+    position: relative;;
+    color: #000;
+    font-size: 490%;
+    top: 45%;
+    left: 5%;
+}
+
+
+header h2 {
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+header h2#intro {
+    position: relative;
+    color: #000;
+    font-family: 'Raleway Dots', cursive;
+    font-weight: normal;
+    color: #feed90;
+    top: 55%;
+    left: 5.2%;
+}
+
+header h2#project {
+    position: relative;
+    color: #000;
+    font-family: 'Raleway Dots', cursive;
+    color: #fff;
+    opacity: 0.7;
+    top: 70%;
+    left: 5.2%;
+    font-weight: normal;
+}
+
+span.days{
+    font-weight: 900;
+    color: #fede32;
+
+}
+
+
+
+/* content */
+.container {
+    width: 350px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.container-about{
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.container h3, .container-about h3 {
+    margin-top: 20px;
+    color: #222;
+    font-family: 'Raleway Dots', cursive;
+    letter-spacing: 2px;
+}
+
+.container h3 a, .container-about h3 a {
+    text-decoration: none;
+    color: #222;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.container h3 a:hover, .container-about h3 a:hover {
+    color: #fede32;
+    border-bottom: 0.5px solid #fede32;
+}
+
+
+/* About page */
+.profile-image {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.about-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+.head-title {
+    margin-top: 50px;
+    font-size: 4rem;
+    color: #feed90;
+}
+
+
+/* footer*/
+
+footer {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    color: #222;
+    font-family: 'Raleway Dots', cursive;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #222;
+}
+
+footer a:hover {
+    color: #fede32;
+}
