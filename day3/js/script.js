@@ -100,6 +100,7 @@ document.getElementById('button').onclick = function() {
         stop = false;
         document.getElementById('info').innerHTML = info;
         document.getElementById('button').innerHTML = 'Stop Game';
+        document.getElementById('score').innerHTML = score;
         score = 0;
         fullScore = 0;
         reactions = [];
