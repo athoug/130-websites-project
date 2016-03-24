@@ -101,6 +101,7 @@ document.getElementById('button').onclick = function() {
         document.getElementById('info').innerHTML = info;
         document.getElementById('button').innerHTML = 'Stop Game';
         score = 0;
+        fullScore = 0;
         reactions = [];
         makeTardis();
     }
