@@ -1,0 +1,45 @@
+html {
+    background: url('../img/bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.intro {
+    width: 30%;
+    height: 100%;
+    padding: 15px;
+    color: #222;
+    background-color: #F4FF1F;
+    border-left: 10px solid #222;
+}
+
+#tardis {
+    position: relative;
+    width: 42px;
+    height: 64px;
+    background-image: url('../img/tardis.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+#button {
+    border: 2px solid #222;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+#button:hover {
+    background-color: #222;
+    color: #F4FF1F;
+}
