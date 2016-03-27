@@ -34,17 +34,17 @@ function timeSetting(sec) {
 
                     if (len < 2){
                         document.getElementById('seconds').innerHTML = '0'+seconds;
-                        document.getElementById('minutes').innerHTML = minutes;
+                        document.getElementById('minutes').innerHTML = '0'+minutes;
                         document.getElementById('hours').innerHTML = '0'+ hours;
                     } else {
                         if(hours == 24) {
                             hours = 0
                             document.getElementById('seconds').innerHTML = '0'+seconds;
-                            document.getElementById('minutes').innerHTML = minutes;
+                            document.getElementById('minutes').innerHTML = '0'+minutes;
                             document.getElementById('hours').innerHTML = '0'+ hours;
                         } else {
                             document.getElementById('seconds').innerHTML = '0'+seconds;
-                            document.getElementById('minutes').innerHTML = minutes;
+                            document.getElementById('minutes').innerHTML = '0'+minutes;
                             document.getElementById('hours').innerHTML = hours;
                         }
                     }
@@ -80,7 +80,7 @@ document.getElementById('clear').onclick = function() {
     seconds = 0;
     minutes = 0;
     hours = 0;
-    
+
     document.getElementById('seconds').innerHTML = '00';
     document.getElementById('minutes').innerHTML = '00';
     document.getElementById('hours').innerHTML = '00';
