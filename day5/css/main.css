@@ -1,51 +1,40 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 html {
     background: url('../img/face.svg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+    font-weight: 100;
 }
 
-footer {
+/* Container styling*/
+.the-face {
+    width: 1420px;
+    height: 100%;
+    margin: auto;
     position: relative;
-    margin-left: 60%;
-    font-family: Helvetica, Arial, sans-serif;
-    padding-top: 5px;
-    color: #fff;
-    text-align: center;
-    font-size: 0.75rem;
+    /*border:1px solid #000;*/
 }
-
-footer #note {
-    font-size: 1.5rem;
-    margin-bottom: -5px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 
 .eyes {
     width:100%;
-    height:650px;
+    height:750px;
     z-index:1;
-    padding: 50px;
 }
 
 #left-eye {
     width:150px;
     height:150px;
     float: left;
-    margin-top: 238px;
-    margin-left: 175px;
-    border:1px solid #000;
+    margin-top: 400px;
+    margin-left: 235px;
+    /*border:1px solid #000;*/
     border-radius: 100%;
     text-align: center;
     display:block;
@@ -59,13 +48,215 @@ footer a:hover {
     width:150px;
     height:150px;
     float: left;
-    margin-top: 238px;
+    margin-top: 400px;
     margin-left: 445px;
-    border:1px solid #000;
+    /*border:1px solid #000;*/
     border-radius: 100%;
     text-align: center;
 }
 
 #right-eye img {
     text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    position:absolute;
+    right:0;
+    top:0;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-right: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-top: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 1353px){
+
+    #left-eye, #right-eye {
+        margin-top: 410px;
+    }
+
+    #right-eye {
+        margin-left: 435px;
+    }
+
+    #left-eye {
+        margin-left: 225px;
+    }
+}
+
+@media only screen and (max-width: 1310px){
+
+    #left-eye, #right-eye {
+        margin-top: 420px;
+    }
+
+}
+
+@media only screen and (max-width: 1280px){
+
+    #left-eye, #right-eye {
+        margin-top: 430px;
+    }
+
+}
+
+@media only screen and (max-width: 1250px){
+
+    #left-eye, #right-eye {
+        margin-top: 440px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+
+    #left-eye, #right-eye {
+        margin-top: 470px;
+    }
+
+}
+
+@media only screen and (max-width: 1170px){
+
+    #left-eye, #right-eye {
+        margin-top: 480px;
+    }
+
+}
+
+@media only screen and (max-width: 1135px){
+
+    #left-eye, #right-eye {
+        margin-top: 490px;
+    }
+
+}
+
+@media only screen and (max-width: 1110px){
+
+    #left-eye, #right-eye {
+        margin-top: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 1090px){
+
+    #left-eye, #right-eye {
+        margin-top: 510px;
+    }
+
+}
+
+@media only screen and (max-width: 1070px){
+
+    #left-eye, #right-eye {
+        margin-top: 520px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px){
+
+    #left-eye, #right-eye {
+        margin-top: 530px;
+    }
+
+}
+
+@media only screen and (max-width: 1015px){
+
+    #left-eye, #right-eye {
+        margin-top: 550px;
+    }
+    footer{
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 990px){
+
+    #left-eye, #right-eye {
+        margin-top: 560px;
+    }
+}
+
+@media only screen and (max-width: 980px){
+
+    #left-eye, #right-eye {
+        margin-top: 570px;
+    }
+}
+
+@media only screen and (max-width: 955px){
+
+    #left-eye, #right-eye {
+        margin-top: 585px;
+    }
+
+    footer{
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (max-width: 930px){
+
+    #left-eye, #right-eye {
+        margin-top: 605px;
+    }
+
+}
+
+@media only screen and (max-width: 910px){
+
+    #left-eye, #right-eye {
+        margin-top: 625px;
+    }
+    footer{
+        margin-right: -30px;
+    }
+}
+
+@media only screen and (max-width: 880px){
+
+    #left-eye, #right-eye {
+        margin-top: 635px;
+    }
+
+}
+
+@media only screen and (max-width: 865px){
+
+    #left-eye, #right-eye {
+        margin-top: 6255px;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+
+    html {
+        background: url('../img/full-face.svg') no-repeat center center fixed;
+    }
+
+    #left-eye, #right-eye {
+        display: none;
+    }
+
 }
