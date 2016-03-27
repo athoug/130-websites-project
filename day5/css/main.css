@@ -8,6 +8,7 @@ html {
 }
 
 footer {
+    position: relative;
     margin-left: 60%;
     font-family: Helvetica, Arial, sans-serif;
     padding-top: 5px;
@@ -33,7 +34,7 @@ footer a:hover {
 
 .eyes {
     width:100%;
-    height:760px;
+    height:650px;
     z-index:1;
     padding: 50px;
 }
@@ -44,11 +45,10 @@ footer a:hover {
     float: left;
     margin-top: 238px;
     margin-left: 175px;
-    /*border:1px solid #000;*/
+    border:1px solid #000;
     border-radius: 100%;
     text-align: center;
     display:block;
-    transform-origin: center center;;
 }
 
 #left-eye img {
@@ -61,7 +61,7 @@ footer a:hover {
     float: left;
     margin-top: 238px;
     margin-left: 445px;
-    /*border:1px solid #000;*/
+    border:1px solid #000;
     border-radius: 100%;
     text-align: center;
 }
