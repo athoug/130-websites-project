@@ -198,9 +198,12 @@ span.days{
 /* footer*/
 
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin-top: 150px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     color: #222;
     font-family: 'Raleway Dots', cursive;
     font-size: 0.8rem;

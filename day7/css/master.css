@@ -1,0 +1,165 @@
+/* Reset Code */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Syling */
+body {
+    color: #222;
+    font: 1.15rem 'Helvetica', Arial, sans-serif;
+}
+
+
+
+/* Head section Style */
+.head {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 1400px;
+}
+#logo img {
+    max-width: 100%;
+
+}
+
+#navbar {
+    position: relative;
+    top: -21px;
+    left: 25px;
+}
+
+#navbar a {
+
+   text-decoration: none;
+   display: inline-block;
+   color: #222;
+   font-size: 1rem;
+   padding: 15px;
+   margin-left: 15px;
+   border: 1px solid #222;
+}
+
+#navbar a#all {
+     margin-left: 0;
+}
+
+#navbar a#ada:hover {
+   color: #00CCFF;
+   border-color: #00CCFF;
+}
+
+#navbar a#steve:hover {
+   color: #33CC99;
+   border-color: #33CC99;
+}
+
+#navbar a#tim:hover {
+   color: #FF6699;
+   border-color: #FF6699;
+}
+
+#navbar a#all:hover {
+   color: #FFCC66;
+   border-color: #FFCC66;
+}
+
+
+
+/* Container Styles*/
+.container {
+    width: 70%;
+    margin: 20px auto;
+    overflow: auto;
+}
+
+#main {
+    display: block;
+    overflow: hidden;
+    width: 1400px;
+    margin: 0 auto;
+    margin-left: 25px;
+    min-height: 475px;
+    max-width: 1400px;
+}
+
+#main li {
+    float: left;
+    height: 96px;
+    list-style: none;
+    margin: 6px;
+    position: relative;
+    width: 125px;
+    -webkit-box-shadow: 0 0 5px #555;
+    -moz-box-shadow: 0 0 5px #555;
+    -o-box-shadow: 0 0 5px #555;
+    -ms-box-shadow: 0 0 5px #555;
+    box-shadow: 0 0 5px #555;
+}
+
+#main ul {
+    overflow: hidden;
+}
+
+#main ul.hidden {
+    display: none;
+}
+/* Footer section*/
+
+footer {
+    font-size: 0.75rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #222;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #00CCFF;
+}
+
+
+
+/* Responsive */
+@media only screen and (max-width: 900px){
+
+    #links {
+        clear: both;
+        top: 70px;
+        left: 0;
+    }
+
+    #links a {
+
+       font-size: 0.5rem;
+       padding: 7px;
+       margin-left: 15;
+    }
+
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1250px){
+
+    /*#links {
+        clear: both;
+        top: 70px;
+        left: 0;
+    }*/
+
+    #links a {
+
+       font-size: 0.75rem;
+       padding: 8px;
+       margin-left: 8px;
+    }
+
+}
