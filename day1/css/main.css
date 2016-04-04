@@ -144,6 +144,11 @@ span.days{
 
 
 /* content */
+section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .container {
     width: 350px;
     margin: 0 auto;
@@ -198,8 +203,8 @@ span.days{
 /* footer*/
 
 footer {
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;
+    bottom: 0;*/
     width: 100%;
     text-align: center;
     margin-top: 20px;
