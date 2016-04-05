@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>practice canvas</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            canvas {
+                background: #222;
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <canvas id="myCanvas" width="500" height="400"></canvas>
+
+        <script type="text/javascript">
+            var canvas = document.getElementById('myCanvas');
+            var pointer = canvas.getContext('2d');
+
+            // drawing a rect
+            pointer.beginPath();
+            pointer.rect(40, 100, 100, 70);
+            pointer.strokeStyle = 'pink';
+            pointer.stroke();
+            pointer.closePath();
+
+            // drawing a circle
+            pointer.beginPath();
+            pointer.arc(250, 200, 30, 0, (Math.PI), true);
+            pointer.strokeStyle = 'green';
+            pointer.stroke();
+            pointer.closePath();
+
+            /*
+                code from Mozela developer netowrk tutorial for canvas
+
+                // grab a refrence to the canves element
+                var canvas = document.getElementById('myCanvas');
+                var ctx = canvas.getContext('2d'); // creating a ctx varable to store the 2d rendering context (the tool to use to paint on the canvas)
+
+                // draw a red square
+                ctx.beginPath();
+                ctx.rect(20, 40, 50, 50);
+                ctx.fillStyle = '#ff0000';
+                ctx.fill();
+                ctx.closePath();
+
+                // drawing a green circle
+                ctx.beginPath();
+                ctx.arc(240, 160, 20, 0, Math.PI*2, false);
+                ctx.fillStyle = 'green';
+                ctx.fill();
+                ctx.closePath();
+
+                // usrig the stroke to color the shape (no fill)
+                ctx.beginPath();
+                ctx.rect(160, 10, 100, 40);
+                ctx.strokeStyle = 'rgba(0,0, 255, 0.5)';
+                ctx.stroke();
+                ctx.closePath();
+            */
+        </script>
+
+    </body>
+</html>
