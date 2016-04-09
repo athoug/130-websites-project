@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Disco Lights</title>
+
+        <script type="text/javascript">
+            var colors = ['#007fff', '#f0ffff', '#89cff0'];
+            var curretnColor = 0;
+
+            function dicoLights() {
+                // var bodydoc = document.getElementsByTagName('BODY')[0];
+                if (document.getElementsByTagName('BODY')[0].style.backgroundColor == '#007fff'){
+                    document.getElementsByTagName('BODY')[0].style.backgroundColor = '#f0ffff';
+                    console.log('im in if');
+                } else{
+                    document.getElementsByTagName('BODY')[0].style.backgroundColor = '#007fff';
+                    console.log('im in else');
+                }
+            }
+
+            function changeColor() {
+                inter = window.setInterval(dicoLights, 1000);
+            }
+
+        </script>
+    </head>
+    <body onload="changeColor()">
+
+
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>setInterval/clearInterval example</title>
+
+  <script>
+    var nIntervId;
+
+    function changeColor() {
+      nIntervId = setInterval(flashText, 1000);
+    }
+
+    function flashText() {
+      var oElem = document.getElementById("my_box");
+      oElem.style.color = oElem.style.color == "red" ? "blue" : "red";
+    }
+
+    function stopTextColor() {
+      clearInterval(nIntervId);
+    }
+  </script>
+</head>
+
+<body onload="changeColor();">
+  <div id="my_box">
+    <p>Hello World</p>
+  </div>
+
+  <button onclick="stopTextColor();">Stop</button>
+</body>
+</html> -->

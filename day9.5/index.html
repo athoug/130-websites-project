@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Phaser Framework</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            canvas {
+                border-left: 2px solid #d3d3d3;
+                border-right: 2px solid #d3d3d3;
+            }
+        </style>
+
+        <!-- Load the javascript game assets  -->
+        <script src="js/phaser.min.js"></script>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+            // Game initializing code
+            var game = new Phaser.Game(480, 620, Phaser.AUTO, null,  {
+                preload: preload, create: create, update: update
+            });
+
+            // gloabal variables
+            var ball; // will be used to refrence the ball object
+            var paddle; // will be used to refrence the paddle object
+            var bricks; // will be used to create a group
+            var newBrick; // will be a new object added to the group on every iteration of the loop
+            var brickInfo; // will store all the data we need
+            var textScore; // will hold the object to display on the screen
+            var score = 0; // will hold the value of the score
+            var lives = 3; // number of lives users have
+            var livesText; // lives text to display
+            var lifeLostText; // text lable shown on the screen on player losses
+            var playing = false; // the state of playin the game
+            var startButton; // the start button object
+            // color list
+            var colors = ['Aquamarine', 'Chartreuse','CornflowerBlue', 'Crimson', 'Gold', 'DarkViolet'];
+            var x, y;
+
+            function preload(){
+                // the scalling object is used to make the game fit/scale on diffrent screen sizes
+                game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL; // This desides on the mode of scale such as no scale, exact fit, show all (each with it's difrent presentation properties on how to display it)
+                game.scale.pageAlignHorizontally = true; // alligning the page horizontally
+                game.scale.pageAlignVertically = true; // alligning the page verticaly
+                game.stage.backgroundColor = '#fff'; // changing the color of the stage (canvas)
+
+                game.load.image('ball', 'img/ball.png'); //the first perameter is the name we want to gove the asset, the second parameter is the path of the image
+                game.load.image('Aquamarine', 'img/Aquamarine1.png');
+                game.load.image('Chartreuse', 'img/Chartreuse1.png');
+                game.load.image('CornflowerBlue', 'img/CornflowerBlue1.png');
+                game.load.image('Crimson', 'img/Crimson1.png');
+                game.load.image('Gold', 'img/Gold1.png');
+                game.load.image('DarkViolet', 'img/DarkViolet1.png');
+                game.load.image('paddle', 'img/paddle.png'); // loading in the paddle asset
+                game.load.image('brick0', 'img/brick2.png');
+                game.load.image('brick1', 'img/brick3.png');
+                game.load.image('brick2', 'img/brick4.png');
+                game.load.image('brick3', 'img/brick5.png');
+                game.load.image('brick4', 'img/brick6.png');
+                game.load.image('brick5', 'img/brick7.png');
+                game.load.spritesheet('ball', 'img/wobbles.png', 20, 20); // loading a spritesheet for animation (the last two parameters represent the width and height of a single image)
+                game.load.spritesheet('Aquamarine', 'img/Aquamarine.png', 20, 20);
+                game.load.spritesheet('Chartreuse', 'img/Chartreuse.png', 20, 20);
+                game.load.spritesheet('CornflowerBlue', 'img/CornflowerBlue.png', 20, 20);
+                game.load.spritesheet('Crimson', 'img/Crimson.png', 20, 20);
+                game.load.spritesheet('Gold', 'img/Gold.png', 20, 20);
+                game.load.spritesheet('DarkViolet', 'img/DarkViolet.png', 20, 20);
+                game.load.spritesheet('button', 'img/buttons.png', 97, 36);
+            }
+
+            function create(){  // drawing things and rendering them to the screen
+
+                // since we will need collision detection, we will need to include the physics engine
+                game.physics.startSystem(Phaser.Physics.ARCADE); //initializing the arcade physics engine
+                game.physics.arcade.checkCollision.down = false; // disables the balls collision with the bottom world bound to add lo  sing state
+
+                // initializing the ball
+                createBall(game.world.width*0.5, game.world.height-25, 'ball')
+                // ball = game.add.sprite(game.world.width*0.5, game.world.height-25, 'ball'); // this will add the ball to the game and rendersit on screen the first two perameters are the x, and y coordenates. and the third perameter is the name of the asset we defined in preload
+                // ball.animations.add('wobble', [0,1,0,2,0,1,0,2,0], 24); // the perameters are as follows the name we gave the sprite, an array to define the order of animation, and finaly the frame rate in fps
+                // ball.anchor.set(0.5);
+                // game.physics.enable(ball, Phaser.Physics.ARCADE); // Enable the ball for the physics system
+                // //ball.body.velocity.set(150, -150); // setting the velocity to move the object
+                // ball.body.collideWorldBounds = true; // adding colliders to the canvas element by making the ball not go past them
+                // ball.body.bounce.set(1); // it makes the object bounce off when colliding with wall
+                // ball.checkWorldBounds = true;
+                // ball.events.onOutOfBounds.add(ballLeaveScreen, this);
+
+                // initializing the paddle
+                paddle = game.add.sprite(game.world.width*0.5, game.world.height-5, 'paddle');
+                paddle.anchor.set(0.5,1);
+                game.physics.enable(paddle, Phaser.Physics.ARCADE);
+                paddle.body.immovable = true;
+
+                // drawing the bricks
+                initBricks(); // calling the bricks function to draw them
+
+                textStyle = {font: '14px Arial', fill: '#D3D3D3'}; // setting up the font styling instead of writing it over and over again
+                // create the text for score
+                textScore = game.add.text(35, 10, 'Points: 0', textStyle); //text() method takes in 4 parameters the x, and y coordinates, the actual text to render, and the font style to render
+                livesText = game.add.text(game.world.width-35, 10, 'Lives: '+lives, textStyle); //text for Lives
+                livesText.anchor.set(1,0);
+                lifeLostText = game.add.text(game.world.width*0.5, game.world.height*0.5, 'Life lost, click to continue', textStyle);
+                lifeLostText.anchor.set(0.5);
+                lifeLostText.visible = false;
+
+                // create the button asset
+                startButton = game.add.button(game.world.width*0.5, game.world.height*0.5, 'button', startGame, this, 1, 0, 2); // the perameters are as follows, the x and y coordinates, the name of the graphic asset, a callback function that will execute when the button is pressed, a refrence to this to specify the context extention, and finally the frames that will be used for the over out and down events
+                startButton.anchor.set(0.5);
+            }
+
+            function update(){ // will run on a loop ever 60 milisecond
+                game.physics.arcade.collide(ball, paddle, ballHitPaddle); //constantly checking if they are colliding
+                game.physics.arcade.collide(ball, bricks, ballHitBricks); // check the collision between the bricks and ball, then direct to the function that handels the collision
+                if(playing){
+                    paddle.x = game.input.x || game.world.width*0.5; // moving the paddle basedon the device input (mouse/touch)
+                }
+            }
+
+            function initBricks(){ // function for drawing bricks
+                brickInfo = { // the object that holds information we need to draw off the bricks
+                    width: 50,
+                    height: 20,
+                    count: {
+                        row: 7,
+                        col: 6
+                    },
+                    offset: {
+                        top: 60,
+                        left: 60
+                    },
+                    padding: 10,
+                    color: ''
+                }
+
+                bricks = game.add.group(); // craeting an empty group of bricks
+
+                // loop through rows and columns to create new bricks on each itteration
+                for(c=0; c<brickInfo.count.col; c++){
+                    for(r=0; r<brickInfo.count.row; r++){
+                        // create new brick and add it to the group
+                        var brickX = (r*(brickInfo.width+brickInfo.padding)) + brickInfo.offset.left; // holds the bricks x coordinate
+                        var brickY = (c*(brickInfo.height+brickInfo.padding)) + brickInfo.offset.top; // holds the bricks y coordinate
+
+                        newBrick = game.add.sprite(brickX, brickY, 'brick'+c);
+                        game.physics.enable(newBrick, Phaser.Physics.ARCADE);
+                        newBrick.body.immovable = true;
+                        newBrick.anchor.set(0.5);
+                        newBrick.property=20;
+                        newBrick.color = colors[c];
+                        bricks.add(newBrick);
+                    }
+                }
+            }
+
+            function ballHitBricks(ball, brick){ // what to do when the ball and bricks collide
+                var killTween = game.add.tween(brick.scale); // we define a new tween and specify what property ti tween
+                killTween.to({x:0,y:0}, 200, Phaser.Easing.Linear.None); // defines the state of the object at the end of the tween (the scale 1 being 100% and 0 being 0%), (the time of the tween/in milliseconds), and (the type of tween)
+                killTween.onComplete.addOnce(function(){ // add an optional on complete event handler (a function to execute when tween is finished)
+                    brick.kill();
+                }, this);
+                killTween.start(); // actually start the tween
+                ball.animations.play('wobble');
+                score += 10;
+
+                textScore.setText('Points: '+score); // the setText method updates the text on the screen
+                if(score === brickInfo.count.row*brickInfo.count.col*10) { // checking win state for game when score is equal to th enumber of bricks multiplied by score
+                    alert('You won the game, congratulations!');
+                    location.reload();
+
+                }
+
+            }
+
+            function ballLeaveScreen(){ // handeling user lives & game state (lost)
+                lives--;
+                if(lives){
+                    livesText.setText('Lives: '+lives);
+                    lifeLostText.visible = true;
+                    ball.reset(game.world.width*0.5, game.world.height-25);
+                    paddle.reset(game.world.width*0.5, game.world.height-5);
+                    game.input.onDown.addOnce(function(){
+                        lifeLostText.visible = false;
+                        ball.body.velocity.set(150, -150);
+                    }, this);
+                } else {
+                    alert('You lost, game over!');
+                    location.reload();
+                }
+            }
+
+            function ballHitPaddle(ball, paddle){ // handelling the animation on collision
+                ball.animations.play('wobble');
+                ball.body.velocity.x = -1*5*(paddle.x-ball.x);
+            }
+
+            function startGame(){
+                startButton.destroy();
+                ball.body.velocity.set(150, -150);
+                playing = true;
+            }
+
+            function createBall(x, y, color){
+                ball = game.add.sprite(x, y, color); // this will add the ball to the game and rendersit on screen the first two perameters are the x, and y coordenates. and the third perameter is the name of the asset we defined in preload
+                ball.animations.add('wobble', [0,1,0,2,0,1,0,2,0], 24); // the perameters are as follows the name we gave the sprite, an array to define the order of animation, and finaly the frame rate in fps
+                ball.anchor.set(0.5);
+                game.physics.enable(ball, Phaser.Physics.ARCADE); // Enable the ball for the physics system
+                ball.body.collideWorldBounds = true; // adding colliders to the canvas element by making the ball not go past them
+                ball.body.bounce.set(1); // it makes the object bounce off when colliding with wall
+                ball.checkWorldBounds = true;
+                ball.events.onOutOfBounds.add(ballLeaveScreen, this);
+            }
+        </script>
+
+    </body>
+</html>

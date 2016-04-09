@@ -23,7 +23,7 @@ var brickColumnCount = 5;
 var brickWidth = 75;
 var brickheight = 20;
 var brickPadding = 10;
-var brickOffsetTop = 40;
+var brickOffsetTop = 50;
 var brickOffsetLeft = 30;
 // keeping score varable
 var score = 0;
@@ -31,12 +31,13 @@ var score = 0;
 var lives = 3;
 // color list
 var colors = ['Aquamarine', 'chartreuse','cornflowerblue', 'crimson', 'gold', 'darkviolet'];
+var ballColor = 'lightgray';
 // creating the bricks ia 2d array (default values) this is the inicilization part where we reserve place in memory for the bricks
 var bricks = [];
 for(c=0; c< brickColumnCount; c++) { // first loop will hold the columns
     bricks[c] = [];
     for(r=0; r< brickRowCount; r++) { // loop through rows
-        bricks[c][r] = {x: 0, y: 0, status: 1}; // object that holds the coordinates of the brick
+        bricks[c][r] = {x: 0, y: 0, status: 1, color: ''}; // object that holds the coordinates of the brick
     }
 }
 
@@ -75,7 +76,7 @@ function drawBall() {
     // drawing ball code
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-    ctx.fillStyle = 'lightgray';
+    ctx.fillStyle = ballColor;
     ctx.fill();
     ctx.closePath();
 }
@@ -97,10 +98,10 @@ function drawBricks() {
                 var brickY = (r*(brickheight+brickPadding)) + brickOffsetTop;
                 bricks[c][r].x = brickX;
                 bricks[c][r].y = brickY;
-
+                bricks[c][r].color = colors[r];
                 ctx.beginPath();
                 ctx.rect(brickX, brickY, brickWidth, brickheight);
-                ctx.strokeStyle = colors[r];
+                ctx.strokeStyle = bricks[c][r].color;
                 ctx.stroke();
                 ctx.closePath();
             }
@@ -118,6 +119,7 @@ function collisionDetection() {
                 if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickheight){
                     dy = -dy;
                     b.status = 0;
+                    ballColor = b.color;
                     score++;
                     if(score == brickRowCount*brickColumnCount){
                         alert('YOU WIN, CONGRATULATIONS!');
@@ -133,14 +135,14 @@ function collisionDetection() {
 function drawScore(){
     ctx.font = '16px Arial';
     ctx.fillStyle = 'lightgray';
-    ctx.fillText('Score: ' + score, 30, 20);
+    ctx.fillText('Score: ' + score, 30, 30);
 }
 
 // drawing the lives function
 function drawLives(){
     ctx.font = '16px Arial';
     ctx.fillStyle = 'lightgray';
-    ctx.fillText('Lives: '+lives, canvas.width-90, 20);
+    ctx.fillText('Lives: '+lives, canvas.width-90, 30);
 }
 
 function draw() {
@@ -175,6 +177,7 @@ function draw() {
                 dx = 2;
                 dy = -2;
                 paddleX = (canvas.width - paddleWidth)/2;
+                ballColor = 'lightgray';
             }
 
         }
