@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lost Bit</title>
+
+        <!-- load the javascript assets for the game-->
+        <script src="js/phaser.min.js"></script>
+        <script src="js/Boot.js"></script>
+        <script src="js/Preloader.js"></script>
+        <script src="js/MainMenu.js"></script>
+        <script src="js/Story.js"></script>
+        <script src="js/Instructions.js"></script>
+        <script src="js/puzzle2.js"></script>
+        <script src="js/LevelOne.js"></script>
+        <script src="js/LevelOneStory.js"></script>
+        <script src="js/LevelTwo.js"></script>
+        <script src="js/BossLevelStory.js"></script>
+        <script src="js/Boss.js"></script>
+        <script src="js/simon.js"></script>
+        <script src="js/GameWin.js"></script>
+
+        <script src="js/Enemy.js"></script>
+
+
+
+        <!-- Add style to the background and set margins using CSS-->
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: #fff;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="gameDiv"></div>
+
+        <script type="text/javascript">
+
+            //When the page loads it initializes the game
+            window.onload = function() {
+                var game = new Phaser.Game(960, 640, Phaser.AUTO, 'gameDiv');
+
+                //Add the states of the game
+                game.state.add('Boot', pixel.Boot);
+                game.state.add('Preloader', pixel.Preloader);
+                game.state.add('MainMenu', pixel.MainMenu);
+                game.state.add('Story', pixel.Story);
+                game.state.add('puzzle', pixel.puzzle);
+                game.state.add('Levelone', pixel.Levelone);
+                game.state.add('rank', pixel.rank);
+                game.state.add('Instructions', pixel.Instructions);
+                game.state.add('LevelOneStory', pixel.LevelOneStory);
+                game.state.add('LevelTwo', pixel.LevelTwo);
+                game.state.add('BossLevelStory', pixel.BossLevelStory);
+                game.state.add('Boss', pixel.Boss);
+                game.state.add('simon', pixel.simon);
+                game.state.add('GameWin', pixel.GameWin);
+
+                //Start the game
+                game.state.start('Boot');
+            }
+        </script>
+
+    </body>
+</html>
