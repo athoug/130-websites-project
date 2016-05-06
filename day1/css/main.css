@@ -12,9 +12,10 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'Yantramanav', Helvetica, Arial, sans-serif;
     width: 100%;
+    height: 100%;
 }
 
 
@@ -95,17 +96,18 @@ li a:hover {
 }
 
 .text {
-    position: relative;
-    top: 100px;
     padding: 5px;
+    width: 50%;
+    padding-top: 10%;
+    padding-left: 5%;
 }
 
 header h1 {
-    position: relative;;
+    /*position: relative;;*/
     color: #000;
     font-size: 490%;
-    top: 45%;
-    left: 5%;
+    /*top: 45%;
+    left: 5%;*/
 }
 
 
@@ -115,23 +117,23 @@ header h2 {
 }
 
 header h2#intro {
-    position: relative;
+    /*position: relative;*/
     color: #000;
     font-family: 'Raleway Dots', cursive;
     font-weight: normal;
     color: #feed90;
-    top: 55%;
-    left: 5.2%;
+    /*top: 55%;
+    left: 5.2%;*/
 }
 
 header h2#project {
-    position: relative;
+    /*position: relative;*/
     color: #000;
     font-family: 'Raleway Dots', cursive;
     color: #fff;
     opacity: 0.7;
-    top: 70%;
-    left: 5.2%;
+    /*top: 70%;
+    left: 5.2%;*/
     font-weight: normal;
 }
 
@@ -189,7 +191,8 @@ section {
 .about-text {
     width: 50%;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
+    line-height: 180%;
     margin-bottom: 100px;
 }
 

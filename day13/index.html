@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tesla Vs Edison</title>
+
+        <!-- load the javascript assets for the game-->
+        <script src="js/phaser.min.js"></script>
+        <script src="js/Boot.js"></script>
+        <script src="js/Preloader.js"></script>
+        <script src="js/MainMenu.js"></script>
+        <script src="js/Instructions.js"></script>
+        <script src="js/Game.js"></script>
+
+        <!-- Add style to the background and set margins using CSS-->
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="gameDiv"></div>
+
+        <script type="text/javascript">
+            
+            //When the page loads it initializes the game
+            window.onload = function() {
+                var game = new Phaser.Game(640, 960, Phaser.AUTO, 'gameDiv');
+
+                //Add the states of the game
+                game.state.add('Boot', Tesla.Boot);
+                game.state.add('Preloader', Tesla.Preloader);
+                game.state.add('MainMenu', Tesla.MainMenu);
+                game.state.add('Instructions', Tesla.Instructions);
+                game.state.add('Game', Tesla.Game);
+
+                //Start the game
+                game.state.start('Boot');
+            }
+        </script>
+
+    </body>
+</html>

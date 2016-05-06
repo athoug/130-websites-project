@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #fff;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 4.5em;
+    text-shadow: 5px 5px 0 #222;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -10px;
+}

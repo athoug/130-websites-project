@@ -22,7 +22,7 @@
     }
 
     h1,h2 {
-        width: 500px;
+        width: 480px;
     }
 
     h2 {
@@ -32,7 +32,7 @@
         font-weight: 500;
         padding: 10px;
         padding-left: 0;
-        width: 450px;
+        width: 430px;
         left: 2%;
     }
 }
@@ -41,20 +41,23 @@
 
 @media (max-width: 440px) {
 
+    .text {
+        padding-top: 20%;
+    }
     header h1 {
         font-size: 450%;
-        left: 1%;
+        /*left: 1%;*/
     }
 
     h2 {
         font-size: 1.25em;
-        width: 380px;
+        width: 330px;
     }
     header h2#intro, header h2#project {
         font-weight: 500;
         padding: 10px;
         padding-left: 0;
-        width: 350px;
+        width: 330px;
         left: 2%;
     }
 

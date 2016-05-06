@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #ddd;
+}
+
+.clock {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 350px;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    font-family: 'Quicksand', 'Helvetica', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.inside {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 250px;
+    background-color: #222;
+}
+
+.content {
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.days {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.days span {
+    margin-left: 10px;
+}
+
+.text{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top: 100px;
+    font-size: 3.5em;
+}
+
+#time {
+    font-size: 1.5rem;
+}
+
+#date {
+    margin-top: 100px;
+    margin-left: -100px;
+}
+
+#cal img {
+    width: 50px;
+    height: 50px;
+}
+
+span#day {
+    position: absolute;
+    margin-top: 15px;
+}
+
+span#month {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 25px;
+
+}
+
+span#year {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 65px;
+
+}
