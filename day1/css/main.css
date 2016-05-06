@@ -22,14 +22,15 @@ html, body {
 
 /* Header Section */
 header {
-    position: relative;
+    /*position: relative;*/
     height: 500px;
     width: 100%;
     background-color: #222;
+    overflow: hidden;
 }
 
 #about-header {
-    position: relative;
+    /*position: relative;*/
     height: 50px;
     width: 100%;
     background-color: #222;
