@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Canvas</title>
+        <script type="text/javascript">
+            window.onload = function() {
+                    // getting a refrence to the canvas element
+                    var canvas = document.getElementById('paper');
+                    var ctx = canvas.getContext('2d');
+
+                    ctx.fillStyle = '#333';
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                    ctx.strokeStyle="#fff";
+                    ctx.strokeRect(50,50,50,50);
+
+                    ctx.beginPath();
+                    ctx.moveTo(100,100);
+                    ctx.lineTo(130,200);
+                    ctx.lineTo(200,200);
+                    ctx.lineTo(220,250);
+                    ctx.lineTo(250,200);
+                    ctx.lineTo(300,200);
+                    ctx.lineTo(340,100);
+                    ctx.closePath();
+
+                    ctx.fill();
+                    ctx.stroke();
+
+
+            };
+        </script>
+    </head>
+    <body>
+        <canvas id="paper" width="500" height="500">
+            Get a browser that supports canvas!
+        </canvas>
+    </body>
+</html>

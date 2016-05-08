@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    background-color: #444;
+}
+
+button {
+    margin-top: 400px;
+    width: 220px;
+    height: 55px;
+    color: #444;
+    font-size: 2em;
+    background-color: #FFD21F;
+    border: 0;
+}
+img {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+.coin{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    margin-top: 150px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.coin > #front {
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateX(0deg);
+    -moz-transform: perspective(600px) rotateX(0deg);
+    -o-transform: perspective(600px) rotateX(0deg);
+    -ms-transform: perspective(600px) rotateX(0deg);
+    transform: perspective(600px) rotateX(0deg);
+    background-color: #FFD21F;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+
+.coin > #back {
+    position: absolute;
+    -webkit-perspective(600px) rotateX(270deg);
+    -moz-perspective(600px) rotateX(270deg);
+    -o-perspective(600px) rotateX(270deg);
+    -ms-perspective(600px) rotateX(270deg);
+    transform: perspective(600px) rotateX(270deg);
+    background-color: #FFD21F;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 0.5s linear 0s;
+}
+
+.coinFlipF {
+    animation-name: spinF;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.coinFlipB {
+    animation-name: spinB;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinF {
+    from{
+        transform: perspective(600px) rotateX(0deg);
+    }
+    to {
+        transform: perspective(600px) rotateX(270deg);
+    }
+}
+
+@keyframes spinB {
+    from{
+        transform: perspective(600px) rotateX(270deg);
+    }
+    to {
+        transform: perspective(600px) rotateX(0deg);
+    }
+}
+
+/*.coin:hover > #front {
+    -webkit-transform: perspective(600px) rotateX(-270deg);
+    -moz-transform: perspective(600px) rotateX(-270deg);
+    -o-transform: perspective(600px) rotateX(-270deg);
+    -ms-transform: perspective(600px) rotateX(-270deg);
+    transform: perspective(600px) rotateX(-270deg);
+}
+
+.coin:hover > #back {
+    -webkit-transform: perspective(600px) rotateX(0deg);
+    -moz-transform: perspective(600px) rotateX(0deg);
+    -o-transform: perspective(600px) rotateX(0deg);
+    -ms-transform: perspective(600px) rotateX(0deg);
+    transform: perspective(600px) rotateX(0deg);
+}*/
