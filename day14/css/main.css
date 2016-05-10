@@ -98,6 +98,32 @@ img {
     }
 }
 
+/********************************************************
+                FOOTER STYLING
+********************************************************/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFD21F;
+    font-size: 0.8rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFD21F;
+}
+
+footer a:hover {
+    color: #222;
+    border-bottom: 1px solid #222;
+}
+
+
 /*.coin:hover > #front {
     -webkit-transform: perspective(600px) rotateX(-270deg);
     -moz-transform: perspective(600px) rotateX(-270deg);

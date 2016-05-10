@@ -118,3 +118,28 @@ h1 {
 #s-text {
     left: 310px;
 }
+
+
+/********************************************************
+                FOOTER STYLING
+********************************************************/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #405D96;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #405D96;
+}
+
+footer a:hover {
+    color: #0D1627;
+    border-bottom: 1px solid #0D1627;
+}

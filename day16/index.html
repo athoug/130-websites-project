@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Catamaran:400,100,900|Quicksand:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="paper">
+                <div class="paper-content">
+                    <div class="calculations">
+                        <div class="first">
+                            <span id="number1"></span>
+                            <span id="operation"></span>
+                        </div>
+                        <div class="second">
+                            <span id="number2"></span>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <span id='result'></span>
+                    </div>
+                </div>
+            </div>
+            <div class="calc">
+                <div class="buttons-container">
+                    <div class="button" id="ac" onclick="clearContent()">
+                        <p id="ac-text">
+                            AC
+                        </p>
+                    </div>
+                    <div class="button" id="squrt" onclick="signValue()">
+                        <p id="sign-text">
+                            +/-
+                        </p>
+                    </div>
+                    <div class="button" id="percent" onclick="percentage()">
+                        <p id="percent-text">
+                            %
+                        </p>
+                    </div>
+                    <div class="button" id="division" onclick="operationGrab('division-text')">
+                        <p id="division-text">
+                            /
+                        </p>
+                    </div>
+                    <div class="button" id="seven" onclick="grabNumber('seven-text')">
+                        <p id="seven-text">
+                            7
+                        </p>
+                    </div>
+                    <div class="button" id="eight" onclick="grabNumber('eight-text')">
+                        <p id="eight-text">
+                            8
+                        </p>
+                    </div>
+                    <div class="button" id="nine" onclick="grabNumber('nine-text')">
+                        <p id="nine-text">
+                            9
+                        </p>
+                    </div>
+                    <div class="button" id="multiply" onclick="operationGrab('multiply-text')">
+                        <p id="multiply-text">
+                            x
+                        </p>
+                    </div>
+                    <div class="button" id="four" onclick="grabNumber('four-text')">
+                        <p id="four-text">
+                            4
+                        </p>
+                    </div>
+                    <div class="button" id="five" onclick="grabNumber('five-text')">
+                        <p id="five-text">
+                            5
+                        </p>
+                    </div>
+                    <div class="button" id="six" onclick="grabNumber('six-text')">
+                        <p id="six-text">
+                            6
+                        </p>
+                    </div>
+                    <div class="button" id="minus" onclick="operationGrab('minus-text')">
+                        <p id="minus-text">
+                            -
+                        </p>
+                    </div>
+                    <div class="button" id="one" onclick="grabNumber('one-text')">
+                        <p id="one-text">
+                            1
+                        </p>
+                    </div>
+                    <div class="button" id="two" onclick="grabNumber('two-text')">
+                        <p id="two-text">
+                            2
+                        </p>
+                    </div>
+                    <div class="button" id="three" onclick="grabNumber('three-text')">
+                        <p id="three-text">
+                            3
+                        </p>
+                    </div>
+                    <div class="button" id="plus" onclick="operationGrab('plus-text')">
+                        <p id="plus-text">
+                            +
+                        </p>
+                    </div>
+                    <div class="button">
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="button" id='zero' onclick="grabNumber('zero-text')">
+                        <p id='zero-text'>
+                            0
+                        </p>
+                    </div>
+                    <div class="button" id="point" onclick="grabNumber('point-text')">
+                        <p id="point-text">
+                            .
+                        </p>
+                    </div>
+                    <div class="button" id='equals' onclick="calculateResult()">
+                        <p id='equals-text'>
+                            =
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Athoug Alsougayer &copy; 2016 &nbsp; &nbsp;&nbsp; &nbsp;<a href="../default.html">Home</a> &nbsp;|  &nbsp; <a href="http://athougcodesatnight.tumblr.com/">blog</a></p>
+        </footer>
+        
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </body>
+</html>
