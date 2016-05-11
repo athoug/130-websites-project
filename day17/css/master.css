@@ -1,0 +1,174 @@
+/********************************************************
+                GENERAL STYLING
+********************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #222;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
+
+/********************************************************
+                BANNER STYLING
+********************************************************/
+
+.banner {
+    position: absolute;
+    left: 15%;
+    width: 10%;
+    height: 20%;
+    background-color: #ee553e;
+    color: #222;
+    text-align: center;
+}
+
+.banner:after,.banner:before {
+    content: '';
+    position: absolute;
+    border-top: 15px solid #ee553e;
+    height: 0;
+    width: 0;
+    top: 100%;
+}
+
+.banner:after { /*right angle*/
+    border-left: 70px solid transparent;
+    right:0;}
+
+.banner:before { /*left angle*/
+    border-right: 70px solid transparent;
+    left:0;
+}
+
+
+h2 {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+label {
+    font-size: 1em;
+    font-weight: 100;
+    display: block;
+    margin-bottom: 8%;
+}
+
+
+input {
+    border: none;
+    background-color: #ee553e;
+    width: 20%;
+    height: 20%;
+}
+
+
+
+
+
+
+/********************************************************
+                CANVAS STYLING
+********************************************************/
+
+#canvas {
+    width: 80%;
+    height: 80%;
+    background-color: #eee;
+    margin: 5% auto;
+    overflow: hidden;
+}
+
+.square {
+        width: 1%;
+        height: 2%;
+        border: 1px solid #ccc;
+        float: left;
+}
+
+
+
+/********************************************************
+                FOOTER STYLING
+********************************************************/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #444;
+}
+
+footer a:hover {
+    color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+/********************************************************
+                MEDIA QUERY STYLING
+********************************************************/
+
+@media screen and (max-width: 1000px) {
+
+    .square {
+        width: 3%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    h2 {
+
+        font-size: 1em;
+    }
+
+    label {
+        font-size: .75em;
+    }
+
+
+    input {
+        width: 50%;
+        height: 15%;
+    }
+
+    .banner {
+        height: 15%;
+        width: 15%;
+    }
+    .banner:after { /*right angle*/
+        border-left: 40px solid transparent;
+    }
+
+    .banner:before { /*left angle*/
+        border-right: 40px solid transparent;
+    }
+}
