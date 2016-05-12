@@ -29,11 +29,23 @@
         font-size: 1.25em;
     }
     header h2#intro, header h2#project {
-        font-weight: 500;
+        font-weight: 800;
         padding: 10px;
         padding-left: 0;
         width: 430px;
         left: 2%;
+    }
+
+    span.days{
+        color: #f7cb3b;
+        font-weight: bolder;
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .container h3 a, .container-about h3 a {
+        font-weight: 500;
+        color: #333;
+        font-family: 'Quicksand', sans-serif;
     }
 }
 
@@ -54,7 +66,7 @@
         width: 330px;
     }
     header h2#intro, header h2#project {
-        font-weight: 500;
+        font-weight: 800;
         padding: 10px;
         padding-left: 0;
         width: 330px;
@@ -90,7 +102,7 @@
         width: 350px;
     }
     header h2#intro, header h2#project {
-        font-weight: 500;
+        font-weight: 800;
         padding: 10px;
         padding-left: 0;
         width: 300px;
@@ -126,7 +138,7 @@
         width: 300px;
     }
     header h2#intro, header h2#project {
-        font-weight: 500;
+        font-weight: 800;
         padding: 10px;
         width: 300px;
         padding-left: 0;

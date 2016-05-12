@@ -1,6 +1,6 @@
 
 function createBoxes(){
-    for (var i = 0; i < (3655 + window.innerHeight); i++) {
+    for (var i = 0; i < (4655 + window.innerHeight); i++) {
         var newElement = document.createElement('div');
         newElement.className = 'square';
         newElement.setAttribute('id', 'div-'+i);
