@@ -1,0 +1,493 @@
+/********************************************************
+                GENERAL STYLING
+********************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #f0efe9;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/********************************************************
+                LIST CONTAINER STYLING
+********************************************************/
+
+.list-container {
+    position: relative;
+    width: 25%;
+    height: 70%;
+    margin: 7% auto;
+    background-color: #fff;
+    box-shadow: 5px 5px 0 0 #eee;
+}
+
+.list-header {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+    left: 7.5%;
+    width: 85%;
+    height: 25%;
+    background-color: #4EE2A2;
+}
+.todos-container {
+    position: absolute;
+    top: 16%;
+    right: 10%;
+    left: 7.2%;
+    width: 85%;
+    height: 70%;
+    /*border: 1px solid #4EE2A2;*/
+    overflow: auto;
+}
+
+.add-button {
+    position: absolute;
+    right: 40%;
+    left: 36%;
+    bottom: -9%;
+    width: 25%;
+    height: 17%;
+    background-color: #4EE2A2;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-image: url("../img/plus.svg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+#plus {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15%;
+    right: 12%;
+    left: 12%;
+    font-size: 3.5em;
+    font-weight: 300;
+    color: #45BB89;
+
+}
+
+@keyframes shacke {
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(15deg);
+    }
+
+    40%{
+        transform: rotate(0deg);
+    }
+
+    60%{
+        transform: rotate(-15deg);
+    }
+
+}
+
+.add-button:hover,
+.add-button:focus {
+    animation-name: shacke;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/********************************************************
+                LIST HEADER STYLING
+********************************************************/
+.date {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    letter-spacing: 1px;
+    color: #45BB89;
+}
+
+#date {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+
+#month {
+    position: absolute;
+    top: 29%;
+    left: 20%;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+#year {
+    position: absolute;
+    top: 49%;
+    left: 20%;
+    font-size: 0.75em;
+    font-weight: 300;
+
+}
+
+#day {
+    position: absolute;
+    top: 40%;
+    right: 9%;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+
+.data-to-add {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    text-align: center;
+}
+
+.data-to-add > input {
+    width: 88%;
+    height: 60%;
+    background-color: #4EE2A2;
+    border: none;
+    border-bottom: 2px solid #45BB89;
+    font-size: 1.75em;
+    color: #45BB89;
+}
+
+.data-to-add > input:focus {
+    outline: none
+
+}
+
+::-webkit-input-placeholder {
+   color: #45BB89;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #45BB89;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #45BB89;
+}
+
+:-ms-input-placeholder {
+   color: #45BB89;
+}
+
+/********************************************************
+                LIST CONTENT STYLING
+********************************************************/
+
+.lists {
+    /*border: 1px solid #4EE2A2;*/
+    list-style: none;
+}
+
+.lists > li {
+    /*border: 1px solid #4EE2A2;*/
+    margin-bottom: 2%;
+    padding: 2%;
+    font-size: 1.05em;
+    font-weight: 400;
+    color: #777;
+    transition: padding 0.75s, background-color 0.75s, color 0.75s;
+}
+
+
+.check {
+    float: right;
+    margin-right: 2%;
+}
+
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #777;
+}
+
+
+/* check box styling */
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+.checkboxFour {
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #45BB89;
+    float: right;
+    margin-right: 2%;
+
+    border-radius: 100%;
+    position: relative;
+}
+
+.checkboxFour label {
+    display: block;
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 100%;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+
+    cursor: pointer;
+    position: absolute;
+    top: 3.75px;
+    left: 3.75px;
+    z-index: 1;
+
+    background-color: rgba(0,0,0,0);
+}
+
+.checkboxFour input[type=checkbox]:checked + label {
+    background-color: #4EE2A2;
+}
+
+
+
+.lists > li:hover,
+.lists > li:focus {
+    padding: 5%;
+    background-color: #f0efe9;
+    color: #4EE2A2;
+}
+
+
+/********************************************************
+                FOOTER STYLING
+********************************************************/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #45BB89;
+    font-size: 0.8rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #45BB89;
+}
+
+footer a:hover {
+    color: #4EE2A2;
+    border-bottom: 1px solid #4EE2A2;
+}
+
+
+
+
+
+
+
+
+
+/********************************************************
+                MEDIA QUERY STYLING
+********************************************************/
+
+@media screen and (max-width: 1300px) {
+
+    .list-container {
+        width: 30%;
+    }
+    .add-button {
+        width: 25%;
+        height: 17%;
+        left: 37%;
+        bottom: -8%;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .list-container {
+        width: 33%;
+        margin-top: 10%;
+    }
+
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .list-container {
+        width: 40%;
+    }
+
+    .add-button {
+        height: 15%;
+        bottom: -7%;
+    }
+
+    #month {
+        top: 32%;
+        left: 24%;
+    }
+
+    #year {
+        top: 51%;
+        left: 24%;
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .list-container {
+        width: 45%;
+        margin-top: 12%;
+    }
+
+    #month {
+        top: 32%;
+        left: 26%;
+    }
+
+    #year {
+        top: 51%;
+        left: 26%;
+
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .list-container {
+        width: 50%;
+        margin-top: 14%;
+    }
+
+    #month {
+        top: 32%;
+        left: 26%;
+    }
+
+    #year {
+        top: 51%;
+        left: 26%;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .list-container {
+        width: 55%;
+        margin-top: 17%;
+    }
+
+    #month {
+        left: 26%;
+    }
+
+    #year {
+        left: 26%;
+
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .list-container {
+        width: 65%;
+        margin-top: 15%;
+    }
+
+    #month {
+        top: 32%;
+        left: 21%;
+    }
+
+    #year {
+        top: 51%;
+        left: 21%;
+
+    }
+
+    .add-button {
+        width: 24%;
+        height: 16%;
+    }
+
+    .lists > li {
+        transition: none;
+    }
+
+    .lists > li:focus, .lists > li:hover {
+        padding: 2%;
+        background-color: #fff;
+        color: #777;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .list-container {
+        width: 75%;
+        margin-top: 15%;
+    }
+
+    #plus {
+        bottom: 12%;
+        font-size: 3.25em;
+
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .list-container {
+        width: 90%;
+    }
+
+    #month {
+        top: 32%;
+        left: 21%;
+    }
+
+    #year {
+        top: 51%;
+        left: 21%;
+
+    }
+
+    #plus {
+        bottom: 7%;
+        font-size: 3.25em;
+
+    }
+}

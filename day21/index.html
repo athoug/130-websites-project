@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Draw Something</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+
+        <ul id="palette">
+            <li class='active' style="background:#000"></li>
+            <li style="background:#f00"></li>
+            <li style="background:#0f0"></li>
+            <li style="background:#00f"></li>
+            <li style="background:#ff0"></li>
+            <li style="background:#f0f"></li>
+            <li style="background:#0ff"></li>
+            <!-- <li style="background:#4DC6FA" id="set-color">
+                <input type="color" id="color-picker" value="#4DC6FA"/>
+                <span id='setBtn' onclick="setColor('set-color')">set color</span>
+            </li> -->
+        </ul>
+
+        <div id="colorSetter">
+            <div class="close" onclick="closewindow('colorSetter')">
+                <!-- <div class="color-label-swatch">
+                    <input type="color" id="color-picker" value="#4DC6FA"/>
+                </div> -->
+                <input type="range" id="myRange" value="2">
+                <span id='setBtn' onclick="setSize('myRange')">set size</span>
+            </div>
+        </div>
+
+        <div class="tools">
+            <a href="#" id="clear"><span class="clear">clear</span></a>
+            <a href="#" id='save' download='drawing.png' target="_blank"> <span class="save">Save</span></a>
+            <a href="#" id="eraser"><span class="clear">erase</span></a>
+        </div>
+
+        <div class="tools2">
+            <a href="#" id="brush"><span class="brush">brush size</span></a>
+            <a href="#" id="color" onclick="openwindow('colorSetter')"><span class="color">select color</span></a>
+        </div>
+
+    </body>
+</html>

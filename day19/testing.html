@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>testing buttons</title>
+
+        <style media="screen">
+            input[type=checkbox] {
+                visibility: hidden;
+            }
+
+            .checkboxFour {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #777;
+                margin: 20px 90px;
+
+                border-radius: 100%;
+                position: relative;
+            }
+
+            .checkboxFour label {
+                display: block;
+                width: 12.5px;
+                height: 12.5px;
+                border-radius: 100%;
+
+                -webkit-transition: all .5s ease;
+                -moz-transition: all .5s ease;
+                -o-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                transition: all .5s ease;
+
+                cursor: pointer;
+                position: absolute;
+                top: 3.75px;
+                left: 3.75px;
+                z-index: 1;
+
+                background-color: #fff;
+            }
+
+            .checkboxFour input[type=checkbox]:checked + label {
+                background-color: #4EE2A2;
+            }
+        </style>
+    </head>
+    <body>
+
+        <section>
+          <!-- Checbox Four -->
+          <div class="checkboxFour">
+          <input type="checkbox" value="1" id="checkboxFourInput" name="" />
+          <label for="checkboxFourInput"></label>
+          </div>
+        </section>
+
+    </body>
+</html>

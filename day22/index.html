@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Draw Something</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+
+        <div class="container">
+            <div class="tools">
+                <a href="#" id="clear"><span class="clear">clear</span></a>
+                <a href="#" id='save' download='drawing.png' target="_blank"> <span class="save">Save</span></a>
+                <a href="#" id="eraser"><span class="clear">erase</span></a>
+            </div>
+
+            <div class="tools">
+                <ul id="palette">
+                    <li class='active' style="background:#000"></li>
+                    <li style="background:#f00"></li>
+                    <li style="background:#0f0"></li>
+                    <li style="background:#00f"></li>
+                    <li style="background:#ff0"></li>
+                    <li style="background:#f0f"></li>
+                    <li style="background:#0ff"></li>
+                </ul>
+            </div>
+
+            <div class="tools tools2">
+                    <a href="#" id="brush" onclick="openwindow('Settings')"><span class="brush" onclick="openwindow('Settings')">brush size</span></a>
+                    <a href="#" id="color" onclick="openwindow('Color-Settings')"><span class="color" onclick="openwindow('Color-Settings')">select color</span></a>
+            </div>
+        </div>
+
+
+        <div id="Settings">
+            <div class="close" onclick="closewindow('Settings')"></div>
+            <input type="range" id="myRange" value="2">
+            <span id='setBtn' onclick="setSize('Settings')">set size</span>
+        </div>
+
+
+        <div id="Color-Settings">
+            <div class="close" onclick="closewindow('Color-Settings')"></div>
+                <input type="color" id="color-picker" value="#4DC6FA"/>
+            <span id='setBtn' onclick="setColor('Color-Settings')">set color</span>
+        </div>
+
+    </body>
+</html>

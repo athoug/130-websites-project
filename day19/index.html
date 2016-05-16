@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    <body>
+
+        <div class="list-container">
+            <div class="list-header">
+                <div class="date">
+                    <span id="date"></span> <span id="month"></span> <span id="year"></span> <span id="day"></span>
+                </div>
+                <div class="data-to-add">
+                     <input type='text' placeholder="Add a task" id="todos" onkeypress = "addItem(event, false)"/>
+                </div>
+            </div>
+            <div class="todos-container">
+                <ul class= "lists" id="the-to-do-list">    </ul>
+            </div>
+            <div class="add-button" onclick="addItem(event, true)">
+                <!-- <span id="plus">+</span> -->
+            </div>
+        </div>
+
+        <footer>
+            <p>Athoug Alsougayer &copy; 2016 &nbsp; &nbsp;&nbsp; &nbsp;<a href="../default.html">Home</a> &nbsp;|  &nbsp; <a href="http://athougcodesatnight.tumblr.com/">blog</a></p>
+        </footer>
+    </body>
+</html>
