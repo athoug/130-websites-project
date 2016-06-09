@@ -1,0 +1,246 @@
+/**********************************
+    GENERAL STYLING
+*******************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font: 0.95em 'Helvetica', Arial, sans-serif;
+}
+
+html {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/**********************************
+    MENU STYLING
+*******************************/
+ul {
+    margin-top: 20px;
+    list-style: none;
+    max-width: 220px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #222;
+}
+
+.nav {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    max-width: 220px;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+
+
+}
+
+ul a {
+    display: block;
+    padding: 20px;
+    font-size: 1em;
+    text-align: center;
+    color: #555;
+    text-decoration: none;
+    text-align: left;
+}
+
+ul a:hover {
+    color: #fff;
+}
+
+.nav li {
+    text-align: left;
+    padding-left: 10px;
+    width: 95%;
+    border-bottom: 1px solid #333;
+}
+
+.selected {
+    color: #fff;
+}
+
+
+.open {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.under {
+    position: absolute;
+    z-index: -1;
+}
+
+.hamburger {
+  position: fixed;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  display: block;
+  width: 30px;
+}
+
+.line {
+  border-bottom: 3px solid #eee;
+  width: 25px;
+  margin-bottom: 4px;
+}
+
+.hamburger p {
+    font-size: 0.6em;
+    padding-left: 1px;
+    padding-top: 5px;
+    text-align: left;
+    color: #eee;
+}
+
+
+
+/**********************************
+    CONTENT STYLING
+*******************************/
+
+section {
+    text-align: center;
+}
+
+.content {
+    max-width: 700px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -2;
+}
+
+.content img {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.slogan {
+    color: #eee;
+    width: 350px;
+    padding: 20px;
+    font-size: 2em;
+    border: 6px solid #eee;
+    margin: auto;
+    margin-top: 90px;
+}
+
+.social img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.social {
+    position: absolute;
+    left: -40%;
+    bottom: 0;
+
+}
+
+.socialClosed {
+    position: absolute;
+    z-index: -2;
+}
+
+.discription {
+    width: auto;
+    margin-top: 50px;
+    color: #fff;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding: 10px;
+    line-height: 150%;
+    letter-spacing: 120%;
+}
+
+
+video#bgvid {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    transition: 1s opacity;
+    overflow: hidden;
+}
+
+/*---------------------------------------------------------
+  M E D I A   Q U E R I E S
+----------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+
+    .social {
+        left: -30%;
+        bottom: 0;
+    }
+
+    .social img{
+        width: 27px;
+        height: 27px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .discription {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .content {
+        width: 400px;
+        overflow: hidden;
+        position: absolute;
+        z-index: -2;
+    }
+
+  .slogan {
+      width: 300px;
+  }
+
+  .social img{
+      width: 25px;
+      height: 25px;
+  }
+
+  .social {
+      position: absolute;
+      left: auto;
+      right: auto;
+      bottom: 0;
+  }
+
+  .discription {
+      font-size: 1em;
+      padding: 10px;
+  }
+
+}

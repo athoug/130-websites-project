@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    font: 1em 'Roboto', sans-serif;
+}
+
+
+
+ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    background-color: #333;
+}
+
+ul a {
+    display: block;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: #aaa;
+    text-decoration: none;
+}
+
+ul a:hover {
+    background: #444;
+}
+
+nav li {
+    display: inline-block;
+    width: 20%;
+}
+
+
+/*---------------------------------------------------------
+  M E D I A   Q U E R I E S
+----------------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+
+  .hamburger {
+    cursor: pointer;
+    padding: 15px;
+    display: block;
+  }
+
+  .line {
+    border-bottom: 4px solid #bbb;
+    width: 35px;
+    margin-bottom: 6px;
+  }
+
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Our styles here */
+  nav li {
+      width: 100%;
+  }
+
+  .menu {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s;
+  }
+
+  .open {
+      height: 300px;
+
+  }
+}
