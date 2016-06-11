@@ -1,0 +1,108 @@
+/******************************************************************
+                        GENERAL STYLING
+******************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/grid.png');
+    font-family: 'Quicksand', 'helvetica', Arial, sans-serif;
+    overflow: hidden;
+}
+
+
+
+
+/******************************************************************
+                        HEADER STYLING
+******************************************************************/
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #CC6E7B;
+}
+.content {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10%;
+}
+
+p {
+    display: inline;
+    color: #ddd;
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+
+input {
+    background-color: #ddd;
+    border: none;
+    color: #CC6E7B;
+    padding: 2px;
+    border-radius: 10px;
+    width: 40px;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+
+/******************************************************************
+                        FOOTER STYLING
+******************************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    color: #CC6E7B;
+    letter-spacing: 2px;
+}
+
+footer p {
+    color: #CC6E7B;
+}
+
+footer a {
+    text-decoration: none;
+    color: #CC6E7B;
+}
+
+
+footer a:hover {
+    color: #a3c1ad;
+    border-bottom: 1px solid #a3c1ad;
+}
+
+
+
+/******************************************************************
+                        MEDIA QUERIES STYLING
+******************************************************************/
+@media only screen and (max-width: 650px){
+    .content {
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+    p {
+        font-size: 1em;
+    }
+
+    input {
+        width: 25px;
+        height: 15px;
+        font-size: 0.75em;
+    }
+    footer {
+        font-size: 0.5rem;
+        letter-spacing: 0;
+
+    }
+}
