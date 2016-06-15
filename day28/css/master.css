@@ -1,6 +1,7 @@
-/**************************************
-        GENERAL STYLING
-**************************************/
+/********************************************************
+            GENERAL STYLING
+********************************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,34 +10,70 @@
 html, body {
     width: 100%;
     height: 100%;
+    background-color: #0e1111;
+    color: 	#353839;
+    overflow: hidden;
+    font-family: 'Gudea','Helvetica', Arial, sans-serif;
 }
 
-body {
-    background: url('../img/bg.png') fixed;
-}
-
-p {
-    color: #fff;
-    font-size: 3em;
-    margin: 10px;
+canvas {
+    display: block;
+    margin: 60px auto 0;
+    background-color: #232b2b;
 }
 
 
 
 
-/**************************************
-        PARALLAX STYLING
-**************************************/
+/********************************************************
+            SCORE STYLING
+********************************************************/
 
-#para_lyr_1 {
-    position: fixed;
-    background: url('../img/tri.png') no-repeat 0 200px;
-    background-size: contain;
-    width: 100%;
-    height: 800px;
-    opacity: 0.6;
-}
-
-#content_layer {
+.scores {
     position: absolute;
+    top: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 40px;
+}
+
+.scores > p {
+    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.75em;
+}
+
+
+/********************************************************
+            FOOTER STYLING
+********************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+    color: 	#353839;
+    letter-spacing: 2px;
+}
+
+footer p {
+    color: 	#353839;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#353839;
+}
+
+
+footer a:hover {
+    color: #a3c1ad;
+    border-bottom: 1px solid #a3c1ad;
 }
