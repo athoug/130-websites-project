@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #BDEFFF;
+}
+
+button{
+    position: relative;
+    left: 43.5%;
+    top: 100px;
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #FCBDDB;
+    box-shadow: 0 5px 0 #FAACD1;
+}
+
+div#dice{
+    margin: 0 auto;
+    margin-top: 300px;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 7%;
+}
+
+.center {
+    text-align: center;
+}
+
+#one {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    font-size: 10rem;
+    color: #574F53;
+}
+
+#two, #three {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    font-size: 10rem;
+    transform: rotate(45deg);
+    color: #574F53;
+}
+
+#four {
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 10rem;
+    line-height: 80%;
+    color: #574F53;
+}
+
+#five{
+    text-align: center;
+    position: relative;
+    top: 15%;
+    font-size: 10rem;
+    color: #574F53;
+    line-height: 45%;
+}
+
+#six {
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 10rem;
+    color: #574F53;
+    line-height: 50%;
+}

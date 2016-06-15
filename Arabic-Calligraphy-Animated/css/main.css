@@ -1,0 +1,61 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica-light", Helvetica, Arial, sans-serif;
+    color: #384047;
+    background: #ffffcc;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center; /* Why on earth this was the easiest way to center this stupid SVG tag :< */
+}
+
+h1, h2 {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.toogi {
+    margin: 1em auto;
+    max-width: 60%;
+    display: block;
+}
+
+#toogi-logo {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+    /*fill: #ffffcc;*/
+    -webkit-animation: dash 5.5s linear forwards; /*Dash is the type of animation*/
+    -moz-animation: dash 5.5s linear forwards;
+    -o-animation: dash 5.5s linear forwards;
+    -ms-animation: dash 5.5s linear forwards;
+    animation: dash 5.5s linear forwards;
+}
+
+/*#logo:hover #toogi-logo {
+    fill: #222;
+    transition: 0.8s;
+}*/
+
+/* Setting up key frames for the animation in Dash*/
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset: 2000;
+        /*fill: #ffffcc;*/
+    }
+    to {
+        stroke-dashoffset: 0;
+        /*fill: #222;*/
+    }
+}
