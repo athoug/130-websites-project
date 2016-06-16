@@ -1,42 +1,447 @@
-/**************************************
-        GENERAL STYLING
-**************************************/
-* {
-    margin: 0;
-    padding: 0;
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+/********************************************************
+            GENERAL STYLING
+********************************************************/
+*{
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
+body{
+  font-family: 'Press Start 2P', cursive;
+  width: 100%;
+  height: 100%;
+  color: 	#222;
+  overflow: hidden;
+}
+
+
+
+/********************************************************
+            BOXES STYLING
+********************************************************/
+.wrapper{
+  max-width:25%;
+  margin: 10rem auto;
+  text-align: center;
+}
+
+div[class^='content']{
+ /*float: left;*/
+  position: relative;
+}
+
+div[class^='boxes']{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.move{
+  transform: rotate(-37deg);
+}
+
+.text {
+  font-size: 1.25rem;
+  top: 8rem;
+  left: 3rem;
+  animation: puls 2s infinite ease-in;
+}
+
+.left_box {
+  top: 4rem;
+  left: 2rem;
+}
+
+.right_box{
+  top: -8rem;
+  left: 2rem;
+}
+
+
+
+/********************************************************
+            BOX COLORS STYLING
+********************************************************/
+
+.boxes_14{
+  background: #E63C2E;
+  opacity: 0;
+  animation: box_14 2s infinite linear;
+}
+
+.boxes_13{
+  background: #FF9E19;
+  opacity: 0;
+  animation: box_13 2s infinite linear;
+}
+
+.boxes_12{
+  background: #F6D93C;
+  opacity: 0;
+  animation: box_12 2s infinite linear;
+}
+
+.boxes_11{
+  background: #8ADC64;
+  opacity: 0;
+  animation: box_11 2s infinite linear;
+}
+
+.boxes_10{
+  background: #5AB3E8;
+  opacity: 0;
+  animation: box_10 2s infinite linear;
+}
+
+.boxes_9{
+  background: #0971CE;
+  opacity: 0;
+  animation: box_9 2s infinite linear;
+}
+
+.boxes_8{
+  background: #B34EC5;
+  opacity: 0;
+  animation: box_8 2s infinite linear;
+}
+
+.boxes_7{
+  background: #E63C2E;
+  opacity: 0;
+  animation: box_7 2s infinite linear;
+}
+
+.boxes_6{
+  background: #FF9E19;
+  opacity: 0;
+  animation: box_6 2s infinite linear;
+}
+
+.boxes_5{
+  background: #F6D93C;
+  opacity: 0;
+  animation: box_5 2s infinite linear;
+}
+
+.boxes_4{
+  background: #8ADC64;
+  opacity: 0;
+  animation: box_4 2s infinite linear;
+}
+
+.boxes_3{
+  background: #5AB3E8;
+  opacity: 0;
+  animation: box_3 2s infinite linear;
+}
+
+.boxes_2{
+  background: #0971CE;
+  opacity: 0;
+  animation: box_2 2s infinite linear;
+}
+
+.boxes_1{
+  background: #B34EC5;
+  opacity: 0;
+  animation: box_1 2s infinite linear;
+}
+
+
+
+/********************************************************
+            ANIMATION STYLING
+********************************************************/
+
+
+@keyframes box_14 {
+  0% {
+    opacity:0;
+  }
+  5% {
+    opacity:0;
+  }
+  7.14%{
+    opacity:1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_13 {
+  0% {
+    opacity:0;
+  }
+
+  7.14%{
+    opacity:0;
+  }
+
+  14.28%{
+     opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_12 {
+  0% {
+    opacity:0;
+  }
+
+  14.28%{
+     opacity: 0;
+  }
+
+  21.42% {
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_11 {
+  0% {
+    opacity:0;
+  }
+
+  21.42% {
+    opacity: 0;
+  }
+
+  28.56%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_10 {
+  0% {
+    opacity:0;
+  }
+
+  28.56%{
+    opacity: 0;
+  }
+
+  35.7%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_9 {
+  0% {
+    opacity:0;
+  }
+
+  35.7%{
+    opacity: 0;
+  }
+
+  42.84%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_8 {
+  0% {
+    opacity:0;
+  }
+
+  42.84%{
+    opacity: 0;
+  }
+
+  49.98%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_7 {
+  0% {
+    opacity:0;
+  }
+
+  49.98%{
+    opacity: 0;
+  }
+
+  57.12%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_6 {
+  0% {
+    opacity:0;
+  }
+
+  57.12%{
+    opacity: 0;
+  }
+
+  64.26%{
+     opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_5 {
+  0% {
+    opacity:0;
+  }
+
+  64.26%{
+     opacity: 0;
+  }
+
+  71.4%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_4 {
+  0% {
+    opacity:0;
+  }
+
+  71.4%{
+    opacity: 0;
+  }
+
+  78.54%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_3 {
+  0% {
+    opacity:0;
+  }
+
+  78.54%{
+    opacity: 0;
+  }
+
+  85.68%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_2 {
+  0% {
+    opacity:0;
+  }
+
+  85.68%{
+    opacity: 0;
+  }
+
+  92.82%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes box_1 {
+  0% {
+    opacity:0;
+  }
+
+  92.82%{
+    opacity: 0;
+  }
+
+  97%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes puls {
+  0%{
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100%{
+    opacity: 1:
+  }
+}
+
+
+/********************************************************
+            FOOTER STYLING
+********************************************************/
+footer {
     width: 100%;
-    height: 100%;
-}
-
-body {
-    background: url('../img/bg.png') fixed;
-}
-
-p {
-    color: #fff;
-    font-size: 3em;
-    margin: 10px;
-}
-
-
-
-
-/**************************************
-        PARALLAX STYLING
-**************************************/
-
-#para_lyr_1 {
-    position: fixed;
-    background: url('../img/tri.png') no-repeat 0 200px;
-    background-size: contain;
-    width: 100%;
-    height: 800px;
-    opacity: 0.6;
-}
-
-#content_layer {
     position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+    color: 	#222;
+}
+
+footer p {
+    color: 	#222;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#222;
+}
+
+
+footer a:hover {
+    color: #a3c1ad;
+    border-bottom: 1px solid #a3c1ad;
 }
