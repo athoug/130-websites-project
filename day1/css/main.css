@@ -214,14 +214,14 @@ footer {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 5px;
-    color: #222;
+    color: #333;
     font-family: 'Raleway Dots', cursive;
     font-size: 0.8rem;
 }
 
 footer a {
     text-decoration: none;
-    color: #222;
+    color: #333;
 }
 
 footer a:hover {

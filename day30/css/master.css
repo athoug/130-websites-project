@@ -1,6 +1,8 @@
-/**************************************
-        GENERAL STYLING
-**************************************/
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700);
+/********************************************************
+            GENERAL STYLING
+********************************************************/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,34 +11,513 @@
 html, body {
     width: 100%;
     height: 100%;
-}
+    overflow: hidden;
+    background: linear-gradient(#202028, #222222);
+    font-family: 'Asap','Helvetica', Arial, sans-serif;
 
-body {
-    background: url('../img/bg.png') fixed;
-}
-
-p {
-    color: #fff;
-    font-size: 3em;
-    margin: 10px;
 }
 
 
 
 
-/**************************************
-        PARALLAX STYLING
-**************************************/
-
-#para_lyr_1 {
-    position: fixed;
-    background: url('../img/tri.png') no-repeat 0 200px;
-    background-size: contain;
-    width: 100%;
-    height: 800px;
-    opacity: 0.6;
+/********************************************************
+            TITLE STYLING
+********************************************************/
+.title{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: #F5EAD6;
 }
 
-#content_layer {
+.title > h1 {
+    font-size: 5rem;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F5EAD6;
+}
+
+.title > h6 {
+    text-align: center;
+    padding-top: 10px;
+    color: #50CAE2;
+}
+
+
+.title > h3 {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: 200;
+    letter-spacing: 0.75px;
+}
+
+
+
+
+/********************************************************
+            MOON STYLING
+********************************************************/
+.moon {
     position: absolute;
+    bottom: -40rem;
+    left: -10rem;
+    width: 60rem;
+    height: 60rem;
+    border-radius: 100%;
+    background-color: #CCCCCC;
+    border-left: 1rem solid #999999;
+    z-index: 100;
+}
+
+
+.moon-bumps {
+    position: absolute;
+    top: 10rem;
+    left: 40rem;
+    width: 8rem;
+    height: 6rem;
+    border-radius: 200%;
+    background:#999999;
+    transform: rotate(75deg);
+    border-left: 5px solid #777777;
+    border-bottom: 5px solid #777777;
+}
+
+.two {
+    top: 5rem;
+    left: 30rem;
+    transform: rotate(190deg);
+    width: 6rem;
+    height: 4rem;
+}
+
+.circle{
+    position: absolute;
+    top:  0.45rem;
+    left: 0rem;
+    width: 3rem;
+    height: 3.5rem;
+    border-radius: 200%;
+    background-color: #777777;
+}
+
+.three {
+    top: 13rem;
+    left: 30rem;
+    transform: rotate(190deg);
+    width: 7rem;
+    height: 6rem;
+    background-color: #CCCCCC;
+    border-bottom: 9px solid #777777;
+
+}
+
+
+
+
+
+/********************************************************
+            STARS STYLING
+********************************************************/
+
+.star {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    z-index: 1;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 200%;
+    background-color: #fff;
+
+    transition: all 15s;
+    animation: starLight 20s infinite ease;
+
+}
+
+
+/********************************************************
+            SPUTNIK STYLING
+********************************************************/
+.container{
+    position: absolute;
+    top: 10rem;
+    left: -7rem;
+    z-index: 2;
+    transform: rotate(10deg);
+
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    animation: sputnik 3s infinite ease;
+}
+
+.sput-body {
+    position: relative;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    background-color: #125B7B;
+}
+
+.sput-stripe{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0.3rem;
+    margin: auto;
+    background-color: #4AC9E0;
+}
+
+.sput-window{
+    display: block;
+    margin-left: 4.5rem;
+    padding-top: 5px;
+    color:  #4AC9E0;
+    font-size: 3.3rem;
+    line-height: 1.7rem;
+}
+
+.sput-top-tail{
+    position: absolute;
+    top: -0.5rem;
+    left: -7rem;
+    width: 10rem;
+    height: 0.4rem;
+    background-color: #F5EAD6;
+    transform: rotate(25deg);
+}
+
+.sput-middle-tail{
+    position: absolute;
+    top: 3rem;
+    left: -10rem;
+    width: 10rem;
+    height: 0.4rem;
+    background-color: #F5EAD6;
+}
+
+.sput-bottom-tail{
+    position: absolute;
+    top: 7rem;
+    left: -7rem;
+    width: 10rem;
+    height: 0.4rem;
+    background-color: #F5EAD6;
+    transform: rotate(335deg);
+}
+
+
+
+
+/********************************************************
+            FOOTER STYLING
+********************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+    color: 	#999999;
+}
+
+footer p {
+    color: 	#999999;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#999999;
+}
+
+
+footer a:hover {
+    color: #a3c1ad;
+    border-bottom: 1px solid #a3c1ad;
+}
+
+
+
+
+/********************************************************
+            STARS ANIMATION STYLING
+********************************************************/
+
+@keyframes starLight {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+
+
+
+
+
+/********************************************************
+            SPUTNIK ANIMATION STYLING
+********************************************************/
+@keyframes sputnik {
+    0%{
+        top: 10rem;
+        left: -7rem;
+        transform: rotate(10deg);
+        transition: all 2s;
+
+    }
+
+    2%{
+        top: 10.5rem;
+        left: -5rem;
+    }
+
+    4%{
+        top: 11rem;
+        left: -3rem;
+    }
+
+    6%{
+        top: 11.5rem;
+        left: -1rem;
+        transform: rotate(15deg);
+    }
+
+    8%{
+        top: 12rem;
+        left: 1rem;
+    }
+
+    10%{
+        top: 12.5rem;
+        left: 3rem;
+    }
+
+    12%{
+        top: 13rem;
+        left: 5rem;
+        transform: rotate(20deg);
+    }
+
+    14%{
+        top: 13.5rem;
+        left: 7rem;
+
+
+    }
+
+    16%{
+        left: 9rem;
+    }
+
+    18%{
+        top: 14rem;
+        left: 11rem;
+        transform: rotate(25deg);
+    }
+
+    20%{
+        top: 14.5rem;
+        left: 13rem;
+    }
+
+    22%{
+        top: 14.5rem;
+        left: 15rem;
+    }
+
+    24%{
+        top: 15rem;
+        left: 17rem;
+        transform: rotate(30deg);
+    }
+
+    26%{
+        top: 15.5rem;
+        left: 19rem;
+    }
+
+    28%{
+        top: 16rem;
+        left: 21rem;
+    }
+
+    30%{
+        top: 16.5rem;
+        left: 23rem;
+        transform: rotate(35deg);
+    }
+
+    32%{
+        top: 17rem;
+        left: 25rem;
+    }
+
+    34%{
+        top: 17.5rem;
+        left: 27rem;
+    }
+
+    36%{
+        left: 29rem;
+        transform: rotate(40deg);
+    }
+
+    38%{
+        left: 31rem;
+    }
+
+    40%{
+        top: 18.5rem;
+        left: 33rem;
+    }
+
+    42%{
+        left: 35rem;
+        transform: rotate(45deg);
+    }
+
+    44%{
+        top: 18.5rem;
+        left: 37rem;
+    }
+
+    46%{
+        left: 39rem;
+    }
+
+    48%{
+        top: 19.5rem;
+        left: 41rem;
+        transform: rotate(50deg);
+    }
+
+    50%{
+        left: 43rem;
+    }
+
+    52%{
+        top: 20.5rem;
+        left: 45rem;
+    }
+
+    54%{
+        left: 47rem;
+    }
+
+    56%{
+        top: 21.5rem;
+        left: 49rem;
+    }
+
+    58%{
+        left: 51rem;
+    }
+
+    60%{
+        top: 22.5rem;
+        left: 53rem;
+    }
+
+    62%{
+        left: 55rem;
+    }
+
+    64%{
+        top: 23.5rem;
+        left: 57rem;
+    }
+
+    66%{
+        left: 59rem;
+    }
+
+    68%{
+        top: 24.5rem;
+        left: 61rem;
+    }
+
+    70%{
+        left: 63rem;
+    }
+
+    72%{
+        top: 25.5rem;
+        left: 65rem;
+    }
+
+    74%{
+        left: 67rem;
+    }
+
+    76%{
+        top: 26.5rem;
+        left: 69rem;
+    }
+
+    78%{
+        left: 71rem;
+    }
+
+    80%{
+        top: 27.5rem;
+        left: 73rem;
+    }
+
+    82%{
+        left: 75rem;
+    }
+
+    84%{
+        top: 28.5rem;
+        left: 77rem;
+    }
+
+    86%{
+        left: 79rem;
+    }
+
+    88%{
+        top: 29.5rem;
+        left: 81rem;
+    }
+
+    90%{
+        left: 83rem;
+    }
+
+    92%{
+        top: 30.5rem;
+        left: 85rem;
+    }
+
+    94%{
+        left: 87rem;
+    }
+
+    96%{
+        top: 31.5rem;
+        left: 89rem;
+    }
+
+    98%{
+        left: 91rem;
+    }
+
+    100%{
+        top: 32.5rem;
+        left: 93rem;
+    }
 }

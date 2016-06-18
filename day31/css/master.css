@@ -1,0 +1,110 @@
+/********************************************************
+            GENERAL STYLING
+********************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    background-color: #1A515E;
+    font-family: 'Quicksand','Helvetica', Arial, sans-serif;
+}
+
+
+
+
+
+/********************************************************
+            FORM ELEMENTS STYLING
+********************************************************/
+h1{
+    margin-top: 1rem;
+    color: #87B990;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Helvetica';
+    font-weight: 700;
+    letter-spacing:1px;
+}
+
+span {
+    color: #ABCD9D;
+}
+
+.container{
+    height: 50%;
+    margin: 3rem auto 0rem;
+}
+
+textarea {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: #1A515E;
+    border: 0.4rem solid #318074;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #87B990;
+    resize: none;
+    letter-spacing:1px;
+    font-weight: 300;
+}
+
+
+button {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    border: none;
+    font-size: 1rem;
+    background-color: #318074;
+    color: #1A515E;
+    outline: none;
+    transition: all 0.5s;
+}
+
+
+button:hover{
+    border: 3px solid #318074;
+    background-color: #1A515E;
+    color: #318074;
+}
+
+
+
+/********************************************************
+            FOOTER STYLING
+********************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    color: 	#318074;
+}
+
+footer p {
+    color: 	#318074;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#318074;
+}
+
+
+footer a:hover {
+    color: #a3c1ad;
+    border-bottom: 1px solid #a3c1ad;
+}
