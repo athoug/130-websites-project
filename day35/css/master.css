@@ -1,0 +1,146 @@
+/*
+    This is not my original code. It's a tutoriuaal I followed on
+    The code player The link to the actual tutorial is
+    http://thecodeplayer.com/walkthrough/leaky-coffee-mug
+*/
+
+/****************************************************
+                GENERAL STYLING
+****************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #262C52;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: #eee;
+    padding-top: 5%;
+}
+
+
+
+
+
+/****************************************************
+                COFFEE MUG STYLING
+****************************************************/
+
+/* the coffee mug and the coffee will be created mostly using box shadows */
+.coffee-mug{
+    background: #3F2616;
+    position: relative;
+    margin: 150px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* the following box-shadow values are going to create the coffee mug, a coffee ring, and some coffee splatters (our mug is a little leaky) */
+    box-shadow: 0 0 0 10px #442918,
+                0 0 0 25px #3c2415,
+                0 0 0 42px #e4e6b2,
+                0 0 0 65px #eff0d1,
+                0 120px 0 -25px #3c2415,
+                100px 70px 0 -25px #3c2415,
+                80px 140px 0 -10px #3c2415,
+                0 210px 0 -55px #3c2415,
+                20px 250px 0 -65px #3c2415;
+}
+
+
+
+
+/* cool right? except the mug needs a handle */
+.coffee-mug::before{
+    content: "";
+    position: absolute;
+    background: #eff0d1;
+    height: 80px;
+    width: 60px;
+    top: -85px;
+    right: -75px;
+    border-radius: 5px;
+    box-shadow: inset 0 50px 0 0 #eff0d1;
+    /* transform lets us rotate the handle on an angle */
+    transform: rotate(45deg);
+}
+
+
+
+/* that coffee could look a little more realistic. let's add a simple ripple effect */
+.coffee-mug::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    border: 3px solid #77665c;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    opacity: 0.2;
+    /* a little bit of animation*/
+    animation: rings 3s ease-out infinite;
+}
+
+@keyframes rings{
+    to {
+        width: 150px;
+        height: 150px;
+        opacity: 0;
+    }
+}
+
+
+
+
+/****************************************************
+                WATER STYLING
+****************************************************/
+.water-ripple{
+    background: #123456;
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+
+/****************************************************
+                FOOTER STYLING
+****************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.5rem;
+    color: 	#999999;
+}
+
+footer p {
+    color: 	#999999;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#999999;
+}
+
+
+footer a:hover {
+    color: #a3c1ad;
+    border-bottom: 1px solid #a3c1ad;
+}
