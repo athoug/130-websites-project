@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arduino Simulator</title>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <h1 class='title'>Arduino Simulator</h1>
+        <div class="wrapper">
+            <div class="container">
+
+            </div>
+
+            <div class="IDE">
+                <div class="circles red"></div>
+                <div class="circles yellow"></div>
+                <div class="circles green"></div>
+                <div class="text">Blink | Arduino Sketch</div>
+                <div class="button-layer">
+                    <div class="run-button" id='buttonRun'></div>
+                </div>
+
+                <div class="button-layer sketch-name">
+                    <div class="sketch-blink-name" id="blink">
+                        Blink
+                    </div>
+
+                    <div class="sketch-blink-name sketch-instruction-name not-selected " id="info">
+                        Info
+                    </div>
+                </div>
+
+                <div class="white-ide">
+                    <div class="information-text">
+                        <p>/*</p>
+                        <p>&nbsp; &nbsp; Blink</p>
+                        <p>&nbsp; &nbsp; Turns on the LED for one second, then off for one second, repeatedly.</p>
+                        <p>&nbsp; &nbsp; This example code is in the public domain.</p>
+                        <p>/*</p>
+                        <br>
+                        <p>// put your setup code here, to run once:</p>
+                        <p class="codcolor"> void setup<span class='curly'>( ) {</span></p>
+                        <p>// initialize the digital pin as an output (you may chose from 0 till 9)</p>
+                        <p class="codcolor"> pinMode<span class='curly'>(0, <span class="paramater">OUTPUT</span> ) ;</span></p>
+                        <p><span class='curly'> }</span></p>
+                        <br>
+                        <p>// put your main code here, to run repeatedly:</p>
+                        <p class="codcolor"> void loop<span class='curly'>( ) {</span></p>
+                        <p class="codcolor"> digitalWrite<span class='curly'>(0, <span class="paramater">HIGH</span> ) ;</span> <span class="comment">// turn the LED on</span></p>
+                        <p class="codcolor"> delay<span class='curly'>(1000) ;</span> <span class="comment">// wait for a second</span></p>
+                        <p class="codcolor"> digitalWrite<span class='curly'>(0, <span class="paramater">LOW</span> ) ;</span> <span class="comment">// turn the LED off</span></p>
+                        <p class="codcolor"> delay<span class='curly'>(1000) ;</span> <span class="comment">// wait for a second</span></p>
+                        <p><span class='curly'> }</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <p>Athoug Alsougayer &copy; 2016 &nbsp; &nbsp;&nbsp; &nbsp;<a href="../default.html">Home</a> &nbsp;|  &nbsp; <a href="http://athougcodesatnight.tumblr.com/">blog</a></p>
+        </footer>
+    </body>
+</html>

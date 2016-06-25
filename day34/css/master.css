@@ -1,0 +1,666 @@
+/********************************************************
+            GENERAL STYLING
+********************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 2%;
+    color: #1FAFB3;
+    background-color: #F1F1F1;
+    font-family: 'Open Sans', 'Helvetica', Arial, sans-serif;
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 70%;
+    margin: 2% auto 0;
+    margin-bottom: 10px;
+    /*border: 1px solid #000;*/
+    padding-left: 10%;
+}
+
+
+.title {
+    background: #00979C;
+    color: #F1F1F1;
+    text-align: center;
+    padding: 2%;
+    font-size: 3.5rem;
+}
+
+/********************************************************
+            ARDUINO CONTAINOR STYLING
+********************************************************/
+
+.container {
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-right: 5%;
+    height: 90%;
+    width: 40%;
+    float: left;
+    text-align: center;
+    margin-top: 1%;
+    /*border: 1px solid #000*/
+
+}
+
+.svg-container {
+    display: inline-block;
+	position: relative;
+	width: 90%;
+	padding-bottom: 90%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+
+
+/********************************************************
+            LIGHT DEIODS STYLING
+********************************************************/
+
+.light-diods{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 79%;
+    height: 20%;
+    margin: auto;
+    /*border: 1px solid #000;*/
+
+}
+
+
+
+.diods{
+    /*display: none;*/
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 1%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    float: right;
+     -webkit-transform-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: translate(-50%, 0);
+    /*background-color:  #D92323;*/
+}
+
+#light0, #Rectangle0, #Rectangl0 {
+     animation: lightUp0 2s infinite ease;
+}
+
+.diods-position{
+    margin-left: 4%;
+    margin-right: 0.5%;
+}
+
+.diod-adjust-position{
+    margin-left: 3%;
+}
+
+.last-deoad {
+    margin-right: 0;
+}
+
+
+#first {
+    display: block;
+    animation: lightUp0 2s infinite ease;
+}
+
+
+
+/********************************************************
+            ANIMATING LIGHT DEIODS STYLING
+********************************************************/
+@keyframes lightUp0 {
+    0%{
+        fill: #E37576;
+    }
+
+    15%{
+        fill: #FF0000;
+    }
+
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+
+@keyframes lightUp1 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    25% {
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+
+@keyframes lightUp2 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    35% {
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+@keyframes lightUp3 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    45%{
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }}
+
+    @keyframes lightUp4 {
+        0%{
+            fill: #E37576;
+        }
+
+
+        55%{
+            fill: #FF0000;
+        }
+
+
+        100%{
+            fill: #E37576;
+        }
+}
+
+@keyframes lightUp5 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    65%{
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+@keyframes lightUp6 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    75%{
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+@keyframes lightUp7 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    85%{
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+
+@keyframes lightUp8 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    95%{
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+@keyframes lightUp9 {
+    0%{
+        fill: #E37576;
+    }
+
+
+    98%{
+        fill: #FF0000;
+    }
+
+
+    100%{
+        fill: #E37576;
+    }
+}
+
+
+@keyframes turnOn {
+    0%{
+        fill: #E37576;
+    }
+
+
+    50%{
+        fill: #FF0000;
+    }
+    100% {
+        fill: #FF0000;
+    }
+}
+
+
+
+@keyframes turnOff {
+
+    0%{
+        fill: #FF0000;
+    }
+
+    50%{
+        fill: #E37576;
+    }
+
+
+}
+
+
+/********************************************************
+            ARDUINO IDE STYLING
+********************************************************/
+
+.IDE {
+    width: 35%;
+    height: 100%;
+    background-color: gray;
+    float: left;
+    margin-top: 1%;
+    /*border: 1px solid #000*/
+}
+
+
+.circles {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+
+}
+
+.text{
+    float: left;
+    color: #333;
+    margin-top: 6px;
+    margin-left: 80px;
+}
+
+.red {
+    background-color: #FC615C;
+}
+
+.yellow {
+    background-color: #FDC041;
+}
+
+.green {
+    background-color: #34C949;
+}
+
+.button-layer {
+    float: none;
+    position: relative;
+    top:30px;
+    width: 100%;
+    height: 40px;
+    background-color: #01767B;
+}
+
+.run-button{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/checking.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #60C2C6;
+    border-radius: 100%;
+}
+
+.run-button:hover{
+    background-color:#006666;
+    background-image: url('../img/checking-hover.svg');
+}
+
+
+.sketch-name{
+    background-color: #1FAFB3;
+}
+
+.sketch-blink-name {
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    color: #006666;
+    padding-top: 5px;
+}
+
+
+.sketch-instruction-name {
+    top: -20px;
+    left: 100px;
+
+}
+
+.not-selected {
+    background-color: #006666;
+    color: #fff;
+}
+
+.selected {
+    background-color: #fff;
+    color: #006666;
+}
+
+.white-ide {
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.console {
+    width: 100%;
+    height: 15.5%;
+    background-color: #333;
+}
+
+.console-message {
+    padding: 2%;
+    color: #FDC041;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+
+/********************************************************
+            INSTRUCTION  STYLING
+********************************************************/
+
+.information-text{
+    position: relative;
+    top: 50px;
+    left: 10px;
+    transition: all 1s;
+}
+
+
+.information-text > p {
+    color: #ccc;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+p.codcolor {
+    color: #dc9143;
+}
+
+.curly {
+    color: #333;
+}
+
+.paramater {
+    color: #1584AE;
+}
+
+.comment {
+    color: #ccc;
+}
+
+
+
+/********************************************************
+            BLINK CODE STYLING
+********************************************************/
+.blink-text {
+    display: none;
+    position: relative;
+    top: 50px;
+    left: 10px;
+    transition: all 1s;
+}
+
+.blink-text> p {
+    color: #ccc;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+.blink-text> p.codcolor {
+    color: #dc9143;
+}
+
+.blink-text> textarea {
+    resize: none;
+    width: 90%;
+    height: 30px;
+    border-color: #ddd;
+    outline: none;
+    padding: 2%;
+    color: #1FAFB3;
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+
+/********************************************************
+            FOOTER STYLING
+********************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom:2px;
+    font-size: 0.6rem;
+    color: 	#1FAFB3;
+}
+
+footer p {
+    color: 	#1FAFB3;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#1FAFB3;
+}
+
+
+footer a:hover {
+    color: #01767B;
+    border-bottom: 1px solid #01767B;
+}
+
+
+
+
+
+
+
+/********************************************************
+                MEDIA QUERY STYLING
+********************************************************/
+
+@media screen and (max-width: 980px) {
+    .text{
+        margin-top: 3px;
+        margin-left: 30px;
+    }
+
+    .wrapper {
+        padding-left: 0:
+    }
+
+    html, body {
+        overflow-y: auto;
+    }
+
+    div[class^="container"] {
+        float: none;
+        width: 60%;
+        margin: auto;
+        padding-bottom: 20%;
+    }
+
+    div[class^="IDE"] {
+        float: none;
+        margin: auto;
+        width: 60%;
+        padding-bottom: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 940px) {
+
+    html, body {
+        overflow-y: auto;
+    }
+
+    div[class^="container"], div[class^="IDE"]{
+        float: none;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 30%;
+    }
+
+    div[class^="IDE"]{
+        width: 60%;
+        padding-bottom: 0;
+    }
+
+    .svg-container {
+        width: 60%:
+    }
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .wrapper {
+        padding-left: 0:
+    }
+
+    div[class^="container"], div[class^="IDE"]{
+        float: none;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 32%;
+    }
+
+    div[class^="IDE"]{
+        padding-bottom: 0;
+    }
+
+
+    .button-layer{
+        margin-top: 50px;
+    }
+
+    .sketch-name {
+        margin-top: 0;
+    }
+
+    .title {
+        padding: 2%;
+        font-size: 2.5rem;
+    }
+
+
+    .light-diods {
+        width: 60%;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .text{
+        margin-top: 3px;
+        margin-left: 40px;
+    }
+
+    .diods {
+        width: 1rem;
+        height: 1rem;
+    }
+}
