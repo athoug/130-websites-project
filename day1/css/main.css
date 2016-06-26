@@ -16,6 +16,7 @@ html, body {
     font-family: 'Yantramanav', Helvetica, Arial, sans-serif;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -70,7 +71,44 @@ li#email {
     background-size: contain;
 }
 
-li a {
+a[class^='underline']{
+  color: #feed90;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-decoration: none;
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+  padding-bottom: 0.05em;
+  position: relative;
+}
+
+a[class^='underline']::after{
+  content: '';
+  position: absolute;
+  top: 100%;
+  /*color: #fede32;*/
+  border-bottom: 0.105em solid #fede32;
+  transition: all .35s;
+}
+
+a[class^='underline']:hover::after{
+    color: #fede32;
+    transition: all .35s;
+}
+
+a.underline_from_center::after{
+  color: #feed90;
+  right:50%;
+  left:50%;
+}
+
+a.underline_from_center:hover::after{
+  color: #fede32;
+  right: 0;
+  left: 0;
+}
+
+/*li a {
     color: #feed90;
     font-size: 1rem;
     font-weight: lighter;
@@ -80,7 +118,7 @@ li a {
 li a:hover {
     color: #fede32;
     border-bottom: 1px solid #fede32;
-}
+}*/
 
 .logo {
     position: absolute;
@@ -183,6 +221,50 @@ section {
     border-bottom: 0.5px solid #fede32;
 }
 
+/*****************************
+        link styling
+******************************/
+a[class^='slide']{
+  text-decoration: none;
+  line-height: 1.5em;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  border-bottom: 0.0625em solid #ccc;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+a[class^='slide']::after{
+  content: attr(data-linktext);
+  color: #222;
+  background: #fede32;
+  position: absolute;
+  display: block;
+  text-align: center;
+  transition: all .35s;
+
+}
+
+a[class^='slide']:hover::after {
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  transition: all .35s;
+}
+
+a.slide_from_bottom::after {
+  top: 100%;
+  bottom: -100%;
+}
+
+a.slide_from_left::after {
+  top: 0;
+  right: 100%;
+  left: -100%;
+}
 
 /* About page */
 .profile-image {

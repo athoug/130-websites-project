@@ -1,0 +1,106 @@
+/**************************************************
+            GENERAL STYLING
+**************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #222;
+    font-family: 'Lobster', cursive;
+}
+
+
+
+/**************************************************
+            QUOTES CONTAINER STYLING
+**************************************************/
+
+.quoteBlock{
+    width: 70%;
+    height: 100%;
+    margin: 200px auto 20px;
+    text-align: center;
+    padding: 2%;
+    /*border: 1px solid #000;*/
+    color: #eee;
+    font-size: 3rem;
+}
+
+#button{
+    background-color: #222;
+    display: block;
+    margin: 50px auto;
+    padding: 1.5% 2.5%;
+    color: #eee;
+    border: 2px solid #eee;
+    font-size: 1rem;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+
+
+
+
+
+/********************************************************
+            FOOTER STYLING
+********************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    color: 	#eee;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+footer p {
+    color: 	#eee;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#eee;
+}
+
+
+footer a:hover {
+    color: #01767B;
+    border-bottom: 1px solid #01767B;
+}
+
+
+
+/********************************************************
+                MEDIA QUERY STYLING
+********************************************************/
+
+@media screen and (max-width: 580px) {
+    .quoteBlock{
+        font-size: 2rem;
+        margin-top: 150px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    .quoteBlock{
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+
+    #button {
+        padding: 4%;
+        font-size: 0.9rem;
+    }
+}

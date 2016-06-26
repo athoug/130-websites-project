@@ -239,22 +239,29 @@ html, body {
     font-size: 5em;
 }
 
-.up:before {
+/*.up::before {
     content: '⏝';
-}
+}*/
+
+
 .up {
     transition: all 0.5s;
     transform: rotateZ(0deg);
 }
+
+/*.up::after {
+    content: '⏝';
+}*/
+
 
 /*.up:hover{
     transition: all 0.5s;
     transform: rotateZ(180deg);
 }*/
 
-.down:before {
+/*.down:before {
     content: '⏝';
-}
+}*/
 .down {
     transition: all 0.5s;
     transform: rotateZ(180deg);

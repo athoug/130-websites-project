@@ -34,28 +34,28 @@
 		<path style="fill:#FFFFFF;stroke:#656668;stroke-width:1.8028;stroke-miterlimit:10;" d="M404.625,171.045l-26.731,3.996
 			c0,0-5.938,20.776-37.619,33.562v44.752v59.933c0,50.744,40.79,83.51,91.079,83.51c50.292,0,91.08-32.766,91.08-83.51v-63.13
 			C522.63,250.157,427.988,220.79,404.625,171.045z"/>
-		
+
 			<ellipse style="fill:none;stroke:#656668;stroke-width:1.8028;stroke-miterlimit:10;" cx="381.459" cy="270.334" rx="26.73" ry="26.97"/>
-		
+
 			<line style="fill:none;stroke:#656668;stroke-width:1.8028;stroke-linecap:round;stroke-miterlimit:10;" x1="360.273" y1="227.583" x2="395.714" y2="227.583"/>
 		<path style="fill:none;stroke:#656668;stroke-width:1.8028;stroke-linecap:round;stroke-miterlimit:10;" d="M421.851,265.74
 			l-1.387,54.339c-0.199,4.194,3.366,7.792,7.524,7.792c0,0,10.295,1.599,16.832,0"/>
-		
+
 			<ellipse style="fill:none;stroke:#656668;stroke-width:1.8028;stroke-miterlimit:10;" cx="481.645" cy="270.334" rx="26.73" ry="26.97"/>
-		<ellipse style="fill:#656668;" cx="481.645" cy="270.335" rx="5.149" ry="5.195"/>
+		<ellipse id="left-eye" style="fill:#656668;" cx="481.645" cy="270.335" rx="5.149" ry="5.195"/>
 		<path style="fill:none;stroke:#656668;stroke-width:1.8028;stroke-miterlimit:10;" d="M408.189,270.335
 			c15.641-7.393,31.084-7.393,46.726,0"/>
 		<path style="fill:none;stroke:#656668;stroke-width:1.8028;stroke-linecap:round;stroke-miterlimit:10;" d="M408.189,357.239
 			c15.641,7.39,31.084,7.39,46.726,0"/>
 		<polygon style="fill:#656668;" points="382.25,428.158 409.772,394.796 383.833,385.607 380.864,400.789 380.271,417.771 		"/>
 		<g>
-			
+
 				<line style="fill:none;stroke:#FFB8AC;stroke-width:1.8028;stroke-linecap:round;stroke-miterlimit:10;" x1="374.133" y1="310.289" x2="379.279" y2="317.881"/>
-			
+
 				<line style="fill:none;stroke:#FFB8AC;stroke-width:1.8028;stroke-linecap:round;stroke-miterlimit:10;" x1="364.035" y1="310.289" x2="369.38" y2="317.881"/>
-			
+
 				<line style="fill:none;stroke:#FFB8AC;stroke-width:1.8028;stroke-linecap:round;stroke-miterlimit:10;" x1="496.693" y1="310.289" x2="502.039" y2="317.881"/>
-			
+
 				<line style="fill:none;stroke:#FFB8AC;stroke-width:1.8028;stroke-linecap:round;stroke-miterlimit:10;" x1="486.794" y1="310.289" x2="491.941" y2="317.881"/>
 		</g>
 		<path style="fill:#FFFFFF;stroke:#656668;stroke-width:1.8028;stroke-miterlimit:10;" d="M339.284,254.553
@@ -84,7 +84,7 @@
 			c-3.169,6.192-7.722,11.586-14.059,14.781c-11.88,5.796-30.69,9.593-47.124-9.388l-2.575-31.366c0,0,58.213-12.584,61.777-79.511
 			v-63.729c-16.039-6.992-102.168-36.36-118.009-79.112l-26.729,3.996c0,0-10.098,24.374-37.62,33.562v45.95
 			C340.474,254.553,334.135,252.754,327.009,258.949z"/>
-		<ellipse style="fill:#656668;" cx="381.459" cy="270.335" rx="5.147" ry="5.195"/>
+		<ellipse id="right-eye" style="fill:#656668;" cx="381.459" cy="270.335" rx="5.147" ry="5.195"/>
 	</g>
 </g>
 </svg>
