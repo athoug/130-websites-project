@@ -1,0 +1,121 @@
+/**************************************************
+            GENERAL STYLING
+**************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #eee;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.wrapper{
+    width: 70%;
+    height: 50%;
+    margin: 15% auto;
+}
+
+
+#left-hand, #right-hand {
+    animation: meh 2s infinite linear;
+    animation-direction: alternate;
+}
+
+
+/*#left-eye {
+    animation: blink 3s infinite linear;
+    animation-direction: alternate;
+}*/
+
+/**************************************************
+            SVG CONTAINER STYLING
+**************************************************/
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+@keyframes meh {
+    to{
+        transform: translateY(-50px);
+    }
+}
+
+
+@keyframes meh2 {
+
+    to{
+        /*transform: translateX(295px);*/
+        transform: translateY(-50px);
+    }
+}
+
+
+@keyframes test {
+    to {
+        transform: translateY(-50px);
+        transform: rotate(-50deg);
+    }
+}
+
+
+@keyframes blink {
+    5% {
+        height: 48px;
+    }
+
+    90% {
+        height: 0;
+    }
+}
+
+
+
+/********************************************************
+            FOOTER STYLING
+********************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    color: 	#222;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+footer p {
+    color: 	#222;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#222;
+}
+
+
+footer a:hover {
+    color: #01767B;
+    border-bottom: 1px solid #01767B;
+}
