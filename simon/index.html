@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simon</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="lvl">
+            <h2>Round &nbsp;&nbsp;<span id='round'></span></h2>
+        </div>
+        <div class="wrapper">
+            <div class="simon" id="red"></div>
+            <div class="simon" id="green"></div>
+            <div class="simon" id="yellow"></div>
+            <div class="simon" id="blue"></div>
+        </div>
+
+        <div class="data-container">
+            <h1>SIMON</h1>
+            <div class="btn" id='play'>Play</div>
+            <div class="btn" id='end'>End Game</div>
+        </div>
+
+        <audio id='sound' src="media/beep-07.mp3">
+            <!-- <source src="media/beep-07.mp3" type="audio/mpeg"> -->
+        </audio>
+        <footer id='foot'>
+            <p id='footp'>Athoug Alsougayer &copy; 2016 &nbsp; &nbsp;&nbsp; &nbsp;<a href="../default.html" id='foota1'>Home</a> &nbsp;|  &nbsp; <a href="http://athougcodesatnight.tumblr.com/" id='foota2'>blog</a></p>
+        </footer>
+    </body>
+</html>
