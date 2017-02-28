@@ -1,0 +1,123 @@
+/*****************************************
+          GENERAL STYLING
+*****************************************/
+
+/*
+    -COLOR PALLETS-
+  light blue color: #C8F0EF
+  tiffany blue: #26979F
+  light pink: #FAC0B4
+  off white: #FDF9F0
+  light gray: #CAC6C3
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #26979F;
+  font-family: 'Lato', 'Helvetica', Arial, sans-serif;
+}
+
+
+
+/*****************************************
+          TIC TAC TOE BOXES STYLING
+*****************************************/
+.container {
+  position: relative;
+  width: 300px;
+  height: 50%;
+  margin: 12rem auto;
+  /*border: 2px solid #FAC0B4;*/
+}
+
+
+.box {
+  width: 90px;
+  height: 90px;
+  float: left;
+  border: 2px solid #FAC0B4;
+  color: #FDF9F0;
+  text-align: center;
+  line-height: 90px;
+  font-size: 2.5rem;
+}
+
+.box:first-child {
+  border-top-color: #26979F;
+  border-left-color: #26979F;
+}
+.box:nth-child(2) {
+  border-top-color: #26979F;
+}
+.box:nth-child(3) {
+  border-top-color: #26979F;
+  border-right-color: #26979F;
+}
+.box:nth-child(4) {
+  border-left-color: #26979F;
+}
+.box:nth-child(6) {
+  border-right-color: #26979F;
+}
+.box:nth-child(7) {
+  border-left-color: #26979F;
+  border-bottom-color: #26979F;
+}
+.box:nth-child(8) {
+  border-bottom-color: #26979F;
+}
+.box:nth-child(9) {
+  border-bottom-color: #26979F;
+  border-right-color: #26979F;
+}
+
+
+
+
+/*****************************************
+        CROSS STYLING
+*****************************************/
+.cross {
+  position: relative;
+  top: 15rem;
+  left: 10rem;
+  width: 200px;
+  border: 3px solid #fff;
+}
+
+/*****************************************
+          FOOTER STYLING
+*****************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    color: 	#FAC0B4;
+}
+
+footer p {
+    color: 	#FAC0B4;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#FAC0B4;
+}
+
+
+footer a:hover {
+    color: #01767B;
+    border-bottom: 1px solid #01767B;
+}
