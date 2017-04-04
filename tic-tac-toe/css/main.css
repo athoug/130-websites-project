@@ -38,7 +38,6 @@ html, body {
   /*border: 2px solid #FAC0B4;*/
 }
 
-
 .box {
   width: 90px;
   height: 90px;
@@ -81,16 +80,85 @@ html, body {
 
 
 
-
 /*****************************************
         CROSS STYLING
 *****************************************/
-.cross {
+.cross-horizontal {
   position: relative;
-  top: 15rem;
-  left: 10rem;
-  width: 200px;
-  border: 3px solid #fff;
+  width: 250px;
+  border: 2px solid #fff;
+}
+
+.cross-vertical {
+  position: relative;
+  width: 0;
+  height: 250px;
+  border: 2px solid #fff;
+}
+
+.cross-top {
+  top: 2.9em;
+  left: 0.7em;
+}
+
+.cross-middle {
+  top: 8.8em;
+  left: 0.7em;
+}
+
+.cross-top {
+  top: 14.7em;
+  left: 0.7em;
+}
+
+.cross-vertical-left {
+  top: 1.3em;
+  left: 2.75em;
+}
+
+.cross-vertical-middle {
+  top: 1.3em;
+  left: 8.7em;
+}
+
+.cross-vertical-right {
+  top: 1.3em;
+  left: 14.5em;
+}
+
+.cross-diaginal-right {
+  top: 0.2em;
+  left: 8.5em;
+  width: 0;
+  height: 280px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cross-diaginal-left {
+  top: 0.2em;
+  left: 8.9em;
+  width: 0;
+  height: 280px;
+  -webkit-transform: rotate(136deg);
+  -moz-transform: rotate(136deg);
+  -o-transform: rotate(136deg);
+  -ms-transform: rotate(136deg);
+  transform: rotate(136deg);
+}
+
+/*****************************************
+        TIC AND TAC STYLING
+*****************************************/
+.xs {
+  color: #fff;
+}
+
+.os {
+  color:#CAC6C3;
 }
 
 /*****************************************
