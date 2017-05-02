@@ -1,0 +1,253 @@
+* {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #FFFFEF;
+}
+
+.wrapper {
+  position: relative;
+  height: 75%;
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+.container {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+  margin: 3rem auto;
+  background: #BFDF9E;
+}
+
+.tee {
+  position: absolute;
+  top: 320px;
+  left: 70px;
+  width: 300px;
+  height: 200px;
+  border-radius: 100%;
+  background: #FFC759;
+}
+
+.collar {
+  position: absolute;
+  top: 300px;
+  left: 170px;
+  width: 100px;
+  height: 85px;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.neck {
+  position: absolute;
+  top: 230px;
+  left: 175px;
+  width: 90px;
+  height: 140px;
+  border-radius: 20% 20% 45% 45%;
+  background: #F5BD91;
+}
+
+.head {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  width: 200px;
+  height: 240px;
+  border-radius: 49%;
+  background: #FFCE99;
+}
+
+.ears {
+  position: absolute;
+  top: 180px;
+  left: 95px;
+  width: 250px;
+  height: 90px;
+  border-radius: 49%;
+  background: #F5BD91;
+}
+
+.eyes {
+  position: absolute;
+  top: 205px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background: #803F11;
+
+  /*add animation*/
+  /*-webkit-animation-name: blink;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-origin: 50%;*/
+
+  animation-name: blinking;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50%;
+}
+
+
+#left {
+  left: 155px;
+}
+
+#right {
+    left: 260px;
+}
+
+.nose {
+  position: absolute;
+  top: 250px;
+  left: 210px;
+  width: 20px;
+  height: 8px;
+  border-radius: 0 0 100% 100% ;
+  background: #F2B190;
+}
+
+.mouth {
+  position: absolute;
+  top: 250px;
+  left: 105px;
+  height: 60px;
+  width: 25px;
+  border-radius: 150px 0 0 150px;
+  border-top: 5px solid #F2B190;
+  border-left: 5px solid #F2B190;
+  border-bottom: 5px solid #F2B190;
+  transform: translate(100px) rotate(-90deg);
+  background: #FFCE99;
+}
+
+
+.hair {
+  position: absolute;
+  width: 110px;
+  height: 100px;
+  border-radius: 100%;
+  background: #221006;
+}
+
+#one {
+  top: 50px;
+  left: 130px;
+  height: 110px;
+  width: 130px;
+}
+
+#two {
+  top: 80px;
+  left: 80px;
+  height: 120px;
+}
+
+#three {
+  top: 130px;
+  left: 40px;
+  height: 150px;
+}
+
+#four {
+  top: 210px;
+  left: 40px;
+  height: 150px;
+}
+
+#five {
+  top: 250px;
+  left: 60px;
+}
+
+#six {
+  top: 300px;
+  left: 80px;
+}
+
+#seven {
+  top: 350px;
+  left: 80px;
+}
+
+#eight {
+  top: 50px;
+  left: 180px;
+}
+
+#nine {
+  top: 50px;
+  left: 200px;
+}
+
+#ten {
+  top: 100px;
+  left: 280px;
+  width: 60px;
+  height: 120px;
+}
+
+/*@-webkit-keyframes blink{
+  0% { -webkit-transform: scaleX(1) scaleY(1);}
+  1% { -webkit-transform: scaleX(1.3) scaleY(0.1);}
+  2% { -webkit-transform: scaleX(1) scaleY(1);}
+  60% { -webkit-transform: scaleX(1) scaleY(1);}
+  61% { -webkit-transform: scaleX(1.3) scaleY(0.1);}
+  62% { -webkit-transform: scaleX(1) scaleY(1);}
+  100% { -webkit-transform: scaleX(1) scaleY(1);}
+}*/
+
+@keyframes blink {
+  0% { transform: scaleX(1) scaleY(1);}
+  1% { transform: scaleX(1.3) scaleY(0.1);}
+  2% { transform: scaleX(1) scaleY(1);}
+  60% { transform: scaleX(1) scaleY(1);}
+  61% { transform: scaleX(1.3) scaleY(0.1);}
+  62% { transform: scaleX(1) scaleY(1);}
+  100% { transform: scaleX(1) scaleY(1);}
+}
+
+@keyframes blinking {
+  0% { height: 25px; top: 205px;}
+  1% { height: 0.1px; top: 229.9px;}
+  2% { height: 25px; top: 205px;}
+  60% { height: 25px; top: 205px;}
+  61% { height: 0.1px; top: 229.9px;}
+  62% { height: 25px; top: 205px;}
+  100% { height: 25px; top: 205px;}
+}
+
+
+/********************************************************
+                    FOOTER STYLES
+********************************************************/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+    color: 	#BFDF9E;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+footer p {
+    color: 	#BFDF9E;
+}
+
+footer a {
+    text-decoration: none;
+    color: 	#BFDF9E;
+}
+
+
+footer a:hover {
+    color: #01767B;
+    border-bottom: 1px solid #01767B;
+}

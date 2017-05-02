@@ -1,0 +1,73 @@
+/* Jumbotrons changes */
+.jumbotron  {
+  padding-top: 150px;
+  color: #3388FF;
+  background: #5540FF;
+}
+
+/* top menu style changer */
+.navbar-inverse {
+  background-color: #5540FF;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav >li >a {
+  color: #3388FF;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #3388FF;
+}
+
+.nav > li > a > .fa {
+  font-size: 1.5em;
+}
+
+.nav > li > a > .fa #user {
+  font-size: 0.5em;
+}
+
+/* p tag width fixing */
+
+p {
+  width: 50%;
+}
+
+h3 {
+  /*color: #5540FF;*/
+}
+
+/* h4 styling */
+h4 {
+  font-size: 1em;
+  font-weight: 100;
+  /*color: #3388FF;*/
+}
+
+/* Hamberger menu style */
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #5540FF;
+}
+
+.navbar-inverse .navbar-toggle:hover, .icon-bar{
+  background-color: #5540FF;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus .icon-bar {
+  background-color: #3388FF;
+}
+
+
+.thumbnail > img, .thumbnail a > img {
+  width: 350px;
+  height: 229.53px;
+}
+
+.thumbnail {
+  height: 388.52px;
+  border-color: #fff;
+}

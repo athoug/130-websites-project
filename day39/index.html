@@ -1,32 +1,35 @@
-<!DOCTYOE html/>
-<html>
+<!doctype html>
+<html lang="en-us">
   <head>
-    <title>NYC</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Trumpland</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
   </head>
-
-  <body>
-    <div class="container">
-      <div class="half-circle"></div>
-
-      <div class="empire">
-        <div class="building"></div>
-        <div class="top-half-build"></div>
-        <div class="second-top-half"></div>
-        <div class="needle"></div>
-      </div>
-
-      <div class="tall-building">
-
-      </div>
-
-      <div class="empire">
-        <div class="building2"></div>
-        <div class="top-half-build2"></div>
-        <div class="second-top-half2"></div>
-        <div class="needle2"></div>
-      </div>
-
+  <body class="template">
+    <div class="template-wrap clear">
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">Trumpland</div>
     </div>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/Trumpland-Game.data",
+    codeUrl: "Release/Trumpland-Game.js",
+    asmUrl: "Release/Trumpland-Game.asm.js",
+    memUrl: "Release/Trumpland-Game.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
   </body>
 </html>
