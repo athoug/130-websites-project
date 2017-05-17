@@ -1,0 +1,7 @@
+h1 {
+  color: #fff;
+  font-size: 10vw;
+  padding-left: 2rem;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 0 2px 0 black, 0 -2px 0 black, 2px 0 0 black, -2px 0 0 black;
+}
