@@ -1,3 +1,7 @@
+var ratesCurrancy;
+var rates;
+var httpRequest
+
 window.onload = function() {
 
   // grab todays date
@@ -17,4 +21,25 @@ window.onload = function() {
   	/* etc */
   }
   console.log(fx(1000).from('GBP').to("EUR"));
+
+  // Getting the Rates usig AJAX request
+  httpRequest = new XMLHttpRequest();
+  httpRequest.onreadystatechange = saveCurrancy;
+  httpRequest.open("GET", "https://openexchangerates.org/api/latest.json?app_id=e6d4c633ac72461c86aba2eebca365b8", false);
+  httpRequest.send();
+
+
+}
+
+// AJAX curancy to object parsing
+function saveCurrancy() {
+  if(httpRequest.readyState === XMLHttpRequest.DONE){
+    if (httpRequest.status === 200) {
+        ratesCurrancy = JSON.parse(httpRequest.responseText);
+        console.log(ratesCurrancy);
+        alert(httpRequest.responseText);
+      } else {
+        alert('There was a problem with the request.');
+      }
+  }
 }
