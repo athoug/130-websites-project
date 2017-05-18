@@ -79,6 +79,34 @@ html, body {
   color: rgba(252, 252, 252, 1);
 }
 
+#topCurrencySelector {
+  /* remove defualt styling */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  outline: none; /* This is the focuse style*/
+
+  background-image: url("../img/white-arraow.png");
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: 7px 14px;
+  position: absolute;
+  top: 130px;
+  right: 80px;
+  width: 70px;
+  padding: 10px 10px 10px 28px;
+  border: none;
+  background-color: rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 100;
+  text-align: right;
+}
+
+#topCurrencySelector:focus {
+  outline: 1px solid #a9db80; /* This is the focuse style*/
+}
 
 /* BOTTOM CURRANCY */
 .bottom {
@@ -157,10 +185,22 @@ footer a:hover {
 
 /* RESPONSIVNESS */
 
+@media only screen and (max-width: 1100px){
+  .container {
+    max-width: 35%;
+  }
+  #topCurrencySelector {
+    right: 50px;
+  }
+}
 
 @media only screen and (max-width: 980px){
   .container {
     max-width: 35%;
+  }
+
+  #topCurrencySelector {
+    right: 50px;
   }
 }
 
@@ -180,16 +220,28 @@ footer a:hover {
   .container {
     max-width: 50%;
   }
+
+  #topCurrencySelector {
+    right: 50px;
+  }
 }
 
 @media only screen and (max-width: 550px){
   .container {
     max-width: 55%;
   }
+
+  #topCurrencySelector {
+    right: 40px;
+  }
 }
 
 @media only screen and (max-width: 450px){
   .container {
     max-width: 70%;
+  }
+
+  #topCurrencySelector {
+    right: 50px;
   }
 }
