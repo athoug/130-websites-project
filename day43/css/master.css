@@ -150,6 +150,10 @@ html, body {
   transition: all 0.5;
 }
 
+.btn:active {
+  top: 46%;
+}
+
 .btn p {
   font-size: 20px;
   padding-top: 15px;
@@ -183,6 +187,9 @@ html, body {
   letter-spacing: 2px;
 }
 
+#convert-btn:active {
+  bottom: 13px;
+}
 
 /* FOOTER */
 footer {

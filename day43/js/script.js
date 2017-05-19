@@ -34,10 +34,13 @@ window.onload = function() {
     bottomSelect.appendChild(newItem2);
   }
 
-  // set up event listener
+  // set up converter event listener
   var btn = document.getElementById("convert-btn");
   btn.onclick = convert;
 
+  // set up exchange event
+  var exchangeBtn = document.getElementById("swapper");
+  exchangeBtn.onclick = exchange;
 }
 
 // AJAX curancy to object parsing
@@ -77,4 +80,30 @@ function convert() {
 
   bottomCurrancy.value = "" + fx(topCurrency.value).from(curancy1).to(curancy2).toFixed(2);
 
+}
+
+function exchange() {
+  var topSelect = document.getElementById("topCurrencySelector");
+  var bottomSelect = document.getElementById("bottomCurrencySelector");
+  var curancy1 = topSelect.options[topSelect.selectedIndex].text;
+  var curancy2 = bottomSelect.options[bottomSelect.selectedIndex].text;
+
+  var listLength1 = topSelect.options.length;
+  for (var i = 0; i < listLength1; i++) {
+    if(topSelect.options[i].value == curancy2){
+      topSelect.options[i].selected = true;
+      break;
+    }
+  }
+
+  var listLength2 = bottomSelect.options.length;
+  for (var i = 0; i < listLength2; i++) {
+    if(bottomSelect.options[i].value == curancy1){
+      bottomSelect.options[i].selected = true;
+      break;
+    }
+  }
+
+  topSelect.value = bottomCurrancy.value;
+  bottomCurrancy.value = "" + fx(topCurrency.value).from(curancy2).to(curancy1).toFixed(2);
 }
