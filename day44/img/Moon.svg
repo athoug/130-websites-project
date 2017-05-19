@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Moon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="29" cy="29" r="29"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Moon">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-18" fill="#B9B6B6" xlink:href="#path-1"></use>
+            <circle id="Oval-19" fill="#D8D8D8" mask="url(#mask-2)" cx="11.5" cy="19.5" r="36.5"></circle>
+            <circle id="Oval-20" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="18.5" cy="25.5" r="6.5"></circle>
+            <circle id="Oval-20-Copy" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="41.5" cy="34.5" r="6.5"></circle>
+            <circle id="Oval-20-Copy-2" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="48.5" cy="25.5" r="6.5"></circle>
+            <circle id="Oval-20-Copy-3" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="39.5" cy="3.5" r="6.5"></circle>
+            <circle id="Oval-20-Copy-4" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="16.5" cy="26.5" r="6.5"></circle>
+            <circle id="Oval-20-Copy-5" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="37.5" cy="3.5" r="6.5"></circle>
+            <ellipse id="Oval-20-Copy-6" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="9.5" cy="3.5" rx="13.5" ry="14.5"></ellipse>
+            <ellipse id="Oval-20-Copy-7" fill-opacity="0.519999981" fill="#ABABAB" mask="url(#mask-2)" cx="18.5" cy="55.5" rx="13.5" ry="14.5"></ellipse>
+        </g>
+    </g>
+</svg>

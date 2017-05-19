@@ -38,41 +38,6 @@ html, body {
   background-size: cover;
 }
 
-.Mercury-orbit {
-  position: absolute;
-  top: -2rem;
-  left: -18rem;
-  /*left: 17rem;*/
-  /*height: 150%;
-  width: 60%;*/
-  height: 40.5rem;
-  width: 39.5rem;
-  border-radius: 100%;
-  border: 3px solid #748592;
-}
-.Mercury {
-  position: absolute;
-  z-index: 900;
-  top: 20.3rem;
-  left: 19.6rem;
-  width: 1.7rem;
-  height: 1.7rem;
-  border-radius: 100%;
-
-  background-image: url("../img/Mercury.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  -webkit-animation: Orbit0 8s linear infinite;
-     -moz-animation: Orbit0 8s linear infinite;
-       -o-animation: Orbit0 8s linear infinite;
-          animation: Orbit0 8s linear infinite;
-
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
 .info {
   position: absolute;
   top: -7.5rem;
@@ -94,6 +59,42 @@ html, body {
   transition: all 0.5s;
 }
 
+/* Mercury */
+.Mercury-orbit {
+  position: absolute;
+  top: -2rem;
+  left: -20rem;
+  /*left: 17rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 40.5rem;
+  width: 39.5rem;
+  border-radius: 100%;
+  border: 3px solid #748592;
+}
+
+.Mercury {
+  position: absolute;
+  z-index: 900;
+  top: 20.3rem;
+  left: 19.6rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 100%;
+
+  background-image: url("../img/Mercury.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-animation: Orbit0 4s linear infinite;
+     -moz-animation: Orbit0 4s linear infinite;
+       -o-animation: Orbit0 4s linear infinite;
+          animation: Orbit0 4s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
 .Mercury:hover #Mercury-info{
   display: block;
@@ -109,11 +110,11 @@ html, body {
     animation-play-state:paused;
 }
 
-
+/* Venus */
 .Venus-orbit {
   position: absolute;
   top: -3rem;
-  left: -15rem;
+  left: -18rem;
   /*left: 17rem;*/
   /*height: 150%;
   width: 60%;*/
@@ -137,10 +138,10 @@ html, body {
   background-position: center;
   background-size: cover;
 
-  -webkit-animation: Orbit1 14s linear infinite;
-     -moz-animation: Orbit1 14s linear infinite;
-       -o-animation: Orbit1 14s linear infinite;
-          animation: Orbit1 14s linear infinite;
+  -webkit-animation: Orbit1 8s linear infinite;
+     -moz-animation: Orbit1 8s linear infinite;
+       -o-animation: Orbit1 8s linear infinite;
+          animation: Orbit1 8s linear infinite;
 
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -160,6 +161,88 @@ html, body {
     animation-play-state:paused;
 }
 
+/* Earth */
+.Earth-orbit {
+  position: absolute;
+  top: -4rem;
+  left: -16rem;
+  /*left: 17rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 45.5rem;
+  width: 45.5rem;
+  border-radius: 100%;
+  border: 3px solid #748592;
+}
+
+.moon-orbit {
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 100%;
+  border: 3px solid #748592;
+}
+
+.moon {
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  top: 3rem;
+  left: 3rem;
+  background-image: url("../img/Moon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-animation: Orbit3 25s linear infinite;
+     -moz-animation: Orbit3 25s linear infinite;
+       -o-animation: Orbit3 25s linear infinite;
+          animation: Orbit3 25s linear infinite;
+}
+
+.Earth {
+  position: absolute;
+  z-index: 800;
+  top: 21rem;
+  left: 21rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 100%;
+
+  background-image: url("../img/Earth.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-animation: Orbit2 12s linear infinite;
+     -moz-animation: Orbit2 12s linear infinite;
+       -o-animation: Orbit2 12s linear infinite;
+          animation: Orbit2 12s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#Earth-info {
+  left: -0.25rem;
+}
+
+.Earth:hover #Earth-info{
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.Earth:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
 @keyframes Orbit0 {
   from { transform: rotate(0deg) translateX(19.1rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(19.1rem) rotate(-360deg); }
@@ -168,4 +251,14 @@ html, body {
 @keyframes Orbit1 {
   from { transform: rotate(0deg) translateX(20.3rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(20.3rem) rotate(-360deg); }
+}
+
+@keyframes Orbit2 {
+  from { transform: rotate(0deg) translateX(21.5rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(21.5rem) rotate(-360deg); }
+}
+
+@keyframes Orbit3 {
+  from { transform: rotate(0deg) translateX(3.5rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(3.5rem) rotate(-360deg); }
 }

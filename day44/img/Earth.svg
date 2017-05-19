@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="246px" height="246px" viewBox="0 0 246 246" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Earth</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="123" cy="123" r="123"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Earth">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-4" fill="#1677BD" xlink:href="#path-1"></use>
+            <ellipse id="Oval-10" fill="#1996FA" mask="url(#mask-2)" cx="61.5" cy="115" rx="118.5" ry="149"></ellipse>
+            <rect id="Rectangle-3" fill="#A6B228" mask="url(#mask-2)" x="20" y="53" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-10" fill="#A6B228" mask="url(#mask-2)" x="110" y="203" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-11" fill="#A6B228" mask="url(#mask-2)" x="180" y="13" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-4" fill="#A6B228" mask="url(#mask-2)" x="0" y="113" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-6" fill="#A6B228" mask="url(#mask-2)" x="25" y="140" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-8" fill="#A6B228" mask="url(#mask-2)" x="35" y="171" width="38" height="30" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-9" fill="#A6B228" mask="url(#mask-2)" x="135" y="181" width="38" height="30" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-7" fill="#A6B228" mask="url(#mask-2)" x="35" y="113" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-5" fill="#A6B228" mask="url(#mask-2)" x="151" y="159" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-2" fill="#A6B228" mask="url(#mask-2)" x="155" y="91" width="51" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy" fill="#A6B228" mask="url(#mask-2)" x="123" y="63" width="84" height="38" rx="8"></rect>
+            <rect id="Rectangle-3-Copy-3" fill="#A6B228" mask="url(#mask-2)" x="122" y="118" width="84" height="47" rx="8"></rect>
+            <rect id="Rectangle-4" fill="#F4F5F5" mask="url(#mask-2)" x="2" y="147" width="167" height="45" rx="8"></rect>
+            <rect id="Rectangle-4-Copy" fill="#F4F5F5" mask="url(#mask-2)" x="20" y="50" width="107" height="25" rx="8"></rect>
+            <rect id="Rectangle-4-Copy-2" fill="#F4F5F5" mask="url(#mask-2)" x="120" y="101" width="103" height="25" rx="8"></rect>
+        </g>
+    </g>
+</svg>
