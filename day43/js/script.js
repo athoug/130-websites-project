@@ -104,6 +104,8 @@ function exchange() {
     }
   }
 
-  topSelect.value = bottomCurrancy.value;
+  var topCurrency = document.getElementById("topCurrancy");
+  var bottomCurrancy = document.getElementById("bottomCurrancy");
+  // topCurrency.value = bottomCurrancy.value;
   bottomCurrancy.value = "" + fx(topCurrency.value).from(curancy2).to(curancy1).toFixed(2);
 }
