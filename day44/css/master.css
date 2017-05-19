@@ -14,6 +14,7 @@ html, body {
   height: 100%;
   overflow: hidden;
   background: #2A3A4B;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* CONTAINER */
@@ -40,8 +41,8 @@ html, body {
 .Mercury-orbit {
   position: absolute;
   top: -2rem;
-  left: -15rem;
-  /*left: 17rem;*/
+  /*left: -18rem;*/
+  left: 17rem;
   /*height: 150%;
   width: 60%;*/
   height: 40.5rem;
@@ -62,10 +63,42 @@ html, body {
   background-position: center;
   background-size: cover;
 
-  -webkit-animation: Orbit 8s linear infinite;
+  /*-webkit-animation: Orbit 8s linear infinite;
      -moz-animation: Orbit 8s linear infinite;
        -o-animation: Orbit 8s linear infinite;
-          animation: Orbit 8s linear infinite;
+          animation: Orbit 8s linear infinite;*/
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.info {
+  position: absolute;
+  top: -7.5rem;
+  left: -2.5rem;
+  width: 7rem;
+  height: 7rem;
+  padding: 10px;
+  background-image: url("../img/Bubble-info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  font-size: 0.435rem;
+  color: #2A3A4B;
+
+  display: none;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+.Mercury:hover .info{
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 @keyframes Orbit {
