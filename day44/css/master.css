@@ -63,10 +63,10 @@ html, body {
   background-position: center;
   background-size: cover;
 
-  /*-webkit-animation: Orbit 8s linear infinite;
+  -webkit-animation: Orbit 8s linear infinite;
      -moz-animation: Orbit 8s linear infinite;
        -o-animation: Orbit 8s linear infinite;
-          animation: Orbit 8s linear infinite;*/
+          animation: Orbit 8s linear infinite;
 
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -99,6 +99,13 @@ html, body {
 
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+.Mercury:hover{
+  -webkit-animation: none;
+     -moz-animation: none;
+       -o-animation: none;
+          animation: none;
 }
 
 @keyframes Orbit {
