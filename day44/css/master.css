@@ -243,6 +243,57 @@ html, body {
     animation-play-state:paused;
 }
 
+/* Mars */
+.Mars-orbit {
+  position: absolute;
+  top: -4.5rem;
+  left: -15rem;
+  /*left: 17rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 48.5rem;
+  width: 48.5rem;
+  border-radius: 100%;
+  border: 3px solid #748592;
+}
+
+.Mars {
+  position: absolute;
+  z-index: 800;
+  top: 23rem;
+  left: 23rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+
+  background-image: url("../img/Mars.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-animation: Orbit4 16s linear infinite;
+     -moz-animation: Orbit4 16s linear infinite;
+       -o-animation: Orbit4 16s linear infinite;
+          animation: Orbit4 16s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Mars:hover #Mars-info{
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.Mars:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
 @keyframes Orbit0 {
   from { transform: rotate(0deg) translateX(19.1rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(19.1rem) rotate(-360deg); }
@@ -261,4 +312,9 @@ html, body {
 @keyframes Orbit3 {
   from { transform: rotate(0deg) translateX(3.5rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(3.5rem) rotate(-360deg); }
+}
+
+@keyframes Orbit4 {
+  from { transform: rotate(0deg) translateX(24.25rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(24.25rem) rotate(-360deg); }
 }

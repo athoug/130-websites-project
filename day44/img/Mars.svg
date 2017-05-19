@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="197px" height="197px" viewBox="0 0 197 197" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Mars</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="98.5" cy="98.5" r="98.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mars">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-5" fill="#AA4F3E" xlink:href="#path-1"></use>
+            <ellipse id="Oval-6" fill="#D5634E" mask="url(#mask-2)" cx="33" cy="97.5" rx="94" ry="94.5"></ellipse>
+            <rect id="Rectangle-5" fill="#BE5C46" mask="url(#mask-2)" x="-25" y="97" width="129" height="42" rx="8"></rect>
+            <rect id="Rectangle-5-Copy" fill="#BE5C46" mask="url(#mask-2)" x="69" y="49" width="98" height="31" rx="8"></rect>
+            <rect id="Rectangle-5-Copy-2" fill="#BE5C46" mask="url(#mask-2)" x="69" y="170" width="98" height="31" rx="8"></rect>
+            <rect id="Rectangle-5-Copy-3" fill="#BE5C46" mask="url(#mask-2)" x="152" y="108" width="43" height="20" rx="8"></rect>
+            <rect id="Rectangle-5-Copy-4" fill="#BE5C46" mask="url(#mask-2)" x="0" y="66" width="43" height="20" rx="8"></rect>
+            <rect id="Rectangle-5-Copy-5" fill="#BE5C46" mask="url(#mask-2)" x="75" y="1" width="63" height="27" rx="8"></rect>
+        </g>
+    </g>
+</svg>
