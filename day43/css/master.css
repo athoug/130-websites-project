@@ -22,7 +22,7 @@ html, body {
   position: relative;
   margin: 5rem auto;
   max-width: 27%;
-  height: 69%;
+  height: 500px;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.3);
 
   -webkit-transition: all 0.5s; /* Safari */
@@ -99,7 +99,7 @@ html, body {
   border: none;
   background-color: rgba(255,255,255,0.3);
   color: #fff;
-  font-size: 0.95rem;
+  font-size: 0.80rem;
   font-weight: 100;
   text-align: right;
 }
@@ -157,6 +157,32 @@ html, body {
   display: block;
   text-align: center;
 }
+
+/* convert button */
+#convert-btn {
+  content: "Convert";
+  position: absolute;
+  bottom: 15px;
+  right: 45%;
+  left: 35%;
+  width: 100px;
+  height: 45px;
+  padding-top: 13px;
+  border-radius: 2px;
+
+  background: #a9db80; /* Old browsers */
+  background: -moz-linear-gradient(top, #a9db80 0%, #96c56f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a9db80 0%,#96c56f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a9db80 0%,#96c56f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 );
+
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
 
 /* FOOTER */
 footer {
