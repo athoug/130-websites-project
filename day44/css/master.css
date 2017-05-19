@@ -1,0 +1,74 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #2A3A4B;
+}
+
+/* CONTAINER */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* PLANETS AND STARS*/
+.sun {
+  position: absolute;
+  z-index: 1000;
+  top: 2.5rem;
+  left: -15rem;
+  width: 30rem;
+  height: 30rem;
+  background-image: url("../img/Sun.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.Mercury-orbit {
+  position: absolute;
+  top: -2rem;
+  left: -15rem;
+  /*left: 17rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 40.5rem;
+  width: 39.5rem;
+  border-radius: 100%;
+  border: 3px solid #748592;
+}
+.Mercury {
+  position: absolute;
+  top: 20.65rem;
+  left: 19.6rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+
+  background-image: url("../img/Mercury.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-animation: Orbit 8s linear infinite;
+     -moz-animation: Orbit 8s linear infinite;
+       -o-animation: Orbit 8s linear infinite;
+          animation: Orbit 8s linear infinite;
+}
+
+@keyframes Orbit {
+  from { transform: rotate(0deg) translateX(19.3rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(19.3rem) rotate(-360deg); }
+}

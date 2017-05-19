@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="179px" height="179px" viewBox="0 0 179 179" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Mercury</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="89.5" cy="89.5" r="89.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mercury">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval" fill="#C0C2CE" xlink:href="#path-1"></use>
+            <ellipse id="Oval-9" fill="#D8D8D8" mask="url(#mask-2)" cx="-30.5" cy="74" rx="136.5" ry="141"></ellipse>
+            <rect id="Rectangle" fill="#A7875C" style="mix-blend-mode: overlay;" mask="url(#mask-2)" x="99" y="80" width="80" height="20" rx="8"></rect>
+            <rect id="Rectangle-Copy-3" fill="#535456" mask="url(#mask-2)" x="75" y="60" width="95" height="20" rx="8"></rect>
+            <rect id="Rectangle-Copy-7" fill="#535456" mask="url(#mask-2)" x="74" y="157" width="37" height="20" rx="8"></rect>
+            <rect id="Rectangle-Copy-5" fill="#535456" mask="url(#mask-2)" x="4" y="94" width="95" height="20" rx="8"></rect>
+            <rect id="Rectangle-Copy" fill="#A7875C" style="mix-blend-mode: overlay;" mask="url(#mask-2)" x="75" y="115" width="80" height="20" rx="8"></rect>
+            <rect id="Rectangle-Copy-4" fill="#888387" mask="url(#mask-2)" x="75" y="135" width="64" height="20" rx="8"></rect>
+            <rect id="Rectangle-Copy-6" fill="#888387" mask="url(#mask-2)" x="59" y="13" width="64" height="20" rx="8"></rect>
+            <rect id="Rectangle-Copy-2" fill="#A7875C" style="mix-blend-mode: overlay;" mask="url(#mask-2)" x="19" y="33" width="80" height="20" rx="8"></rect>
+        </g>
+    </g>
+</svg>
