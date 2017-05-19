@@ -259,7 +259,7 @@ html, body {
 
 .Mars {
   position: absolute;
-  z-index: 800;
+  z-index: 700;
   top: 23rem;
   left: 23rem;
   width: 2.5rem;
@@ -294,6 +294,61 @@ html, body {
     animation-play-state:paused;
 }
 
+
+/* Jupiter */
+.Jupiter-orbit {
+  position: absolute;
+  top: -7.5rem;
+  left: -15rem;
+  /*left: 10rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 56.5rem;
+  width: 56.5rem;
+  border-radius: 100%;
+  border: 3px solid #748592;
+}
+
+.Jupiter {
+  position: absolute;
+  z-index: 600;
+  top: 20rem;
+  left: 25rem;
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 100%;
+
+  background-image: url("../img/Jupiter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-animation: Orbit5 20s linear infinite;
+     -moz-animation: Orbit5 20s linear infinite;
+       -o-animation: Orbit5 20s linear infinite;
+          animation: Orbit5 20s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Jupiter:hover #Jupiter-info{
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#Jupiter-info {
+  left: 2rem;
+}
+.Jupiter:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
 @keyframes Orbit0 {
   from { transform: rotate(0deg) translateX(19.1rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(19.1rem) rotate(-360deg); }
@@ -317,4 +372,9 @@ html, body {
 @keyframes Orbit4 {
   from { transform: rotate(0deg) translateX(24.25rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(24.25rem) rotate(-360deg); }
+}
+
+@keyframes Orbit5 {
+  from { transform: rotate(0deg) translateX(26rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(26rem) rotate(-360deg); }
 }
