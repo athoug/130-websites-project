@@ -41,8 +41,8 @@ html, body {
 .Mercury-orbit {
   position: absolute;
   top: -2rem;
-  /*left: -18rem;*/
-  left: 17rem;
+  left: -18rem;
+  /*left: 17rem;*/
   /*height: 150%;
   width: 60%;*/
   height: 40.5rem;
@@ -52,10 +52,11 @@ html, body {
 }
 .Mercury {
   position: absolute;
-  top: 20.65rem;
+  z-index: 900;
+  top: 20.3rem;
   left: 19.6rem;
-  width: 2rem;
-  height: 2rem;
+  width: 1.7rem;
+  height: 1.7rem;
   border-radius: 100%;
 
   background-image: url("../img/Mercury.svg");
@@ -63,10 +64,10 @@ html, body {
   background-position: center;
   background-size: cover;
 
-  -webkit-animation: Orbit 8s linear infinite;
-     -moz-animation: Orbit 8s linear infinite;
-       -o-animation: Orbit 8s linear infinite;
-          animation: Orbit 8s linear infinite;
+  -webkit-animation: Orbit0 8s linear infinite;
+     -moz-animation: Orbit0 8s linear infinite;
+       -o-animation: Orbit0 8s linear infinite;
+          animation: Orbit0 8s linear infinite;
 
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -94,21 +95,77 @@ html, body {
 }
 
 
-.Mercury:hover .info{
+.Mercury:hover #Mercury-info{
+  display: block;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Mercury:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+
+.Venus-orbit {
+  position: absolute;
+  top: -3rem;
+  left: -15rem;
+  /*left: 17rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 42.5rem;
+  width: 40.5rem;
+  border-radius: 100%;
+  border: 3px solid #748592;
+}
+
+.Venus {
+  position: absolute;
+  z-index: 800;
+  top: 20.65rem;
+  left: 19.6rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100%;
+
+  background-image: url("../img/Venus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  -webkit-animation: Orbit1 14s linear infinite;
+     -moz-animation: Orbit1 14s linear infinite;
+       -o-animation: Orbit1 14s linear infinite;
+          animation: Orbit1 14s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Venus:hover #Venus-info{
     display: block;
 
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
-.Mercury:hover{
-  -webkit-animation: none;
-     -moz-animation: none;
-       -o-animation: none;
-          animation: none;
+.Venus:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
 }
 
-@keyframes Orbit {
-  from { transform: rotate(0deg) translateX(19.3rem) rotate(0deg); }
-  to { transform: rotate(360deg) translateX(19.3rem) rotate(-360deg); }
+@keyframes Orbit0 {
+  from { transform: rotate(0deg) translateX(19.1rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(19.1rem) rotate(-360deg); }
+}
+
+@keyframes Orbit1 {
+  from { transform: rotate(0deg) translateX(20.3rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(20.3rem) rotate(-360deg); }
 }

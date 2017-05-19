@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210px" height="210px" viewBox="0 0 210 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Venus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Venus">
+            <circle id="Oval-2" fill="#E1E0DE" cx="105" cy="105" r="105"></circle>
+            <ellipse id="Oval-3" fill="#F8EED0" style="mix-blend-mode: multiply;" cx="105.5" cy="87" rx="102.5" ry="51"></ellipse>
+            <rect id="Rectangle-2" fill="#F8EED0" x="0" y="85" width="117" height="33" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-2" fill="#F8EED0" style="mix-blend-mode: multiply;" x="76" y="173" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-12" fill="#F8EED0" style="mix-blend-mode: multiply;" x="17" y="137" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-13" fill="#F8EED0" style="mix-blend-mode: multiply;" x="49" y="154" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-11" fill="#F8EED0" style="mix-blend-mode: multiply;" x="60" y="10" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-4" fill="#F8EED0" x="149" y="109" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-5" fill="#F8EED0" x="130" y="36" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-6" fill="#F8EED0" x="0" y="109" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-7" fill="#F8EED0" x="46" y="137" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-8" fill="#F8EED0" x="30" y="67" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-9" fill="#F8EED0" x="95" y="19" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-10" fill="#F8EED0" x="108" y="160" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy-3" fill="#F8EED0" style="mix-blend-mode: multiply;" x="135" y="137" width="59" height="19" rx="8"></rect>
+            <rect id="Rectangle-2-Copy" fill="#F8EED0" x="15" y="118" width="117" height="19" rx="8"></rect>
+        </g>
+    </g>
+</svg>
