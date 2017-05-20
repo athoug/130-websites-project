@@ -555,3 +555,35 @@ html, body {
   from { transform: rotate(0deg) translateX(40.5rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(40.5rem) rotate(-360deg); }
 }
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+}
+
+footer p {
+    color: 	rgba(116,133,146, 0.5);
+}
+
+footer a {
+    text-decoration: none;
+    color: 	rgba(116,133,146, 0.5);
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
+}
+
+
+footer a:hover {
+    color: #009587;
+    border-bottom: 1px solid #009587;
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
+}
