@@ -24,6 +24,25 @@ html, body {
   height: 100%;
 }
 
+/* TITLE */
+.title{
+  position: absolute;
+  top: 0.75rem;
+  right: 2rem;
+  z-index: 1001;
+  width: 18rem;
+  height: 7rem;
+  padding: 1.25rem;
+  padding-top: 1.5rem;
+  border: 8px solid #748592;
+  color: #FCDCA3;
+  text-align: center;
+}
+
+.title h1 {
+  letter-spacing: 4px;
+}
+
 /* PLANETS AND STARS*/
 .sun {
   position: absolute;
