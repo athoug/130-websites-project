@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="363px" height="363px" viewBox="0 0 363 363" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Uranus</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="181.5" cy="181.5" r="181.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Uranus">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-14" fill-opacity="0.870000005" fill="#668F8E" xlink:href="#path-1"></use>
+            <ellipse id="Oval-15" fill="#9FCED3" mask="url(#mask-2)" cx="113.165468" cy="162.348921" rx="183.676259" ry="202.392086"></ellipse>
+            <rect id="Rectangle-10" fill="#9DC5C4" style="mix-blend-mode: hard-light;" mask="url(#mask-2)" x="113.165468" y="58.323741" width="292.489209" height="121" rx="60.5"></rect>
+            <rect id="Rectangle-10-Copy-3" fill="#9DC5C4" style="mix-blend-mode: hard-light;" mask="url(#mask-2)" x="131.446043" y="228.942446" width="292.489209" height="121" rx="60.5"></rect>
+            <rect id="Rectangle-10-Copy-2" fill="#9DC5C4" style="mix-blend-mode: hard-light;" mask="url(#mask-2)" x="181.935252" y="162.784173" width="292.489209" height="66.1582734" rx="33.0791367"></rect>
+            <rect id="Rectangle-10-Copy" fill="#9DC5C4" style="mix-blend-mode: hard-light;" mask="url(#mask-2)" x="35.6906475" y="285.52518" width="363" height="121" rx="60.5"></rect>
+        </g>
+    </g>
+</svg>

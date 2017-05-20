@@ -28,10 +28,10 @@ html, body {
 .sun {
   position: absolute;
   z-index: 1000;
-  top: 2.5rem;
-  left: -15rem;
-  width: 30rem;
-  height: 30rem;
+  top: -1rem;
+  left: -20rem;
+  width: 35rem;
+  height: 35rem;
   background-image: url("../img/Sun.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -70,7 +70,7 @@ html, body {
   height: 40.5rem;
   width: 39.5rem;
   border-radius: 100%;
-  border: 3px solid #748592;
+  border: 3px solid rgba(116,133,146, 0.2);
 }
 
 .Mercury {
@@ -121,7 +121,7 @@ html, body {
   height: 42.5rem;
   width: 40.5rem;
   border-radius: 100%;
-  border: 3px solid #748592;
+  border: 3px solid rgba(116,133,146, 0.2);
 }
 
 .Venus {
@@ -164,7 +164,7 @@ html, body {
 /* Earth */
 .Earth-orbit {
   position: absolute;
-  top: -4rem;
+  top: -6rem;
   left: -16rem;
   /*left: 17rem;*/
   /*height: 150%;
@@ -172,7 +172,7 @@ html, body {
   height: 45.5rem;
   width: 45.5rem;
   border-radius: 100%;
-  border: 3px solid #748592;
+  border: 3px solid rgba(116,133,146, 0.2);
 }
 
 .moon-orbit {
@@ -182,7 +182,7 @@ html, body {
   width: 7.5rem;
   height: 7.5rem;
   border-radius: 100%;
-  border: 3px solid #748592;
+  border: 3px solid rgba(116,133,146, 0.2);
 }
 
 .moon {
@@ -246,7 +246,7 @@ html, body {
 /* Mars */
 .Mars-orbit {
   position: absolute;
-  top: -4.5rem;
+  top: -6.5rem;
   left: -15rem;
   /*left: 17rem;*/
   /*height: 150%;
@@ -254,7 +254,7 @@ html, body {
   height: 48.5rem;
   width: 48.5rem;
   border-radius: 100%;
-  border: 3px solid #748592;
+  border: 3px solid rgba(116,133,146, 0.2);
 }
 
 .Mars {
@@ -298,7 +298,7 @@ html, body {
 /* Jupiter */
 .Jupiter-orbit {
   position: absolute;
-  top: -7.5rem;
+  top: -8.5rem;
   left: -15rem;
   /*left: 10rem;*/
   /*height: 150%;
@@ -306,7 +306,7 @@ html, body {
   height: 56.5rem;
   width: 56.5rem;
   border-radius: 100%;
-  border: 3px solid #748592;
+  border: 3px solid rgba(116,133,146, 0.2);
 }
 
 .Jupiter {
@@ -349,6 +349,168 @@ html, body {
     animation-play-state:paused;
 }
 
+/* Saturn */
+.Saturn-orbit {
+  position: absolute;
+  top: -10.5rem;
+  left: -12rem;
+  /*left: 5rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 60.5rem;
+  width: 60.5rem;
+  border-radius: 100%;
+  border: 3px solid rgba(116,133,146, 0.2);
+}
+
+.Saturn {
+  position: absolute;
+  z-index: 500;
+  top: 27rem;
+  left: 27rem;
+  width: 8.5rem;
+  height: 8.5rem;
+
+  background-image: url("../img/Saturn.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  -webkit-animation: Orbit6 26s linear infinite;
+     -moz-animation: Orbit6 26s linear infinite;
+       -o-animation: Orbit6 26s linear infinite;
+          animation: Orbit6 26s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Saturn:hover #Saturn-info{
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#Saturn-info {
+  left: 1rem;
+}
+.Saturn:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+/* Uranus */
+.Uranus-orbit {
+  position: absolute;
+  top: -11.5rem;
+  left: -10rem;
+  /*left: 3rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 65.5rem;
+  width: 65.5rem;
+  border-radius: 100%;
+  border: 3px solid rgba(116,133,146, 0.2);
+}
+
+.Uranus {
+  position: absolute;
+  z-index: 400;
+  top: 27rem;
+  left: 27rem;
+  width: 5rem;
+  height: 5rem;
+
+  background-image: url("../img/Uranus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  -webkit-animation: Orbit7 38s linear infinite;
+     -moz-animation: Orbit7 38s linear infinite;
+       -o-animation: Orbit7 38s linear infinite;
+          animation: Orbit7 38s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Uranus:hover #Uranus-info{
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#Uranus-info {
+  left: 0.15rem;
+}
+.Uranus:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+
+/* Neptune */
+.Neptune-orbit {
+  position: absolute;
+  top: -14.5rem;
+  left: -7rem;
+  /*left: 3rem;*/
+  /*height: 150%;
+  width: 60%;*/
+  height: 70.5rem;
+  width: 70.5rem;
+  border-radius: 100%;
+  border: 3px solid rgba(116,133,146, 0.2);
+}
+
+.Neptune {
+  position: absolute;
+  z-index: 400;
+  top: 27rem;
+  left: 27rem;
+  width: 7rem;
+  height: 7rem;
+
+  background-image: url("../img/Neptune.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  -webkit-animation: Orbit8 42s linear infinite;
+     -moz-animation: Orbit8 42s linear infinite;
+       -o-animation: Orbit8 42s linear infinite;
+          animation: Orbit8 42s linear infinite;
+
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.Neptune:hover #Neptune-info{
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#Neptune-info {
+  left: 0.15rem;
+}
+.Neptune:hover{
+  -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+}
+
+
+
 @keyframes Orbit0 {
   from { transform: rotate(0deg) translateX(19.1rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(19.1rem) rotate(-360deg); }
@@ -377,4 +539,19 @@ html, body {
 @keyframes Orbit5 {
   from { transform: rotate(0deg) translateX(26rem) rotate(0deg); }
   to { transform: rotate(360deg) translateX(26rem) rotate(-360deg); }
+}
+
+@keyframes Orbit6 {
+  from { transform: rotate(0deg) translateX(28rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(28rem) rotate(-360deg); }
+}
+
+@keyframes Orbit7 {
+  from { transform: rotate(0deg) translateX(36rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(36rem) rotate(-360deg); }
+}
+
+@keyframes Orbit8 {
+  from { transform: rotate(0deg) translateX(40.5rem) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(40.5rem) rotate(-360deg); }
 }

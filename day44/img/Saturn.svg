@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="659px" height="490px" viewBox="0 0 659 490" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Saturn</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="312.5" cy="233.5" r="233.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saturn" transform="translate(23.000000, 23.000000)">
+            <path d="M7.80712955,299.137623 C-52.3156232,503.908645 248.285697,465.528628 447.439795,335.282586 C529.844634,281.390127 594.880781,211.769365 609.80713,137.137623 C660.80713,-117.862377 92.8071296,9.63762273 7.80712955,299.137623 Z" id="Line" stroke="#BCAE95" stroke-width="45" stroke-linecap="square"></path>
+            <rect id="Rectangle-9" fill="#A89E8D" transform="translate(127.500000, 440.500000) rotate(-3.000000) translate(-127.500000, -440.500000) " x="92" y="430" width="71" height="21" rx="8"></rect>
+            <rect id="Rectangle-9-Copy" fill="#A89E8D" transform="translate(44.002516, 229.343537) rotate(-56.000000) translate(-44.002516, -229.343537) " x="11.502516" y="222.843537" width="65" height="13" rx="6.5"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-11" fill-opacity="0.939999998" fill="#AD8D65" xlink:href="#path-1"></use>
+            <ellipse id="Oval-12" fill="#FCCE87" mask="url(#mask-2)" cx="241" cy="250.5" rx="237" ry="242.5"></ellipse>
+            <path d="M7.80712955,299.137623 C-52.3156232,503.908645 248.285697,465.528628 447.439795,335.282586 C529.844634,281.390127 594.880781,211.769365 609.80713,137.137623 C660.80713,-117.862377 92.8071296,9.63762273 7.80712955,299.137623 Z" id="Line-Copy" stroke="#BCAE95" stroke-width="36" stroke-linecap="square" mask="url(#mask-2)"></path>
+            <ellipse id="Oval-13" fill="#FCCE87" mask="url(#mask-2)" cx="271.5" cy="172" rx="158.5" ry="165"></ellipse>
+            <ellipse id="Oval-13-Copy" fill="#FCCE87" mask="url(#mask-2)" cx="239.5" cy="187" rx="158.5" ry="165"></ellipse>
+            <path d="M301,9 L329,17 L348,26 L361,36 C397.302366,36.3885432 415.302366,33.0552099 415,26 C414.546451,15.4171851 381.17232,2.36664617 358.001873,-1 C342.554908,-3.24443078 323.554284,0.0889025501 301,9 Z" id="Path-2" fill="#B2946E" mask="url(#mask-2)"></path>
+            <path d="M197.61309,149.455999 L547.61309,149.455999 L547.61309,149.455999 C552.031368,149.455999 555.61309,153.037721 555.61309,157.455999 L555.61309,285.455999 L555.61309,285.455999 C555.61309,289.874277 552.031368,293.455999 547.61309,293.455999 L197.61309,293.455999 L197.61309,293.455999 C166.685144,293.455999 141.61309,268.383945 141.61309,237.455999 L141.61309,205.455999 L141.61309,205.455999 C141.61309,174.528053 166.685144,149.455999 197.61309,149.455999 Z" id="Rectangle-8" fill="#F3C78F" style="mix-blend-mode: multiply;" mask="url(#mask-2)" transform="translate(348.613090, 221.455999) rotate(-26.000000) translate(-348.613090, -221.455999) "></path>
+            <path d="M133.61309,6.45599872 L495.61309,6.45599872 L495.61309,6.45599872 C500.031368,6.45599872 503.61309,10.0377207 503.61309,14.4559987 L503.61309,86.4559987 L503.61309,86.4559987 C503.61309,90.8742767 500.031368,94.4559987 495.61309,94.4559987 L133.61309,94.4559987 L133.61309,94.4559987 C109.312561,94.4559987 89.6130902,74.7565277 89.6130902,50.4559987 L89.6130902,50.4559987 L89.6130902,50.4559987 C89.6130902,26.1554697 109.312561,6.45599872 133.61309,6.45599872 Z" id="Rectangle-8-Copy" fill="#F3C78F" style="mix-blend-mode: multiply;" mask="url(#mask-2)" transform="translate(296.613090, 50.455999) rotate(-26.000000) translate(-296.613090, -50.455999) "></path>
+        </g>
+    </g>
+</svg>

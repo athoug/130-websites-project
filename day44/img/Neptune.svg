@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="437px" height="437px" viewBox="0 0 437 437" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>Neptune</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="218.5" cy="218.5" r="218.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Neptune">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-16" fill="#4268D7" xlink:href="#path-1"></use>
+            <ellipse id="Oval-17" fill="#466DFA" mask="url(#mask-2)" cx="116" cy="217.5" rx="227" ry="249.5"></ellipse>
+            <path d="M30.5,56 L244.5,56 L244.5,56 C271.28581,56 293,77.7141896 293,104.5 L293,104.5 L293,104.5 C293,131.28581 271.28581,153 244.5,153 L30.5,153 L30.5,153 C3.71418963,153 -18,131.28581 -18,104.5 L-18,104.5 L-18,104.5 C-18,77.7141896 3.71418963,56 30.5,56 Z" id="Rectangle-11" fill="#4980F6" mask="url(#mask-2)"></path>
+            <path d="M-31,183 L206,183 L206,183 C226.434536,183 243,199.565464 243,220 L243,220 L243,220 C243,240.434536 226.434536,257 206,257 L-31,257 L-31,257 C-51.4345357,257 -68,240.434536 -68,220 L-68,220 L-68,220 C-68,199.565464 -51.4345357,183 -31,183 Z" id="Rectangle-11-Copy" fill="#4980F6" mask="url(#mask-2)"></path>
+            <path d="M199,353 L436,353 L436,353 C456.434536,353 473,369.565464 473,390 L473,390 L473,390 C473,410.434536 456.434536,427 436,427 L199,427 L199,427 C178.565464,427 162,410.434536 162,390 L162,390 L162,390 C162,369.565464 178.565464,353 199,353 Z" id="Rectangle-11-Copy-4" fill="#4980F6" mask="url(#mask-2)"></path>
+            <path d="M-31,223 L206,223 L206,223 C226.434536,223 243,239.565464 243,260 L243,260 L243,260 C243,280.434536 226.434536,297 206,297 L-31,297 L-31,297 C-51.4345357,297 -68,280.434536 -68,260 L-68,260 L-68,260 C-68,239.565464 -51.4345357,223 -31,223 Z" id="Rectangle-11-Copy-3" fill="#4980F6" mask="url(#mask-2)"></path>
+            <path d="M30,233 L305,233 L305,233 C325.434536,233 342,249.565464 342,270 L342,270 L342,270 C342,290.434536 325.434536,307 305,307 L30,307 L30,307 C9.56546426,307 -7,290.434536 -7,270 L-7,270 L-7,270 C-7,249.565464 9.56546426,233 30,233 Z" id="Rectangle-11-Copy-2" fill="#4980F6" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
