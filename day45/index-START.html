@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <script src="js/script.js"></script>
 </head>
-<body>
 
+<body>
 
   <div class="keys">
     <div data-key="65" class="key">
@@ -58,29 +60,6 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
-  window.addEventListener('keydown', playSound);
-
-  function playSound(e){
-    const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
-    const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
-    if(!audio) return; // stops the function from running all together
-    audio.currentTime = 0; // in order to rewind it for if we hit the key over and over again
-    audio.play();
-    key.classList.add('playing');
-  }
-  function removeTransition(e){
-    if(e.propertyName !== 'transform') return; //skip it if it's not transform
-    this.classList.remove('playing');
-  }
-
-  // grab all the keys to listen for the transition end event
-  const keys = document.querySelectorAll('.key');
-  keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-
-
-</script>
-
-
 </body>
+
 </html>
