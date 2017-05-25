@@ -88,7 +88,8 @@ body {
   position: absolute;
   width: 1.5px;
   height: 5.7%;
-  background: #eaeaea;
+  /*background: #eaeaea;*/
+  background: #FF4081;
   background:#3F51B5;
 }
 
@@ -99,7 +100,7 @@ body {
 
 .six {
   left: 50%;
-  bottom: -2%;
+  bottom: -6%;
 }
 
 .three {
@@ -121,13 +122,69 @@ body {
   transform: rotate(25.5deg);
 }
 
+.eleven {
+  right: 75%;
+  top: 5%;
+  height: 5%;
+  transform: rotate(-25.5deg);
+}
+
 .eight {
   top: 75%;
   left: 5%;
   height: 5%;
-  transform: rotate(45.5deg);
+  transform: rotate(55.5deg);
 }
 
+.four {
+  top: 75%;
+  right: 3%;
+  height: 5%;
+  transform: rotate(-55.5deg);
+}
+
+.two {
+  left: 95%;
+  top: 25%;
+  height: 5%;
+  transform: rotate(55.5deg);
+}
+
+.ten {
+  right: 95%;
+  top: 25%;
+  height: 5%;
+  transform: rotate(-55.5deg);
+}
+
+.seven {
+  top: 95%;
+  left: 25%;
+  height: 5%;
+  transform: rotate(25.5deg);
+}
+
+.five {
+  top: 95%;
+  right: 25%;
+  height: 5%;
+  transform: rotate(-25.5deg);
+}
+
+.date{
+  position: absolute;
+  top: 45.5%;
+  left: 70%;
+  width: 12%;
+  height: 12%;
+  background: #eaeaea;
+  /*background: red;*/
+  border-radius: 5%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 35.75px;
+  color: #FF4081;
+}
 
 /* FOOTER */
 footer {
