@@ -113,3 +113,50 @@ body {
   right: -2%;
   transform: rotate(90deg);
 }
+
+.one {
+  left: 75%;
+  top: 5%;
+  height: 5%;
+  transform: rotate(25.5deg);
+}
+
+.eight {
+  top: 75%;
+  left: 5%;
+  height: 5%;
+  transform: rotate(45.5deg);
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+}
+
+footer p {
+    color: #3F51B5;
+}
+
+footer a {
+    text-decoration: none;
+    color: #3F51B5;
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
+}
+
+
+footer a:hover {
+    color: rgba(227, 227, 227, 0.5);
+    border-bottom: 1px solid rgba(227, 227, 227, 0.5);
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
+}
