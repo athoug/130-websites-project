@@ -94,7 +94,11 @@ function createDots(){
     dot.line();
     dot.animate();
 
-    header.style.background = 'url(' + canvas.toDataURL() + ')';
+    if(window.innerWidth > 400){
+      header.style.background = 'url(' + canvas.toDataURL() + ')';
+    } else {
+      header.style.background = '#222';
+    }
 }
 
 idle = setInterval(createDots, 1000/80);

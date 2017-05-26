@@ -324,3 +324,8 @@ footer a {
 footer a:hover {
     color: #fede32;
 }
+@media only screen and(max-width: 420px) {
+  #header {
+      background-color: #222;
+  }
+}
