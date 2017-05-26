@@ -1,0 +1,54 @@
+/*
+  misc styles, nothing to do with CSS variables
+*/
+
+/* Declar CSS variables */
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 1px;
+  --grayscale: 0;
+  --exposure: 100%;
+  --contrast: 100%;
+  --hue: 0deg;
+  --invert: 0;
+  --saturate: 100%;
+  --sepia: 0;
+  --opacity: 100%;
+}
+
+img{
+  padding: var(--spacing);
+  background: var(--base);
+  filter:
+   grayscale(var(--grayscale))
+   opacity(var(--opacity))
+   brightness(var(--exposure))
+   contrast(var(--contrast))
+   hue-rotate(var(--hue))
+   invert(var(--invert))
+   saturate(var(--saturate))
+   sepia(var(--sepia))
+   blur(var(--blur));
+}
+
+body {
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.hl {
+    color: var(--base);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width:100px;
+}
