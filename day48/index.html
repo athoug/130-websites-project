@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Scoped CSS Variables and JS</title>
   <link rel="stylesheet" href="css/master.css">
 </head>
+
 <body>
   <h2>Photo <span class='hl'>Editing</span></h2>
 
-  <div class="controls">
-    <label for="spacing">Spacing:</label>
-    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+  <div class="container">
+    <div class="controls">
 
-    <label for="blur">Blur:</label>
-    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#ffc600">
 
-    <label for="base">Base Color</label>
-    <input id="base" type="color" name="base" value="#ffc600">
+      <br>
 
-    <br>
+      <label for="spacing" class="label-style" id="first">Spacing</label>
+      <input id="spacing" type="range" name="spacing" min="10" max="200" value="0" data-sizing="px">
 
-    <label for="grayscale">Grayscale:</label>
-    <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="0" data-sizing="%">
+      <br>
 
-    <label for="sepia">Sepia:</label>
-    <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+      <label for="blur" class="label-style">Blur</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="1" data-sizing="px">
 
-    <label for="saturate">Saturate:</label>
-    <input id="saturate" type="range" name="saturate" min="0" max="1000" value="100" data-sizing="%">
+      <br>
 
-    <br>
+      <!-- <label for="grayscale" class="label-style">Grayscale</label>
+      <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="0" data-sizing="%">
 
-    <label for="hue-rotate">Hue:</label>
-    <input id="hue-rotate" type="range" name="hue" min="0" max="360" value="0" data-sizing="deg">
+      <br> -->
 
-    <label for="invert">Invert:</label>
-    <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+      <label for="sepia" class="label-style">Sepia</label>
+      <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
 
-    <label for="opacity">Opacity:</label>
-    <input id="opacity" type="range" name="opacity" min="0" max="100" value="100" data-sizing="%">
+      <br>
 
-    <label for="exposure">Brightness:</label>
-    <input id="exposure" type="range" name="exposure" min="0" max="1000" value="100" data-sizing="%">
+      <label for="saturate" class="label-style">Saturate</label>
+      <input id="saturate" type="range" name="saturate" min="0" max="500" value="100" data-sizing="%">
 
-    <label for="contrast">Contrast:</label>
-    <input id="contrast" type="range" name="contrast" min="0" max="1000" value="100" data-sizing="%">
+      <br>
+
+      <label for="hue-rotate" class="label-style">Hue</label>
+      <input id="hue-rotate" type="range" name="hue" min="0" max="360" value="0" data-sizing="deg">
+
+      <br>
+
+      <label for="invert" class="label-style">Invert</label>
+      <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+
+      <br>
+
+      <label for="opacity" class="label-style">Opacity</label>
+      <input id="opacity" type="range" name="opacity" min="0" max="100" value="100" data-sizing="%">
+
+      <br>
+
+      <label for="exposure" class="label-style">Brightness</label>
+      <input id="exposure" type="range" name="exposure" min="0" max="500" value="100" data-sizing="%">
+
+      <br>
+
+      <!-- <label for="contrast" class="label-style">Contrast</label>
+      <input id="contrast" type="range" name="contrast" min="0" max="500" value="100" data-sizing="%"> -->
+
+    </div>
+
+    <div class="image">
+      <img src="img/sky.jpg">
+    </div>
 
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
-
   <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
