@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  background-color: steelblue;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 20px 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  padding: 10px;
+  font-weight: 600;
+  color: steelblue;
+  letter-spacing: 1px;
+  outline: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+button:hover, .selected {
+  color: #fff;
+  background-color: steelblue;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container {
+  margin: 2% auto;
+  max-width: 600px;
+}
+.square {
+  width: 30%;
+  margin: 1.66%;
+  padding-bottom: 30%;
+  border-radius: 50%;
+  float: left;
+  background: purple;
+  transition: all 0.5s;
+}
+
+/*.selected {
+  background-color: blue;
+}*/
+
+#pickedColor {
+  font-size: 200%;
+}
+
+#stripe {
+  background-color: #eaeaea;
+  height: 30px;
+  text-align: center;
+  color: #222;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
