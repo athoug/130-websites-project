@@ -1,4 +1,6 @@
 window.onload = function(){
+  // Safari 3.0+ "[object HTMLElementConstructor]"
+  var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
   var canvas = document.createElement("canvas");
   var header = document.getElementById("header");
   var ctx = canvas.getContext("2d");
@@ -94,8 +96,19 @@ function createDots(){
     dot.line();
     dot.animate();
 
-    if(window.innerWidth > 400){
-      header.style.background = 'url(' + canvas.toDataURL() + ')';
+    // if ( || (navigator.userAgent.indexOf("Firefox") != -1 ))) {
+    //   header.style.background = '#222';
+    // } else {
+    //   header.style.background = 'url(' + canvas.toDataURL() + ')';
+    // }
+
+    if(window.innerWidth > 400) {
+      if(browser.includes("Safari")){
+        // alert('Safari');
+        header.style.background = '#222';
+      } else {
+        header.style.background = 'url(' + canvas.toDataURL() + ')';
+      }
     } else {
       header.style.background = '#222';
     }
