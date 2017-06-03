@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Code Player</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:200,300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,12 +12,13 @@
   <body>
     <header>
       <h1><i class="fa fa-code" aria-hidden="true"></i> <span>CODE PLAYER</span></h1>
-      <h3><i class="fa fa-play" aria-hidden="true"></i> Run</h3>
+      <h3 id="run"><i class="fa fa-play" aria-hidden="true"></i> Run</h3>
       <h3><i class="fa fa-download" aria-hidden="true"></i> Save</h3>
     </header>
 
     <section>
       <div class="html">
+        <!-- <div class="toggle"></div> -->
         <textarea name="name" id="html"></textarea>
       </div>
 
@@ -28,8 +30,8 @@
         <textarea name="name" id="js"></textarea>
       </div>
 
-      <div class="run">
-
+      <div >
+        <iframe class="run"></iframe>
       </div>
     </section>
     <script type="text/javascript" src="./js/script.js"></script>
