@@ -47,6 +47,7 @@ window.onload = function() {
 function saveCurrancy() {
   if (httpRequest.readyState === XMLHttpRequest.DONE) {
     if (httpRequest.status === 200) {
+      console.log(httpRequest.responseText);
       ratesCurrancy = JSON.parse(httpRequest.responseText);
       console.log(ratesCurrancy);
       // alert(httpRequest.responseText);
