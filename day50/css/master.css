@@ -109,6 +109,10 @@ textarea, iframe{
   transition: all 0.5s;
 }
 
+iframe {
+  padding: 0;
+}
+
 .changeBackground {
   background-color: #eaeaea;
 }

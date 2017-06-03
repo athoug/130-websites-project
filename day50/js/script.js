@@ -5,9 +5,9 @@ function main() {
     // change background color
     $(".run").addClass("changeBackground");
 
-    // check background
-    $(".run").contents().find('body').html("<style> "+$("#css").val() +"</style>" + $("#html").val());
+    // grab the contents of the iFrame 
 
+    $(".run").contents().find('html').html("<style> "+$("#css").val() +"</style>" + $("#html").val());
     document.querySelector('.run').contentWindow.eval($("#js").val());
   });
 
