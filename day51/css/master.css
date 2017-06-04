@@ -4,14 +4,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #56CCF2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /*background: #56CCF2;
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);
+  background: linear-gradient(to right, #2F80ED, #56CCF2); */
+  overflow: hidden;
 }
 
 h1 {
-  background-color: #2980e9;
+  background-color: #FCCB3F;
   color: #fff;
   margin: 0;
   padding: 10px 20px;
@@ -44,21 +44,22 @@ input[type="text"]{
   background-color: #f7f7f7;
   width: 100%;
   padding: 13px 13px 13px 20px;
-  color: #2980e9;
+  color: #FCCB3F;
   border: 3px solid rgba(0,0,0,0);
   font-weight: 100;
-  
+
   transition: all 0.5s;
 }
 
 input[type="text"]:focus {
   background: #fff;
-  border: 3px solid #2980e9;
+  border: 3px solid #FCCB3F;;
   outline: none;
 }
 
-span {
+li span {
   background-color: #e74c3c;
+  background-color: #333;
   color: #fff;
   width: 0;
   height: 40px;
@@ -79,7 +80,7 @@ li:hover span{
   margin: 100px auto;
   background-color: #f7f7f7;
   font-weight: 100;
-  box-shadow: 0 0 3px rgba(0,0,0,0.1;)
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
 }
 
 .completed {
@@ -90,4 +91,48 @@ li:hover span{
 .fa-plus {
   float: right;
   font-weight: 100;
+  transition: all 0.5s;
+}
+
+.fa-plus:hover {
+  color: #333;
+}
+
+span.black {
+  color: #333;
+  opacity: 1;
+  width: 40px;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+}
+
+footer p {
+    color: #666;
+}
+
+footer a {
+    text-decoration: none;
+    color: #666;
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
+}
+
+
+footer a:hover {
+    color: #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
 }
