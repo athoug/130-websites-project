@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>JamAcircle</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+    <link rel="stylesheet" href="./css/master.css">
+
+    <script src="./lib/howler.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script type="text/javascript" src="./lib/paper-full.js"></script>
+    <script type="text/paperscript" canvas="myCanvas">
+
+      window.circles = [];
+
+      function onKeyDown(event) {
+
+        if(keyData[event.key]){
+          // a random point
+          var maxPoint = new Point(view.size.width, view.size.height); // gives me a (x,y) point of the maximum width and height of the window
+          var randomPoint = Point.random(); // gives me a random point betwee 0 and 1
+          var point = maxPoint * randomPoint; // this is how to get a random point betweet 0 and the max
+
+          keyData[event.key].sound.play();
+
+          var newCircle = new Path.Circle(point, 500);
+          newCircle.fillColor = keyData[event.key].color;
+          circles.push(newCircle);
+
+        } else {
+
+        }
+      }
+
+      function onFrame(event) {
+        for (var i = 0; i < circles.length; i++) {
+          circles[i].fillColor.hue += 1;
+          circles[i].scale(.91);
+          if(circles[i].area < 1){
+          	circles[i].remove();
+            circles.splice(i, 1);
+          }
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <canvas id="myCanvas" resize></canvas>
+    <footer id='foot'>
+      <p id='footp'>Athoug Alsougayer &copy; 2017 &nbsp; &nbsp;&nbsp; &nbsp;<a href="../default.html" id='foota1'>Home</a> &nbsp;| &nbsp; <a href="http://athougcodesatnight.tumblr.com/" id='foota2'>blog</a></p>
+    </footer>
+  </body>
+</html>
