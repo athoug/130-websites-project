@@ -56,6 +56,7 @@ span {
   padding: 10px;
   width: 55px;
   height: 55px;
+  cursor: default;
 
   transition: all 0.5s;
 }
@@ -188,4 +189,55 @@ footer a:hover {
   background-color: #FC5757;
 
   transition: all 0.5s;
+}
+
+.timeUp {
+  display: none;
+  position: absolute;
+  z-index: 101;
+  top: 125px;
+  left: 17%;
+  right: 17%;
+  width: 250px;
+  height: 150px;
+  border-radius: 3px;
+  background-color: #FC5757;
+  text-align: center;
+
+  transition: all 1s;
+}
+
+.timeUp p {
+  top: 10px;
+  color: #FCFCFC;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.close {
+  display: inline-block;
+  margin-left: 200px;
+}
+
+.watch {
+  animation-name: watch;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: center;
+  transform: rotate(-45deg);
+  transition: all 1s;
+}
+
+/* ANIMATION */
+
+@keyframes watch {
+from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
 }

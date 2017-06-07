@@ -3,6 +3,10 @@ var hr,
     sec;
 var intervalHandler;
 var paused = false;
+var sound = new Howl({
+  src: ['../sound/ring.wav'],
+  volume: 0.5
+});
 
 function resetTimer() {
   hr = 0;
@@ -77,7 +81,8 @@ function tickker() {
 
   // when time reached zero
   if(sec === 0 && min === 0 && hr == 0){
-    alert("done");
+    document.querySelector(".timeUp").style.display = "block";
+    sound.play();
     resetTimer();
   }
 
@@ -152,5 +157,9 @@ window.onload = function () {
 
   document.querySelector(".stop").addEventListener("click", function(){
     pauseTimer();
+  });
+
+  document.querySelector(".close").addEventListener("click", function(){
+    document.querySelector(".timeUp").style.display = "none";
   });
 }
