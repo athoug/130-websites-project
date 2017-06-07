@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: 101;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 0.6rem;
+}
+
+footer p {
+    color: #666;
+}
+
+footer a {
+    text-decoration: none;
+    color: #666;
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
+}
+
+
+footer a:hover {
+    color: #DCDCA3;
+    border-bottom: 1px solid #DCDCA3;
+
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5;
+}
+
+
+.container {
+  margin: 3.5rem auto;
+  width: 360px;
+  height: 400px;
+  border-radius: 10px;
+  border: 2px solid #766F6B;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../img/Person.svg");
+  background-repeat: no-repeat;
+  background-position: center 10px;
+  background-size: 100%;
+
+}
+
+.eye {
+  position: absolute;
+  top: 40%;
+  width: 10px;
+  height: 10px;
+  background-color: #766F6B;
+  border-radius: 50%;
+
+  transform-origin: center;
+  transition: all 1s;
+}
+
+.buttons {
+  width: 380px;
+  margin: auto;
+}
+
+.blink, .side-view, .up-view, .default {
+  margin: auto;
+  width: 80px;
+  height: 30px;
+  background-color: #766F6B;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  float: left;
+  margin-right: 10px;
+
+  transition: all 0.5s;
+}
+
+.default {
+  margin-left: 10px;
+}
+
+.default:hover {
+  background-color: #DCDCA3;
+  color: #766F6B;
+}
+
+.blink:hover {
+  background-color: #DCDCA3;
+  color: #766F6B;
+}
+
+.side-view:hover {
+  background-color: #DCDCA3;
+  color: #766F6B;
+}
+
+.up-view:hover {
+  background-color: #DCDCA3;
+  color: #766F6B;
+}
+
+#one {
+  left: 38%;
+  animation-name: default1;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+#two {
+  left: 60%;
+  animation-name: default2;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+/* ANIMATIONS */
+@keyframes default1 {
+  from {
+    left: 38%;
+  }
+  to {
+    left: 38%;
+  }
+}
+
+@keyframes default2 {
+  from {
+    left: 60%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+@keyframes blink {
+  from {
+    top: 40%;
+    height: 10px;
+  }
+  to {
+    top: 41%;
+    height: 1px;
+  }
+}
+
+@keyframes up {
+  0% {
+    top: 40%;
+  }
+
+  50% {
+    top: 38%;
+  }
+
+  100% {
+    top: 42%;
+  }
+}
+
+@keyframes side1 {
+  0% {
+    left: 38%;
+  }
+  35% {
+    left: 35%;
+  }
+  /*50% {
+    left: 38%
+  }*/
+  100% {
+    left: 41%;
+  }
+}
+
+@keyframes side2 {
+  0% {
+    left: 60%;
+  }
+  35% {
+    left: 57%;
+  }
+  /*50% {
+    left: 60%;
+  }*/
+  100% {
+    left: 66%;
+  }
+}
