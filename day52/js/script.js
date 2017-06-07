@@ -4,7 +4,7 @@ var hr,
 var intervalHandler;
 var paused = false;
 var sound = new Howl({
-  src: ['../sound/ring.wav'],
+  src: ['./../sound/ring.wav'],
   volume: 0.5
 });
 
