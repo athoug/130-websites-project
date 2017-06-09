@@ -1,7 +1,24 @@
+var days = ["SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT"];
+var months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+var today = new Date();
+var todaysDate = days[today.getDay()] + ", " + today.getDate() + " " + months[today.getMonth()];
+console.log(todaysDate);
+
 window.onload = function () {
+  // set the date
+  document.getElementById("date").textContent = todaysDate;
+  document.querySelector("h4").textContent = todaysDate;
+
+  // get device location
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    console.log("location not supported");
+  }
   // start a http protocal
   var request = new XMLHttpRequest();
-  
+
   // distinguise the method and host
   request.open("GET", "http://api.apixu.com/v1/forecast.json?key=b91bf74929fe4db4b6a33327170906&q=Paris");
 
@@ -28,9 +45,19 @@ window.onload = function () {
   request.send();
 
   function formatData(d) {
-    var message = "<h1>Temprature: " + d.current.temp_c + "</h1>";
-    message += "<h1>" + d.current.condition.text + "</h1>";
-      message += "<img src='" + d.current.condition.icon + "' />"
-    document.body.innerHTML = message;
+    document.querySelector(".city").textContent = d.location.name;
+    document.querySelector(".description").textContent = d.current.condition.text;
+    // first temp
+    document.querySelectorAll(".c")[0].textContent = d.current.temp_c;
+    var time = d.current.last_updated.split(" ");
+    document.querySelectorAll(".time")[0].textContent = time[1];
+
+    // second temp
+    var hour = time[1].split(":");
+
+  }
+
+  function showPosition(position) {
+    console.log("longatude " + position.coords.longitude + "latitude: "+ position.coords.latitude);
   }
 }
