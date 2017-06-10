@@ -23,9 +23,12 @@ window.onload = function () {
     document.querySelector(".description").textContent = d.current.condition.text;
 
     // first temp
+    var img = d.current.condition.text.replace(" ", "");
+    console.log(img);
     document.querySelectorAll(".c")[0].textContent = d.current.temp_c;
     var time = d.current.last_updated.split(" ");
     document.querySelectorAll(".time")[0].textContent = time[1];
+    document.querySelector(".main-img").src = weather[img];
 
     // second temp
     var hour = time[1].split(":");
@@ -34,18 +37,22 @@ window.onload = function () {
     if(index == -1){
       index = 23;
     }
+    img = d.forecast.forecastday[0].hour[index].condition.text.replace(" ", "");
     document.querySelectorAll(".c")[1].textContent = d.forecast.forecastday[0].hour[index].temp_c;
     time = d.forecast.forecastday[0].hour[index].time.split(" ");
     document.querySelectorAll(".time")[1].textContent = time[1];
+    document.querySelectorAll(".sub-img")[0].src = weather[img];
 
     // third temp
     index -= 1;
     if(index == -1){
       index = 23;
     }
+    img = d.forecast.forecastday[0].hour[index].condition.text.replace(" ", "");
     document.querySelectorAll(".c")[2].textContent = d.forecast.forecastday[0].hour[index].temp_c;
     time = d.forecast.forecastday[0].hour[index].time.split(" ");
     document.querySelectorAll(".time")[2].textContent = time[1];
+    document.querySelectorAll(".sub-img")[1].src = weather[img];
   }
 
   function showPosition(position) {

@@ -14,7 +14,7 @@ var weather = {
   Fog: "./img/animated/cloudy.svg",
   Freezingfog: "./img/animated/cloudy.svg",
   Patchylightdrizzle: "./img/animated/rainy-6.svg",
-  Light drizzle: "./img/animated/rainy-6.svg",
+  Lightdrizzle: "./img/animated/rainy-6.svg",
   Freezingdrizzle: "./img/animated/rainy-6.svg",
   Heavyfreezingdrizzle: "./img/animated/rainy-6.svg",
   Patchylightrain: "./img/animated/rainy-5.svg",
