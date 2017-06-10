@@ -73,7 +73,7 @@ window.onload = function () {
     var request = new XMLHttpRequest();
 
     // distinguise the method and host
-    request.open("GET", "http://api.apixu.com/v1/forecast.json?key=b91bf74929fe4db4b6a33327170906&q=" + lat + "," + lang);
+    request.open("GET", "https://api.apixu.com/v1/forecast.json?key=b91bf74929fe4db4b6a33327170906&q=" + lat + "," + lang);
 
     // how to handel the responce
     request.onload = function () {
