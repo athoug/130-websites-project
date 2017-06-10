@@ -24,6 +24,7 @@ window.onload = function () {
 
     // first temp
     var img = d.current.condition.text.replace(" ", "");
+    img = img.toLowerCase();
     console.log(img);
     document.querySelectorAll(".c")[0].textContent = d.current.temp_c;
     var time = d.current.last_updated.split(" ");
@@ -38,6 +39,7 @@ window.onload = function () {
       index = 23;
     }
     img = d.forecast.forecastday[0].hour[index].condition.text.replace(" ", "");
+    img = img.toLowerCase();
     document.querySelectorAll(".c")[1].textContent = d.forecast.forecastday[0].hour[index].temp_c;
     time = d.forecast.forecastday[0].hour[index].time.split(" ");
     document.querySelectorAll(".time")[1].textContent = time[1];
@@ -49,6 +51,7 @@ window.onload = function () {
       index = 23;
     }
     img = d.forecast.forecastday[0].hour[index].condition.text.replace(" ", "");
+    img = img.toLowerCase();
     document.querySelectorAll(".c")[2].textContent = d.forecast.forecastday[0].hour[index].temp_c;
     time = d.forecast.forecastday[0].hour[index].time.split(" ");
     document.querySelectorAll(".time")[2].textContent = time[1];
