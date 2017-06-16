@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 canvas {
   display: block;
 }
@@ -20,6 +24,26 @@ h1 {
   padding-bottom: 20px;
   border-bottom: 4px solid #F05897;
 }
+.Astro {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    widows: 360px;
+
+    transition: all 1s;
+    animation-name: astro;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.Astro img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 #space {
   width: 100%;
   height: 100vh;
@@ -59,4 +83,16 @@ footer a:hover {
 
     -webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5;
+}
+
+@keyframes astro {
+  from {
+    top: 24%;
+    left: 65%;
+    transform: rotate(10deg);
+  } to {
+    top: 26%;
+    left: 40%;
+    transform: rotate(-40deg);
+  }
 }

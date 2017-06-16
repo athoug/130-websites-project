@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="431px" height="397px" viewBox="0 0 431 397" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Astronaut</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="44" y="0" width="124" height="106" rx="24"></rect>
+        <rect id="path-3" x="65" y="9" width="81" height="24" rx="7"></rect>
+        <rect id="path-4" x="26" y="132" width="18" height="47" rx="9"></rect>
+        <path d="M85.1272386,314.241453 L56.4975764,299.018792 L28.998126,348.629114 C25.5173375,354.908622 17.6050534,357.177433 11.3255447,353.696645 L-14.0384268,339.637166 C-20.3179354,336.156377 -22.5867464,328.244093 -19.1059579,321.964585 L14.3459059,261.615825 C14.7570232,260.87415 15.2299602,260.188424 15.7547251,259.561513 C16.0916528,258.530746 16.5217631,257.514797 17.0483484,256.524434 L108.22156,85.0525614 L108.22156,85.0525614 C113.147918,75.7874301 124.652393,72.2701592 133.917524,77.1965169 L133.917524,77.1965169 L226.506143,126.426759 C235.771274,131.353116 239.288545,142.857591 234.362187,152.122723 L143.188975,323.594595 C142.46079,324.964113 141.588878,326.208046 140.601719,327.317687 C140.378783,327.912056 140.109477,328.497463 139.792487,329.069329 L106.340623,389.418089 C102.859834,395.697597 94.9475503,397.966408 88.6680417,394.48562 L63.3040701,380.426141 C57.0245615,376.945352 54.7557505,369.033068 58.236539,362.75356 L85.1272386,314.241453 Z" id="path-5"></path>
+        <rect id="path-7" x="38" y="344" width="56" height="31"></rect>
+        <rect id="path-8" x="42" y="174" width="49" height="80" rx="11"></rect>
+        <rect id="path-9" x="125" y="344" width="56" height="31"></rect>
+        <rect id="path-10" x="135" y="313" width="37" height="11" rx="5.5"></rect>
+        <rect id="path-11" x="135" y="297" width="37" height="11" rx="5.5"></rect>
+        <rect id="path-12" x="135" y="279" width="37" height="11" rx="5.5"></rect>
+        <rect id="path-13" x="121" y="210" width="66" height="20" rx="5"></rect>
+        <rect id="path-14" x="121" y="180" width="66" height="20" rx="5"></rect>
+        <rect id="path-15" x="47" y="313" width="37" height="11" rx="5.5"></rect>
+        <rect id="path-16" x="47" y="297" width="37" height="11" rx="5.5"></rect>
+        <rect id="path-17" x="47" y="279" width="37" height="11" rx="5.5"></rect>
+        <rect id="path-18" x="51" y="183" width="31" height="21"></rect>
+        <circle id="path-19" cx="106" cy="98" r="62"></circle>
+        <circle id="path-21" cx="106" cy="97" r="53"></circle>
+        <path d="M39.9699998,41 C20.4781842,50.9701879 11.1548509,61.8035212 12,73.5 C12.8451491,85.1964788 22.1684824,96.0298121 39.9699998,106" id="path-23"></path>
+        <path d="M202.958876,42 C182.133727,52.3035212 172.143727,63.3035212 172.988877,75 C173.834026,86.6964788 183.824026,96.0298121 202.958876,103" id="path-25"></path>
+        <rect id="path-27" x="34" y="29" width="16" height="24" rx="7"></rect>
+        <rect id="path-29" x="38" y="90" width="16" height="26" rx="7"></rect>
+        <rect id="path-31" x="158" y="90" width="16" height="26" rx="7"></rect>
+        <rect id="path-33" x="164" y="29" width="16" height="24" rx="7"></rect>
+        <rect id="path-35" x="4" y="271" width="11" height="25" rx="5.5"></rect>
+        <rect id="path-36" x="16" y="271" width="11" height="25" rx="5.5"></rect>
+        <rect id="path-37" x="29" y="271" width="11" height="25" rx="5.5"></rect>
+        <rect id="path-38" x="39" y="249" width="11" height="25" rx="5.5"></rect>
+        <rect id="path-39" x="303" y="27" width="11" height="25" rx="5.5"></rect>
+        <rect id="path-40" x="58.9673918" y="321.018341" width="30" height="20"></rect>
+        <rect id="path-41" x="255.967392" y="320.018341" width="30" height="20"></rect>
+        <rect id="path-42" x="316" y="5" width="11" height="25" rx="5.5"></rect>
+        <rect id="path-43" x="328" y="5" width="11" height="25" rx="5.5"></rect>
+        <rect id="path-44" x="341" y="5" width="11" height="25" rx="5.5"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Astronaut" transform="translate(206.519531, 180.878906) rotate(23.000000) translate(-206.519531, -180.878906) translate(28.519531, 6.878906)">
+            <g id="Astro-Body" transform="translate(64.000000, 0.000000)">
+                <rect id="Rectangle-16" fill="#5A5757" x="0" y="62" width="216" height="277" rx="22"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-11" fill="#979797" xlink:href="#path-1"></use>
+                <g id="Rectangle-12" mask="url(#mask-2)">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <rect stroke="#979797" stroke-width="1" x="65.5" y="9.5" width="80" height="23" rx="7"></rect>
+                </g>
+                <circle id="Oval-8" fill="#5A5757" mask="url(#mask-2)" cx="75" cy="21" r="4"></circle>
+                <circle id="Oval-8-Copy" fill="#5A5757" mask="url(#mask-2)" cx="136" cy="21" r="4"></circle>
+                <rect id="Rectangle-13" fill="#5A5757" mask="url(#mask-2)" x="99" y="17" width="26" height="8"></rect>
+                <rect id="Rectangle-13-Copy" fill="#5A5757" mask="url(#mask-2)" x="91" y="19" width="26" height="3"></rect>
+                <g id="Rectangle-17" mask="url(#mask-2)">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <rect stroke="#979797" stroke-width="1" x="26.5" y="132.5" width="17" height="46" rx="8.5"></rect>
+                </g>
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Combined-Shape" fill="#D8D8D8" transform="translate(107.925836, 235.543347) rotate(-29.000000) translate(-107.925836, -235.543347) " xlink:href="#path-5"></use>
+                <g id="Rectangle-5" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    <rect stroke="#979797" stroke-width="1" x="38.5" y="344.5" width="55" height="30"></rect>
+                </g>
+                <g id="Rectangle-5-Copy-2" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-8"></use>
+                    <rect stroke="#979797" stroke-width="1" x="42.5" y="174.5" width="48" height="79" rx="11"></rect>
+                </g>
+                <g id="Rectangle-5-Copy" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    <rect stroke="#979797" stroke-width="1" x="125.5" y="344.5" width="55" height="30"></rect>
+                </g>
+                <rect id="Rectangle-3" fill="#F05897" mask="url(#mask-6)" x="125" y="333" width="56" height="11"></rect>
+                <rect id="Rectangle-3-Copy" fill="#F05897" mask="url(#mask-6)" x="38" y="333" width="56" height="11"></rect>
+                <rect id="Rectangle-3-Copy-2" fill="#F05897" mask="url(#mask-6)" x="37" y="245" width="148" height="17"></rect>
+                <rect id="Rectangle-3-Copy-3" fill="#DD367B" mask="url(#mask-6)" x="74" y="245" width="56" height="17"></rect>
+                <g id="Rectangle-4" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-10"></use>
+                    <rect stroke="#979797" stroke-width="1" x="135.5" y="313.5" width="36" height="10" rx="5"></rect>
+                </g>
+                <g id="Rectangle-4-Copy" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    <rect stroke="#979797" stroke-width="1" x="135.5" y="297.5" width="36" height="10" rx="5"></rect>
+                </g>
+                <g id="Rectangle-4-Copy-2" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-12"></use>
+                    <rect stroke="#979797" stroke-width="1" x="135.5" y="279.5" width="36" height="10" rx="5"></rect>
+                </g>
+                <g id="Rectangle-4-Copy-6" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-13"></use>
+                    <rect stroke="#979797" stroke-width="1" x="121.5" y="210.5" width="65" height="19" rx="5"></rect>
+                </g>
+                <g id="Rectangle-4-Copy-7" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-14"></use>
+                    <rect stroke="#979797" stroke-width="1" x="121.5" y="180.5" width="65" height="19" rx="5"></rect>
+                </g>
+                <g id="Rectangle-4-Copy-5" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-15"></use>
+                    <rect stroke="#979797" stroke-width="1" x="47.5" y="313.5" width="36" height="10" rx="5"></rect>
+                </g>
+                <g id="Rectangle-4-Copy-4" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-16"></use>
+                    <rect stroke="#979797" stroke-width="1" x="47.5" y="297.5" width="36" height="10" rx="5"></rect>
+                </g>
+                <g id="Rectangle-4-Copy-3" mask="url(#mask-6)">
+                    <use fill="#979797" fill-rule="evenodd" xlink:href="#path-17"></use>
+                    <rect stroke="#979797" stroke-width="1" x="47.5" y="279.5" width="36" height="10" rx="5"></rect>
+                </g>
+                <rect id="Rectangle-6" fill="#BC2664" mask="url(#mask-6)" x="97" y="239" width="33" height="29"></rect>
+                <rect id="Rectangle-3-Copy-4" fill="#DD367B" mask="url(#mask-6)" x="102" y="245" width="23" height="17"></rect>
+                <rect id="Rectangle-7" fill="#F594BD" mask="url(#mask-6)" x="114" y="245" width="30" height="17"></rect>
+                <rect id="Rectangle-3-Copy-5" fill="#DD367B" mask="url(#mask-6)" x="118" y="249" width="21" height="10"></rect>
+                <rect id="Rectangle-6-Copy" fill="#BC2664" mask="url(#mask-6)" x="124" y="249" width="6" height="10"></rect>
+                <g id="Rectangle-8" mask="url(#mask-6)">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-18"></use>
+                    <rect stroke="#979797" stroke-width="1" x="51.5" y="183.5" width="30" height="20"></rect>
+                </g>
+                <rect id="Rectangle-9" fill="#F05897" mask="url(#mask-6)" x="56" y="187" width="20" height="14"></rect>
+                <rect id="Rectangle-10" fill="#5A5757" mask="url(#mask-6)" x="98" y="180" width="12" height="50" rx="6"></rect>
+                <mask id="mask-20" fill="white">
+                    <use xlink:href="#path-19"></use>
+                </mask>
+                <use id="Oval" fill="#5A5757" xlink:href="#path-19"></use>
+                <mask id="mask-22" fill="white">
+                    <use xlink:href="#path-21"></use>
+                </mask>
+                <use id="Oval-2" fill="#6B1035" xlink:href="#path-21"></use>
+                <circle id="Oval-3" fill="#BB2764" style="mix-blend-mode: soft-light;" mask="url(#mask-22)" cx="101.5" cy="91.5" r="52.5"></circle>
+                <circle id="Oval-4" fill="#F594BC" style="mix-blend-mode: soft-light;" mask="url(#mask-22)" cx="96.5" cy="79.5" r="25.5"></circle>
+                <circle id="Oval-5" fill="#FFFFFF" mask="url(#mask-22)" cx="74.5" cy="93.5" r="10.5"></circle>
+                <ellipse id="Oval-6" fill="#FFFFFF" mask="url(#mask-22)" cx="104.5" cy="57" rx="4.5" ry="5"></ellipse>
+                <mask id="mask-24" fill="white">
+                    <use xlink:href="#path-23"></use>
+                </mask>
+                <use id="Path-2" stroke="#87052C" stroke-width="9" xlink:href="#path-23"></use>
+                <mask id="mask-26" fill="white">
+                    <use xlink:href="#path-25"></use>
+                </mask>
+                <use id="Path-2-Copy" stroke="#87052C" stroke-width="9" transform="translate(187.949156, 72.500000) scale(-1, 1) translate(-187.949156, -72.500000) " xlink:href="#path-25"></use>
+                <mask id="mask-28" fill="white">
+                    <use xlink:href="#path-27"></use>
+                </mask>
+                <g id="Rectangle-15">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-27"></use>
+                    <rect stroke="#979797" stroke-width="1" x="34.5" y="29.5" width="15" height="23" rx="7"></rect>
+                </g>
+                <circle id="Oval-7" fill="#FFFFFF" mask="url(#mask-28)" cx="115.5" cy="53.5" r="2.5"></circle>
+                <mask id="mask-30" fill="white">
+                    <use xlink:href="#path-29"></use>
+                </mask>
+                <use id="Rectangle-14" fill="#979797" xlink:href="#path-29"></use>
+                <mask id="mask-32" fill="white">
+                    <use xlink:href="#path-31"></use>
+                </mask>
+                <use id="Rectangle-14-Copy" fill="#979797" xlink:href="#path-31"></use>
+                <mask id="mask-34" fill="white">
+                    <use xlink:href="#path-33"></use>
+                </mask>
+                <g id="Rectangle-15-Copy">
+                    <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-33"></use>
+                    <rect stroke="#979797" stroke-width="1" x="164.5" y="29.5" width="15" height="23" rx="7"></rect>
+                </g>
+            </g>
+            <path d="M96,152 C60.7267284,153.074243 39.0600618,161.74091 31,178 C22.9399382,194.25909 20.6066049,221.25909 24,259" id="Path-3" stroke="#979797" stroke-width="35"></path>
+            <path d="M332.70339,44.21875 C297.430118,45.2929932 275.763451,53.9596599 267.70339,70.21875 C259.643328,86.4778401 257.309994,113.47784 260.70339,151.21875" id="Path-3-Copy" stroke="#979797" stroke-width="35" transform="translate(295.949351, 97.718750) rotate(182.000000) translate(-295.949351, -97.718750) "></path>
+            <rect id="Rectangle-18" fill="#D8D8D8" x="87" y="128" width="16" height="51"></rect>
+            <rect id="Rectangle-18-Copy" fill="#D8D8D8" x="241" y="128" width="16" height="51"></rect>
+            <g id="Rectangle-19">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-35"></use>
+                <rect stroke="#979797" stroke-width="1" x="4.5" y="271.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <g id="Rectangle-19-Copy">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-36"></use>
+                <rect stroke="#979797" stroke-width="1" x="16.5" y="271.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <g id="Rectangle-19-Copy-2">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-37"></use>
+                <rect stroke="#979797" stroke-width="1" x="29.5" y="271.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <g id="Rectangle-19-Copy-6" transform="translate(44.500000, 261.500000) rotate(-90.000000) translate(-44.500000, -261.500000) ">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-38"></use>
+                <rect stroke="#979797" stroke-width="1" x="39.5" y="249.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <g id="Rectangle-19-Copy-7" transform="translate(308.500000, 39.500000) rotate(-90.000000) translate(-308.500000, -39.500000) ">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-39"></use>
+                <rect stroke="#979797" stroke-width="1" x="303.5" y="27.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <g id="Rectangle-20" transform="translate(73.967392, 331.018341) rotate(29.000000) translate(-73.967392, -331.018341) ">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-40"></use>
+                <rect stroke="#979797" stroke-width="1" x="59.4673918" y="321.518341" width="29" height="19"></rect>
+            </g>
+            <g id="Rectangle-20-Copy" transform="translate(270.967392, 330.018341) scale(-1, 1) rotate(29.000000) translate(-270.967392, -330.018341) ">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-41"></use>
+                <rect stroke="#979797" stroke-width="1" x="256.467392" y="320.518341" width="29" height="19"></rect>
+            </g>
+            <g id="Rectangle-19-Copy-5">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-42"></use>
+                <rect stroke="#979797" stroke-width="1" x="316.5" y="5.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <g id="Rectangle-19-Copy-4">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-43"></use>
+                <rect stroke="#979797" stroke-width="1" x="328.5" y="5.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <g id="Rectangle-19-Copy-3">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-44"></use>
+                <rect stroke="#979797" stroke-width="1" x="341.5" y="5.5" width="10" height="24" rx="5"></rect>
+            </g>
+            <ellipse id="Oval-9" stroke="#979797" fill="#D8D8D8" cx="333.5" cy="43" rx="22.5" ry="24"></ellipse>
+            <ellipse id="Oval-9-Copy" stroke="#979797" fill="#D8D8D8" cx="22.5" cy="260" rx="22.5" ry="24"></ellipse>
+        </g>
+    </g>
+</svg>
