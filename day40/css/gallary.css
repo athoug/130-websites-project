@@ -1,67 +1,59 @@
+html, body {
+    font-family: 'Quicksand', 'Helvetica', sans-serif;
+}
+
 /* Jumbotrons changes */
 .jumbotron  {
-  padding-top: 150px;
+  padding-top: 10%;
   color: #3388FF;
   background: #5540FF;
+  height: 50vh;
 }
 
-/* top menu style changer */
-.navbar-inverse {
-  background-color: #5540FF;
-  border: none;
-}
-
-.navbar-inverse .navbar-nav >li >a {
-  color: #3388FF;
-}
-
-.navbar-inverse .navbar-brand {
-  color: #3388FF;
-}
-
-.nav > li > a > .fa {
-  font-size: 1.5em;
-}
-
-.nav > li > a > .fa #user {
-  font-size: 0.5em;
-}
 
 /* p tag width fixing */
-
 p {
   width: 50%;
 }
 
-h3 {
-  /*color: #5540FF;*/
+/* heading styling */
+h1 {
+ text-transform: uppercase;
+ width: 60%;
 }
 
-/* h4 styling */
 h4 {
   font-size: 1em;
   font-weight: 100;
-  /*color: #3388FF;*/
 }
 
-/* Hamberger menu style */
-.navbar-inverse .navbar-toggle {
-    border: none;
+hr {
+    width: 60%;
+    border: 0;
+    background-color: #3388FF;
+    padding: 0;
+    margin: 0;
+    height: 4px;
 }
 
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background-color: #5540FF;
+/* links */
+ul.links {
+    list-style: none;
+    padding: 0;
 }
 
-.navbar-inverse .navbar-toggle:hover, .icon-bar{
-  background-color: #5540FF;
+ul.links li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 150%;
 }
 
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus .icon-bar {
-  background-color: #3388FF;
+ul.links li:first-child {
+    padding-left: 0;
 }
 
 
+/* thumbnail styling */
 .thumbnail > img, .thumbnail a > img {
   width: 350px;
   height: 229.53px;
@@ -70,4 +62,45 @@ h4 {
 .thumbnail {
   height: 388.52px;
   border-color: #fff;
+}
+
+
+/* canvas style */
+canvas {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#info {
+    z-index: 999;
+}
+
+
+footer {
+    margin: 0 auto;
+}
+
+footer p{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+ul.bottom-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.bottom-links li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+
+}
+
+ul.bottom-links li i {
+    color: #333;
 }

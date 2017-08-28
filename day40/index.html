@@ -9,39 +9,26 @@
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.css">
+   <link rel="stylesheet" href="css/ionicons.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="css/gallary.css">
 </head>
 
 <body>
-  <!-- navigation -->
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://athoug.xyz/about.html"><i class="fa fa-user" aria-hidden="true" id="user"></i></a></li>
-          <li><a href="https://athougcodesatnight.tumblr.com/"><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-          <li><a href="https://twitter.com/to0ogi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li> <a href="https://github.com/athoug"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="jumbotron">
-    <div class="container">
+  <canvas></canvas>
+  <div class="jumbotron" id="bg">
+    <div class="container" id="info">
       <!-- content -->
-      <h1>My Generative Art Journey</h1>
-      <p>A place where I try to express myself with code. This here is a gallery of my progress where I learn and try to experiment.</p>
+      <h1>My Generative Art <span>Journey</span></h1>
+      <p>A place where I try to express myself with code. This here, is a gallery of my progress, where I learn and try to experiment with code <i class="fa fa-code" aria-hidden="true"></i></p>
+
+      <ul class="links">
+          <li><a href="http://athoug.xyz/about.html"><i class="ion-android-globe"></i></a></li>
+          <li><a href="https://github.com/athoug"><i class="ion-social-github"></i></a></li>
+          <li><a href="https://twitter.com/to0ogi"><i class="ion-social-twitter"></i></a></li>
+          <li><a href="https://athougcodesatnight.tumblr.com"><i class="ion-social-tumblr"></i></a></li>
+      </ul>
+       <hr>
     </div>
   </div>
 
@@ -675,6 +662,15 @@
         </div>
       </div>
     </div>
+    <footer>
+        <ul class="bottom-links">
+            <li><a href="http://athoug.xyz/about.html"><i class="ion-android-globe"></i></a></li>
+            <li><a href="https://github.com/athoug"><i class="ion-social-github"></i></a></li>
+            <li><a href="https://twitter.com/to0ogi"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="https://athougcodesatnight.tumblr.com"><i class="ion-social-tumblr"></i></a></li>
+        </ul>
+      <p>Made by <i class="fa fa-code" aria-hidden="true"></i> Athoug Alsoughayer</p>
+    </footer>
   </div>
 
 
@@ -684,6 +680,8 @@
   <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="./libraries/p5.js"></script>
+  <script src="./js/sketch.js"></script>
 </body>
 
 </html>
