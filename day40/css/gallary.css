@@ -5,8 +5,8 @@ html, body {
 /* Jumbotrons changes */
 .jumbotron  {
   padding-top: 10%;
-  color: #3388FF;
-  background: #5540FF;
+  color: #eee;
+  background: #130c22;
   height: 50vh;
 }
 
@@ -30,7 +30,7 @@ h4 {
 hr {
     width: 60%;
     border: 0;
-    background-color: #3388FF;
+    background-color: #eee;
     padding: 0;
     margin: 0;
     height: 4px;
@@ -50,6 +50,10 @@ ul.links li {
 
 ul.links li:first-child {
     padding-left: 0;
+}
+
+ul.links li a i {
+    color: #eee;
 }
 
 
