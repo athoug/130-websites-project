@@ -4,13 +4,14 @@ var canvas = document.getElementsByTagName('canvas')[0];
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   background("#130c22");
+
 }
 
 
 function draw() {
 
   // craete a variable that holds the circle object
-  var cir = new Circle(mouseX, mouseY);
+  var cir = new Circle(random(window.innerWidth), random(window.innerHeight));
 
   // add variable to array
   circles.push(cir);
