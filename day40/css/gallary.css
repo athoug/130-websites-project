@@ -7,7 +7,7 @@ html, body {
   padding-top: 10%;
   color: #eee;
   background: #130c22;
-  height: 50vh;
+  height: 500px;
 }
 
 
@@ -77,9 +77,7 @@ canvas {
 }
 
 #info {
-  position: relative;
-    z-index: 999;
-    top: -100px;
+  margin-top: -50px;
 }
 
 
@@ -109,4 +107,19 @@ ul.bottom-links li {
 
 ul.bottom-links li i {
     color: #333;
+}
+
+@media screen and (max-width: 400px) {
+  #info {
+    width: 100%;
+  }
+
+  p {
+    width: 90%;
+  }
+
+  hr {
+    width: 90%;
+  }
+
 }
