@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Cairo', Helvetica, arial, sans-serif;
+  font-size: 24px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  color: #2c3e50;
+}
+
+/* HEADER STYLING */
+header {
+  background-color:#34495e;
+  height: 100%;
+}
+
+h1.name {
+  position: fixed;
+  right: 80px;
+  font-size: 450%;
+  padding: 100px;
+  padding-right: 0;
+  font-weight: 900;
+  z-index: 1000;
+}
+
+h1.tagline {
+  position: fixed;
+  right: 100px;
+  top: 280px;
+  font-weight: 300;
+  font-size: 200%;
+  color: #8e44ad;
+}
+
+/* SECTION STYLING */
+
+section {
+  padding: 80px 40px;
+}
+
+.svg-link a:link,
+.svg-link a:visited {
+  text-decoration: none;
+  color: #2c3e50;
+  padding-bottom: -50px;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.svg-link a:hover,
+.svg-link a:active {
+  text-decoration: none;
+  color: #2980b9;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.svg-link {
+  margin: 0;
+}
+
+.svg-link span {
+  display: inline-block;
+  color: #8e44ad;
+  font-weight: 600;
+  font-size: 150%;
+}
+
+/* FOOTER STYLE */
+footer {
+  text-align: center;
+  font-size: 16px;
+}
+
+footer p > a:link,
+footer p > a:active{
+  color: #2c3e50;
+}

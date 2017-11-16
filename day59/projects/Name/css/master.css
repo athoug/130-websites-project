@@ -1,0 +1,26 @@
+body {
+  margin: auto;
+  padding: 10px;
+  background-color: #2980b9;
+  overflow: hidden;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+.path {
+  stroke-dasharray: 7600;
+  stroke-dashoffset: 7600;
+  -webkit-transition: 10s all;
+  transition: 10s all;
+}
+
+svg:hover .path {
+  stroke-dashoffset: 0;
+}

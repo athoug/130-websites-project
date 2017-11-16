@@ -1,0 +1,22 @@
+body {
+  background-color: #d35400;
+}
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.path {
+  stroke-dasharray: 6251;
+  stroke-dashoffset: 6251;
+  -webkit-transition: 10s all;
+  transition: 10s all;
+}
+
+svg:hover .path{
+  stroke-dashoffset: 0;
+}

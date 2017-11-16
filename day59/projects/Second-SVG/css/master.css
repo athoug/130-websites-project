@@ -1,0 +1,79 @@
+body {
+  background: #c0392b;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+svg circle {
+  fill: none;
+  stroke: #e74c3c;
+  stroke-width: 3px;
+  stroke-dasharray: 760;
+  stroke-dashoffset: 760;
+  opacity: 0;
+  -webkit-animation: 4s circle-outline infinite alternate;
+          animation: 4s circle-outline infinite alternate;
+}
+
+
+svg path {
+  fill: none;
+  stroke: #e74c3c;
+  stroke-width: 3px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  opacity: 0;
+  
+  -webkit-animation: 4.1s path-outline infinite alternate;
+
+          animation: 4.1s path-outline infinite alternate;
+}
+
+
+@-webkit-keyframes circle-outline {
+  from {
+    stroke-dashoffset: 760;
+    opacity: 0;
+  } to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+
+@keyframes circle-outline {
+  from {
+    stroke-dashoffset: 760;
+    opacity: 0;
+  } to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes path-outline {
+  from {
+    stroke-dashoffset: 450;
+    opacity: 0;
+  } to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes path-outline {
+  from {
+    stroke-dashoffset: 450;
+    opacity: 0;
+  } to {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
