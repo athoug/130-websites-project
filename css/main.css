@@ -6,7 +6,6 @@
 
     /* Browser compatability */
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
@@ -87,11 +86,13 @@ a[class^='underline']::after{
   top: 100%;
   /*color: #fede32;*/
   border-bottom: 0.105em solid #fede32;
+  -webkit-transition: all .35s;
   transition: all .35s;
 }
 
 a[class^='underline']:hover::after{
     color: #fede32;
+    -webkit-transition: all .35s;
     transition: all .35s;
 }
 
@@ -218,6 +219,8 @@ section {
     text-align: left;
 }
 
+
+
 .container h3, .container-about h3 {
     margin-top: 20px;
     color: #222;
@@ -236,6 +239,9 @@ section {
     border-bottom: 0.5px solid #fede32;
 }
 
+.container h3.arabic {
+  letter-spacing: 0;
+}
 /*****************************
         link styling
 ******************************/
@@ -258,6 +264,7 @@ a[class^='slide']::after{
   position: absolute;
   display: block;
   text-align: center;
+  -webkit-transition: all .35s;
   transition: all .35s;
 
 }
@@ -267,6 +274,7 @@ a[class^='slide']:hover::after {
   right:0;
   top:0;
   bottom:0;
+  -webkit-transition: all .35s;
   transition: all .35s;
 }
 
