@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px"
+	 height="250px" viewBox="0 0 500 250" enable-background="new 0 0 500 250" xml:space="preserve">
+<g id="bg">
+	<rect y="-0.432" fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="500" height="250.201"/>
+</g>
+<g id="lines_1_">
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="-1.952" y1="250" x2="248.048" y2="0"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="500" y1="0" x2="249.98" y2="250.021"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="250" y1="125" x2="375.432" y2="-0.432"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="250" y1="125" x2="125.231" y2="249.769"/>
+</g>
+<g id="title">
+	<g>
+		<path d="M100.036,112.819l1.084-11.382h-0.542l-4.12,10.407l-19.729,34.255h-2.71l-20.921-34.363l-3.903-10.298h-0.542
+			l1.518,11.274v51.058h-8.455V87.887h6.721l23.74,38.808l3.578,8.456h0.217l3.36-8.673l22.656-38.591h7.046v75.882h-8.997V112.819z
+			"/>
+		<path d="M129.52,87.887h8.998v75.882h-8.998V87.887z"/>
+		<path d="M172.662,114.12l-5.854-10.949h-0.434l1.084,10.949v49.648h-8.455V86.694h4.77l36.315,50.624l5.637,10.406h0.542
+			l-1.192-10.406V87.887h8.455v77.074h-4.77L172.662,114.12z"/>
+		<path d="M234.016,87.887h8.998v75.882h-8.998V87.887z"/>
+		<path d="M321.821,112.819l1.084-11.382h-0.542l-4.119,10.407l-19.729,34.255h-2.71l-20.922-34.363l-3.902-10.298h-0.542
+			l1.518,11.274v51.058H263.5V87.887h6.722l23.74,38.808l3.577,8.456h0.217l3.36-8.673l22.656-38.591h7.046v75.882h-8.997V112.819z"
+			/>
+		<path d="M385.274,142.738h-27.829l-7.55,21.03h-8.997l28.727-77.074h4.119l28.836,77.074h-9.54L385.274,142.738z M360.358,134.934
+			h22.22l-8.413-23.09l-2.697-11.491h-0.108l-2.696,11.708L360.358,134.934z"/>
+		<path d="M457.539,163.769H412.66V87.887h8.998v67.86h35.881V163.769z"/>
+	</g>
+</g>
+</svg>

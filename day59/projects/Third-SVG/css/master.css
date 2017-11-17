@@ -1,0 +1,88 @@
+body {
+  background: #313131;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+svg rect {
+  fill: none;
+  stroke:#fafafa;
+  stroke-width: 8px;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  -webkit-animation: 4s outline 1 forwards;
+          animation: 4s outline 1 forwards;
+}
+
+svg line {
+  stroke:#fafafa;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  -webkit-animation: 4s line 1 forwards;
+          animation: 4s line 1 forwards;
+}
+
+svg path {
+  fill: #fafafa;
+  opacity: 0;
+  -webkit-animation: 3s fade 1 forwards;
+          animation: 3s fade 1 forwards;
+          -webkit-animation-delay: 3.6s;
+                  animation-delay: 3.6s;
+}
+
+
+@-webkit-keyframes outline {
+  from {
+    stroke-dashoffset: 1500;
+  } to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes outline {
+  from {
+    stroke-dashoffset: 1500;
+  } to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes line {
+  from {
+    stroke-dashoffset: 400;
+  } to {
+    stroke-dashoffset: -275;
+  }
+}
+
+@keyframes line {
+  from {
+    stroke-dashoffset: 400;
+  } to {
+    stroke-dashoffset: -275;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
