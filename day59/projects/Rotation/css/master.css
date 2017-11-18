@@ -1,0 +1,44 @@
+body {
+  background: #91a4c4;
+}
+
+svg {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+}
+
+svg polygon {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 5s dimond infinite forwards alternate;
+
+          animation: 5s dimond infinite forwards alternate;
+}
+
+
+@-webkit-keyframes dimond {
+  from {
+    stroke-dashoffset: 450;
+  } to {
+    stroke-dashoffset: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+
+@keyframes dimond {
+  from {
+    stroke-dashoffset: 450;
+  } to {
+    stroke-dashoffset: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}

@@ -1,0 +1,44 @@
+body {
+  background: #0d4656;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+svg path {
+  fill: #6fc5d9;
+}
+
+svg line {
+  stroke: #6fc5d9;
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+
+  -webkit-animation: 300ms move-lines infinite backwards;
+
+          animation: 300ms move-lines infinite backwards;
+}
+
+
+@-webkit-keyframes move-lines {
+  from {
+    stroke-dashoffset: -30;
+  } to {
+    stroke-dashoffset: 30;
+  }
+}
+
+
+@keyframes move-lines {
+  from {
+    stroke-dashoffset: -30;
+  } to {
+    stroke-dashoffset: 30;
+  }
+}
