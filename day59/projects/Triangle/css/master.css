@@ -1,0 +1,68 @@
+body {
+  background-color: #ee7674;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#top polygon {
+  fill: #f49e4c;
+  stroke: #f49e4c;
+  stroke-width: 3px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+          -webkit-animation-delay: 2s;
+                  animation-delay: 2s;
+  -webkit-animation: 3s scale infinite alternate;
+          animation: 3s scale infinite alternate;
+}
+
+#middle polygon {
+  fill: #565676;
+  stroke: #565676;
+  stroke-width: 3px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation: 4s scale infinite alternate;
+          animation: 4s scale infinite alternate;
+}
+
+#bottom polygon {
+  fill: #f5ee9e;
+  stroke: #f5ee9e;
+  stroke-width: 3px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: 5s scale infinite alternate;
+          animation: 5s scale infinite alternate;
+}
+
+
+@-webkit-keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  } to {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+
+@keyframes scale {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  } to {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
