@@ -44,6 +44,14 @@ h1 {
   left: 0;
   right: 0;
   margin: 7em auto 0;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
+}
+
+.uku svg .strings:hover {
+  stroke: #E46C6F;
+  -webkit-transform: all 0.5s;
+          transform: all 0.5s;
 }
 
 /* footer styles */
