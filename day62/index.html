@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Piano</title>
+    <title>Piano Keys</title>
     <link rel="stylesheet" href="./css/master.css">
 
     <!-- Google tracker -->
@@ -25,32 +25,70 @@
 
   </head>
   <body>
+    <h1>Piano Keys</h1>
     <section>
       <div class="wrapper">
         <!-- White Keys -->
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
-        <div class="white-keys"></div>
+        <div class="white-keys keys" data-keys="9"> <span>tab</span></div>
+        <div class="white-keys keys" data-keys="81"> <span>Q</span></div>
+        <div class="white-keys keys" data-keys="87"> <span>W</span></div>
+        <div class="white-keys keys" data-keys="69"> <span>E</span></div>
+        <div class="white-keys keys" data-keys="82"> <span>R</span></div>
+        <div class="white-keys keys" data-keys="84"> <span>T</span></div>
+        <div class="white-keys keys" data-keys="89"> <span>Y</span></div>
+        <div class="white-keys keys" data-keys="85"> <span>U</span></div>
+        <div class="white-keys keys" data-keys="73"> <span>I</span></div>
+        <div class="white-keys keys" data-keys="79"> <span>O</span></div>
+        <div class="white-keys keys" data-keys="80"> <span>P</span></div>
+        <div class="white-keys keys" data-keys="219"> <span>[</span></div>
+        <div class="white-keys keys" data-keys="221"> <span>]</span></div>
+        <div class="white-keys keys" data-keys="220"> <span>\</span></div>
 
         <!-- black keys -->
-        <div class="black-keys"></div>
-        <div class="black-keys"></div>
+        <div class="black-keys keys" data-keys="49"> <span>1</span></div>
+        <div class="black-keys keys two" data-keys="50"> <span>2</span></div>
+        <div class="black-keys keys three" data-keys="52"> <span>4</span></div>
+        <div class="black-keys keys four" data-keys="53"> <span>5</span></div>
+        <div class="black-keys keys five" data-keys="54"> <span>6</span></div>
+        <div class="black-keys keys six" data-keys="56"> <span>8</span></div>
+        <div class="black-keys keys seven" data-keys="57"> <span>9</span></div>
+        <div class="black-keys keys eight" data-keys="189"> <span>-</span></div>
+        <div class="black-keys keys nine" data-keys="187"> <span>=</span></div>
+        <div class="black-keys keys ten" data-keys="8"> <span>delete</span></div>
       </div>
     </section>
     <!-- footer -->
     <footer id='foot'>
       <p id='footp'>Athoug Alsougayer &copy; 2017 &nbsp; &nbsp;&nbsp; &nbsp;<a href="../default.html" id='foota1'>Home</a> &nbsp;| &nbsp; <a href="http://athoug.com/" id='foota2'>blog</a></p>
     </footer>
+
+    <!-- audio sources -->
+    <audio src="./media/261-C.mp3" data-keys="9"></audio>
+    <audio src="./media/277-C-sharp.mp3" data-keys="49"></audio>
+    <audio src="./media/293-D.mp3" data-keys="81"></audio>
+    <audio src="./media/311-D-sharp.mp3" data-keys="50"></audio>
+    <audio src="./media/329-E.mp3" data-keys="87"></audio>
+    <audio src="./media/349-F.mp3" data-keys="69"></audio>
+    <audio src="./media/369F-sharp.mp3" data-keys="52"></audio>
+    <audio src="./media/391-G.mp3" data-keys="82"></audio>
+    <audio src="./media/415-G-sharp.mp3" data-keys="53"></audio>
+    <audio src="./media/440-A.mp3" data-keys="84"></audio>
+    <audio src="./media/466-A-sharp.mp3" data-keys="54"></audio>
+    <audio src="./media/495-B.mp3" data-keys="89"></audio>
+    <audio src="./media/523-C.mp3" data-keys="85"></audio>
+    <audio src="./media/545-C-sharp.mp3" data-keys="56"></audio>
+    <audio src="./media/587-D.mp3" data-keys="73"></audio>
+    <audio src="./media/622-D-sharp.mp3" data-keys="57"></audio>
+    <audio src="./media/659-E.mp3" data-keys="79"></audio>
+    <audio src="./media/698-F.mp3" data-keys="80"></audio>
+    <audio src="./media/698-F-sharp.mp3" data-keys="189"></audio>
+    <audio src="./media/783-G.mp3" data-keys="219"></audio>
+    <audio src="./media/830-G-sharp.mp3" data-keys="187"></audio>
+    <audio src="./media/880-A.mp3" data-keys="221"></audio>
+    <audio src="./media/932-A-sharp.mp3" data-keys="8"></audio>
+    <audio src="./media/987-B.mp3" data-keys="220"></audio>
+
+    <!-- Script file -->
+    <script type="text/javascript" src="./js/play.js"></script>
   </body>
 </html>
