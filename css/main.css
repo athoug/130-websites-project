@@ -69,6 +69,11 @@ li#email {
     background-size: contain;
 }
 
+.fa-envelope-o, .fa-github, .fa-user-o {
+    color: #feed90;
+    padding-right: 5px;
+}
+
 a[class^='underline']{
   color: #feed90;
   font-size: 1rem;
@@ -224,7 +229,7 @@ section {
 .container h3, .container-about h3 {
     margin-top: 20px;
     color: #222;
-    font-family: 'Raleway Dots', cursive;
+    font-family: 'Raleway Dots', sans-serif;
     letter-spacing: 2px;
 }
 
