@@ -8,6 +8,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    overflow-y: hidden;
 }
 
 body {
@@ -19,7 +20,6 @@ body {
 
 div {
     display: inline-block;
-    /* float: left; */
 }
 
 img {
@@ -29,12 +29,9 @@ img {
 
 /* HEADER TITLE STYLE  */
 .header {
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%); */
-    /* border: 1px solid red; */
     width: 350px;
     margin: 2rem 1rem;
+    display: inline-block;
 }
 
 .header h1 {
@@ -55,22 +52,24 @@ img {
 }
 
 /* CONTAINER STYLE */
-.container{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+#app {
     width: 100%;
-    height: 100vh;
-    /* float: none; */
-    overflow-x: scroll;
-    overflow-y: hidden;
+    height: 300px;
+    /* margin: 50px; */
+    position: absolute;
+    top: 25vh;
 }
 
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow-x: scroll;
+}
 
 /* CARD STYLE  */
 .card {
     display: inline-block;
-    clear: both;
     position: relative;
     width: 392px;
     height: 638px;
@@ -103,7 +102,6 @@ img {
     font-size: .75rem;
     color: #9B9B9B;
     font-weight: 100;
-    /* border: 1px solid red; */
     width: 100%;
     height: 90px;
 }
@@ -168,7 +166,6 @@ img {
     padding: 5%;
     color: #000;
     transition: all 0.25s;
-    /* border: 1px solid red; */
 }
 
 .btn:hover {
@@ -187,7 +184,6 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    /* border: 1px solid red; */
     color: #6732E5;
     font-weight: 100;
     font-size: 0.75rem;
