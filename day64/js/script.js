@@ -33,7 +33,7 @@ function Card(props) {
 // a variable that contains the components
 let app = (
     <div className="container">
-        <Header title="Women in STEAM" subheading="A page to that holds tribute to the amazing females who contributed to the field of Science | Engineering | Technology | Math"/>
+        <Header title="Women in STEM" subheading="A page to that holds tribute to the amazing females who contributed to the field of Science | Engineering | Technology | Math"/>
         <div className="cardsSlideshow">
             <Card pathHeader="../img/hypatia.jpg" pathIcon="../img/book.svg" iconTitle="mathematics | astronomy | philosophy" name="Hypatia" description="Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire." link="https://en.wikipedia.org/wiki/Hypatia"/>
 
@@ -54,7 +54,7 @@ let app = (
             <Card pathHeader="../img/Dian-fossey-story.jpg" pathIcon="../img/gorilla.svg" iconTitle="Ethology | Primatology" name="Dian Fossey" description="Dian's contribution to zoology, primatology, and anthropology are second to none. Dian spent 18 years studying mountain gorillas in Rwanda. Sadly she was murdered in 1985, a case that is still open." link="https://en.wikipedia.org/wiki/Dian_Fossey"/>
 
             <Card pathHeader="../img/carson.png" pathIcon="../img/trees.svg" iconTitle="Ecology | Marine biology" name="Rachel Carson" description="Carson is often credited with starting the grassroots environmental movement. She is also credited with the creation of the EPA. Carson was an American marine biologist and conservationist." link="https://en.wikipedia.org/wiki/Rachel_Carson"/>
-        </div>    
+        </div>
     </div>
 );
 
