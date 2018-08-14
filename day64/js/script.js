@@ -13,7 +13,7 @@ function Card(props) {
         return(
             <div className="card">
                 <div className="image-container">
-                    <img src={props.pathHeader} />
+                    <img className="imageShowcase" src={props.pathHeader} />
                 </div>
                 <div className="icon-set">
                     <img src={props.pathIcon} />
@@ -32,7 +32,7 @@ function Card(props) {
 
 // a variable that contains the components
 let app = (
-    <div>
+    <div className="container">
         <Header title="Women in STEAM" subheading="A page to that holds tribute to the amazing females who contributed to the field of Science | Engineering | Technology | Math"/>
 
         <Card pathHeader="../img/hypatia.jpg" pathIcon="../img/book.svg" iconTitle="mathematics | astronomy | philosophy" name="Hypatia" description="Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire." link="https://en.wikipedia.org/wiki/Hypatia"/>
