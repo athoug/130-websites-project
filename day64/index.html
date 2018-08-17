@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
         <title>Women in STEM</title>
-
-        <!-- dependencies -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
 
         <!-- Google tracker -->
         <script>
@@ -29,19 +23,192 @@
             ga('create', 'UA-79841098-1', 'auto');
             ga('send', 'pageview');
         </script>
-
     </head>
-
     <body>
-
-
-        <div id="app"></div>
-
-
+        <div id="app">
+            <div class="container">
+                <!-- header -->
+                <div class="header">
+                    <h1>Women in STEAM</h1>
+                    <p>A page to that holds tribute to the amazing females who contributed to the field of Science | Engineering | Technology | Math</p>
+                </div>
+                <div class="cardsSlideshow">
+                    <!-- Hypatia -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/hypatia.jpg" alt="Hypatia">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/book.svg" alt="feild of study">
+                            <p>Mathematics | Astronomy | Philosophy</p>
+                        </div>
+                        <div class="description">
+                            <h2>Hypatia</h2>
+                            <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="#" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Marie Curie -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/madame-curie.jpg" alt="madame curie">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/atom.svg" alt="feild of study">
+                            <p>Physics</p>
+                        </div>
+                        <div class="description">
+                            <h2>Marie Curie</h2>
+                            <p>Madam Curie is the only women in history to win two Nobel Prizes. She was awarded both in 1903 and 1911 for her contributions to science. Her work on radioactivity has been of paramount importance to humankind.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Marie_Curie" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Rosalind Franklin -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/Rosalind-Franklin.jpg" alt="Rosalind Franklin">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/atom.svg" alt="feild of study">
+                            <p>Physical Chemistry</p>
+                        </div>
+                        <div class="description">
+                            <h2>Rosalind Franklin</h2>
+                            <p>Rosalind is best known for her work on X-Ray diffraction images of DNA. Her infamous Photo 51 led to the discovery of the double helix structure by Watson, Crick, and Wilkins in 1962.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Rosalind_Franklin" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Lise Meitner -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/Lise-Meitner.jpg" alt="Lise Meitner">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/atom.svg" alt="feild of study">
+                            <p>Radioactivity | Nuclear Physics</p>
+                        </div>
+                        <div class="description">
+                            <h2>Lise Meitner</h2>
+                            <p>Lise Meitner was an Austrian-Swedish scientist who worked on the subject of radioactivity and nuclear physics. Meitner and her team first discovered nuclear fission of Uranium when it absorbed an extra neutron. The importance and impact of this discovery cannot be understated.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Lise_Meitner" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Gertrude B. Elion -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/Gertrude.jpeg" alt="Gertrude B. Elion">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/flasks.svg" alt="feild of study">
+                            <p>Biochemistry | Pharmacology</p>
+                        </div>
+                        <div class="description">
+                            <h2>Gertrude B. Elion</h2>
+                            <p>Gertrude shared the 1988 Nobel Prize in Physiology with George Hitchings and Sir James Black. She worked alone as well as with her partners to develop a multitude of new drugs, using innovative techniques. These later led to the development of what is known as AIDS drug, AZT.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Gertrude_B._Elion" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Ada Lovelace -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/ada-lovelance.jpg" alt="Ada Lovelace">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/book.svg" alt="feild of study">
+                            <p>Math | Writing</p>
+                        </div>
+                        <div class="description">
+                            <h2>Ada Lovelace</h2>
+                            <p>An English mathematician and writer. She is mainly known for her work on Charles Babbage's work on a mechanical, general-purpose computer, the Analytical Engine. Her notes include the first algorithm that was intended for the use of the machine.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Barbara McClintock -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/Barbara.jpg" alt="Barbara McClintock">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/microscope.svg" alt="feild of study">
+                            <p>Cytogenetics</p>
+                        </div>
+                        <div class="description">
+                            <h2>Barbara McClintock</h2>
+                            <p>Barbara was an American scientist and cytogeneticist who won the Nobel Prize in Physiology in 1983. After gaining her Ph.D. in Botany at Cornell University in 1927, she started her career as the leader in the development of maize cytogenetics. An obsession that would dominate the rest of her life.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Barbara_McClintock" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Chien-Shiung Wu -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/wu_h.jpg" alt="Chien-Shiung Wu">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/atom.svg" alt="feild of study">
+                            <p>Physics</p>
+                        </div>
+                        <div class="description">
+                            <h2>Chien-Shiung Wu</h2>
+                            <p>Wu was an American experimental physicist who made significant contributions to nuclear physics. Wu was a member of the Manhattan project. Her work helped develop the process of separating uranium metal into Uranium-235 and Uranium-238 isotopes by gaseous diffusion.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Chien-Shiung_Wu" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Dian Fossey -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/Dian-fossey-story.jpg" alt="Dian Fossey">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/gorilla.svg" alt="feild of study">
+                            <p>Ethology | Primatology</p>
+                        </div>
+                        <div class="description">
+                            <h2>Dian Fossey</h2>
+                            <p>Dian's contribution to zoology, primatology, and anthropology are second to none. Dian spent 18 years studying mountain gorillas in Rwanda. Sadly she was murdered in 1985, a case that is still open.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Dian_Fossey" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                    <!-- Rachel Carson -->
+                    <div class="card">
+                        <div class="image-container">
+                            <img class="imageShowcase" src="./img/carson.png" alt="Rachel Carson">
+                        </div>
+                        <div class="icon-set">
+                            <img src="./img/trees.svg" alt="feild of study">
+                            <p>Ecology | Marine Biology</p>
+                        </div>
+                        <div class="description">
+                            <h2>Rachel Carson</h2>
+                            <p>Carson is often credited with starting the grassroots environmental movement. She is also credited with the creation of the EPA. Carson was an American marine biologist and conservationist.</p>
+                        </div>
+                        <div class="btn">
+                            <a href="https://en.wikipedia.org/wiki/Rachel_Carson" target="_blank">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <p>Athoug Alsoughayer &copy; 2018 &ensp; <a href="../default.html">home</a> | <a href="http://athougcodesatnight.com/">blog</a></p>
         </footer>
-        <script type="text/babel" src="./js/script.js"></script>
     </body>
-
 </html>
+<!-- Source for the great women in STEM: https://interestingengineering.com/10-greatest-women-stem -->

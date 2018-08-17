@@ -218,6 +218,7 @@ footer a:hover {
 
     .container {
         display: block;
+        height: 150%;
     }
 
     .cardsSlideshow {

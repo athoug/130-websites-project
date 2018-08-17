@@ -1,83 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/style.css">
         <title>Women in STEM</title>
-    </head>
-    <body>
-        <!-- header -->
-        <div class="header">
-            <h1>Women in STEAM</h1>
-            <p>A page to that holds tribute to the amazing females who contributed to the field of Science | Engineering | Technology | Math</p>
-        </div>
-        <!-- card -->
-        <div class="card">
-            <div class="image-container">
-                <img src="./img/hypatia.jpg" alt="Hypatia">
-            </div>
-            <div class="icon-set">
-                <img src="./img/book.svg" alt="feild of study">
-                <p>mathematics | astronomy | philosophy</p>
-            </div>
-            <div class="description">
-                <h2>Hypatia</h2>
-                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-            </div>
-            <div class="btn">
-                <a href="#" target="_blank">Find out more</a>
-            </div>
-        </div>
-        <!-- testing muliple -->
-        <div class="card">
-            <div class="image-container">
-                <img src="./img/hypatia.jpg" alt="Hypatia">
-            </div>
-            <div class="icon-set">
-                <img src="./img/book.svg" alt="feild of study">
-                <p>mathematics | astronomy | philosophy</p>
-            </div>
-            <div class="description">
-                <h2>Hypatia</h2>
-                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-            </div>
-            <div class="btn">
-                <a href="#" target="_blank">Find out more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image-container">
-                <img src="./img/hypatia.jpg" alt="Hypatia">
-            </div>
-            <div class="icon-set">
-                <img src="./img/book.svg" alt="feild of study">
-                <p>mathematics | astronomy | philosophy</p>
-            </div>
-            <div class="description">
-                <h2>Hypatia</h2>
-                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-            </div>
-            <div class="btn">
-                <a href="#" target="_blank">Find out more</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="image-container">
-                <img src="./img/hypatia.jpg" alt="Hypatia">
-            </div>
-            <div class="icon-set">
-                <img src="./img/book.svg" alt="feild of study">
-                <p>mathematics | astronomy | philosophy</p>
-            </div>
-            <div class="description">
-                <h2>Hypatia</h2>
-                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-            </div>
-            <div class="btn">
-                <a href="#" target="_blank">Find out more</a>
-            </div>
-        </div>
 
+        <!-- dependencies -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+
+        <!-- Google tracker -->
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-79841098-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+    </head>
+
+    <body>
+
+
+        <div id="app"></div>
+
+
+        <footer>
+            <p>Athoug Alsoughayer &copy; 2018 &ensp; <a href="../default.html">home</a> | <a href="http://athougcodesatnight.com/">blog</a></p>
+        </footer>
+        <script type="text/babel" src="./js/script.js"></script>
     </body>
+
 </html>
