@@ -1,71 +1,83 @@
-<!-- header -->
-<div class="header">
-    <h1>Women in STEAM</h1>
-    <p>A page to that holds tribute to the amazing females who contributed to the field of Science | Engineering | Technology | Math</p>
-</div>
-<!-- card -->
-<div class="card">
-    <div class="image-container">
-        <img src="./img/hypatia.jpg" alt="Hypatia">
-    </div>
-    <div class="icon-set">
-        <img src="./img/book.svg" alt="feild of study">
-        <p>mathematics | astronomy | philosophy</p>
-    </div>
-    <div class="description">
-        <h2>Hypatia</h2>
-        <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-    </div>
-    <div class="btn">
-        <a href="#" target="_blank">Find out more</a>
-    </div>
-</div>
-<!-- testing muliple -->
-<div class="card">
-    <div class="image-container">
-        <img src="./img/hypatia.jpg" alt="Hypatia">
-    </div>
-    <div class="icon-set">
-        <img src="./img/book.svg" alt="feild of study">
-        <p>mathematics | astronomy | philosophy</p>
-    </div>
-    <div class="description">
-        <h2>Hypatia</h2>
-        <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-    </div>
-    <div class="btn">
-        <a href="#" target="_blank">Find out more</a>
-    </div>
-</div>
-<div class="card">
-    <div class="image-container">
-        <img src="./img/hypatia.jpg" alt="Hypatia">
-    </div>
-    <div class="icon-set">
-        <img src="./img/book.svg" alt="feild of study">
-        <p>mathematics | astronomy | philosophy</p>
-    </div>
-    <div class="description">
-        <h2>Hypatia</h2>
-        <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-    </div>
-    <div class="btn">
-        <a href="#" target="_blank">Find out more</a>
-    </div>
-</div>
-<div class="card">
-    <div class="image-container">
-        <img src="./img/hypatia.jpg" alt="Hypatia">
-    </div>
-    <div class="icon-set">
-        <img src="./img/book.svg" alt="feild of study">
-        <p>mathematics | astronomy | philosophy</p>
-    </div>
-    <div class="description">
-        <h2>Hypatia</h2>
-        <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
-    </div>
-    <div class="btn">
-        <a href="#" target="_blank">Find out more</a>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Women in STEM</title>
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header">
+            <h1>Women in STEAM</h1>
+            <p>A page to that holds tribute to the amazing females who contributed to the field of Science | Engineering | Technology | Math</p>
+        </div>
+        <!-- card -->
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/hypatia.jpg" alt="Hypatia">
+            </div>
+            <div class="icon-set">
+                <img src="./img/book.svg" alt="feild of study">
+                <p>mathematics | astronomy | philosophy</p>
+            </div>
+            <div class="description">
+                <h2>Hypatia</h2>
+                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
+            </div>
+            <div class="btn">
+                <a href="#" target="_blank">Find out more</a>
+            </div>
+        </div>
+        <!-- testing muliple -->
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/hypatia.jpg" alt="Hypatia">
+            </div>
+            <div class="icon-set">
+                <img src="./img/book.svg" alt="feild of study">
+                <p>mathematics | astronomy | philosophy</p>
+            </div>
+            <div class="description">
+                <h2>Hypatia</h2>
+                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
+            </div>
+            <div class="btn">
+                <a href="#" target="_blank">Find out more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/hypatia.jpg" alt="Hypatia">
+            </div>
+            <div class="icon-set">
+                <img src="./img/book.svg" alt="feild of study">
+                <p>mathematics | astronomy | philosophy</p>
+            </div>
+            <div class="description">
+                <h2>Hypatia</h2>
+                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
+            </div>
+            <div class="btn">
+                <a href="#" target="_blank">Find out more</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image-container">
+                <img src="./img/hypatia.jpg" alt="Hypatia">
+            </div>
+            <div class="icon-set">
+                <img src="./img/book.svg" alt="feild of study">
+                <p>mathematics | astronomy | philosophy</p>
+            </div>
+            <div class="description">
+                <h2>Hypatia</h2>
+                <p>Hypatia was a prolific polymath in Roman Alexandria. Hypatia spent her days as a Greek mathematician, astronomer, and philosopher in what is then the Byzantine Empire.</p>
+            </div>
+            <div class="btn">
+                <a href="#" target="_blank">Find out more</a>
+            </div>
+        </div>
+
+    </body>
+</html>
