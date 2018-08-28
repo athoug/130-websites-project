@@ -1,0 +1,259 @@
+/* Make sure to convert to SCSS */
+
+// colors
+$extreamLightPurple: #DFE1F5;
+$darkPurple: #9A95B7;
+$purple: #BBB6DF;
+$lightPurple: #D5D6F2;
+$lightRed: #BD6B73;
+$red: #A30B37;
+$darkRed: #860A2E;
+$white: #FFFFFF;
+$offWhite: #F5F5F5;
+$offRed: #AF3E49;
+
+// shapes
+$roundedEdges: 5px;
+$rounding: 10px;
+$circle: 50%;
+$trapezoid: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+$cameraMiddle: polygon(3% 0, 97% 0, 100% 100%, 0% 100%);
+
+
+body {
+  background: $extreamLightPurple;
+}
+
+.box {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 20%;
+  width: 640px;
+  height: 537px;
+  background: none;
+}
+
+.polaroid {
+  position: absolute;
+  top: 18%;
+  left: 24.5%;
+  width: 52.34375%;
+  height: 64.6182495%;
+  background: none;
+}
+
+// Polaroid top section
+.top-camera {
+  position: absolute;
+  width: 100%;
+  height: 52.7377522%;
+  background: $lightRed;
+  border-radius: $roundedEdges;
+}
+
+.top-camera-copy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $lightRed;
+  border-radius: $roundedEdges;
+  z-index: 2;
+}
+
+.lense {
+  position: absolute;
+  top: 28%;
+  left: 25.5%;
+  width: 47%;
+  height: 84%;
+  border-radius: $circle;
+  background: $white;
+  z-index: 4;
+}
+
+.inner-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: $circle;
+  background: $red;
+  transform: scale(.7);
+  z-index: 4;
+}
+
+.middle-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: $circle;
+  background: $lightRed;
+  transform: scale(.5);
+  z-index: 4;
+}
+
+.top-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: $circle;
+  background: $red;
+  transform: scale(.25);
+  z-index: 4;
+}
+
+.flash {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 17.2523962%;
+  height: 26.2295082%;
+  border-radius: $roundedEdges;
+  background: $offRed;
+  z-index: 4;
+}
+
+.flash-lense {
+  position: absolute;
+  top: 10.03703705%;
+  left: 10.29166665%;
+  width: 75.9259259%;
+  height: 85.4166667%;
+  border-radius: $circle;
+  background: $red;
+}
+
+.flair {
+  position: absolute;
+  top: 16.03703705%;
+  left: 19.29166665%;
+  width: 31.4814815%;
+  height: 35.4166667%;
+  border-radius: $circle;
+  background: $offWhite;
+}
+
+.stripe-top {
+  position: absolute;
+  left: 15%;
+  width: 20.1277955%;
+  height: 100%;
+  z-index: 2;
+}
+
+.dark-purple-top {
+  position: absolute;
+  width: 33.3333333%;
+  height: 100%;
+  background: $darkPurple;
+}
+
+.purple-top {
+  position: absolute;
+  left: 33.3333333%;
+  width: 33.3333333%;
+  height: 100%;
+  background: $purple;
+}
+
+.light-purple-top {
+  position: absolute;
+  right: 1%;
+  width: 33.3333333%;
+  height: 100%;
+  background: $lightPurple;
+}
+
+.balance-left {
+  position: absolute;
+  bottom: -10%;
+  left: 8%;
+  width: 13.4185304%;
+  height: 22.9508197%;
+  border-radius: $circle;
+  background: $red;
+  z-index: 4;
+}
+
+.balance-right {
+  position: absolute;
+  bottom: -10%;
+  right: 8%;
+  width: 13.4185304%;
+  height: 22.9508197%;
+  border-radius: $circle;
+  background: $red;
+  z-index: 4;
+}
+
+// Polaroid mid section
+.middle-camera {
+  position: absolute;
+  left: -3.5%;
+  bottom: 22%;
+  width: 107%;
+  height: 25.870317%;
+  background: $lightRed;
+  border-bottom-right-radius: $roundedEdges;
+  border-bottom-left-radius: $roundedEdges;
+  clip-path: $cameraMiddle;
+  overflow: hidden;
+}
+
+.stripe-bottom {
+  position: absolute;
+  left: 16%;
+  width: 20.1277955%;
+  height: 100%;
+  z-index: 2;
+  transform: skewX(-4deg);
+}
+
+.dark-purple-bottom {
+  position: absolute;
+  width: 33.3333333%;
+  height: 100%;
+  background: $darkPurple;
+  clip-path: $trapezoid;
+
+}
+
+.purple-bottom {
+  position: absolute;
+  left: 27.3333333%;
+  width: 37.3333333%;
+  height: 100%;
+  background: $purple;
+  clip-path: $trapezoid;
+}
+
+.light-purple-bottom {
+  position: absolute;
+  right: 8%;
+  width: 33.3333333%;
+  height: 100%;
+  background: $lightPurple;
+  clip-path: $trapezoid;
+}
+
+// Polaroid bottom section
+.bottom-camera {
+  position: absolute;
+  bottom: 0;
+  left: -3.5%;
+  width: 107%;
+  height: 22.6138329%;
+  background: $red;
+  border-bottom-right-radius: $rounding;
+  border-bottom-left-radius: $rounding;
+  z-index: 2;
+}
+
+.photo-output {
+  position: absolute;
+  top: 31%;
+  left: 12%;
+  width: 76.27627634%;
+  height: 38.6666667%;
+  background: $darkRed;
+}
