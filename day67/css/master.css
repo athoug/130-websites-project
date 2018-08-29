@@ -16,6 +16,8 @@
    --lightGreen: #A9DCD4;
    --darkGreen: #77C2BB;
    --purple: #8D8FE9;
+   --white: #FFFFFF;
+   --default: #222222;
  }
 
 * {
@@ -69,7 +71,8 @@ h3 {
   line-height: 56px;
   width: 184px;
   height: 56px;
-  border: 1px solid black;
+  border: 1px solid var(--default);
+  color: var(--default);
   text-align: center;
   font-size: 1.1rem;
   font-weight: lighter;
@@ -77,22 +80,26 @@ h3 {
   float: left;
   display: inline-block;
   margin: 75px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
+.btn:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--default);
+  }
 .btn-light-green {
   margin-left: 0;
-  border-color: var(--lightGreen);
-  color:var(--lightGreen);
+  --default: var(--lightGreen);
 }
 
 .btn-dark-green {
-  border-color: var(--darkGreen);
-  color: var(--darkGreen);
+  --default: var(--darkGreen);
 }
 
 .btn-purple {
-  border-color: var(--purple);
-  color: var(--purple);
+  --default: var(--purple);
 }
 
 footer {
