@@ -1,0 +1,173 @@
+/*
+    colors:
+    light theme: #FDFDFD;
+    white: #FFFFFF;
+    light blue: #59C7F1;
+    blue: #36789D;
+    dark theme: #2C3C65;
+    light shadow: #CCCCCC;
+    dark shadow: #2E2C2C;
+ */
+
+ :root {
+     /* Colors */
+     --light-theme: #FDFDFD;
+     --white: #FFFFFF;
+     --light-blue: #59C7F1;
+     --blue: #36789D;
+     --dark-theme: #2C3C65;
+     --light-shadow: #CCCCCC;
+     --dark-shadow: #2E2C2C;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ html {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-theme);
+ }
+
+ body {
+     width: 80%;
+     height: 100%;
+     margin: auto;
+ }
+
+header {
+    width: 100%;
+    height: 28%;
+}
+
+h1 {
+    float: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--light-blue);
+    letter-spacing: 1px;
+    font-size: 3.5rem;
+    line-height: 12rem;
+    padding: 12rem 0;
+    word-spacing: 8px;
+}
+
+.block {
+    color: var(--white);
+    background: var(--light-blue);
+    padding: 0 10px;
+}
+
+#theme-btn {
+    display: block;
+    float: right;
+    padding: 16rem 0;
+}
+
+section {
+    clear: both;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.card {
+    clear: both;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 456px;
+    margin: 0 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px var(--light-shadow);
+}
+
+.card h2 {
+    text-transform: uppercase;
+    color: var(--light-blue);
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 20px 20px 0;
+}
+
+.subtitle {
+    color: var(--blue);
+    letter-spacing: .5px;
+    font-weight: 300;
+    margin: 5px 20px;
+}
+
+hr {
+    width: 147px;
+    height: 2px;
+    background-color: var(--light-blue);
+    border: none;
+    margin: 8px 20px;
+}
+
+.card img {
+    display: block;
+    margin: 30px auto 10px;
+}
+
+.description {
+    color: var(--blue);
+    letter-spacing: .5px;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin: 0 20px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    background-color: var(--light-blue);
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color:var(--blue);
+}
+
+.btn p {
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 7%;
+}
+
+footer {
+  position: absolute;
+  bottom: 2%;
+}
+
+footer p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    color: var(--light-blue);
+    font-weight: 300;
+}
+
+.footer-links a {
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: var(--light-blue);
+}
+
+.footer-links a:hover {
+  color: var(--blue);
+  font-weight: 500;
+}
