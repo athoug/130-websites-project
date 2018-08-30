@@ -20,6 +20,7 @@
      --dark-shadow: #2E2C2C;
      --bg: #FDFDFD;
      --shadow: #CCCCCC;
+     --text: #FFFFFF;
  }
 
  * {
@@ -29,8 +30,8 @@
  }
 
  html {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg);
@@ -43,12 +44,14 @@
  }
 
 header {
+    position: relative;
     width: 100%;
     height: 28%;
 }
 
 h1 {
-    float: left;
+    position: absolute;
+    left: 0;
     font-weight: 400;
     text-transform: uppercase;
     color: var(--light-blue);
@@ -60,30 +63,32 @@ h1 {
 }
 
 .block {
-    color: var(--white);
+    color: var(--text);
     background: var(--light-blue);
     padding: 0 10px;
 }
 
 #theme-btn {
     display: block;
-    float: right;
+    position: absolute;
+    right: 0;
     padding: 16rem 0;
+    transform-origin: center;
 }
 
 section {
-    clear: both;
+    position: relative;
     width: 100%;
     border: 1px solid red;
 }
 
 .card {
-    clear: both;
     position: relative;
+    bottom: 0;
     display: inline-block;
     width: 300px;
     height: 456px;
-    margin: 0 20px;
+    margin-right: 40px;
     border-radius: 5px;
     box-shadow: 0 2px 8px var(--shadow);
 }
@@ -150,16 +155,18 @@ hr {
 }
 
 footer {
+  width: 100%;
   position: absolute;
   bottom: 2%;
+  background-color: red;
 }
 
 footer p {
     text-align: center;
     letter-spacing: 1px;
-    font-weight: lighter;
     color: var(--light-blue);
     font-weight: 300;
+
 }
 
 .footer-links a {

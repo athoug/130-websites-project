@@ -4,6 +4,7 @@ var moon = './img/moon.svg',
     light = '#FDFDFD',
     dark = '#2C3C65',
     lightShadow = '#CCCCCC',
+    white = '#FFFFFF',
     DarkShadow = '#2E2C2C';
 
 // Elements
@@ -17,9 +18,11 @@ themeButton.onclick = function () {
         this.setAttribute('src', sun);
         root.style.setProperty('--bg', dark);
         root.style.setProperty('--shadow', DarkShadow);
+        root.style.setProperty('--text', dark);
     } else {
         this.setAttribute('src', moon);
         root.style.setProperty('--bg', light);
         root.style.setProperty('--shadow', lightShadow);
+        root.style.setProperty('--text', white);
     }
 }
