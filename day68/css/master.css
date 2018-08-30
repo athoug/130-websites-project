@@ -18,6 +18,8 @@
      --dark-theme: #2C3C65;
      --light-shadow: #CCCCCC;
      --dark-shadow: #2E2C2C;
+     --bg: #FDFDFD;
+     --shadow: #CCCCCC;
  }
 
  * {
@@ -31,7 +33,7 @@
     height: 100%;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
-    background-color: var(--light-theme);
+    background-color: var(--bg);
  }
 
  body {
@@ -83,7 +85,7 @@ section {
     height: 456px;
     margin: 0 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 8px var(--light-shadow);
+    box-shadow: 0 2px 8px var(--shadow);
 }
 
 .card h2 {
