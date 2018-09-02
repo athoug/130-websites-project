@@ -17,6 +17,16 @@
      --blue: #54C3F3;
      --yellow: #FED15C;
      --color: #222;
+
+     /* Boxes */
+     --box-1: var(--red);
+     --box-2: var(--dark-blue);
+     --box-3: var(--pink);
+     --box-4: var(--purple);
+     --box-5: var(--blue);
+     --box-6: var(--red);
+     --box-7: var(--dark-blue);
+     --box-8: var(--yellow);
  }
 
 * {
@@ -58,49 +68,68 @@ body {
 .red-top {
   top: 6%;
   left: 21.4%;
-  --color: var(--red);
+  --color: var(--box-1);
 }
 
 .dark-blue-top {
   top: 6%;
   right: 21.4%;
-  --color: var(--dark-blue);
+  --color: var(--box-2);
 }
 
 .pink-mid {
   top: 25.9%;
   left: 4.8%;
-  --color: var(--pink);
+  --color: var(--box-3);
 }
 
 .purple-mid {
   top: 25.9%;
-  left: 37.89%;
-  --color: var(--purple);
+  left: 38%;
+  --color: var(--box-4);
 }
 
 .blue-mid {
   top: 25.9%;
   right: 4.8%;
-  --color: var(--blue);
+  --color: var(--box-5);
 }
 
 .red-mid {
   top: 45.5%;
   left: 21.4%;
-  --color: var(--red);
+  --color: var(--box-6);
 }
 
 .dark-blue-mid {
   top: 45.5%;
   right: 21.4%;
-  --color: var(--dark-blue);
+  --color: var(--box-7);
 }
 
 .yellow-bottom {
   bottom: 6.5%;
   left: 37.89%;
-  --color: var(--yellow);
+  --color: var(--box-8);
+}
+
+input {
+  position: absolute;
+  top: 35%;
+  display: block;
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.2);
+  outline: none;
+  color: #fff;
+  font-size: 14px;
 }
 
 footer {
