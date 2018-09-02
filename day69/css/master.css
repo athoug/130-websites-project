@@ -161,7 +161,7 @@ input[type="text"] {
   border: none;
   border-bottom: 1px solid rgba(200, 200, 200, 0.2);
   outline: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.2);
   font-size: 14px;
   text-align: center;
 }
