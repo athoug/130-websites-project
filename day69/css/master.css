@@ -16,33 +16,113 @@
      --purple: #B94C7D;
      --blue: #54C3F3;
      --yellow: #FED15C;
+     --color: #222;
  }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
 }
 
 .box {
     position: relative;
-    background: aqua;
+    background: none;
     width: 557px;
     height: 466px;
     margin: 10% auto;
     display: block;
 }
 
-.top {
-    position: absolute;
-    width: 100%;
-    height: 39.6995708%;
-    background-color: blueviolet;
-}
+/*
+  width: 131.99px
+  height: 131.95px
+ */
 
 .cubes {
     position: absolute;
     width: 23.6965889%;
-    height: 100%;
-    background: var(--color, #222);
+    height: 28.3154506%;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: var(--color);
+}
+
+.red-top {
+  top: 6%;
+  left: 21.4%;
+  --color: var(--red);
+}
+
+.dark-blue-top {
+  top: 6%;
+  right: 21.4%;
+  --color: var(--dark-blue);
+}
+
+.pink-mid {
+  top: 25.9%;
+  left: 4.8%;
+  --color: var(--pink);
+}
+
+.purple-mid {
+  top: 25.9%;
+  left: 37.89%;
+  --color: var(--purple);
+}
+
+.blue-mid {
+  top: 25.9%;
+  right: 4.8%;
+  --color: var(--blue);
+}
+
+.red-mid {
+  top: 45.5%;
+  left: 21.4%;
+  --color: var(--red);
+}
+
+.dark-blue-mid {
+  top: 45.5%;
+  right: 21.4%;
+  --color: var(--dark-blue);
+}
+
+.yellow-bottom {
+  bottom: 6.5%;
+  left: 37.89%;
+  --color: var(--yellow);
+}
+
+footer {
+  clear: both;
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  font-size: 12px;
+  color: var(--dark-blue);
+}
+
+.footer-links a {
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: var(--dark-blue);
+}
+
+.footer-links a:hover {
+  color: var(--yellow);
+  font-weight: 400;
 }
