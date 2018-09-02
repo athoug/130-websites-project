@@ -38,6 +38,16 @@
 
 body {
   font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color)
+}
+
+.slider {
+  display: block;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 16px;
 }
 
 .box {
@@ -45,7 +55,8 @@ body {
     background: none;
     width: 557px;
     height: 466px;
-    margin: 10% auto;
+    margin: auto;
+    margin-top: 5%;
     display: block;
 }
 
@@ -69,18 +80,24 @@ body {
   top: 6%;
   left: 21.4%;
   --color: var(--box-1);
+  -webkit-box-shadow: -2px -2px 5px #ccc;
+          box-shadow: -2px -2px 5px #ccc;
 }
 
 .dark-blue-top {
   top: 6%;
   right: 21.4%;
   --color: var(--box-2);
+  -webkit-box-shadow: -2px -2px 5px #ccc;
+          box-shadow: -2px -2px 5px #ccc;
 }
 
 .pink-mid {
   top: 25.9%;
   left: 4.8%;
   --color: var(--box-3);
+  -webkit-box-shadow: -2px 2px 5px #ccc;
+          box-shadow: -2px 2px 5px #ccc;
 }
 
 .purple-mid {
@@ -93,27 +110,35 @@ body {
   top: 25.9%;
   right: 4.8%;
   --color: var(--box-5);
+  -webkit-box-shadow: 2px -2px 5px #ccc;
+          box-shadow: 2px -2px 5px #ccc;
 }
 
 .red-mid {
   top: 45.5%;
   left: 21.4%;
   --color: var(--box-6);
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
 }
 
 .dark-blue-mid {
   top: 45.5%;
   right: 21.4%;
   --color: var(--box-7);
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
 }
 
 .yellow-bottom {
   bottom: 6.5%;
   left: 37.89%;
   --color: var(--box-8);
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
 }
 
-input {
+input[type="text"] {
   position: absolute;
   top: 35%;
   display: block;
@@ -128,8 +153,14 @@ input {
   border: none;
   border-bottom: 1px solid rgba(200, 200, 200, 0.2);
   outline: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
+  text-align: center;
+}
+
+.instructions {
+  margin-top: 2%;
+  text-align: center;
 }
 
 footer {

@@ -8,41 +8,50 @@
 </head>
 
 <body>
+  <aside class="slider">
+    <label>Move this 👇 </label>
+    <input class="booth-slider" type="range" min="-50" max="50" value="-50" step="5"/>
+  </aside>
 
   <div class="box">
-    <div class="cubes red-top">
+    <div class="cubes red-top" id="box1">
       <input type="text">
     </div>
 
-    <div class="cubes dark-blue-top">
+    <div class="cubes dark-blue-top" id="box2">
       <input type="text">
     </div>
 
-    <div class="cubes pink-mid">
+    <div class="cubes pink-mid" id="box3">
       <input type="text">
     </div>
 
-    <div class="cubes purple-mid">
+    <div class="cubes purple-mid" id="box4">
+      <input type="text" value="#B94C7D">
+    </div>
+
+    <div class="cubes blue-mid" id="box5">
       <input type="text">
     </div>
 
-    <div class="cubes blue-mid">
+    <div class="cubes red-mid" id="box6">
       <input type="text">
     </div>
 
-    <div class="cubes red-mid">
+    <div class="cubes dark-blue-mid" id="box7">
       <input type="text">
     </div>
 
-    <div class="cubes dark-blue-mid">
-      <input type="text">
-    </div>
-
-    <div class="cubes yellow-bottom">
+    <div class="cubes yellow-bottom" id="box8">
       <input type="text">
     </div>
 
   </div>
+
+  <section class="instructions">
+    👉🏻 Move the slider<br/>
+    👉🏻 Write any color in the red boxes
+  </section>
 
   <footer>
     <p>Athoug Alsoughayer &copy; 2018 <span class="footer-links"><a href="../default.html">home</a> | <a href="http://athougcodesatnight.com"> blog</a></span></p>
