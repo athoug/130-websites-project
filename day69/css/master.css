@@ -27,6 +27,9 @@
      --box-6: var(--red);
      --box-7: var(--dark-blue);
      --box-8: var(--yellow);
+
+     /* slider */
+     --slider: 0;
  }
 
 * {
@@ -44,8 +47,11 @@ body {
 }
 
 .slider {
+  position: absolute;
   display: block;
-  margin-top: 5%;
+  top: 50px;
+  left: 45%;
+  right: 45%;
   text-align: center;
   font-size: 16px;
 }
@@ -56,8 +62,10 @@ body {
     width: 557px;
     height: 466px;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 10%;
     display: block;
+    -webkit-transform: perspective(500px) rotateY(calc(var(--slider) * 1deg));
+            transform: perspective(500px) rotateY(calc(var(--slider) * 1deg));
 }
 
 /*
@@ -159,7 +167,10 @@ input[type="text"] {
 }
 
 .instructions {
-  margin-top: 2%;
+  position: absolute;
+  bottom: 80px;
+  left: 40%;
+  right: 40%;
   text-align: center;
 }
 
