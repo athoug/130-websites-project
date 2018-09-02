@@ -1,0 +1,48 @@
+/*
+    colors
+    red: #ED555F
+    dark-blue: #52B4C3
+    pink: #EC6392
+    purple: #B94C7D
+    blue: #54C3F3
+    yellow: #FED15C
+
+ */
+
+ :root {
+     --red: #ED555F;
+     --dark-blue: #52B4C3;
+     --pink: #EC6392;
+     --purple: #B94C7D;
+     --blue: #54C3F3;
+     --yellow: #FED15C;
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    position: relative;
+    background: aqua;
+    width: 557px;
+    height: 466px;
+    margin: 10% auto;
+    display: block;
+}
+
+.top {
+    position: absolute;
+    width: 100%;
+    height: 39.6995708%;
+    background-color: blueviolet;
+}
+
+.cubes {
+    position: absolute;
+    width: 23.6965889%;
+    height: 100%;
+    background: var(--color, #222);
+}
