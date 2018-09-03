@@ -211,18 +211,71 @@ footer a:hover {
 
  /* Media Query */
 
-@media only screen and (max-width: 730px) {
+@media all and (max-width: 815px) {
     #app {
-        top: 5vh;
+        top: 0;
     }
 
     .container {
         display: block;
-        height: 150%;
+        padding-top: 5px;
+    }
+
+    .header {
+        margin: 0;
     }
 
     .cardsSlideshow {
         position: relative;
-        top: -8%;
+        top: -30px;
+    }
+
+    /* CARD STYLE  */
+    .card {
+        width: 392px;
+        height: 458px;
+        margin: 20px 0 0;
+        margin-left: 20px;
+    }
+
+    .image-container {
+        height: 195px;
+    }
+
+    .icon-set {
+        font-size: .75rem;
+        color: #9B9B9B;
+        font-weight: 100;
+        width: 100%;
+        height: 90px;
+    }
+
+    .icon-set img, .icon-set p {
+        top: 44%;
+    }
+
+    .icon-set img {
+        width: 20px;
+        height: 20px;
+        top: 48%;
+    }
+
+    .icon-set p {
+        left: 15%;
+        margin: 20px;
+        width: 202px;
+    }
+
+    .description {
+        top: 55%;
+    }
+
+    .description h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        left: 42%;
+        top: 88%;
     }
 }
