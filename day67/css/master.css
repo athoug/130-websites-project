@@ -124,3 +124,28 @@ footer {
   color: var(--darkGreen);
   font-weight: 400;
 }
+
+
+@media all and (max-width: 1024px) {
+    header {
+      height: 15%;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    h3 {
+      font-weight: lighter;
+      margin: 95px 0;
+      letter-spacing: 1px;
+      color: var(--darkBlue);
+      font-size: 1.6rem;
+    }
+
+    .btn {
+      float: none;
+      display: block;
+      margin: 15px 0 50px;
+    }
+}
