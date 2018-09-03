@@ -197,3 +197,13 @@ footer {
   color: var(--yellow);
   font-weight: 400;
 }
+
+@media all and (max-width: 414px) {
+    .box {
+        width: 357px;
+        height: 266px;
+        margin-top: 200px;
+        background:aquamarine;
+    }
+    
+}
