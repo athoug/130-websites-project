@@ -44,6 +44,7 @@ class Happy extends React.Component {
     buttonHandler = () => {
         if(this.state.showBox) {
             this.addHappy(document.getElementById('data').value);
+            document.getElementById('data').value = "";
         }
         let status = this.state.showBox;
         this.setState({
@@ -63,6 +64,7 @@ class Happy extends React.Component {
         console.log(e.key);
         if(e.key === 'Enter') {
             this.addHappy(e.target.value);
+            e.target.value = ""
         }
     }
 
