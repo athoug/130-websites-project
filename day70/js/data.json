@@ -1,0 +1,13 @@
+var data = {
+    "reasons": [
+              "Seeing the sun rise.",
+              "Drinking a cup of tea.",
+              "Catching up with your friends.",
+              "Playing with your dog.",
+              "Reading a good book.",
+              "Binge watch a cool new show",
+              "Your code compiles with no errors!",
+              "Working on your project.",
+              "A new episode of your favorite Podcast is out."
+          ]
+}

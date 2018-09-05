@@ -1,3 +1,4 @@
+
 // Card Component
 const Card = (props) => {
     //  dynamic style
@@ -26,19 +27,17 @@ function randColor(){
 class Happy extends React.Component {
     constructor() {
         super();
+        // load json
+        $.getJSON('./js/data.json', function(data) {
+            DATA = (data);
+        });
+        this.data = data;
+
         this.state = {
-            reasons: ['Seeing the sun rise.',
-                      'Drinking a cup of tea.',
-                      'Catching up with your friends.',
-                      'Playing with your dog.',
-                      'Reading a good book.',
-                      'Binge watch a cool new show',
-                      'Your code compiles with no errors!',
-                      'Working on your project.',
-                      'A new episode of your favorite Podcast is out.'
-                  ],
+            reasons: this.data.reasons,
             showBox: false
-        }
+        };
+        console.log(this.state);
     }
 
     buttonHandler = () => {
@@ -57,11 +56,11 @@ class Happy extends React.Component {
         stateCopy.push(happy);
         this.setState({
             reasons: stateCopy
-        })
+        });
+        localStorage.setItem('data', JSON.stringify(stateCopy));
     }
 
     keyPressedHandler = (e) => {
-        console.log(e.key);
         if(e.key === 'Enter') {
             this.addHappy(e.target.value);
             e.target.value = ""
