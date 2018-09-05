@@ -62,7 +62,7 @@ body {
     width: 557px;
     height: 466px;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     display: block;
     -webkit-transform: perspective(500px) rotateY(calc(var(--slider) * 1deg));
             transform: perspective(500px) rotateY(calc(var(--slider) * 1deg));
@@ -198,12 +198,76 @@ footer {
   font-weight: 400;
 }
 
+@media all and (max-width: 1200px) {
+    .box {
+        margin-top: 250px;
+    }
+
+}
+
 @media all and (max-width: 414px) {
+
     .box {
         width: 357px;
         height: 266px;
         margin-top: 200px;
-        background:aquamarine;
     }
-    
+
+    .cubes {
+        width: 21%;
+        height: 28%;
+        z-index: 4;
+    }
+
+    .red-top {
+      top: 6%;
+      left: 24.6%;
+      z-index: 4;
+    }
+
+    .dark-blue-top {
+      top: 6%;
+      right: 24.6%;
+      z-index: 3;
+    }
+
+    .pink-mid {
+      top: 25.5%;
+      left: 10%;
+      z-index: 3;
+    }
+
+    .purple-mid {
+      height: 28.5%;
+      top: 25.5%;
+      left: 39.6%;
+      z-index: 3;
+    }
+
+    .blue-mid {
+      top: 25.5%;
+      right: 10%;
+    }
+
+    .red-mid {
+      top: 45.5%;
+      left: 24.8%;
+    }
+
+    .dark-blue-mid {
+      top: 45.5%;
+      right: 24.8%;
+    }
+
+    .yellow-bottom {
+      bottom: 6.5%;
+      left: 39.6%;
+    }
+
+    input[type="text"] {
+      top: 36%;
+      width: 90%;
+      height: 20px;
+    }
+
 }
