@@ -25,6 +25,12 @@
     box-shadow: 0 3px 3px #ccc;
 }
 
+.Card p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
 h1 {
     font-size: 3rem;
     padding: 5px;
@@ -32,7 +38,7 @@ h1 {
 }
 
 .title {
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .number {
@@ -50,6 +56,32 @@ h1 {
     line-height: 1.5;
     letter-spacing: 1px;
 }
+
+input[type='text'] {
+    display: block;
+    margin: 10px;
+    width: 40%;
+    height: 40px;
+    font-size: 1.15rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 2px solid var(--color);
+    outline: none;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    margin: 16px;
+    border-radius: 50px;
+    outline: none;
+    background: #4026F8;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
 
 @media only screen and (max-width: 680px) {
 
