@@ -5,13 +5,13 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 #root {
     width: 90%;
     padding: 16px;
     margin: auto;
-    font-family: 'Lato', sans-serif;
 }
 
 .Card {
@@ -81,6 +81,29 @@ button {
     font-size: 1rem;
     font-weight: 100;
 }
+
+footer {
+  position: relative;
+  bottom: 1%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: var(--color);
+}
+
+.footer-links a:hover {
+  color: #4026F8;
+  font-weight: 500;
+}
+
 
 
 @media only screen and (max-width: 680px) {
