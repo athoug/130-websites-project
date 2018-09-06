@@ -48,7 +48,6 @@ body {
     margin: auto;
     margin-top: 10%;
     background: none;
-    border: 1px solid white;
     z-index: 2;
 }
 
@@ -134,7 +133,6 @@ body {
     width: 100%;
     height: 84.3558282%;
     bottom: 0;
-    border: 1px solid white;
 }
 
 .top-rocket {
@@ -198,7 +196,31 @@ body {
     bottom: 0;
     background: var(--black-olive);
 }
+/*
+    parent size
+    width: 447
+    height: 825 */
+.rocket-engine-left {
+    position: absolute;
+    width: 17.6733781%;
+    height: 11.030303%;
+    bottom: 0;
+    left: 20%;
+    border-top-left-radius: var(--circle);
+    border-top-right-radius: var(--circle);
+    background: var(--engine-gray);
+}
 
+.rocket-engine-right {
+    position: absolute;
+    width: 17.6733781%;
+    height: 11.030303%;
+    bottom: 0;
+    right: 20%;
+    border-top-left-radius: var(--circle);
+    border-top-right-radius: var(--circle);
+    background: var(--engine-gray);
+}
 
 @keyframes starsAnimation {
     0%{
@@ -209,5 +231,13 @@ body {
     }
     100% {
         ransform: scale(1);
+    }
+}
+
+
+@media all and (max-width: 450px) {
+    .box {
+        width: 307px;
+        height: 838px;
     }
 }
