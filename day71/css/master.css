@@ -127,6 +127,77 @@ body {
     height: 1.2080537%;
     background: var(--black);
 }
+/*  width: 447
+    height: 825 */
+.rocket {
+    position: absolute;
+    width: 100%;
+    height: 84.3558282%;
+    bottom: 0;
+    border: 1px solid white;
+}
+
+.top-rocket {
+    position: absolute;
+    width: 44.7427293%;
+    height: 18.3018182%;
+    left: 27.62863535%;
+    background: var(--black-olive);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+}
+
+/* origin width: 200
+          height: 493*/
+.mid-rocket {
+    position: absolute;
+    width: 44%;
+    height: 59.7575758%;
+    top: 18.3018182%;
+    left: 28%;
+    background: var(--anti-flash-white);
+}
+
+.rocket-stripe {
+    position: absolute;
+    width: 60%;
+    height: 2.0283976%;
+    top: 15%;
+    left: 20%;
+    background: var(--popstar-pink);
+}
+
+.rocket-line-mid {
+    position: absolute;
+    width: 3%;
+    height: 91.4219067%;
+    top: 30%;
+    left: 48.5%;
+    background: var(--popstar-pink);
+    z-index: 3;
+}
+
+.bottom-rocket {
+    position: absolute;
+    width: 90%;
+    height: 18.6666667%;
+    bottom: 5%;
+    left: 5%;
+    background: var(--anti-flash-white);
+    -webkit-clip-path: polygon(28% 0, 72% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(28% 0, 72% 0, 100% 100%, 0% 100%);
+    overflow: hidden;
+}
+
+.rocket-line-bottom {
+    position: absolute;
+    width: 100%;
+    height: 22.0550078%;
+    bottom: 0;
+    background: var(--black-olive);
+}
 
 
 @keyframes starsAnimation {
