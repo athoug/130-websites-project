@@ -1,0 +1,46 @@
+
+:root {
+    /* colors */
+    --dark-purple: #1C0A32;
+    --violet: #371961;
+    --popstar-pink: #C65060;
+    --black-olive: #3C3C3C;
+    --anti-flash-white: #F2F2F2;
+    --light-purple: #8D7E9D;
+
+    /* shapes */
+    --circle: 50%;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+  background: var(--dark-purple);
+}
+
+.stars {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--circle);
+  background: var(--light-purple);
+  transform-origin: center;
+  animation: starsAnimation 4s infinite;
+}
+
+@keyframes starsAnimation {
+    0%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.6);
+    }
+    100% {
+        ransform: scale(1);
+    }
+}
