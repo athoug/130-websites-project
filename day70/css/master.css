@@ -82,6 +82,12 @@ button {
     font-weight: 100;
 }
 
+.title {
+    position: absolute;
+    margin: auto;
+    z-index: 4;
+}
+
 footer {
   position: relative;
   bottom: 1%;
