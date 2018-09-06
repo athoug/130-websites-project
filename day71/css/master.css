@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     /* colors */
     --dark-purple: #1C0A32;
@@ -7,6 +11,10 @@
     --black-olive: #3C3C3C;
     --anti-flash-white: #F2F2F2;
     --light-purple: #8D7E9D;
+    --tankgray: #808080;
+    --black: #1D1C2B;
+    --engine-gray: #F2F2F2;
+    --engine-light-gray: #EDEBEB;
 
     /* shapes */
     --circle: 50%;
@@ -24,7 +32,7 @@ body {
 }
 
 .stars {
-  position: relative;
+  position: absolute;
   width: 20px;
   height: 20px;
   border-radius: var(--circle);
@@ -32,6 +40,94 @@ body {
   transform-origin: center;
   animation: starsAnimation 4s infinite;
 }
+
+.box {
+    position: relative;
+    width: 447px;
+    height: 978px;
+    margin: auto;
+    margin-top: 10%;
+    background: none;
+    border: 1px solid white;
+    z-index: 2;
+}
+
+.tank {
+    position: absolute;
+    width: 83.6689038%;
+    height: 87.9631902%;
+    left: 8.1655481%;
+    border-top-left-radius: var(--circle);
+    border-top-right-radius: var(--circle);
+    background: var(--popstar-pink);
+    overflow: hidden;
+}
+/* original height: 860.28 */
+.tank-stripe {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 1.1624122%;
+    background: var(--dark-purple);
+}
+
+.rocket-fule-left {
+    position: absolute;
+    bottom: 10%;
+    width: 23.9373602%;
+    height: 60.9406953%;
+    border-top-left-radius: var(--circle);
+    border-top-right-radius: var(--circle);
+    background: var(--tankgray);
+    overflow: hidden;
+}
+
+.rocket-fule-right {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 23.9373602%;
+    height: 60.9406953%;
+    border-top-left-radius: var(--circle);
+    border-top-right-radius: var(--circle);
+    background: var(--tankgray);
+    overflow: hidden;
+}
+
+/* original height: 596 */
+.fule-stripe-top {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 1.2080537%;
+    background: var(--black);
+}
+
+.fule-stripe-mid {
+    position: absolute;
+    top: 33%;
+    width: 100%;
+    height: 1.2080537%;
+    background: var(--black);
+}
+
+.square {
+    position: absolute;
+    top: 50%;
+    left: 36.44859815%;
+    width: 27.1028037%;
+    height: 5.704698%;
+    background: var(--black);
+}
+
+.fule-stripe-bottom {
+    position: absolute;
+    bottom: 13%;
+    width: 100%;
+    height: 1.2080537%;
+    background: var(--black);
+}
+
 
 @keyframes starsAnimation {
     0%{
