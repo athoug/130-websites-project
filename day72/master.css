@@ -1,0 +1,170 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #074F55;
+  font-family: helvetica, sans-serif;
+  color: #E8F6FE;
+  font-weight: 700;
+}
+
+.listen {
+  text-align: center;
+  font-size: 5em;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 15%;
+  background: none;
+}
+
+.body {
+  position: absolute;
+  top: 25%;
+  left: 33.33333335%;
+  width: 33.3333333%;
+  height: 50%;
+  background: #62C3EE;
+  border-radius: 50%;
+  border: 20px solid #B5E0F8;
+  z-index: 2;
+  -webkit-animation: glow 5s infinite;
+          animation: glow 5s infinite;
+}
+
+.left-wing {
+  position: absolute;
+  left: 3%;
+  width: 35%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transform: rotateY(40deg) translateZ(0);
+          transform: rotateY(40deg) translateZ(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: flutter .3s infinite;
+          animation: flutter .3s infinite;
+}
+
+.top-wing-left {
+  position: absolute;
+  top: 0%;
+  width: 120%;
+  height: 50%;
+  background: #FEFFFF;
+  clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.bottom-wing-left {
+  position: absolute;
+  bottom: 15%;
+  right: -10%;
+  width: 80%;
+  height: 30%;
+  background: #FEFFFF;
+  clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.right-wing {
+  position: absolute;
+  right: 3%;
+  width: 35%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transform: rotateY(40deg) translateZ(0);
+          transform: rotateY(40deg) translateZ(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-animation: flutter .3s infinite;
+          animation: flutter .3s infinite;
+}
+
+.top-wing-right {
+  position: absolute;
+  top: 0%;
+  left: -15%;
+  width: 120%;
+  height: 50%;
+  background: #FEFFFF;
+  clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-transform: scaleX(-1) rotate(35deg);
+          transform: scaleX(-1) rotate(35deg);
+}
+
+.bottom-wing-right {
+  position: absolute;
+  bottom: 15%;
+  left: -10%;
+  width: 80%;
+  height: 30%;
+  background: #FEFFFF;
+  clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-clip-path: polygon(100% 33%, 66% 0%, 24% 0%, 0% 13%, 1% 35%, 0% 54%, 16% 70%, 38% 81%, 64% 78%, 85% 70%, 96% 66%, 100% 65%);
+  -webkit-transform: scaleX(-1) rotate(-35deg);
+          transform: scaleX(-1) rotate(-35deg);
+}
+
+@-webkit-keyframes glow {
+  0% {
+    border: 20px solid #B5E0F8;
+  }
+  50% {
+    border: 10px solid #E8F6FE;
+  }
+  100% {
+    border: 20px solid #B5E0F8;
+  }
+}
+
+@keyframes glow {
+  0% {
+    border: 20px solid #B5E0F8;
+  }
+  50% {
+    border: 10px solid #E8F6FE;
+  }
+  100% {
+    border: 20px solid #B5E0F8;
+  }
+}
+@-webkit-keyframes flutter {
+  0% {
+    -webkit-transform: rotateY(40deg) translateZ(0);
+            transform: rotateY(40deg) translateZ(0);
+  }
+  50% {
+    -webkit-transform: rotateX(55deg) translateZ(1em);
+            transform: rotateX(55deg) translateZ(1em);
+  }
+  100% {
+    -webkit-transform: rotateY(40deg) translateZ(0);
+            transform: rotateY(40deg) translateZ(0);
+  }
+}
+@keyframes flutter {
+  0% {
+    -webkit-transform: rotateY(40deg) translateZ(0);
+            transform: rotateY(40deg) translateZ(0);
+  }
+  50% {
+    -webkit-transform: rotateX(55deg) translateZ(1em);
+            transform: rotateX(55deg) translateZ(1em);
+  }
+  100% {
+    -webkit-transform: rotateY(40deg) translateZ(0);
+            transform: rotateY(40deg) translateZ(0);
+  }
+}
