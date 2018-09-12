@@ -1,0 +1,160 @@
+body {
+  background: #FFF8BB;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 15%;
+  background: none;
+  display: block;
+}
+
+.face {
+  position: absolute;
+  width: 50%;
+  height: 75%;
+  top: 12.5%;
+  left: 25%;
+  background: #5F3319;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.face-copy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5F3319;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.left-eye {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 35.5%;
+  left: 22%;
+  background: #230501;
+  border-radius: 50%;
+  z-index: 3;
+  animation: blink 4s infinite;
+}
+
+.right-eye {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  top: 35.5%;
+  right: 22%;
+  background: #230501;
+  border-radius: 50%;
+  z-index: 3;
+  animation: blink 4s infinite;
+}
+
+.mouth {
+  position: absolute;
+  width: 40%;
+  height: 35%;
+  top: 45.5%;
+  left: 30%;
+  background: #74482A;
+  border-top-right-radius: 150%;
+  border-top-left-radius: 150%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  z-index: 3;
+}
+
+.nose {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 15.5%;
+  right: 22%;
+  background: #230501;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 4;
+}
+
+.lip {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 35.5%;
+  right: 22%;
+  border-bottom: 8px solid #230501;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 2;
+}
+
+.left-ear {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: -12.5%;
+  left: -20%;
+  background: #5F3319;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.inner-ear-left {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  top: 22.5%;
+  left: 20%;
+  background: #562d11;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.right-ear {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: -12.5%;
+  right: -20%;
+  background: #5F3319;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.inner-ear-right {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  top: 22.5%;
+  right: 20%;
+  background: #562d11;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@keyframes blink {
+  0% {
+    height: 10%;
+    top: 35.5%;
+  }
+  20% {
+    height: 0;
+    top: 45.5%;
+  }
+  25% {
+    height: 10%;
+    top: 35.5%;
+  }
+  100% {
+    height: 10%;
+    top: 35.5%;
+  }
+}
