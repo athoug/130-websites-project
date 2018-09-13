@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #EFCFCD;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 15%;
+  display: block;
+  background: none;
+}
+
+.head {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  height: 100%;
+  z-index: 3;
+}
+
+.top-face {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: #C3BEBA;
+  border-radius: 50%;
+}
+
+.bottom-face {
+  position: absolute;
+  left: 2.5%;
+  bottom: 0%;
+  width: 95%;
+  height: 80%;
+  background: #C3BEBA;
+  border-radius: 50%;
+}
+
+.left-eye {
+  position: absolute;
+  left: 18%;
+  top: 45%;
+  width: 7%;
+  height: 6.5%;
+  background: #A09A96;
+  border-radius: 50%;
+  animation: blink 4s infinite;
+}
+
+.right-eye {
+  position: absolute;
+  right: 18%;
+  top: 45%;
+  width: 7%;
+  height: 6.5%;
+  background: #A09A96;
+  border-radius: 50%;
+  animation: blink 4s infinite;
+}
+
+.trunk {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  width: 20%;
+  height: 100%;
+  z-index: 4;
+}
+
+.trunk-top {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+  background: #CFCDCB;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.trunk-bottom {
+  position: absolute;
+  right: -40%;
+  bottom: 10%;
+  width: 100%;
+  height: 30%;
+  background: #CFCDCB;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+}
+
+.stripe-1 {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  width: 70%;
+  height: 1.5%;
+  background: #C3BEBA;
+}
+
+.stripe-2 {
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  width: 70%;
+  height: 1.5%;
+  background: #C3BEBA;
+}
+
+.stripe-3 {
+  position: absolute;
+  left: 15%;
+  top: 40%;
+  width: 70%;
+  height: 1.5%;
+  background: #C3BEBA;
+}
+
+.stripe-4 {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 70%;
+  height: 1.5%;
+  background: #C3BEBA;
+}
+
+.stripe-5 {
+  position: absolute;
+  left: 15%;
+  top: 60%;
+  width: 70%;
+  height: 1.5%;
+  background: #C3BEBA;
+}
+
+.stripe-6 {
+  position: absolute;
+  left: 15%;
+  top: 70%;
+  width: 70%;
+  height: 1.5%;
+  background: #C3BEBA;
+}
+
+.left-ear {
+  position: absolute;
+  left: -10%;
+  width: 60%;
+  height: 90%;
+}
+
+.top-ear-left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #A09A96;
+  clip-path: ellipse(37% 50% at 50% 50%);
+  -webkit-clip-path: ellipse(37% 50% at 50% 50%);
+  transform: rotate(30deg);
+  z-index: 2;
+}
+
+.bottom-ear-left {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  background: #838181;
+  clip-path: ellipse(37% 50% at 50% 50%);
+  -webkit-clip-path: ellipse(37% 50% at 50% 50%);
+  transform: rotate(30deg);
+}
+
+.right-ear {
+  position: absolute;
+  right: -10%;
+  width: 60%;
+  height: 90%;
+}
+
+.top-ear-right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #A09A96;
+  clip-path: ellipse(37% 50% at 50% 50%);
+  -webkit-clip-path: ellipse(37% 50% at 50% 50%);
+  transform: rotate(-30deg);
+  z-index: 2;
+}
+
+.bottom-ear-right {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+  width: 100%;
+  height: 100%;
+  background: #838181;
+  clip-path: ellipse(37% 50% at 50% 50%);
+  -webkit-clip-path: ellipse(37% 50% at 50% 50%);
+  transform: rotate(-30deg);
+}
+
+.heart {
+  position: absolute;
+  bottom: -10%;
+  right: 20%;
+  width: 30%;
+  height: 40%;
+  z-index: 4;
+  transform: scale(0);
+  animation: appear 2s 1;
+  animation-fill-mode: forwards;
+}
+
+.left {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  width: 60%;
+  height: 80%;
+  background: #D0888C;
+  clip-path: ellipse(33% 44% at 50% 50%);
+  -webkit-clip-path: ellipse(33% 44% at 50% 50%);
+  transform: rotate(-20deg);
+}
+
+.right {
+  position: absolute;
+  top: 10%;
+  right: 12%;
+  width: 60%;
+  height: 80%;
+  background: #D0888C;
+  clip-path: ellipse(33% 44% at 50% 50%);
+  -webkit-clip-path: ellipse(33% 44% at 50% 50%);
+  transform: rotate(20deg);
+}
+
+@keyframes blink {
+  0% {
+    top: 45%;
+    height: 6.5%;
+  }
+  20% {
+    top: 51.5%;
+    height: 0%;
+  }
+  25% {
+    top: 45%;
+    height: 6.5%;
+  }
+  100% {
+    top: 45%;
+    height: 6.5%;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
