@@ -1,0 +1,431 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #10507F;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  margin-top: 15%;
+  background: #F9EFD2;
+  display: block;
+  border-radius: 50%;
+}
+
+.face {
+  position: absolute;
+  top: 17.5%;
+  left: 17.5%;
+  width: 65%;
+  height: 65%;
+  background: #E79B1E;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.face-copy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #E79B1E;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.left-ear {
+  position: absolute;
+  top: -4%;
+  left: -8%;
+  width: 45%;
+  height: 45%;
+  background: #441823;
+  border-radius: 50%;
+}
+
+.right-ear {
+  position: absolute;
+  top: -4%;
+  right: -8%;
+  width: 45%;
+  height: 45%;
+  background: #441823;
+  border-radius: 50%;
+}
+
+.inner-ear-left {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 70%;
+  height: 70%;
+  background: #E9DBC3;
+  border-radius: 50%;
+}
+
+.inner-ear-right {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  width: 70%;
+  height: 70%;
+  background: #E9DBC3;
+  border-radius: 50%;
+}
+
+.strip-top-left {
+  position: absolute;
+  left: 34%;
+  top: -5%;
+  width: 15%;
+  height: 30%;
+  background: #441823;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  z-index: 3;
+}
+
+.strip-top-right {
+  position: absolute;
+  right: 34%;
+  top: -5%;
+  width: 15%;
+  height: 30%;
+  background: #441823;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  z-index: 3;
+}
+
+.strip-left-top {
+  position: absolute;
+  left: -3%;
+  top: 48%;
+  width: 30%;
+  height: 15%;
+  background: #441823;
+  -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+  z-index: 3;
+}
+
+.strip-left-bottom {
+  position: absolute;
+  left: -8%;
+  bottom: 22%;
+  width: 30%;
+  height: 15%;
+  background: #441823;
+  -webkit-clip-path: polygon(100% 50%, 0 100%, 0 0);
+  clip-path: polygon(100% 50%, 0 100%, 0 0);
+  z-index: 3;
+}
+
+.strip-right-top {
+  position: absolute;
+  right: -3%;
+  top: 48%;
+  width: 30%;
+  height: 15%;
+  background: #441823;
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  z-index: 3;
+}
+
+.strip-right-bottom {
+  position: absolute;
+  right: -8%;
+  bottom: 22%;
+  width: 30%;
+  height: 15%;
+  background: #441823;
+  -webkit-clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+  z-index: 3;
+}
+
+.jaw {
+  position: absolute;
+  left: 26%;
+  bottom: -10%;
+  width: 48%;
+  height: 48%;
+  background: #FFFFFF;
+  border-radius: 50px;
+  z-index: 3;
+}
+
+.nose {
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 60%;
+  height: 50%;
+  z-index: 3;
+}
+
+.right-nose {
+  position: absolute;
+  right: -5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  background: #441823;
+  transform: rotate(30deg);
+  -webkit-clip-path: ellipse(33% 50% at 50% 50%);
+  clip-path: ellipse(33% 50% at 50% 50%);
+  z-index: 3;
+}
+
+.left-nose {
+  position: absolute;
+  left: -5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  background: #441823;
+  transform: rotate(-30deg);
+  -webkit-clip-path: ellipse(33% 50% at 50% 50%);
+  clip-path: ellipse(33% 50% at 50% 50%);
+  z-index: 3;
+}
+
+.lip {
+  position: absolute;
+  left: 20%;
+  bottom: 25%;
+  width: 60%;
+  height: 3%;
+  background: #441823;
+  z-index: 3;
+}
+
+.left-cheeck {
+  position: absolute;
+  top: 45%;
+  left: 12%;
+  width: 20%;
+  height: 40%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  transform: rotate(-20deg);
+}
+
+.strip-left-1 {
+  position: absolute;
+  top: 10%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-left-2 {
+  position: absolute;
+  top: 20%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-left-3 {
+  position: absolute;
+  top: 30%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-left-4 {
+  position: absolute;
+  top: 40%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-left-5 {
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-left-6 {
+  position: absolute;
+  top: 60%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-left-7 {
+  position: absolute;
+  top: 70%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-left-8 {
+  position: absolute;
+  top: 80%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.right-cheeck {
+  position: absolute;
+  top: 45%;
+  right: 12%;
+  width: 20%;
+  height: 40%;
+  background: #FFFFFF;
+  border-radius: 20px;
+  transform: rotate(20deg);
+}
+
+.strip-right-1 {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-right-2 {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-right-3 {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-right-4 {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-right-5 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-right-6 {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-right-7 {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.strip-right-8 {
+  position: absolute;
+  right: 0;
+  top: 80%;
+  width: 45%;
+  height: 2%;
+  background: #EDEDED;
+}
+
+.left-eye {
+  position: absolute;
+  top: 24%;
+  left: 10%;
+  width: 35%;
+  height: 35%;
+  z-index: 3;
+}
+
+.patch-left {
+  position: absolute;
+  left: 5%;
+  top: 0%;
+  width: 110%;
+  height: 100%;
+  background: #FFFFFF;
+  transform: rotate(-30deg);
+  -webkit-clip-path: ellipse(33% 50% at 50% 50%);
+  clip-path: ellipse(33% 50% at 50% 50%);
+  z-index: 3;
+}
+
+.puple-left {
+  position: absolute;
+  top: 55%;
+  left: 48%;
+  width: 25%;
+  height: 25%;
+  background: #8B572A;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.right-eye {
+  position: absolute;
+  top: 24%;
+  right: 10%;
+  width: 35%;
+  height: 35%;
+  z-index: 3;
+}
+
+.patch-right {
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  width: 110%;
+  height: 100%;
+  background: #FFFFFF;
+  transform: rotate(30deg);
+  -webkit-clip-path: ellipse(33% 50% at 50% 50%);
+  clip-path: ellipse(33% 50% at 50% 50%);
+  z-index: 3;
+}
+
+.puple-right {
+  position: absolute;
+  top: 55%;
+  right: 48%;
+  width: 25%;
+  height: 25%;
+  background: #8B572A;
+  border-radius: 50%;
+  z-index: 3;
+}
