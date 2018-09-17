@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDFEFE;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-top: 25%;
+  background: none;
+  display: block;
+  border-bottom: 8px solid #363130;
+}
+
+.outter-clock {
+  position: absolute;
+  top: 42%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  background: #DFE7EA;
+  border: 8px solid #363130;
+  border-radius: 40px;
+  z-index: 2;
+}
+
+.inner-clock {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+  background: #363130;
+  border-radius: 20px;
+}
+
+.am {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 20%;
+  height: 20%;
+  color: #FDFEFE;
+  line-height: 1.5;
+  padding-left: 10%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.am:after {
+  content: "AM";
+}
+
+.am-dot {
+  position: absolute;
+  left: 20%;
+  top: 24%;
+  width: 14%;
+  height: 50%;
+  background: #6C301E;
+  border-radius: 50%;
+}
+
+.pm {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  width: 20%;
+  height: 20%;
+  color: #FDFEFE;
+  line-height: 1.5;
+  padding-left: 10%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pm:after {
+  content: "PM";
+}
+
+.pm-dot {
+  position: absolute;
+  left: 20%;
+  top: 24%;
+  width: 14%;
+  height: 50%;
+  background: #6C301E;
+  border-radius: 50%;
+}
+
+.time {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 70%;
+  height: 80%;
+  padding: 20px 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 10px;
+  color: #F3542F;
+}
+
+.leg-left {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 4%;
+  height: 20%;
+  background: #363130;
+  border-radius: 40px;
+}
+
+.leg-right {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  width: 4%;
+  height: 20%;
+  background: #363130;
+  border-radius: 40px;
+}
