@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #C74C4F;
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: none;
+  display: block;
+  margin: auto;
+  margin-top: 15%;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FFF3F1;
+}
+
+.box:after {
+  position: absolute;
+  bottom: -10%;
+  right: 29%;
+  content: "The Ruler";
+}
+
+.crown {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 20%;
+}
+
+.bottom-crown {
+  position: absolute;
+  bottom: 0;
+  left: 7.5%;
+  width: 85%;
+  height: 10%;
+  background: #FBBC37;
+}
+
+.half-moon {
+  position: absolute;
+  bottom: 14%;
+  left: 7.5%;
+  width: 85%;
+  height: 25%;
+  background: #FBBC37;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.circle-2 {
+  position: absolute;
+  top: -4%;
+  left: 45%;
+  width: 10%;
+  height: 13%;
+  background: #FBBC37;
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+
+.triangle-2 {
+  position: absolute;
+  top: 10%;
+  left: 37.5%;
+  width: 25%;
+  height: 45%;
+  background: #FBBC37;
+  -webkit-clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  transform: scale(0.9);
+}
+
+.circle-1 {
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  width: 10%;
+  height: 13%;
+  background: #FBBC37;
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+
+.triangle-1 {
+  position: absolute;
+  top: 15%;
+  left: 2%;
+  width: 25%;
+  height: 45%;
+  background: #FBBC37;
+  -webkit-clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  transform: rotate(-20deg) scale(0.9);
+}
+
+.circle-3 {
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  width: 10%;
+  height: 13%;
+  background: #FBBC37;
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+
+.triangle-3 {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  width: 25%;
+  height: 45%;
+  background: #FBBC37;
+  -webkit-clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  transform: rotate(20deg) scale(0.9);
+}
+
+.ruler {
+  position: absolute;
+  left: 32.5%;
+  bottom: 0;
+  width: 35%;
+  height: 78%;
+  background: #F2EBCA;
+  border: 4px solid #C6B89F;
+}
+
+.part-1 {
+  position: absolute;
+  top: 8%;
+  width: 30%;
+  height: 12%;
+  border-top: 6px solid #C6B89F;
+}
+
+.strip-1 {
+  position: absolute;
+  top: 10%;
+  width: 50%;
+  height: 22%;
+  border-top: 6px solid #C6B89F;
+}
+
+.strip-2 {
+  position: absolute;
+  top: 35%;
+  width: 50%;
+  height: 22%;
+  border-top: 6px solid #C6B89F;
+}
+
+.strip-3 {
+  position: absolute;
+  top: 60%;
+  width: 50%;
+  height: 22%;
+  border-top: 6px solid #C6B89F;
+}
+
+.strip-4 {
+  position: absolute;
+  top: 85%;
+  width: 50%;
+  height: 22%;
+  border-top: 6px solid #C6B89F;
+}
+
+.part-2 {
+  position: absolute;
+  top: 18.5%;
+  width: 30%;
+  height: 12%;
+  border-top: 6px solid #C6B89F;
+}
+
+.part-3 {
+  position: absolute;
+  top: 31.5%;
+  width: 30%;
+  height: 12%;
+  border-top: 6px solid #C6B89F;
+}
+
+.part-4 {
+  position: absolute;
+  top: 44.5%;
+  width: 30%;
+  height: 12%;
+  border-top: 6px solid #C6B89F;
+}
+
+.part-5 {
+  position: absolute;
+  top: 57.5%;
+  width: 30%;
+  height: 12%;
+  border-top: 6px solid #C6B89F;
+}
+
+.part-6 {
+  position: absolute;
+  top: 70.5%;
+  width: 30%;
+  height: 12%;
+  border-top: 6px solid #C6B89F;
+}
+
+.part-7 {
+  position: absolute;
+  top: 83.5%;
+  width: 30%;
+  height: 12%;
+  border-top: 6px solid #C6B89F;
+}
