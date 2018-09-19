@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  display: block;
+  background: none;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.notepad {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  background: #89BAD4;
+  border-radius: 10px;
+}
+
+.pad {
+  position: absolute;
+  top: -1%;
+  left: 5%;
+  width: 90%;
+  height: 95%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+  height: 7%;
+}
+
+.clip-1 {
+  position: absolute;
+  width: 12.5%;
+  height: 100%;
+}
+
+.whole {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 60%;
+  background: #ececec;
+  border-radius: 50%;
+}
+
+.roll {
+  position: absolute;
+  top: -40%;
+  left: 30%;
+  width: 40%;
+  height: 120%;
+  background: #F36540;
+  border-radius: 10px;
+}
+
+.clip-2 {
+  position: absolute;
+  left: 12.5%;
+  width: 12.5%;
+  height: 100%;
+}
+
+.clip-3 {
+  position: absolute;
+  left: 25%;
+  width: 12.5%;
+  height: 100%;
+}
+
+.clip-4 {
+  position: absolute;
+  left: 37.5%;
+  width: 12.5%;
+  height: 100%;
+}
+
+.clip-5 {
+  position: absolute;
+  left: 50%;
+  width: 12.5%;
+  height: 100%;
+}
+
+.clip-6 {
+  position: absolute;
+  left: 62.5%;
+  width: 12.5%;
+  height: 100%;
+}
+
+.clip-7 {
+  position: absolute;
+  left: 75%;
+  width: 12.5%;
+  height: 100%;
+}
+
+.clip-8 {
+  position: absolute;
+  left: 87.5%;
+  width: 12.5%;
+  height: 100%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: -3%;
+  width: 100%;
+  height: 90%;
+  z-index: 2;
+}
+
+.line-1 {
+  position: absolute;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-2 {
+  position: absolute;
+  top: 8%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-3 {
+  position: absolute;
+  top: 16%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-4 {
+  position: absolute;
+  top: 24%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-5 {
+  position: absolute;
+  top: 32%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-6 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-7 {
+  position: absolute;
+  top: 48%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-8 {
+  position: absolute;
+  top: 56%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-9 {
+  position: absolute;
+  top: 64%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-10 {
+  position: absolute;
+  top: 72%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-11 {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.line-12 {
+  position: absolute;
+  top: 88%;
+  width: 100%;
+  height: .32%;
+  background: #F36540;
+}
+
+.pen {
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  width: 10%;
+  height: 70%;
+  background: #F36540;
+}
+
+.top-pen {
+  position: absolute;
+  top: -1%;
+  width: 160%;
+  height: 1.5%;
+  background: #F36540;
+}
+
+.edge {
+  position: absolute;
+  top: -1%;
+  right: -60%;
+  width: 10%;
+  height: 30%;
+  background: #F36540;
+}
+
+.reflection {
+  position: absolute;
+  left: 7%;
+  width: 6%;
+  height: 100%;
+  background: #FFFFFF;
+}
+
+.pen-tip {
+  position: absolute;
+  bottom: -15%;
+  left: 1%;
+  width: 100%;
+  height: 15%;
+  background: #F36540;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.tip-reflection {
+  position: absolute;
+  right: 32%;
+  width: 4%;
+  height: 80%;
+  background: #FFFFFF;
+  transform: rotate(20deg);
+}
