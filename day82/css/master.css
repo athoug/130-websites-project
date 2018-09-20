@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  margin-top: 12%;
+  display: black;
+  padding: 40px;
+  background: #252525;
+  color: #FDFDFD;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.day {
+  position: absolute;
+  left: 10%;
+  width: 30%;
+  height: 30%;
+  font-size: 8rem;
+}
+
+.detail {
+  position: absolute;
+  right: 10%;
+  height: 30%;
+}
+
+#month {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+#year {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.calendar {
+  position: absolute;
+  top: 40%;
+  width: 80%;
+  height: 50%;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
+
+th, td {
+  width: 14.285714286%;
+  height: 16.666666667%;
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+td:hover {
+  cursor: pointer;
+  background: #111111;
+}
+
+.active:after {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  background: #F9EF71;
+  border-radius: 50%;
+}
