@@ -2,13 +2,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #121212;  
+}
+
 .box {
   position: relative;
-  width: 400px;
+  width: 500px;
   height: 600px;
   margin: auto;
-  margin-top: 12%;
-  display: black;
+  margin-top: 15%;
+  display: block;
   padding: 40px;
   background: #252525;
   color: #FDFDFD;
@@ -43,6 +47,7 @@
   top: 15%;
   font-size: 3rem;
   font-weight: 400;
+  color: #F9EF71;
 }
 
 .calendar {
@@ -58,6 +63,7 @@ table {
 }
 
 th, td {
+  position: relative;
   width: 14.285714286%;
   height: 16.666666667%;
   text-align: center;
@@ -70,10 +76,11 @@ td:hover {
   background: #111111;
 }
 
-.active:after {
+.active {
   position: absolute;
-  width: 10%;
-  height: 10%;
+  top: 25%;
+  width: 12%;
+  height: 15%;
   background: #F9EF71;
   border-radius: 50%;
 }
