@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #4A3768;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: block;
+  background: none;
+  margin: auto;
+  margin-top: 15%;
+}
+
+.pizza-slice-1 {
+  position: absolute;
+  left: 17.5%;
+  width: 65%;
+  height: 50%;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  transform: scale(0.8);
+}
+
+.border {
+  position: absolute;
+  top: 5%;
+  left: 7.5%;
+  width: 85%;
+  height: 85%;
+  background: #4A3768;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.crust {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: #C59C6F;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+}
+
+.border-copy {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: #4A3768;
+  border-radius: 50%;
+}
+
+.cheese {
+  position: absolute;
+  top: 20%;
+  left: 17.5%;
+  width: 65%;
+  height: 65%;
+  background: #FADC81;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.peperoni-1 {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 25%;
+  height: 30%;
+  background: #4A3768;
+  border-radius: 50%;
+}
+
+.meat {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: #D95071;
+  border-radius: 50%;
+}
+
+.peperoni-2 {
+  position: absolute;
+  top: 38%;
+  right: 16%;
+  width: 25%;
+  height: 30%;
+  background: #4A3768;
+  border-radius: 50%;
+}
+
+.peperoni-3 {
+  position: absolute;
+  bottom: 10%;
+  left: 26%;
+  width: 25%;
+  height: 30%;
+  background: #4A3768;
+  border-radius: 50%;
+}
+
+.olive-1 {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: #4A3768;
+  top: 10%;
+  left: 24%;
+  border-radius: 50%;
+  transform: scale(0.6);
+}
+
+.olive-2 {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: #4A3768;
+  top: 26%;
+  left: 22%;
+  border-radius: 50%;
+  transform: scale(0.7);
+}
+
+.olive-3 {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: #4A3768;
+  top: 42%;
+  left: 32%;
+  border-radius: 50%;
+  transform: scale(0.5);
+}
+
+.olive-4 {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: #4A3768;
+  top: 55%;
+  left: 50%;
+  border-radius: 50%;
+  transform: scale(0.6);
+}
+
+.olive-5 {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: #4A3768;
+  bottom: 15%;
+  right: 40%;
+  border-radius: 50%;
+  transform: scale(0.75);
+}
+
+.olive-6 {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: #4A3768;
+  top: 15%;
+  right: 28%;
+  border-radius: 50%;
+  transform: scale(0.9);
+}
+
+.olive-7 {
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background: #4A3768;
+  top: 25%;
+  right: 18%;
+  border-radius: 50%;
+  transform: scale(0.5);
+}
+
+.pizza-slice-2 {
+  position: absolute;
+  top: 11.5%;
+  left: 34%;
+  width: 65%;
+  height: 50%;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  transform: scale(0.8) rotate(70deg);
+  opacity: 0;
+  animation: slice 10s infinite;
+}
+
+.pizza-slice-3 {
+  position: absolute;
+  top: 30%;
+  left: 29.5%;
+  width: 65%;
+  height: 50%;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  transform: scale(0.8) rotate(135deg);
+  opacity: 0;
+  animation: slice 10s infinite;
+  animation-delay: 2.5s;
+}
+
+.pizza-slice-4 {
+  position: absolute;
+  top: 33.5%;
+  left: 9.5%;
+  width: 65%;
+  height: 50%;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  transform: scale(0.8) rotate(205deg);
+  opacity: 0;
+  animation: slice 10s infinite;
+  animation-delay: 5s;
+}
+
+.pizza-slice-5 {
+  position: absolute;
+  top: 16.5%;
+  left: -.15%;
+  width: 65%;
+  height: 50%;
+  background: #FFFFFF;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  border-radius: 50%;
+  transform: scale(0.8) rotate(275deg);
+  opacity: 0;
+  animation: slice 10s infinite;
+  animation-delay: 7.5s;
+}
+
+@keyframes slice {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+}
