@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #E3E7F2;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: block;
+  background: none;
+  margin: auto;
+  margin-top: 12%;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 80%;
+  background: #CED2EA;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+}
+
+.face-right {
+  position: absolute;
+  right: 0%;
+  width: 50%;
+  height: 100%;
+  background: #9DA4D1;
+  border-bottom-right-radius: 50%;
+}
+
+.mouth {
+  position: absolute;
+  bottom: 15%;
+  left: 40%;
+  width: 20%;
+  height: 30%;
+  background: #492B52;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mouth-right {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: #5F498F;
+  overflow: hidden;
+}
+
+.check-left-bottom {
+  position: absolute;
+  bottom: 25%;
+  left: 17%;
+  width: 33.15%;
+  height: 20%;
+  background: #CED2EA;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+.check-right-bottom {
+  position: absolute;
+  bottom: 25%;
+  right: 17%;
+  width: 33.15%;
+  height: 20%;
+  background: #9DA4D1;
+  transform: scaleX(-1);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+.circle-left {
+  position: absolute;
+  bottom: -15%;
+  right: 0%;
+  width: 35%;
+  height: 60%;
+  background: #CED2EA;
+  border-radius: 50%;
+}
+
+.circle-right {
+  position: absolute;
+  bottom: -15%;
+  right: 0%;
+  width: 35%;
+  height: 60%;
+  background: #9DA4D1;
+  border-radius: 50%;
+}
+
+.nose {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 20%;
+  height: 20%;
+  background: #492A53;
+  transform: scale(0.4);
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  z-index: 3;
+}
+
+.check-left-top {
+  position: absolute;
+  bottom: 44%;
+  left: 17%;
+  width: 33.15%;
+  height: 17%;
+  background: #5D4990;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.check-right-top {
+  position: absolute;
+  bottom: 44%;
+  right: 17%;
+  width: 33.15%;
+  height: 17%;
+  background: #492A53;
+  transform: scaleX(-1);
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  top: -2%;
+  left: 47%;
+  width: 25%;
+  height: 55%;
+  background: #FC5F36;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.check-fix-left {
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  width: 20%;
+  height: 110%;
+  background: #9DA4D1;
+  -webkit-clip-path: polygon(100% 100%, 0 0, 100% 0);
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+
+.check-fix-right {
+  position: absolute;
+  top: -10%;
+  right: 0%;
+  width: 20%;
+  height: 110%;
+  background: #5D4990;
+  transform: scaleX(1);
+  -webkit-clip-path: polygon(100% 100%, 0 0, 100% 0);
+  clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+
+.left-face-top {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 25.15%;
+  height: 25%;
+  background: #9DA4D1;
+}
+
+.right-face-top {
+  position: absolute;
+  top: 20%;
+  right: 25%;
+  width: 25.15%;
+  height: 25%;
+  background: #5D4990;
+}
+
+.ear-left {
+  position: absolute;
+  top: 5%;
+  left: 32.5%;
+  width: 30%;
+  height: 40%;
+  background: #5D4990;
+  transform: scale(1.5) scaleY(-1);
+  -webkit-clip-path: circle(47.9% at 0 49%);
+  clip-path: circle(47.9% at 0 49%);
+  overflow: hidden;
+}
+
+.ear-right {
+  position: absolute;
+  top: 5%;
+  right: 32.5%;
+  width: 30%;
+  height: 40%;
+  background: #9DA4D1;
+  transform: scale(1.5) scale(-1);
+  -webkit-clip-path: circle(47.9% at 0 49%);
+  clip-path: circle(47.9% at 0 49%);
+  overflow: hidden;
+}
+
+.inner-ear {
+  position: absolute;
+  bottom: 20%;
+  left: -20%;
+  width: 40%;
+  height: 50%;
+  background: #4A2B54;
+  border-radius: 50%;
+}
