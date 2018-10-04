@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #DFDFDD;
+  transform-origin: center;
+  animation: starsAnimation 4s infinite;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: none;
+  display: block;
+  margin: auto;
+  margin-top: 15%;
+  z-index: 2;
+  transition: all 1s;
+  animation: movment 4s infinite;
+}
+
+.head {
+  position: absolute;
+  left: 40%;
+  width: 20%;
+  height: 20%;
+  background: #D4BAA1;
+}
+
+.mask {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  height: 20%;
+  background: #429B55;
+}
+
+.sholder {
+  position: absolute;
+  top: 20%;
+  left: 12.5%;
+  width: 75%;
+  height: 14%;
+  background: #38383A;
+}
+
+.arm-left {
+  position: absolute;
+  left: 5%;
+  top: 9%;
+  width: 14%;
+  height: 25%;
+  background: #DFDFDD;
+}
+
+.ring {
+  position: absolute;
+  top: -8%;
+  left: 20%;
+  width: 15%;
+  height: 8%;
+  background: #B6C040;
+}
+
+.arm-right {
+  position: absolute;
+  top: 20%;
+  right: -11%;
+  width: 25%;
+  height: 14%;
+  background: #DFDFDD;
+}
+
+.lantern {
+  position: absolute;
+  top: 34%;
+  right: -10%;
+  width: 20%;
+  height: 30%;
+}
+
+.lantern-handel {
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  height: 40%;
+  background: #6A6B6D;
+}
+
+.lantern-body {
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  width: 50%;
+  height: 40%;
+  background: #BFC640;
+}
+
+.body {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 40%;
+  height: 60%;
+  background: #429B55;
+}
+
+.chrest {
+  position: absolute;
+  left: 35%;
+  top: 20%;
+  width: 30%;
+  height: 20%;
+  background: #DFDFDD;
+}
+
+.tousers {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  background: #38383A;
+}
+
+.leg-left {
+  position: absolute;
+  bottom: -20%;
+  left: 30%;
+  width: 15%;
+  height: 40%;
+  background: #38383A;
+}
+
+.leg-right {
+  position: absolute;
+  bottom: -30%;
+  right: 30%;
+  width: 15%;
+  height: 50%;
+  background: #38383A;
+}
+
+.socks {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  background: #429B55;
+}
+
+@keyframes movment {
+  0% {
+    margin: auto;
+    margin-top: 15%;
+  }
+  50% {
+    margin-top: 25%;
+  }
+  100% {
+    margin: auto;
+    margin-top: 15%;
+  }
+}
+@keyframes starsAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
