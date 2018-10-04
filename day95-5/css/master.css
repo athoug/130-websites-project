@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #A1CDA7;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: #59AA65;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 12%;
+  display: block;
+  animation: pulse 3s infinite;
+  animation-direction: alternate;
+}
+
+.symbol {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+}
+
+.circle {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  border: 25px solid #59AA65;
+  animation: borders 3s infinite;
+  animation-direction: alternate;
+}
+
+.top-line {
+  position: absolute;
+  top: 16%;
+  left: 17.5%;
+  width: 65%;
+  height: 10%;
+  background: #59AA65;
+  -webkit-clip-path: polygon(10% 100%, 90% 99%, 100% 0, 0 0);
+  clip-path: polygon(10% 100%, 90% 99%, 100% 0, 0 0);
+  animation: pulse 3s infinite;
+  animation-direction: alternate;
+}
+
+.bottom-line {
+  position: absolute;
+  bottom: 16%;
+  left: 17.5%;
+  width: 65%;
+  height: 10%;
+  background: #59AA65;
+  transform: scaleY(-1);
+  -webkit-clip-path: polygon(10% 100%, 90% 99%, 100% 0, 0 0);
+  clip-path: polygon(10% 100%, 90% 99%, 100% 0, 0 0);
+  animation: pulse 3s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background: #59AA65;
+  }
+  100% {
+    background: #81C08A;
+  }
+}
+@keyframes borders {
+  0% {
+    border-color: #59AA65;
+  }
+  100% {
+    border-color: #81C08A;
+  }
+}
