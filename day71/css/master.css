@@ -432,7 +432,7 @@ footer {
         transform: scale(.6);
     }
     100% {
-        ransform: scale(1);
+        transform: scale(1);
     }
 }
 
