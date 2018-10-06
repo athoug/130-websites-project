@@ -1,0 +1,370 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  position: relative;
+  height: 800px;
+  width: 600px;
+  display: block;
+  background: none;
+  margin: auto;
+  margin-top: 15%;
+  overflow: hidden;
+}
+
+.ironman {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+}
+
+.head {
+  position: absolute;
+  left: 37.5%;
+  width: 25%;
+  height: 25%;
+  background: #BF2932;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.mask {
+  position: absolute;
+  top: -6%;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+  background: #FECF33;
+  border-radius: 50px;
+}
+
+.helmet-edge {
+  position: absolute;
+  top: -5%;
+  left: 37.5%;
+  width: 25%;
+  height: 27%;
+  background: #BF2932;
+  border-radius: 50px;
+}
+
+.eye-left {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 27%;
+  height: 10%;
+  background: #5981C0;
+  border-radius: 50px;
+}
+
+.eye-right {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  width: 27%;
+  height: 10%;
+  background: #5981C0;
+  border-radius: 50px;
+}
+
+.body {
+  position: absolute;
+  top: 21%;
+  left: 20%;
+  width: 60%;
+  height: 80%;
+}
+
+.torso {
+  position: absolute;
+  left: 17.5%;
+  width: 65%;
+  height: 60%;
+  background: #BF2932;
+  border-radius: 50px;
+  z-index: 3;
+}
+
+.heart {
+  position: absolute;
+  left: 37.5%;
+  top: 15%;
+  width: 25%;
+  height: 15%;
+  background: #5981C0;
+  border-radius: 50px;
+}
+
+.left-arm {
+  position: absolute;
+  top: 7%;
+  left: 1%;
+  width: 22%;
+  height: 42%;
+  background: #B22931;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.right-arm {
+  position: absolute;
+  top: 7%;
+  right: 1%;
+  width: 22%;
+  height: 42%;
+  background: #B22931;
+  border-radius: 50px;
+  z-index: 2;
+}
+
+.left-leg {
+  position: absolute;
+  bottom: 10%;
+  left: 23%;
+  width: 24%;
+  height: 50%;
+  background: #B22931;
+  border-radius: 50px;
+  z-index: 4;
+}
+
+.right-leg {
+  position: absolute;
+  bottom: 0%;
+  right: 23%;
+  width: 24%;
+  height: 55%;
+  background: #BF2932;
+  border-radius: 50px;
+  z-index: 4;
+}
+
+.flame-arm-left {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 14%;
+  height: 33%;
+  background: #FECF33;
+  border-radius: 50px;
+}
+
+.orange-arm-left {
+  position: absolute;
+  left: 22.5%;
+  width: 55%;
+  height: 70%;
+  background: #ED5B2C;
+  border-radius: 50px;
+}
+
+.flame-arm-right {
+  position: absolute;
+  right: 4%;
+  top: 40%;
+  width: 14%;
+  height: 40%;
+  background: #FECF33;
+  border-radius: 50px;
+}
+
+.orange-arm-right {
+  position: absolute;
+  left: 22.5%;
+  width: 55%;
+  height: 80%;
+  background: #ED5B2C;
+  border-radius: 50px;
+}
+
+.flame-leg-left {
+  position: absolute;
+  left: 27%;
+  bottom: -36%;
+  width: 14%;
+  height: 50%;
+  background: #FECF33;
+  border-radius: 50px;
+}
+
+.orange-leg-left {
+  position: absolute;
+  left: 22.5%;
+  width: 55%;
+  height: 55%;
+  background: #ED5B2C;
+  border-radius: 50px;
+}
+
+.flame-leg-right {
+  position: absolute;
+  right: 27%;
+  bottom: -30%;
+  width: 14%;
+  height: 45%;
+  background: #FECF33;
+  border-radius: 50px;
+}
+
+.orange-leg-right {
+  position: absolute;
+  left: 22.5%;
+  width: 55%;
+  height: 75%;
+  background: #ED5B2C;
+  border-radius: 50px;
+}
+
+.flames {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+
+.base {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6%;
+  background: #EEEEEE;
+  border-radius: 50px;
+}
+
+.first-fire {
+  position: absolute;
+  left: 44%;
+  bottom: -8%;
+  width: 12%;
+  height: 21%;
+  background: #FECF33;
+  border-radius: 50%;
+  transform: scale(1.3);
+}
+
+.second-fire {
+  position: absolute;
+  bottom: 0;
+  left: 32.5%;
+  width: 35%;
+  height: 21%;
+  overflow: hidden;
+}
+
+.orange-flame-1 {
+  position: absolute;
+  left: 17%;
+  bottom: -15%;
+  width: 15%;
+  height: 50%;
+  background: #ED5B2C;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
+
+.orange-flame-2 {
+  position: absolute;
+  right: 17%;
+  bottom: -15%;
+  width: 15%;
+  height: 50%;
+  background: #ED5B2C;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
+
+.third-flame {
+  position: absolute;
+  bottom: 0;
+  left: 22.5%;
+  width: 55%;
+  height: 41%;
+  overflow: hidden;
+}
+
+.yellow-flame-1 {
+  position: absolute;
+  left: 20%;
+  bottom: -5%;
+  width: 15%;
+  height: 40%;
+  background: #FECF33;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
+
+.yellow-flame-2 {
+  position: absolute;
+  right: 20%;
+  bottom: -5%;
+  width: 15%;
+  height: 40%;
+  background: #FECF33;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
+
+.forth-fire {
+  position: absolute;
+  bottom: 0;
+  left: 12.5%;
+  width: 75%;
+  height: 51%;
+}
+
+.orange-flame-3 {
+  position: absolute;
+  left: 6%;
+  bottom: -15%;
+  width: 15%;
+  height: 45%;
+  background: #ED5B2C;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
+
+.orange-flame-4 {
+  position: absolute;
+  right: 6%;
+  bottom: -15%;
+  width: 15%;
+  height: 45%;
+  background: #ED5B2C;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
+
+.fifth-fire {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  height: 71%;
+}
+
+.yellow-flame-3 {
+  position: absolute;
+  left: 10%;
+  bottom: -5%;
+  width: 15%;
+  height: 40%;
+  background: #FECF33;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
+
+.yellow-flame-4 {
+  position: absolute;
+  right: 10%;
+  bottom: -5%;
+  width: 15%;
+  height: 40%;
+  background: #FECF33;
+  border-radius: 50%;
+  transform: scale(2.5);
+}
