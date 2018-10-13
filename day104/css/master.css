@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: none;
+  display: block;
+  margin: 12% auto;
+  transition: all .8s;
+}
+
+.js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #F8DC3C;
+  border-radius: 5px;
+  transition: all .8s;
+}
+
+.js:after {
+  position: absolute;
+  right: 0;
+  bottom: -8%;
+  padding: 5%;
+  padding-bottom: 0%;
+  content: "JS";
+  font-family: 'Roboto', sans-serif;
+  font-size: 20em;
+  font-weight: 700;
+  color: #323232;
+}
