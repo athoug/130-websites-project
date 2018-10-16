@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F7F7F7;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: none;
+  display: block;
+  margin: 12% auto 0;
+  transform: scale(0.8) rotate(0deg);
+  transform-origin: center;
+  transition: all .5s;
+  animation: rotate 4s infinite linear;
+}
+
+.name p {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 2px;
+  text-align: center;
+  bottom: -22%;
+  color: #61DBFB;
+  font-size: 6rem;
+  vertical-align: top;
+  margin: -1% auto 0;
+}
+
+.center {
+  position: absolute;
+  top: 42.5%;
+  left: 42.5%;
+  width: 15%;
+  height: 15%;
+  background: #61DBFB;
+  border-radius: 50%;
+}
+
+.mid {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 40%;
+  border-radius: 50%;
+  border: 23px solid #61DBFB;
+}
+
+.left {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 40%;
+  border-radius: 50%;
+  border: 23px solid #61DBFB;
+  transform: rotate(60deg);
+}
+
+.right {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 40%;
+  border-radius: 50%;
+  border: 23px solid #61DBFB;
+  transform: rotate(-60deg);
+}
+
+@keyframes rotate {
+  100% {
+    transform: scale(0.8) rotate(360deg);
+  }
+}
