@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 700px;
+    background: none;
+    display: block;
+    margin: 12% auto 0;
+}
+
+.cell-body {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    border: 15px solid #4E8CC2;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    bottom: -3%;
+    width: 100%;
+    height: 98%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background: #D8ECFE;
+}
+
+.top-content {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 10%;
+}
+
+.camera {
+    position: absolute;
+    top: 34%;
+    left: 20%;
+    width: 15%;
+    height: 40%;
+    border-radius: 50%;
+    background: #4E8CC2;
+    transform: scale(.6);
+}
+
+.mic {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    width: 45%;
+    height: 17%;
+    background: #4E8CC2;
+    transform: scale(.8);
+}
+
+.screen {
+    position: absolute;
+    left: 2.5%;
+    top: 10%;
+    width: 95%;
+    height: 78%;
+    border: 7.5px solid #4E8CC2;
+    background: white;
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    width: 80%;
+    height: 5%;
+}
+
+.speaker-left {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    width: 25%;
+    height: 50%;
+    border-radius: 50px;
+    background:  #4E8CC2;
+}
+
+.speaker-right {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 25%;
+    height: 50%;
+    border-radius: 50px;
+    background:  #4E8CC2;
+}
