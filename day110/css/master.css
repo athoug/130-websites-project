@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #04A9F4;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.box {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: none;
+  display: block;
+  margin: 12% auto 0;
+}
+
+.laptop {
+  position: absolute;
+  left: 5%;
+  top: 16.66666665%;
+  width: 50%;
+  height: 66.6666667%;
+}
+
+.top-side {
+  position: absolute;
+  left: 5%;
+  top: 17.5%;
+  width: 90%;
+  height: 65%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #445A64;
+}
+
+.cam {
+  position: absolute;
+  top: 2%;
+  left: 47.5%;
+  width: 5%;
+  height: 7%;
+  border-radius: 50%;
+  background: #26343A;
+  transform: scale(0.4);
+}
+
+.screen-laptop {
+  position: absolute;
+  left: 7.5%;
+  top: 12%;
+  width: 85%;
+  height: 80%;
+  background: #FFFFFF;
+}
+
+.person-laptop {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  width: 50%;
+  height: 60%;
+}
+
+.hair-top {
+  position: absolute;
+  left: 10%;
+  width: 45%;
+  height: 48%;
+  border-radius: 50%;
+  background: #FFB302;
+}
+
+.hair-bottom {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 35%;
+  height: 25%;
+  border-radius: 50%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: #FFB302;
+}
+
+.face-laptop {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 60%;
+  height: 68%;
+  border-radius: 50%;
+  background: #FFE1B3;
+  overflow: hidden;
+}
+
+.hair-left {
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  width: 45%;
+  height: 48%;
+  border-radius: 50%;
+  background: #FFCB28;
+  transform: scale(1.5);
+}
+
+.hair-right {
+  position: absolute;
+  top: -40%;
+  right: 10%;
+  width: 45%;
+  height: 48%;
+  border-radius: 50%;
+  background: #FFCB28;
+  transform: scale(2);
+}
+
+.bottom-side {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  height: 8%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #26343A;
+  overflow: hidden;
+}
+
+.trackpad {
+  position: absolute;
+  top: -2%;
+  left: 42.5%;
+  width: 15%;
+  height: 27%;
+  border-radius: 50px;
+  background: #354850;
+}
+
+.phone {
+  position: absolute;
+  right: 20%;
+  bottom: 23%;
+  width: 15%;
+  height: 35%;
+  border-radius: 15px;
+  background: #35464E;
+}
+
+.camera {
+  position: absolute;
+  top: 3%;
+  left: 44.5%;
+  width: 11%;
+  height: 7%;
+  border-radius: 50%;
+  background: #26343A;
+  transform: scale(0.4);
+}
+
+.screen-phone {
+  position: absolute;
+  left: 7.5%;
+  top: 12%;
+  width: 85%;
+  height: 80%;
+  background: #FFFFFF;
+}
+
+.person-phone {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  width: 80%;
+  height: 60%;
+}
+
+.hair-phone {
+  position: absolute;
+  right: 10%;
+  width: 45%;
+  height: 38%;
+  border-radius: 50%;
+  background: #5C4036;
+  overflow: hidden;
+}
+
+.hair-band {
+  position: absolute;
+  bottom: -40%;
+  right: 30%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #EF4336;
+}
+
+.face-phone {
+  position: absolute;
+  top: 18%;
+  left: 8%;
+  width: 70%;
+  height: 58%;
+  border-radius: 50%;
+  background: #C9A591;
+  overflow: hidden;
+}
+
+.hair-left-phone {
+  position: absolute;
+  top: -35%;
+  left: 5%;
+  width: 65%;
+  height: 48%;
+  border-radius: 50%;
+  background: #5C4036;
+  transform: scale(1.5);
+}
+
+.hair-right-phone {
+  position: absolute;
+  top: -5%;
+  right: -40%;
+  width: 65%;
+  height: 48%;
+  border-radius: 50%;
+  background: #5C4036;
+  transform: scale(1.5);
+}
+
+.speech-laptop {
+  position: absolute;
+  left: 25%;
+  top: 32%;
+  width: 20%;
+  height: 10%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: all .5s;
+  transform-origon: center;
+  transform: scale(0);
+  animation: hello 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+
+.speech-laptop::after {
+  position: absolute;
+  bottom: -28%;
+  left: 17%;
+  content: "";
+  width: 15%;
+  height: 30%;
+  background: #FFFFFF;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.speech-phone {
+  position: absolute;
+  right: 20%;
+  top: 45%;
+  width: 12%;
+  height: 10%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: all .5s;
+  transform-origon: center;
+  transform: scale(1);
+  animation: hi 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.speech-phone::after {
+  position: absolute;
+  bottom: -25%;
+  left: 25%;
+  content: "";
+  width: 20%;
+  height: 28%;
+  background: #FFFFFF;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+@keyframes hello {
+  0% {
+    top: 32%;
+    transform: scale(0);
+  }
+  100% {
+    top: 12%;
+    transform: scale(1);
+  }
+}
+@keyframes hi {
+  0% {
+    top: 45%;
+    transform: scale(0);
+  }
+  100% {
+    top: 28%;
+    transform: scale(1);
+  }
+}
