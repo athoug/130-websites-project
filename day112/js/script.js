@@ -1,7 +1,9 @@
-const keyboard = document.querySelectorAll(".keys-white");
+const keyboard = Array.from(document.querySelectorAll(".key"));
 
-for(let i=0; i < keyboard.length; i++) {
-  keyboard[i].addEventListener("click", (e) => {
-    console.log(`clicked ${keyboard[i].getAttribute("data-key")}`);
-  });
+keyboard.forEach(key => key.addEventListener("click", playAudio));
+
+
+function playAudio(e) {
+    let audio = document.querySelector(`audio[data-key=${e.keycode}]`);
+    console.log(audio);
 }
