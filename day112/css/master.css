@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #E8E8E8;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: none;
+  display: block;
+  margin: 15% auto 0;
+}
+
+.keyboard {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 80%;
+  height: 70%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #252122;
+}
+
+.keys {
+  position: absolute;
+  left: 7.5%;
+  top: 10%;
+  width: 85%;
+  height: 70%;
+}
+
+.white-keys {
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 100%;
+  height: 80%;
+}
+
+.keys-white {
+  float: left;
+  margin-left: 1.5%;
+  width: 9.5%;
+  height: 100%;
+  border-radius: 50px;
+  background: #FFFFFF;
+}
+
+.black-keys {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+}
+
+.keys-black {
+  float: left;
+  width: 9.5%;
+  height: 100%;
+  border-radius: 50px;
+  background: #252122;
+}
+
+.keys-black:nth-of-type(1) {
+  margin-left: 6%;
+}
+
+.keys-black:nth-of-type(2) {
+  margin-left: 3%;
+}
+
+.keys-black:nth-of-type(3) {
+  margin-left: 12%;
+}
+
+.keys-black:nth-of-type(4) {
+  margin-left: 12%;
+}
+
+.keys-black:nth-of-type(5) {
+  margin-left: 12%;
+}
