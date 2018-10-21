@@ -29,7 +29,6 @@ function playAudio(e) {
 }
 
 function removeTransition(e) {
-    console.log(e.propertyName);
     if (e.propertyName !== 'background-color') return;
     e.target.classList.remove('white-keys-clicked');
     e.target.classList.remove('black-keys-clicked');

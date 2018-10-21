@@ -57,6 +57,16 @@ body {
   transition: all 0.35s;
 }
 
+    .keys-white::after {
+        position: absolute;
+        bottom: 5%;
+        width: 10%;
+        content: attr(data-key);
+        color: #E8E8E8;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
 .black-keys {
   position: absolute;
   left: 0%;
@@ -75,6 +85,16 @@ body {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
 }
+
+    .keys-black::after {
+        position: absolute;
+        bottom: 10%;
+        width: 10%;
+        content: attr(data-key);
+        color: #111111;
+        font-family: sans-serif;
+        text-align: center;
+    }
 
 .keys-black:nth-of-type(1) {
   margin-left: 6%;
