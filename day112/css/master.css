@@ -4,6 +4,8 @@
 
 body {
   background: #E8E8E8;
+  overflow: hidden;
+  font-family: sans-serif;
 }
 
 .box {
@@ -130,4 +132,33 @@ body {
   transition: all 0.35s;
 
   background: #050404;
+}
+
+
+/* FOOTER STYLING */
+footer {
+  color: #C7C8C3;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+footer a:hover {
+    color: #E46C6F;
+    border-bottom: 1px solid #E46C6F;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
