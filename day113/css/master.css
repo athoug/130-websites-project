@@ -1,0 +1,434 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #CAD7DB;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  background: none;
+  display: block;
+  margin: 10% auto 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.star-1 {
+  position: absolute;
+  top: -10%;
+  width: 8%;
+  height: 10%;
+  background: #494042;
+  -webkit-clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.star-2 {
+  position: absolute;
+  top: -11%;
+  left: 8%;
+  width: 5%;
+  height: 6%;
+  background: #494042;
+  -webkit-clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  -webkit-animation: spin 3s infinite linear;
+          animation: spin 3s infinite linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.star-3 {
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+  width: 8%;
+  height: 10%;
+  background: #494042;
+  -webkit-clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.star-4 {
+  position: absolute;
+  bottom: -11%;
+  right: 8%;
+  width: 5%;
+  height: 6%;
+  background: #494042;
+  -webkit-clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  clip-path: polygon(50% 0%, 63% 35%, 100% 45%, 65% 57%, 52% 95%, 38% 60%, 1% 44%, 37% 35%);
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+  -webkit-animation: spin 3s infinite linear;
+          animation: spin 3s infinite linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.nintendo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.top-screen {
+  position: absolute;
+  left: 2.5%;
+  width: 95%;
+  height: 50%;
+  background: #494042;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 70px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 99% 100%, 1% 100%);
+  clip-path: polygon(0 0, 100% 0, 99% 100%, 1% 100%);
+  z-index: 2;
+}
+
+.bottom-screen {
+  position: absolute;
+  bottom: 0;
+  left: 3.42809%;
+  width: 93.146%;
+  height: 50%;
+  background: #494042;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.camera {
+  position: absolute;
+  top: 2%;
+  left: 47.5%;
+  width: 5%;
+  height: 10%;
+  border: 4px solid #353940;
+  border-radius: 50%;
+  background: #6C717A;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.shine {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background: #8C929B;
+}
+
+.screen-top {
+  position: absolute;
+  left: 10%;
+  top: 15%;
+  width: 80%;
+  height: 85%;
+  background: #72757A;
+  border: 4px solid #353940;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.shine-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5D6066;
+  -webkit-clip-path: polygon(0 0, 35% 0, 60% 100%, 0 100%);
+  clip-path: polygon(0 0, 35% 0, 60% 100%, 0 100%);
+}
+
+.left-section {
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  width: 20%;
+  height: 70%;
+}
+
+.top-cog {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 45%;
+  border: 8px solid #706E6E;
+  background: #3E3A39;
+  border-radius: 50%;
+}
+
+.inner-circle-cog {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 80%;
+  background: #898989;
+  border-radius: 50%;
+}
+
+.croped-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #727171;
+  border-radius: 50%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.bottom-cog {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  width: 80%;
+  height: 45%;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.top-square-cog {
+  position: absolute;
+  left: 32.5%;
+  width: 35%;
+  height: 100%;
+  background: #898989;
+}
+
+.bottom-square-cog {
+  position: absolute;
+  top: 32.5%;
+  height: 35%;
+  width: 100%;
+  background: #898989;
+}
+
+.top-stripe {
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  width: 10%;
+  height: 18%;
+  background: #494042;
+}
+
+.bottom-stripe {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  width: 10%;
+  height: 18%;
+  background: #494042;
+}
+
+.left-stripe {
+  position: absolute;
+  left: 10%;
+  top: 45%;
+  height: 10%;
+  width: 18%;
+  background: #494042;
+}
+
+.right-stripe {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  height: 10%;
+  width: 18%;
+  background: #494042;
+}
+
+.mid-section {
+  position: absolute;
+  top: 15%;
+  left: 27%;
+  width: 50%;
+  height: 80%;
+}
+
+.screen-bottom {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: #72757A;
+  border: 4px solid #353940;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bottom-screen-shine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5D6066;
+  -webkit-clip-path: polygon(0 0, 70% 0, 95% 100%, 0 100%);
+  clip-path: polygon(0 0, 70% 0, 95% 100%, 0 100%);
+}
+
+.sensor {
+  position: absolute;
+  left: 42.5%;
+  bottom: 5%;
+  width: 15%;
+  height: 8%;
+  background: #727171;
+  border-radius: 50px;
+}
+
+.right-section {
+  position: absolute;
+  right: 3%;
+  top: 15%;
+  width: 20%;
+  height: 70%;
+}
+
+.top-buttons {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  height: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.blue-btn {
+  position: absolute;
+  top: 5%;
+  left: 37.5%;
+  width: 25%;
+  height: 28%;
+  border-radius: 50%;
+  background: #036EB8;
+  border: 5px solid #4F74B8;
+}
+
+.red-btn {
+  position: absolute;
+  top: 36%;
+  right: 10%;
+  width: 25%;
+  height: 28%;
+  border-radius: 50%;
+  background: #E50012;
+  border: 5px solid #E94514;
+}
+
+.yellow-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 37.5%;
+  width: 25%;
+  height: 28%;
+  border-radius: 50%;
+  background: #F8B62C;
+  border: 5px solid #FAEE00;
+}
+
+.green-btn {
+  position: absolute;
+  top: 36%;
+  left: 10%;
+  width: 25%;
+  height: 28%;
+  border-radius: 50%;
+  background: #00913A;
+  border: 5px solid #64A63C;
+}
+
+.bottom-buttons {
+  position: absolute;
+  bottom: 0;
+  left: -2%;
+  width: 90%;
+  height: 50%;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.select-btn {
+  position: absolute;
+  top: 16%;
+  left: 10%;
+  width: 25%;
+  height: 28%;
+  border-radius: 50%;
+  background: #9FA0A0;
+}
+
+.start-btn {
+  position: absolute;
+  bottom: 16%;
+  left: 10%;
+  width: 25%;
+  height: 28%;
+  border-radius: 50%;
+  background: #9FA0A0;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
