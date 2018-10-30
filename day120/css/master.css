@@ -1,0 +1,202 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #FEFFFF;
+  font-family: 'Caveat Brush', cursive;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 5% auto 0;
+  background: none;
+  display: block;
+}
+
+.box:after {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  content: "cake love";
+  color: #86282A;
+  text-transform: uppercase;
+  font-size: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  bottom: -15%;
+}
+
+.cake {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.left-bottom-layer {
+  position: absolute;
+  left: 21.75%;
+  bottom: 5%;
+  width: 35%;
+  height: 65%;
+  background: #FBDCB3;
+  border: 14px solid #86282A;
+  border-right: 0;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.right-bottom-layer {
+  position: absolute;
+  right: 21.75%;
+  bottom: 5%;
+  width: 35%;
+  height: 65%;
+  background: #FBDCB3;
+  border: 14px solid #86282A;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-mid-layer {
+  position: absolute;
+  left: 21.75%;
+  bottom: 12%;
+  width: 35%;
+  height: 65%;
+  background: #FBDCB3;
+  border: 14px solid #86282A;
+  border-right: 0;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.right-mid-layer {
+  position: absolute;
+  right: 21.75%;
+  bottom: 12%;
+  width: 35%;
+  height: 65%;
+  background: #FBDCB3;
+  border: 14px solid #86282A;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.left-top-layer {
+  position: absolute;
+  left: 21.75%;
+  bottom: 19%;
+  width: 35%;
+  height: 65%;
+  background: #C34A49;
+  border: 14px solid #86282A;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 51%, 80% 51%, 80% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 51%, 80% 51%, 80% 100%, 0 100%);
+  overflow: hidden;
+}
+
+.right-top-layer {
+  position: absolute;
+  right: 21.75%;
+  bottom: 19%;
+  width: 35%;
+  height: 65%;
+  background: #C34A49;
+  border: 14px solid #86282A;
+  border-bottom: 0;
+  border-radius: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  overflow: hidden;
+}
+
+.shine-l {
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  background: #DD5B5A;
+}
+
+.dark-r {
+  position: absolute;
+  height: 15%;
+  width: 100%;
+  background: #AB3636;
+}
+
+.base-left {
+  position: absolute;
+  left: 4.7%;
+  top: 35.8%;
+  width: 4%;
+  height: 17.5%;
+  background: #86282A;
+  border-radius: 10px;
+}
+
+.base-right {
+  position: absolute;
+  right: 4.7%;
+  top: 35.8%;
+  width: 4%;
+  height: 17.5%;
+  background: #86282A;
+  border-radius: 10px;
+}
+
+.cherry {
+  position: absolute;
+  top: 27%;
+  left: 44%;
+  width: 12%;
+  height: 12%;
+  border: 14px solid #86282A;
+  border-radius: 50%;
+  background: #FB4B4D;
+}
+
+.shine-c {
+  position: absolute;
+  top: 6%;
+  left: 8%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: #FE9498;
+}
+
+.steam {
+  position: absolute;
+  left: 48%;
+  top: 18.9%;
+  width: 4%;
+  height: 10%;
+  background: #86282A;
+  border-radius: 10px;
+}
