@@ -1,0 +1,206 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #FFFBEF;
+}
+
+.box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: none;
+  display: block;
+  margin: 10% auto 0;
+}
+
+.beer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+.cup {
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+  width: 60%;
+  height: 75%;
+  background: none;
+  border: 20px solid #5D4241;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 10px;
+}
+
+.liquid {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+  background: #FAAF25;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.stripe-1 {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  width: 10%;
+  height: 60%;
+  border-radius: 50px;
+  background: #5D4241;
+}
+
+.stripe-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  width: 10%;
+  height: 60%;
+  border-radius: 50px;
+  background: #5D4241;
+}
+
+.stripe-3 {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  width: 10%;
+  height: 60%;
+  border-radius: 50px;
+  background: #5D4241;
+}
+
+.cup-holder {
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  width: 50%;
+  height: 45%;
+  background: none;
+  border: 25px solid #5D4241;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 50%;
+  -webkit-clip-path: polygon(56% 0, 100% 0, 100% 100%, 56% 100%);
+  clip-path: polygon(56% 0, 100% 0, 100% 100%, 56% 100%);
+}
+
+.foam {
+  position: absolute;
+  left: 15%;
+  top: 0;
+  width: 60%;
+  height: 25%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.foam-1 {
+  position: absolute;
+  left: 8%;
+  bottom: -2%;
+  width: 32%;
+  height: 70%;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  border: 20px solid #5D4241;
+  -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+  clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+}
+
+.foam-2 {
+  position: absolute;
+  left: 29%;
+  bottom: 0;
+  width: 40%;
+  height: 85%;
+  border-radius: 50%;
+  border: 20px solid #5D4241;
+  -webkit-clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
+  clip-path: polygon(0 45%, 0 0, 100% 0, 100% 45%);
+}
+
+.foam-3 {
+  position: absolute;
+  right: 10%;
+  bottom: -2%;
+  width: 32%;
+  height: 70%;
+  border-radius: 50%;
+  border-bottom-left-radius: 0;
+  border: 20px solid #5D4241;
+  -webkit-clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+  clip-path: polygon(0 65%, 0 0, 75% 0, 75% 25%);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.bubbles-1 {
+  position: absolute;
+  top: 5%;
+  right: 38%;
+  width: 8%;
+  height: 8%;
+  background: #5D4241;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: bubbling 2s infinite linear;
+          animation: bubbling 2s infinite linear;
+}
+
+.bubbles-2 {
+  position: absolute;
+  top: 0%;
+  left: 38%;
+  width: 8%;
+  height: 8%;
+  background: #5D4241;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: bubbling 1s infinite linear;
+          animation: bubbling 1s infinite linear;
+}
+
+.bubbles-3 {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  width: 8%;
+  height: 8%;
+  background: #5D4241;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: bubbling 2s infinite linear;
+          animation: bubbling 2s infinite linear;
+}
+
+@-webkit-keyframes bubbling {
+  0% {
+    -webkit-transform: scale(1) tanslateY(0);
+            transform: scale(1) tanslateY(0);
+  }
+  100% {
+    -webkit-transform: scale(0) translate(0, -250px);
+            transform: scale(0) translate(0, -250px);
+  }
+}
+
+@keyframes bubbling {
+  0% {
+    -webkit-transform: scale(1) tanslateY(0);
+            transform: scale(1) tanslateY(0);
+  }
+  100% {
+    -webkit-transform: scale(0) translate(0, -250px);
+            transform: scale(0) translate(0, -250px);
+  }
+}
