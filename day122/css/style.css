@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: none;
+    display: block;
+    margin: 10% auto 0;
+}
+
+.mat {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 8px solid #71B1DC;
+    border-radius: 30px;
+    box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.top-section {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background: #9C9C9E;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.btn-left {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 15%;
+    height: 30%;
+    background: #71B1DC;
+    border-radius: 50px;
+    border: 4px solid white;
+}
+
+.btn-left:after {
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: '-';
+    font-size: 4rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-right {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 15%;
+    height: 30%;
+    background: #BFC1C0;
+    border-radius: 50px;
+    border: 4px solid white;
+}
+
+.btn-right:after {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: '+';
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.sensor {
+    position: absolute;
+    top: -25%;
+    left: 35%;
+    width: 30%;
+    height: 70%;
+    border-radius: 20px;
+    background: #242223;
+    -webkit-clip-path: polygon(50% 0%, 100% 10%, 90% 100%, 10% 100%, 0 10%);
+    clip-path: polygon(50% 0%, 100% 10%, 90% 100%, 10% 100%, 0 10%);
+    overflow: hidden;
+}
+
+.edge-bottom {
+    position: absolute;
+    bottom: 7%;
+    left: 15%;
+    width: 70%;
+    height: 3%;
+    background: #626061;
+}
+
+.edge-left {
+    position: absolute;
+    bottom: 41%;
+    left: -1.5%;
+    width: 25%;
+    height: 3%;
+    background: #626061;
+    transform: rotate(-110deg);
+}
+
+.edge-right {
+    position: absolute;
+    bottom: 41%;
+    right: -1.5%;
+    width: 25%;
+    height: 3%;
+    background: #626061;
+    transform: rotate(110deg);
+}
+
+.mid-seperator {
+    position: absolute;
+    top: 47%;
+    left: 29%;
+    width: 42%;
+    height: 4%;
+    background: #626061;
+}
+
+.mid-l {
+    position: absolute;
+    top: 67%;
+    left: 13%;
+    width: 19%;
+    height: 4%;
+    background: #626061;
+    transform: rotate(135deg);
+}
+
+.mid-r {
+    position: absolute;
+    top: 67%;
+    right: 13%;
+    width: 19%;
+    height: 4%;
+    background: #626061;
+    transform: rotate(-135deg);
+}
+
+.edge-l {
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    width: 19%;
+    height: 4%;
+    background: #626061;
+    transform: rotate(-110deg);
+}
+
+.edge-r {
+    position: absolute;
+    top: 25%;
+    right: 17%;
+    width: 19%;
+    height: 4%;
+    background: #626061;
+    transform: rotate(110deg);
+}
+
+.top {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    height: 28%;
+}
+
+.middle {
+    position: absolute;
+    top: 43.5%;
+    width: 100%;
+    height: 28%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 28%;
+}
+
+.top-l {
+    position: absolute;
+    left: 0;
+    width: 33%;
+    height: 100%;
+}
+
+.top-m {
+    position: absolute;
+    left: 33.5%;
+    width: 33%;
+    height: 100%;
+    background-image: linear-gradient(to top, #ccc, #fff);
+}
+
+.top-r {
+    position: absolute;
+    right: 0;
+    width: 33%;
+    height: 100%;
+}
+
+.b-mat {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    background: #71B1DC;
+    font-family: 'Audiowide', cursive;
+    transform: scale(0.8);
+}
+
+.b-mat p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -40%;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.a-mat {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    background: #71B1DC;
+    font-family: 'Audiowide', cursive;
+    transform: scale(0.8);
+}
+
+.a-mat p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -40%;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.left-b {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    width: 10%;
+    height: 90%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+.right-b {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 10%;
+    height: 90%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+.arrow-up {
+    position: absolute;
+    left: 15%;
+    top: 8%;
+    width: 70%;
+    height: 70%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    transform: rotate(90deg) scale(0.8);
+}
+
+.middle-l {
+    position: absolute;
+    top: -2%;
+    left: 4%;
+    width: 33%;
+    height: 104%;
+    background-image: linear-gradient(to left, #ccc, #fff);
+}
+
+.top-b {
+    position: absolute;
+    left: 5%;
+    top: 0%;
+    width: 90%;
+    height: 10%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+    clip-path: polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+}
+
+.bottom-b {
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    width: 90%;
+    height: 10%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+}
+
+.arrow-left {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    transform: rotate(0deg) scale(0.9);
+}
+
+.middle-m {
+    position: absolute;
+    left: 33.5%;
+    width: 33%;
+    height: 100%;
+}
+
+.middle-r {
+    position: absolute;
+    top: -2%;
+    right: 4%;
+    width: 33%;
+    height: 104%;
+    background-image: linear-gradient(to right, #ccc, #fff);
+}
+
+.arrow-right {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    transform: rotate(180deg) scale(0.9);
+}
+
+.bottom-l {
+    position: absolute;
+    left: 0;
+    width: 33%;
+    height: 100%;
+}
+
+.bottom-m {
+    position: absolute;
+    left: 33.5%;
+    width: 33%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ccc, #fff);
+}
+
+.bottom-r {
+    position: absolute;
+    right: 0;
+    width: 33%;
+    height: 100%;
+}
+
+.arrow-down {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    width: 70%;
+    height: 70%;
+    background: #71B1DC;
+    -webkit-clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    transform: rotate(270deg) scale(0.8);
+}
+
+.oval {
+    position: absolute;
+    top: 38%;
+    left: 31%;
+    width: 38%;
+    height: 38%;
+    border-radius: 50%;
+    border: 10px solid white;
+}
