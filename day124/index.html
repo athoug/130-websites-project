@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>DrumKit</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="single-plate">
+            <div class="stick-center-s"></div>
+            <div class="leg-s-l"></div>
+            <div class="leg-s-r"></div>
+            <div class="plate-s key" data-key="83">
+                <div class="plate-s-base"></div>
+                <div class="oval-s"></div>
+            </div>
+        </div>
+        <div class="drum-l">
+            <div class="drum-l-copy key" data-key="65">
+                <div class="white-box"></div>
+                <div class="red-mid"></div>
+            </div>
+            <div class="left-leg-l"></div>
+            <div class="right-leg-l"></div>
+        </div>
+        <div class="drum-double-top">
+            <div class="holder-h"></div>
+            <div class="holder-v"></div>
+            <div class="top-drum-l key" data-key="70">
+                <div class="white-box"></div>
+                <div class="red-mid"></div>
+            </div>
+            <div class="top-drum-r key" data-key="71">
+                <div class="white-box"></div>
+                <div class="red-mid"></div>
+            </div>
+            <div class="holder-base"></div>
+        </div>
+        <div class="drum-center">
+            <div class="drum-center-copy">
+                <div class="center-oval-drum key" data-key="68"></div>
+                <div class="edges edge-1"></div>
+                <div class="edges edge-2"></div>
+                <div class="edges edge-3"></div>
+                <div class="edges edge-4"></div>
+                <div class="edges edge-5"></div>
+                <div class="edges edge-6"></div>
+                <div class="edges edge-7"></div>
+                <div class="edges edge-8"></div>
+            </div>
+            <div class="center-leg-l"></div>
+            <div class="center-leg-r"></div>
+        </div>
+        <div class="drum-r">
+            <div class="drum-r-leg-left"></div>
+            <div class="drum-r-leg-right"></div>
+            <div class="drum-r-holder"></div>
+            <div class="drum-r-copy key" data-key="72">
+                <div class="white-box"></div>
+                <div class="red-mid"></div>
+            </div>
+        </div>
+        <div class="double-plate">
+            <div class="d-holder"></div>
+            <div class="d-leg-left"></div>
+            <div class="d-leg-right"></div>
+            <div class="nail"></div>
+            <div class="nail-head"></div>
+            <div class="d-plate-top key" data-key="74">
+                <div class="plate-s-base"></div>
+                <div class="oval-s"></div>
+            </div>
+            <div class="d-plate-bottom">
+                <div class="plate-s-base"></div>
+                <div class="oval-s"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <audio src="./sounds/single-plate.wav" data-key="83"></audio>
+    <audio src="./sounds/drum-l.wav" data-key="65"></audio>
+    <audio src="./sounds/center-drum.wav" data-key="68"></audio>
+    <audio src="./sounds/top-drum-l.wav" data-key="70"></audio>
+    <audio src="./sounds/top-drum-r.wav" data-key="71"></audio>
+    <audio src="./sounds/drum-r.wav" data-key="72"></audio>
+    <audio src="./sounds/double-plate.wav" data-key="74"></audio>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
