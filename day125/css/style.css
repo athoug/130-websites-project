@@ -67,17 +67,28 @@ a:hover {
     background: none;
     border-radius: 50%;
     border: 10px solid #09BC8A;
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .handel {
     position: absolute;
+    left: 2%;
     top: 50%;
-    width: 50%;
+    width: 48%;
     height: 6px;
     background: #004346;
     transform-origin: 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0, 2.54, 1, 1);
+}
+
+.minutes-hand {
+    left: 2%;
+    width: 46%;
+}
+
+.hours-hand {
+    left: 7%;
+    width: 42%;
 }
