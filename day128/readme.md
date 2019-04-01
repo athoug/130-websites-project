@@ -82,3 +82,97 @@ page as follows
     <audio data-key="77" src="./assets/audio/veil.mp3"></audio>
 </body>
 ```
+
+Brilliant that's a start [most proboably will add sections for styling later but this will do for now].
+this is how it currently looks like
+
+![screenshot of the structured web page](assets/img/1.png)
+
+### Javascript
+
+okay with the structure out of the way, lets make it work. The idea is to have audio play when the proper key is pressed
+or when the button is clicked. Lets start off with tackiling the keypress.
+
+We want to target the whole page so for that readon we'll attach the event listner to the wondow object
+
+``` js
+// setting an event lister to the wndow object
+window.addEventListener('keydown', playSound);
+```
+
+We haven't defined the playSound function yet, we'll do the now, but a couple of things I want to do here:
+
+1. get a refrence to the audio that corresponds with the pressed key [using the keyCode]
+2. get a refrence to the corresponding button [for animating purposes]
+3. if the key pressed has a refrence to an audio element then
+   1. reset the audio [for multiple clicks]
+   2. play the audio
+   3. add animation to the button
+4. else just exit the function
+
+with those steps in mind, we'd end up with a **playSound** function that looks like:
+
+``` js
+// play sound function
+function playSound(e) {
+    // grab the elements based on the key pressed
+    const soundClip = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const btn = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+
+    if (!soundClip) return; // if teh audio doesn't exist just leave, leave...
+
+    soundClip.currentTime = 0; // reset the audio
+    soundClip.play();
+
+    // TODO: add the animation class
+    // btn.classList.add('')
+}
+```
+
+Great now it plays the sound [you just have to take my word for it] and I still have to do the animation class ...
+so I think it's a good time to start styling the app
+
+### CSS
+
+Not sure if I want to go into detail for my reasoning behind the style because as the name states it's style and
+everyone has their own prefrence, but for the sake of explaining I'll just explain my reasoning behind a couple of choices
+
+first off, I wanted to reset the margins, and paddings, and bound them based on their border [people will have conflicting opinions based on using the universal selector buuut the app is small so I can get away with this ;)]
+
+``` css
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+so more importantly is the container and the items in them [which are the buttons] because i want to esily position them and have the design be responsive i'll use flexbox which gives me this sort of css styling
+
+``` css
+    .keys {
+    margin: 20% auto 0;
+    max-width: 960px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.key {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: #282c33;
+    border: 4px solid #000;
+    transition: all 0.08s;
+}
+```
+
+awesome so what I have now is something that looks like this and is responsive
+
+![screenshot of the page demonstraing it's responsive nature](assets/img/responsive.gif)
+
