@@ -225,3 +225,57 @@ now lets test it out
 ![button animation working demo](assets/img/animation-2.gif)
 
 okay now lets tackle the click functionality it;s basically the same just listening to button clicks for this I'm thinking of delegating the methods lets see if it works.
+
+So I attached the event listner to the container, and did a little addition to assining the audio and element by checking of the keyCode doesn't exit just grab the target dataset key attribute so the function `playSound` update looks as follows
+
+``` js
+// play sound function
+function playSound(e) {
+    // grab the elements based on the key pressed
+    const soundClip = document.querySelector(`audio[data-key="${e.keyCode}"]`) || document.querySelector(`audio[data-key="${e.target.dataset.key}"]`);
+    const btn = document.querySelector(`.key[data-key="${e.keyCode}"]`) || document.querySelector(`.key[data-key="${e.target.dataset.key}"]`);
+
+    if (!soundClip) return; // if the audio doesn't exist just leave, leave...
+
+    soundClip.currentTime = 0; // reset the audio
+    soundClip.play();
+
+    // add the animation class
+    btn.classList.add('playing');
+}
+```
+
+so lets test this out and ...
+
+![click button animation working - demo](assets/img/btn-animation.gif)
+
+So far so good, well this makes me think that I should also delegate the `removeAnimation` method as well instead of attching it
+to each item [bravo on thinking about performance Athoug - I need to motivate myslef ]
+with that said, I'll update the function to look like this
+
+``` js
+function removeAnimation(e) {
+    // if the property isn't transition just leave
+    if (e.propertyName != 'transform') return;
+    // otherwise remove the playing class from the element
+    e.target.classList.remove('playing'); // <- this is what changed
+}
+```
+
+and now before I selected all `.key` elements and looped to attach listners to them
+
+``` js
+// selecting the keys and setting the 'transitionend' listener
+- const keys = document.querySelectorAll('.key');
+- keys.forEach(key => key.addEventListener('transitionend', removeAnimation));
+```
+
+but I chnged that and removed the code block above and just used the `.keys` element container and attached a
+single lisner to it just like as illustrated bellow
+
+``` js
+// selecting the key container and setting the 'click' listener
+const keysContainer = document.querySelector('.keys');
+keysContainer.addEventListener('click', playSound);
++ keysContainer.addEventListener('transitionend', removeAnimation); // <- this is the addition
+```
