@@ -9,7 +9,7 @@ function playSound(e) {
     soundClip.currentTime = 0; // reset the audio
     soundClip.play();
 
-    // TODO: add the animation class
+    // add the animation class
     btn.classList.add('playing');
 }
 

@@ -176,3 +176,24 @@ awesome so what I have now is something that looks like this and is responsive
 
 ![screenshot of the page demonstraing it's responsive nature](assets/img/responsive.gif)
 
+with it being responsive it's time to add the `.playing` class that will change the animation and using js
+we will add it when clicked. For now I'll just add any reandom color [which I'll change later] which gives me
+
+``` css
+.playing {
+    transform: scale(1.1);
+    border-color: aqua;
+    box-shadow: 0 0 1rem aqua;
+}
+```
+
+now if I go back to the `app.js` file and add the class when it's clicked as such
+
+``` js
+// add the animation class
+btn.classList.add('playing');
+```
+
+when we test it out in the browser what do we get
+
+![animating buttons demo](assets/img/animation-1.gif)
