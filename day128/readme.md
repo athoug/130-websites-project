@@ -1,4 +1,4 @@
-# Music Buttons - Day 128
+# Sound Keys - Day 128
 
 Continuing on the project, and getting inspired by [Wes Bos's](https://wesbos.com/) 30 day Javascript challeneg, teh drun kit tutorial was all about
 playing audio with keyboard events, and animating them. So let's get straign to it.
@@ -279,3 +279,17 @@ const keysContainer = document.querySelector('.keys');
 keysContainer.addEventListener('click', playSound);
 + keysContainer.addEventListener('transitionend', removeAnimation); // <- this is the addition
 ```
+
+so basically I am done with the functionality. I just want to fix the style a bit so back to css
+
+### CSS [again]
+
+I want to start by adding icons that represent the sound being played and for that I'll be using fontawesome
+The way I went about choosing the icons isn't really intitive or reasnoable in any way. It was difficult to relate
+a sound to an image especially with a limited free library like fontawesome so I picked the first image that seemed like
+'yeah that can work with this sound' pretty sure not everyone would agree to this but I like the outcome here's how it looks
+like thus far
+
+![screenshot of buttons with icons](assets/img/2.png)
+
+Now I want to add a bit of heading and footer to the structre of the app

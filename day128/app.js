@@ -31,3 +31,6 @@ keys.forEach(key => key.addEventListener('transitionend', removeAnimation));
 const keysContainer = document.querySelector('.keys');
 keysContainer.addEventListener('click', playSound);
 keysContainer.addEventListener('transitionend', removeAnimation);
+
+// updating the dom with the year
+document.querySelector('.year').textContent = new Date().getFullYear();

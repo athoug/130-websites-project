@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Music Buttons</title>
+    <title>Sound Keys</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+    <header>
+        <h1>sound keys</h1>
+        <p> start generating sounds by pressing on your keyboard or just clicking the button </p>
+    </header>
     <main class="keys">
         <!-- keys to be pressed -->
-        <button class="key" data-key="81">q</button>
-        <button class="key" data-key="87">w</button>
-        <button class="key" data-key="69">e</button>
-        <button class="key" data-key="82">r</button>
-        <button class="key" data-key="34">t</button>
-        <button class="key" data-key="89">y</button>
-        <button class="key" data-key="85">u</button>
-        <button class="key" data-key="73">i</button>
-        <button class="key" data-key="79">o</button>
-        <button class="key" data-key="80">p</button>
-        <button class="key" data-key="65">a</button>
-        <button class="key" data-key="83">s</button>
-        <button class="key" data-key="68">d</button>
-        <button class="key" data-key="70">f</button>
-        <button class="key" data-key="71">g</button>
-        <button class="key" data-key="72">h</button>
-        <button class="key" data-key="74">j</button>
-        <button class="key" data-key="75">k</button>
-        <button class="key" data-key="76">l</button>
-        <button class="key" data-key="90">z</button>
-        <button class="key" data-key="88">x</button>
-        <button class="key" data-key="67">c</button>
-        <button class="key" data-key="86">v</button>
-        <button class="key" data-key="66">b</button>
-        <button class="key" data-key="78">n</button>
-        <button class="key" data-key="77">m</button>
+        <button class="key" data-key="81"><i class="fas fa-braille"></i><span>q</span></button>
+        <button class="key" data-key="87"><i class="far fa-expand"></i> <span>w</span></button>
+        <button class="key" data-key="69"><i class="fas fa-bomb"></i><span>e</span></button>
+        <button class="key" data-key="82"><i class="fas fa-broadcast-tower"></i><span>r</span></button>
+        <button class="key" data-key="34"><i class="fas fa-drum-steelpan"></i><span>t</span></button>
+        <button class="key" data-key="89"><i class="fas fa-ghost"></i><span>y</span></button>
+        <button class="key" data-key="85"><i class="fas fa-spinner"></i><span>u</span></button>
+        <button class="key" data-key="73"><i class="fas fa-satellite"></i><span>i</span></button>
+        <button class="key" data-key="79"><i class="fas fa-spray-can"></i><span>o</span></button>
+        <button class="key" data-key="80"><i class="fas fa-wave-square"></i><span>p</span></button>
+        <button class="key" data-key="65"><i class="fas fa-drum"></i><span>a</span></button>
+        <button class="key" data-key="83"><i class="fas fa-rainbow"></i><span>s</span></button>
+        <button class="key" data-key="68"><i class="fab fa-cloudsmith"></i><span>d</span></button>
+        <button class="key" data-key="70"><i class="fas fa-snowflake"></i><span>f</span></button>
+        <button class="key" data-key="71"><i class="fas fa-mortar-pestle"></i><span>g</span></button>
+        <button class="key" data-key="72"><i class="fas fa-spider"></i><span>h</span></button>
+        <button class="key" data-key="74"><i class="fab fa-uniregistry"></i><span>j</span></button>
+        <button class="key" data-key="75"><i class="fab fa-mendeley"></i><span>k</span></button>
+        <button class="key" data-key="76"><i class="fas fa-tablets"></i><span>l</span></button>
+        <button class="key" data-key="90"><i class="fas fa-fire"></i><span>z</span></button>
+        <button class="key" data-key="88"><i class="fas fa-circle-notch"></i><span>x</span></button>
+        <button class="key" data-key="67"><i class="fas fa-sign-language"></i><span>c</span></button>
+        <button class="key" data-key="86"><i class="fas fa-flask"></i><span>v</span></button>
+        <button class="key" data-key="66"><i class="fas fa-magic"></i><span>b</span></button>
+        <button class="key" data-key="78"><i class="fas fa-gavel"></i><span>n</span></button>
+        <button class="key" data-key="77"><i class="fas fa-infinity"></i><span>m</span></button>
     </main>
+
+    <footer>
+        <p>Athoug Alsoughayer &copy; <span class="year"></span></p>
+    </footer>
 
     <!-- audio resources -->
     <audio data-key="81" src="./assets/audio/clay.mp3"></audio>
