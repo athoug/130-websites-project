@@ -292,4 +292,21 @@ like thus far
 
 ![screenshot of buttons with icons](assets/img/2.png)
 
-Now I want to add a bit of heading and footer to the structre of the app
+Now I want to add a bit of heading and footer to the structre of the app.
+after adding the footer and header section, adding a couple of styling we have a final result of
+
+![screenshot of appliation](assets/img/final.gif)
+
+That's it for today.
+
+## Resources
+
+Listed below are some resources used, and articles read to help with this project
+
+* [Coolers](https://coolors.co/285fcc-0a0f19-282c33-2e333d-353d4c) color generator
+* [CSS-Tricks Flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [keycode.info](http://keycode.info/) to map teh key with the audio
+* [MDN keyboard events](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+* [MDN data-attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+* [MDN transitionend event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitionend_event)
+
