@@ -197,3 +197,31 @@ btn.classList.add('playing');
 when we test it out in the browser what do we get
 
 ![animating buttons demo](assets/img/animation-1.gif)
+
+cool now lets jump back to javascript to fix the issue with removing the animation once done with the click/press
+
+### Javascript [again]
+
+okay we're almost there. I need now a way to remove the classes when the animation/transistion ends. To do that, I need to listen to the `treansitionend` event. But what will listen to this... well, since we are adding the transition to the `.key` class that's what we'll be targeting. Our steps would be as follows
+
+1. select the keys
+2. loop over those keys, and add an even listner to them that listens to the transition ending
+3. in that function, we want to check if the transition is transform if it's not just exit
+4. otherwise remove the class `.playing` from the element
+
+with the steps outline for us lets get to work
+
+``` js
+function removeAnimation(e) {
+    // if the property isn't transition just leave
+    if (e.propertyName != 'transform') return;
+    // otherwise remove the playing class from the element
+    this.classList.remove('playing');
+}
+```
+
+now lets test it out
+
+![button animation working demo](assets/img/animation-2.gif)
+
+okay now lets tackle the click functionality it;s basically the same just listening to button clicks for this I'm thinking of delegating the methods lets see if it works.

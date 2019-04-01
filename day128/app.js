@@ -13,5 +13,16 @@ function playSound(e) {
     btn.classList.add('playing');
 }
 
+function removeAnimation(e) {
+    // if the property isn't transition just leave
+    if (e.propertyName != 'transform') return;
+    // otherwise remove the playing class from the element
+    this.classList.remove('playing');
+}
+
 // setting an event lister to the wndow object
 window.addEventListener('keydown', playSound);
+
+// selecting the keys
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeAnimation));
