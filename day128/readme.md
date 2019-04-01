@@ -1,6 +1,5 @@
-# Sound Keys - Day 128
+# [Sound Keys - Day 128](https://athoug.xyz/day128/index.html)
 
-[link to demo](https://athoug.xyz/day128/index.html)
 Continuing on the project, and getting inspired by [Wes Bos's](https://wesbos.com/) 30 day Javascript challeneg, teh drun kit tutorial was all about
 playing audio with keyboard events, and animating them. So let's get straign to it.
 
