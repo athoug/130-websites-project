@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    background: rgb(234,240,239);
+    background: linear-gradient(90deg, rgba(234,240,239,1) 0%, rgba(218,227,227,1) 100%);
+}
+
+main {
+
+}
+
+.container {
+    position: relative;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    background: rgb(233, 240, 238);
+    background: linear-gradient(90deg, rgb(233, 240, 238) 0%, rgba(218,227,227,1) 100%);
+    box-shadow: -10rem 0 20rem rgba(255,255,255,1),
+                10rem 0 20rem rgba(0,0,0,0.1);
+}
+
+.clock {
+    position: relative;
+    top: 7.5%;
+    left: 7.5%;
+    width: 85%;
+    height: 85%;
+    background: rgb(241, 247, 246);
+    border-radius: 50%;
+    box-shadow: 0 0 5rem rgba(0,0,0,0.2);
+}
