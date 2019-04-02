@@ -33,13 +33,377 @@ main {
                 10rem 0 20rem rgba(0,0,0,0.1);
 }
 
+.seconds-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid slateblue;
+}
+
+.seconds {
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+    transition: all 0.3s;
+    transform: rotate(90deg);
+    /* transform-origin: 100%; */
+}
+
 .clock {
     position: relative;
-    top: 7.5%;
-    left: 7.5%;
-    width: 85%;
-    height: 85%;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
     background: rgb(241, 247, 246);
     border-radius: 50%;
     box-shadow: 0 0 5rem rgba(0,0,0,0.2);
+}
+
+div[data-key="0"] {
+    left: 47%;
+    top: 4%;
+}
+
+div[data-key="1"] {
+    right: 44%;
+    top: 4%;
+    transform: rotate(-86deg);
+}
+
+div[data-key="2"] {
+    right: 40%;
+    top: 4%;
+    transform: rotate(-82deg);
+}
+
+div[data-key="3"] {
+    right: 35%;
+    top: 4.6%;
+    transform: rotate(-75deg);
+}
+
+div[data-key="4"] {
+    right: 31%;
+    top: 6%;
+    transform: rotate(-67deg);
+}
+
+div[data-key="5"] {
+    right: 27%;
+    top: 8%;
+    transform: rotate(-58deg);
+}
+
+div[data-key="6"] {
+    right: 22%;
+    top: 11%;
+    transform: rotate(-51deg);
+}
+
+div[data-key="7"] {
+    right: 17%;
+    top: 15%;
+    transform: rotate(-45deg);
+}
+
+div[data-key="8"] {
+    right: 13%;
+    top: 20%;
+    transform: rotate(-35deg);
+}
+
+div[data-key="9"] {
+    right: 10%;
+    top: 25%;
+    transform: rotate(-30deg);
+}
+
+div[data-key="10"] {
+    right: 7%;
+    top: 30%;
+    transform: rotate(-25deg);
+}
+
+div[data-key="11"] {
+    right: 5%;
+    top: 35%;
+    transform: rotate(-15deg);
+}
+
+div[data-key="12"] {
+    right: 3.5%;
+    top: 39%;
+    transform: rotate(-10deg);
+}
+
+div[data-key="13"] {
+    right: 2.5%;
+    top: 43%;
+    transform: rotate(-5deg);
+}
+
+div[data-key="14"] {
+    right: 2%;
+    top: 47%;
+    transform: rotate(-5deg);
+}
+
+div[data-key="15"] {
+    right: 2%;
+    top: 51%;
+    transform: rotate(0deg);
+}
+
+div[data-key="16"] {
+    right: 44%;
+    bottom: 4%;
+    transform: rotate(86deg);
+}
+
+div[data-key="17"] {
+    right: 42%;
+    bottom: 4%;
+    transform: rotate(82deg);
+}
+
+div[data-key="18"] {
+    right: 38%;
+    bottom: 4.5%;
+    transform: rotate(75deg);
+}
+
+div[data-key="19"] {
+    right: 33%;
+    bottom: 6%;
+    transform: rotate(67deg);
+}
+
+div[data-key="20"] {
+    right: 27%;
+    bottom: 8%;
+    transform: rotate(58deg);
+}
+
+div[data-key="21"] {
+    right: 22%;
+    bottom: 11%;
+    transform: rotate(51deg);
+}
+
+div[data-key="22"] {
+    right: 17%;
+    bottom: 15%;
+    transform: rotate(45deg);
+}
+
+div[data-key="23"] {
+    right: 13%;
+    bottom: 20%;
+    transform: rotate(35deg);
+}
+
+div[data-key="24"] {
+    right: 10%;
+    bottom: 25%;
+    transform: rotate(30deg);
+}
+
+div[data-key="25"] {
+    right: 7%;
+    bottom: 30%;
+    transform: rotate(25deg);
+}
+
+div[data-key="26"] {
+    right: 5%;
+    bottom: 35%;
+    transform: rotate(15deg);
+}
+
+div[data-key="27"] {
+    right: 3.5%;
+    bottom: 39%;
+    transform: rotate(10deg);
+}
+
+div[data-key="28"] {
+    right: 2.5%;
+    bottom: 43%;
+    transform: rotate(5deg);
+}
+
+div[data-key="29"] {
+    top: 96%;
+    left: 51%;
+    transform: rotate(-89deg);
+    background: red;
+}
+
+div[data-key="30"] {
+    top: 96%;
+    left: 49%;
+}
+
+div[data-key="31"] {
+    left: 45%;
+    bottom: 3.5%;
+    transform: rotate(-86deg);
+}
+
+div[data-key="32"] {
+    left: 40%;
+    bottom: 3.9%;
+    transform: rotate(-82deg);
+}
+
+div[data-key="33"] {
+    left: 36%;
+    bottom: 4.5%;
+    transform: rotate(-75deg);
+}
+
+div[data-key="34"] {
+    left: 31%;
+    bottom: 6%;
+    transform: rotate(-67deg);
+}
+
+div[data-key="35"] {
+    left: 27%;
+    bottom: 8%;
+    transform: rotate(-58deg);
+}
+
+div[data-key="36"] {
+    left: 22%;
+    bottom: 11%;
+    transform: rotate(-51deg);
+}
+
+div[data-key="37"] {
+    left: 17%;
+    bottom: 15%;
+    transform: rotate(-45deg);
+}
+
+div[data-key="38"] {
+    left: 13%;
+    bottom: 20%;
+    transform: rotate(-35deg);
+}
+
+div[data-key="39"] {
+    left: 10%;
+    bottom: 25%;
+    transform: rotate(-30deg);
+}
+
+div[data-key="40"] {
+    left: 7%;
+    bottom: 30%;
+    transform: rotate(-25deg);
+}
+
+div[data-key="41"] {
+    left: 5%;
+    bottom: 35%;
+    transform: rotate(-15deg);
+}
+
+div[data-key="42"] {
+    left: 3.5%;
+    bottom: 39%;
+    transform: rotate(-10deg);
+}
+
+div[data-key="43"] {
+    left: 2.5%;
+    bottom: 43%;
+    transform: rotate(-5deg);
+}
+
+div[data-key="45"] {
+    left: 2%;
+    top: 48%;
+    transform: rotate(0deg);
+}
+
+div[data-key="46"] {
+    left: 43%;
+    top: 4%;
+    transform: rotate(86deg);
+}
+
+div[data-key="47"] {
+    left: 39%;
+    top: 4%;
+    transform: rotate(82deg);
+}
+
+div[data-key="48"] {
+    left: 35%;
+    top: 4.6%;
+    transform: rotate(75deg);
+}
+
+div[data-key="49"] {
+    left: 31%;
+    top: 6.1%;
+    transform: rotate(67deg);
+}
+
+div[data-key="50"] {
+    left: 27%;
+    top: 8%;
+    transform: rotate(58deg);
+}
+
+div[data-key="51"] {
+    left: 22%;
+    top: 11%;
+    transform: rotate(51deg);
+}
+
+div[data-key="52"] {
+    left: 17%;
+    top: 15%;
+    transform: rotate(45deg);
+}
+
+div[data-key="53"] {
+    left: 13%;
+    top: 20%;
+    transform: rotate(35deg);
+}
+
+div[data-key="54"] {
+    left: 10%;
+    top: 25%;
+    transform: rotate(30deg);
+}
+
+div[data-key="55"] {
+    left: 7%;
+    top: 30%;
+    transform: rotate(25deg);
+}
+
+div[data-key="56"] {
+    left: 5%;
+    top: 35%;
+    transform: rotate(15deg);
+}
+
+div[data-key="57"] {
+    left: 3.5%;
+    top: 39%;
+    transform: rotate(10deg);
+}
+
+div[data-key="58"] {
+    left: 2.5%;
+    top: 43%;
+    transform: rotate(5deg);
 }
