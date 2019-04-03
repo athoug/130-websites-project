@@ -252,3 +252,43 @@ setInterval(time, 1000);
 and what we have now is
 
 ![demo of the active seconds](img/5.gif)
+
+great now to remove the active when the second ends, to do that I'll add an event listner to the container and check for the `transitionend` and then remove the class form the targeted element
+
+``` js
+function removeActive(e) {
+    if (e.propertyName !== 'background-color') return;
+    e.target.classList.remove('active-second');
+}
+```
+
+brilliant, it now works
+
+![second ticks working](img/6.gif)
+
+now it's time for the handels which is basically converting time to an angle using the formula (current time/total time units) * 360 so our function looks like so
+
+``` js
+function time() {
+    const now = new Date();
+
+    const secondTick = document.querySelector(`div[data-key="${now.getSeconds()}"]`);
+    secondTick.classList.add('active-second');
+
+    const seconds = now.getSeconds();
+    const secondsDegree = ((seconds/60) * 360) + 90;
+    secondsHand.style.transform = `rotate(${secondsDegree}deg)`;
+
+    const minutes = now.getMinutes();
+    const minutesDegree = ((minutes / 60) * 360) + 90;
+    minutesHand.style.transform = `rotate(${minutesDegree}deg)`;
+
+    const hour = now.getHours();
+    const hourDegree = ((hour / 12) * 360) + 90;
+    hourHand.style.transform = `rotate(${hourDegree}deg)`;
+}
+```
+
+It works and i'm happy about it. True the tick seconds isn't synced with the handle I knew this will hapen and that's due to my not so accurate positioning for those ticks but regardless not bad
+
+![screen shot of clock handle working](img/7.gif)

@@ -13,10 +13,43 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
+    text-align: center;
     min-height: 100vh;
+}
+
+.light {
     background: rgb(234,240,239);
     background: linear-gradient(90deg, rgba(234,240,239,1) 0%, rgba(218,227,227,1) 100%);
 }
+
+.light-container {
+    background: rgb(233, 240, 238);
+    background: linear-gradient(90deg, rgb(233, 240, 238) 0%, rgba(218,227,227,1) 100%);
+    box-shadow: -10rem 0 20rem rgba(255,255,255,1),
+                10rem 0 20rem rgba(0,0,0,0.1);
+}
+
+.light-clock {
+    background: rgb(241, 247, 246);
+    box-shadow: 0 0 5rem rgba(0,0,0,0.2);
+}
+
+.dark {
+    background: rgb(20,8,50);
+    background: linear-gradient(90deg, rgba(20,8,50,1) 0%, rgba(11,9,16,1) 100%);
+}
+
+.dark-container {
+    background: #16102C;
+    box-shadow: -10rem 0 20rem rgba(148, 48, 89, 0.1),
+                10rem 0 20rem rgba(0,0,0,0.3);
+}
+
+.dark-clock {
+    background: #16102C;
+    box-shadow: 0 0 2.5rem .5rem rgba(255,255,255,0.05);
+}
+
 
 
 .container {
@@ -24,10 +57,15 @@ body {
     width: 45rem;
     height: 45rem;
     border-radius: 50%;
-    background: rgb(233, 240, 238);
-    background: linear-gradient(90deg, rgb(233, 240, 238) 0%, rgba(218,227,227,1) 100%);
-    box-shadow: -10rem 0 20rem rgba(255,255,255,1),
-                10rem 0 20rem rgba(0,0,0,0.1);
+}
+
+.time {
+    font-size: 5.75rem;
+    margin-top: 4rem;
+}
+
+.hour-timer, .minute-timer {
+    color: #fff;
 }
 
 .seconds-container {
@@ -41,7 +79,7 @@ body {
     width: 2rem;
     height: 0.3rem;
     background: #fff;
-    transition: all 0.3s;
+    transition: all 0.9s;
     transform: rotate(90deg);
 }
 
@@ -52,9 +90,7 @@ body {
     left: 10%;
     width: 80%;
     height: 80%;
-    background: rgb(241, 247, 246);
     border-radius: 50%;
-    box-shadow: 0 0 5rem rgba(0,0,0,0.2);
 }
 
 .hand {
@@ -65,10 +101,11 @@ body {
     background: #16102C;
     transform-origin: 100%;
     transition: all 0.07s;
+    transform: rotate(90deg);
 }
 
 .hour-hand {
-    left: 5%;
+    top: 55%;
     width: 50%;
 }
 
@@ -81,7 +118,7 @@ body {
 }
 
 .second-hand {
-    left: -5px;
+    left: 1%;
     width: 60%;
     top: calc(50% + 1.5px);
     height: 4px;
@@ -93,13 +130,16 @@ body {
     position: absolute;
     left: 47%;
     top: 49%;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background: #FD1A77;
 }
 
 /* seconds tick styles */
+.hide-ticks {
+    display: none;
+}
 
 .active-second {
     background: #FD1A77;
@@ -461,4 +501,8 @@ div[data-key="59"] {
     left: 43%;
     top: 3.75%;
     transform: rotate(86deg);
+}
+
+.dark-handel {
+    background: rgb(241, 247, 246);
 }

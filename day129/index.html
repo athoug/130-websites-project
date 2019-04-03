@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="./main.css">
     <title>Theme Clock</title>
 </head>
-<body>
+<body class="dark">
     <main>
-        <div class="container">
-            <div class="seconds-container">
+        <div class="container dark-container">
+            <div class="seconds-container hide-ticks">
                 <div class="seconds" data-key="0"></div>
                 <div class="seconds" data-key="1"></div>
                 <div class="seconds" data-key="2"></div>
@@ -75,13 +75,18 @@
                 <div class="seconds" data-key="58"></div>
                 <div class="seconds" data-key="59"></div>
             </div>
-            <div class="clock">
-                <div class="hand hour-hand"></div>
+            <div class="clock dark-clock">
+                <div class="hand hour-hand dark-handel"></div>
                 <div class="hand minute-hand"></div>
                 <div class="hand second-hand"></div>
-                <div class="circle-clock"></div>
+                <!-- <div class="circle-clock"></div> -->
             </div>
         </div>
+        <!-- <div class="time">
+            <span class="hour-timer">4</span>
+            :
+            <spand class="minute-timer">33</spand>
+        </div> -->
     </main>
 
     <script src="./app.js"></script>
