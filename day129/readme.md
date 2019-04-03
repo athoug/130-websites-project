@@ -110,3 +110,74 @@ body {
 and this gives us this light gradient background
 
 ![screenshot of gradient background](img/1.png)
+
+okay now it's time [excuse the pun] for the clock both the container and the clock face styling would look like this
+
+``` css
+.container {
+    position: relative;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 50%;
+    background: rgb(233, 240, 238);
+    background: linear-gradient(90deg, rgb(233, 240, 238) 0%, rgba(218,227,227,1) 100%);
+    box-shadow: -10rem 0 20rem rgba(255,255,255,1),
+                10rem 0 20rem rgba(0,0,0,0.1);
+}
+
+.clock {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: rgb(241, 247, 246);
+    border-radius: 50%;
+    box-shadow: 0 0 5rem rgba(0,0,0,0.2);
+}
+```
+
+and lets see what we have so far
+
+![clock face screenshot](img/2.png)
+
+now is the tough part which is basically the seconds ticks. Now to be honist this was trial and error where I chose the positions of each tick based on my eye sight [apart from the 4 major corners] so for the css I won't detail all the positions you can just check it out in the `css` file yourself
+
+``` css
+.seconds-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.seconds {
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    background: #fff;
+    transition: all 0.3s;
+    transform: rotate(90deg);
+}
+
+/* seconds tick styles */
+div[data-key="0"] {
+    left: 47%;
+    top: 3.5%;
+}
+
+div[data-key="1"] {
+    right: 44%;
+    top: 3.5%;
+    transform: rotate(-86deg);
+}
+
+div[data-key="2"] {
+    right: 40%;
+    top: 4%;
+    transform: rotate(-82deg);
+}
+```
+
+This took a while [a really long while] but finally managed to make it and here's what we have so far
+
+![seconds tick screenshot](img/3.png)

@@ -18,9 +18,6 @@ body {
     background: linear-gradient(90deg, rgba(234,240,239,1) 0%, rgba(218,227,227,1) 100%);
 }
 
-main {
-
-}
 
 .container {
     position: relative;
@@ -37,7 +34,6 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    /* border: 1px solid slateblue; */
 }
 
 .seconds {
@@ -47,7 +43,6 @@ main {
     background: #fff;
     transition: all 0.3s;
     transform: rotate(90deg);
-    /* transform-origin: 100%; */
 }
 
 .clock {
