@@ -181,3 +181,74 @@ div[data-key="2"] {
 This took a while [a really long while] but finally managed to make it and here's what we have so far
 
 ![seconds tick screenshot](img/3.png)
+
+great now it's time for the handles and the
+
+``` css
+.hand {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 6px;
+    background: #16102C;
+    transform-origin: 100%;
+    transition: all 0.07s;
+}
+
+.hour-hand {
+    left: 5%;
+    width: 50%;
+}
+
+.minute-hand {
+    width: 55%;
+    top: calc(50% + 1.5px);
+    height: 4px;
+    background: rgb(217, 224, 222);
+    transform-origin: 90%;
+}
+
+.second-hand {
+    left: -5px;
+    width: 60%;
+    top: calc(50% + 1.5px);
+    height: 4px;
+    background: #FD1A77;
+    transform-origin: 80%
+}
+
+.circle-clock {
+    position: absolute;
+    left: 47%;
+    top: 49%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #FD1A77;
+}
+
+```
+
+aaand we have
+
+![clock screenshot](img/4.png)
+
+for now we'll stop with the css and make the clock functional
+
+### Javascript
+
+The first thing to takle here would be the seconds ticker and the plan is get the current second, get the element that corresponds to that second add the class to it so with that said, the time function would look like
+
+``` js
+function time() {
+    const now = new Date();
+    const secondTick = document.querySelector(`div[data-key="${now.getSeconds()}"]`);
+    secondTick.classList.add('active-second');
+}
+
+setInterval(time, 1000);
+```
+
+and what we have now is
+
+![demo of the active seconds](img/5.gif)

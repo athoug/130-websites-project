@@ -45,6 +45,7 @@ body {
     transform: rotate(90deg);
 }
 
+/* clock face styling */
 .clock {
     position: absolute;
     top: 10%;
@@ -56,7 +57,54 @@ body {
     box-shadow: 0 0 5rem rgba(0,0,0,0.2);
 }
 
+.hand {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 6px;
+    background: #16102C;
+    transform-origin: 100%;
+    transition: all 0.07s;
+}
+
+.hour-hand {
+    left: 5%;
+    width: 50%;
+}
+
+.minute-hand {
+    width: 55%;
+    top: calc(50% + 1.5px);
+    height: 4px;
+    background: rgb(217, 224, 222);
+    transform-origin: 90%;
+}
+
+.second-hand {
+    left: -5px;
+    width: 60%;
+    top: calc(50% + 1.5px);
+    height: 4px;
+    background: #FD1A77;
+    transform-origin: 80%
+}
+
+.circle-clock {
+    position: absolute;
+    left: 47%;
+    top: 49%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #FD1A77;
+}
+
 /* seconds tick styles */
+
+.active-second {
+    background: #FD1A77;
+}
+
 div[data-key="0"] {
     left: 47%;
     top: 3.5%;
