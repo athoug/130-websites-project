@@ -292,3 +292,19 @@ function time() {
 It works and i'm happy about it. True the tick seconds isn't synced with the handle I knew this will hapen and that's due to my not so accurate positioning for those ticks but regardless not bad
 
 ![screen shot of clock handle working](img/7.gif)
+
+## Resources
+
+A list of resources that helped with this project:
+
+* [Javascript 30](https://javascript30.com/)
+* [UI Inperation](https://dribbble.com/shots/2286742-Alarm-Clock-Skin)
+* [Gradient Generator](https://cssgradient.io/)
+* [CSS-Ticks: progrss bar](https://css-tricks.com/building-progress-ring-quickly/) Article
+* [Codepen progress bar demo](https://codepen.io/jo-asakura/pen/stFHi)
+* [CSS-Tricks: transform](https://css-tricks.com/almanac/properties/t/transform/) Article
+* [SVG animation](https://jakearchibald.com/2013/animated-line-drawing-svg/)
+* [MDN: translateX](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX)
+* [MDN: Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+* [MDN: String includes prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+* [MDN: Date Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)

@@ -10,10 +10,20 @@
     <link rel="stylesheet" href="./main.css">
     <title>Theme Clock</title>
 </head>
-<body class="dark">
+<body class="light">
+    <div class="theme-toggler">
+        <i class="far fa-moon"></i>
+        <button role="toggle Theme"><span class="toggle-circle toggle-circle-light"></span></button>
+        <i class="far fa-sun"></i>
+    </div>
     <main>
-        <div class="container dark-container">
-            <div class="seconds-container hide-ticks">
+        <div class="container light-container">
+            <div class="seconds-container dark-seconds hide">
+                <svg class="progress-ring">
+                    <circle class="progress-ring__circle"/>
+                </svg>
+            </div>
+            <div class="seconds-container light-seconds">
                 <div class="seconds" data-key="0"></div>
                 <div class="seconds" data-key="1"></div>
                 <div class="seconds" data-key="2"></div>
@@ -75,20 +85,26 @@
                 <div class="seconds" data-key="58"></div>
                 <div class="seconds" data-key="59"></div>
             </div>
-            <div class="clock dark-clock">
-                <div class="hand hour-hand dark-handel"></div>
+            <div class="clock light-clock">
+                <div class="hand hour-hand"></div>
                 <div class="hand minute-hand"></div>
                 <div class="hand second-hand"></div>
-                <!-- <div class="circle-clock"></div> -->
+                <div class="circle-clock"></div>
             </div>
         </div>
-        <!-- <div class="time">
+        <div class="time dark-time-indicator">
             <span class="hour-timer">4</span>
             :
             <spand class="minute-timer">33</spand>
-        </div> -->
+            <span class="indicator">
+                <span class="am">am</span>
+                <span class="pm dark-time-indicator">pm</span>
+            </span>
+        </div>
     </main>
-
+    <footer class="light-footer">
+        <p>Athoug Alsoughayer &copy; <span class="year">2019</span></p>
+    </footer>
     <script src="./app.js"></script>
 </body>
 </html>

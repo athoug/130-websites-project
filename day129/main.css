@@ -10,11 +10,34 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Lato', sans-serif;
     text-align: center;
     min-height: 100vh;
+    transition: all 0.5s;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+footer {
+    margin: 3rem auto;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.light-footer {
+    color: #ccc;
+}
+
+.dark-footer {
+    color: rgb(39, 28, 70);
 }
 
 .light {
@@ -40,7 +63,7 @@ body {
 }
 
 .dark-container {
-    background: #16102C;
+    background: rgb(29, 21, 54);
     box-shadow: -10rem 0 20rem rgba(148, 48, 89, 0.1),
                 10rem 0 20rem rgba(0,0,0,0.3);
 }
@@ -50,22 +73,106 @@ body {
     box-shadow: 0 0 2.5rem .5rem rgba(255,255,255,0.05);
 }
 
-
+.hide {
+   opacity: 0;
+}
 
 .container {
     position: relative;
     width: 45rem;
     height: 45rem;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 5.75rem;
     margin-top: 4rem;
+    padding-left: 5rem;
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: #fff;
+    font-size: 1.75rem;
+}
+
+.theme-toggler button{
+    position: relative;
+    top: -0.4rem;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 1rem;
+    width: 5rem;
+    height: 3rem;
+    outline: none;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.btn-dark-container {
+    color: rgb(39, 28, 70);
+}
+
+.btn-dark {
+    border: 1px solid rgb(39, 28, 70);
+}
+
+.toggle-circle {
+    position: absolute;
+    top: 7.1%;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.toggle-circle-light {
+    background: #fff;
+    right: 0;
+}
+
+.toggle-circle-dark {
+    background: rgb(39, 28, 70);;
+    left: 0;
+}
+
+
+.hour-timer {
+    margin-right: 1rem;
+}
+
+.minute-timer {
+    margin-left: 1rem;
+}
+
+.am, .pm {
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 1.5rem;
+    font-size: 2.25rem;
+    display: block;
+    opacity: 0;
+    transition: all 0.3s;
+    font-weight: 700;
+}
+
+.dark-time-indicator {
+    color: #FD1A77;
 }
 
 .hour-timer, .minute-timer {
     color: #fff;
+}
+
+.view-time-am-pm {
+    opacity: 1
 }
 
 .seconds-container {
@@ -91,45 +198,51 @@ body {
     width: 80%;
     height: 80%;
     border-radius: 50%;
+    /* border: 1px solid white; */
 }
 
 .hand {
     position: absolute;
-    top: 50%;
     width: 50%;
-    height: 6px;
+    height: 1%;
     background: #16102C;
     transform-origin: 100%;
     transition: all 0.07s;
     transform: rotate(90deg);
 }
 
+.dark-handle {
+    background: #fff;
+}
+
+/* height -> 1% */
 .hour-hand {
-    top: 55%;
-    width: 50%;
+    top: 49.5%;
+    left: 14%;
+    width: 35%;
+    height: 2%;
 }
 
 .minute-hand {
-    width: 55%;
-    top: calc(50% + 1.5px);
-    height: 4px;
+    width: 45%;
+    height: 1.5%;
+    left: 5%;
+    top: 49.25%;
     background: rgb(217, 224, 222);
-    transform-origin: 90%;
 }
 
 .second-hand {
-    left: 1%;
-    width: 60%;
-    top: calc(50% + 1.5px);
-    height: 4px;
+    width: 50%;
+    height: 1%;
+    top: 49.5%;
+    left: -0.3%;
     background: #FD1A77;
-    transform-origin: 80%
 }
 
 .circle-clock {
     position: absolute;
     left: 47%;
-    top: 49%;
+    top: 48%;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
@@ -137,9 +250,6 @@ body {
 }
 
 /* seconds tick styles */
-.hide-ticks {
-    display: none;
-}
 
 .active-second {
     background: #FD1A77;
@@ -505,4 +615,48 @@ div[data-key="59"] {
 
 .dark-handel {
     background: rgb(241, 247, 246);
+}
+
+/* dark seconds */
+.dark-seconds-test {
+    /* z-index: 44; */
+    --x-start: 50%;
+    --y-start: 0;
+    --x-end: 61%;
+    --y-end: 0%;
+    position: absolute;
+    /* top: 5%;
+    left: 5%; */
+    width: 100%;
+    height: 100%;
+    background: #FD1A77;
+    -webkit-clip-path: polygon(var(--x-start) var(--y-start), 50% 50%, var(--x-end) var(--y-end));
+    clip-path: polygon(var(--x-start) var(--y-start), 50% 50%, var(--x-end) var(--y-end));
+}
+
+.dark-seconds {
+    position: absolute;
+    /* border: 1px solid white; */
+    z-index: 49;
+}
+
+svg {
+    width: 450px;
+    height: 450px;
+}
+
+circle {
+    r: calc((103%/2) - (20 * 2));
+    cx: 50%;
+    cy: 50%;
+    stroke:  #FD1A77;
+    stroke-width: 20;
+    fill: transparent;
+}
+
+.progress-ring__circle {
+  /* stroke-dasharray: 4 10; */
+  /* transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%, */
 }
