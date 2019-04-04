@@ -15,6 +15,8 @@ const digitalHour = document.querySelector('.hour-timer');
 const digitalMinute = document.querySelector('.minute-timer');
 const amContainer = document.querySelector('.am');
 const pmContainer = document.querySelector('.pm');
+// progress second
+const circle = document.querySelector('circle');
 
 let secondsCounterDegree = 0;
 let minuteCounterDegree = 0;
@@ -49,6 +51,9 @@ function time() {
 
     // get the second and convert it to degrees
     setSeconds(now);
+
+    // setting the dashstoke
+    dashStrokeSetter(now);
 
     // get the minute and convert it to degrees
     setMinutes(now);
@@ -94,6 +99,12 @@ function amPmSetter(now) {
         amContainer.classList.remove('view-time-am-pm');
         pmContainer.classList.add('view-time-am-pm');
     }
+}
+
+// function to set dash stroke array
+function dashStrokeSetter(now) {
+    const offset = (now.getSeconds() /60) * 268;
+    circle.style.strokeDashoffset = `-${offset}%`;
 }
 
 // function to toggle the theme

@@ -643,6 +643,7 @@ div[data-key="59"] {
 svg {
     width: 450px;
     height: 450px;
+    transform: rotateY(180deg) rotateZ(-90deg) scaleY(-1);
 }
 
 circle {
@@ -652,11 +653,23 @@ circle {
     stroke:  #FD1A77;
     stroke-width: 20;
     fill: transparent;
+    stroke-dasharray: 268%;
+    stroke-dashoffset: 0px;
+    /* stroke-linecap: round; */
+    /* animation: countdown 50s linear infinite forwards; */
 }
 
 .progress-ring__circle {
-  /* stroke-dasharray: 4 10; */
-  /* transition: stroke-dashoffset 0.35s;
-  transform: rotate(-90deg);
-  transform-origin: 50% 50%, */
+  transition: 0.35s stroke-dashoffset;
+  /* transform: rotate(-90deg); */
+  transform-origin: 50% 50%;
+}
+
+@keyframes countdown {
+     from {
+    stroke-dashoffset: 268%;
+  }
+  to {
+    stroke-dashoffset:  0;
+  }
 }

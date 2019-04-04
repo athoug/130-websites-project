@@ -302,8 +302,10 @@ A list of resources that helped with this project:
 * [Gradient Generator](https://cssgradient.io/)
 * [CSS-Ticks: progrss bar](https://css-tricks.com/building-progress-ring-quickly/) Article
 * [Codepen progress bar demo](https://codepen.io/jo-asakura/pen/stFHi)
+* [Codepen countdown](https://codepen.io/zebateira/pen/VvqJwm)
 * [CSS-Tricks: transform](https://css-tricks.com/almanac/properties/t/transform/) Article
 * [SVG animation](https://jakearchibald.com/2013/animated-line-drawing-svg/)
+* [CSS and JS timer](https://www.cssscript.com/circular-countdown-timer-javascript-css3/)
 * [MDN: translateX](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX)
 * [MDN: Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 * [MDN: String includes prototype](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
