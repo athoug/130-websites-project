@@ -293,6 +293,18 @@ It works and i'm happy about it. True the tick seconds isn't synced with the han
 
 ![screen shot of clock handle working](img/7.gif)
 
+to be honest I lost myslef in coding a bit so I forgot to document the progress but you can check out the css and js file for the updates. in the meantime I'll share the update UI
+
+when working on the design and setting up the toggler here's how it looks like
+
+![Light theme](img/8.gif)
+
+for the dark theme the function just toggles between the light and dark classes. here's how the app looks like
+
+![Dark theme demo](img/9.gif)
+
+
+
 ## Resources
 
 A list of resources that helped with this project:
