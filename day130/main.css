@@ -1,0 +1,235 @@
+/* general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+:root {
+    --face-width: 50%;
+    --face-height: 75%;
+    --skin-color: #FFC79E;
+    --ear-color: #F39570;
+    --inner-ear-color: #C65745;
+    --nose-color: #F39570;
+    --nose-shade-color: #E97660;
+    --eye-color: #262425;
+    --eye-brow-color: #262425;
+    --blush-color: #F39570;
+    --hair-color: #1C1E20;
+    --mouth-color: #E97660;
+}
+
+html {
+    font-size: 10;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: #F3EFEA;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding: 3rem;
+    flex: 2;
+    /* border: 1px solid salmon; */
+}
+
+
+/* container stylling */
+.container {
+    margin: auto;
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    /* border: 1px solid slateblue; */
+}
+
+
+/* ear styling */
+.ear-left {
+    position: absolute;
+    bottom: 30%;
+    left: 16%;
+    width: 16%;
+    height: 24%;
+    background: var(--ear-color);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(-15deg);
+}
+
+.inner-ear-l {
+    position: absolute;
+    bottom: 1%;
+    left: 40.5%;
+    background: var(--inner-ear-color);
+    width: 4%;
+    height: 90%;
+    transform: rotate(-10deg);
+}
+
+.ear-right {
+    position: absolute;
+    bottom: 30%;
+    right: 16%;
+    width: 16%;
+    height: 24%;
+    background: var(--ear-color);
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(15deg);
+}
+
+.inner-ear-r {
+    position: absolute;
+    bottom: 1%;
+    right: 40.5%;
+    background: var(--inner-ear-color);
+    width: 4%;
+    height: 90%;
+    transform: rotate(10deg);
+}
+
+
+/* face style */
+.face {
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    width: var(--face-width);
+    height: var(--face-height);
+    background: var(--skin-color);
+    border-radius: 48%;
+}
+/* nose styling */
+.nose {
+    position: absolute;
+    left: 40%;
+    top:  35%;
+    width: 20%;
+    height: 30%;
+    background: var(--nose-color);
+    -webkit-clip-path: polygon(50% 0%, 10% 100%, 90% 100%);
+            clip-path: polygon(50% 0%, 10% 100%, 90% 100%);
+}
+
+.nose-shade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--nose-shade-color);
+    -webkit-clip-path: polygon(50% 0, 100% 100%, 50% 100%);
+            clip-path: polygon(50% 0, 100% 100%, 50% 100%);
+}
+/* eyes styling */
+.eye-l {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    width: 12%;
+    height: 8%;
+    background: var(--eye-color);
+    border-radius: 50%;
+    transform: scale(0.8)
+}
+
+.eye-r {
+    position: absolute;
+    top: 40%;
+    right: 18%;
+    width: 12%;
+    height: 8%;
+    background: var(--eye-color);
+    border-radius: 50%;
+    transform: scale(0.8)
+}
+/* eye brows styling */
+.eye-brow-l {
+    position: absolute;
+    left: 12%;
+    top: 26%;
+    width: 27%;
+    height: 8.5%;
+    border-radius: 10%;
+    background: var(--eye-brow-color);
+}
+
+.eye-brow-r {
+    position: absolute;
+    right: 12%;
+    top: 26%;
+    width: 27%;
+    height: 8.5%;
+    border-radius: 10%;
+    background: var(--eye-brow-color);
+}
+/* blush styling */
+.blush-l {
+    position: absolute;
+    left: 8%;
+    bottom: 31%;
+    width: 28%;
+    height: 16%;
+    background: var(--blush-color);
+    border-radius: 50%;
+    transform: scale(1);
+}
+
+.blush-r {
+    position: absolute;
+    right: 8%;
+    bottom: 31%;
+    width: 28%;
+    height: 16%;
+    background: var(--blush-color);
+    border-radius: 50%;
+    transform: scale(1);
+}
+/* mouth styling */
+.mouth {
+    position: absolute;
+    left: 37.5%;
+    bottom: 18%;
+    width: 25%;
+    height: 5%;
+    border-bottom: 0.5rem solid var(--mouth-color);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* background: var(--mouth-color); */
+}
+
+
+/* hair styling */
+.hair-back {
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    width: 60%;
+    height: 70%;
+    background: var(--hair-color);
+   -webkit-clip-path: polygon(48% 19%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+           clip-path: polygon(48% 19%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.hair-front {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 55%;
+    height: 30%;
+    background: var(--hair-color);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 30%;
+}

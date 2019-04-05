@@ -11,23 +11,27 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family: 'Lato', sans-serif;
     text-align: center;
     min-height: 100vh;
     transition: all 0.5s;
 }
+header {
+    flex: 1;
+}
 
 main {
-    margin: 0 auto;
+    margin: 10rem auto;
     max-width: 960px;
+    flex: 2;
 }
 
 footer {
-    margin: 3rem auto;
-    position: absolute;
-    bottom: 0;
+    text-align: center;
+    margin: 3rem auto 4rem;
+    flex: 1;
     letter-spacing: 1px;
     font-size: 1.2rem;
 }
@@ -111,6 +115,7 @@ footer {
     width: 5rem;
     height: 3rem;
     outline: none;
+    border: 1px solid #ccc;
     margin-left: 0.4rem;
     margin-right: 0.4rem;
 }
@@ -119,7 +124,7 @@ footer {
     color: rgb(39, 28, 70);
 }
 
-.btn-dark {
+.theme-toggler button.btn-dark  {
     border: 1px solid rgb(39, 28, 70);
 }
 
@@ -671,5 +676,11 @@ circle {
   }
   to {
     stroke-dashoffset:  0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
   }
 }
