@@ -46,11 +46,13 @@ footer {
 
 .light {
     background: rgb(234,240,239);
+    background: -webkit-linear-gradient(90deg, rgba(234,240,239,1) 0%, rgba(218,227,227,1) 100%);
     background: linear-gradient(90deg, rgba(234,240,239,1) 0%, rgba(218,227,227,1) 100%);
 }
 
 .light-container {
     background: rgb(233, 240, 238);
+    background: -webkit-linear-gradient(90deg, rgb(233, 240, 238) 0%, rgba(218,227,227,1) 100%);
     background: linear-gradient(90deg, rgb(233, 240, 238) 0%, rgba(218,227,227,1) 100%);
     box-shadow: -10rem 0 20rem rgba(255,255,255,1),
                 10rem 0 20rem rgba(0,0,0,0.1);
@@ -63,6 +65,7 @@ footer {
 
 .dark {
     background: rgb(20,8,50);
+    background: -webkit-linear-gradient(90deg, rgba(20,8,50,1) 0%, rgba(11,9,16,1) 100%);
     background: linear-gradient(90deg, rgba(20,8,50,1) 0%, rgba(11,9,16,1) 100%);
 }
 
@@ -683,10 +686,4 @@ circle {
     html {
         font-size: 6px;
     }
-  body {
-    background: red;
-  }
-  header {
-      background: blue;
-  }
 }
