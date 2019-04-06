@@ -679,8 +679,14 @@ circle {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media all and (max-width: 550px)  {
+    html {
+        font-size: 6px;
+    }
   body {
-    background-color: red;
+    background: red;
+  }
+  header {
+      background: blue;
   }
 }
