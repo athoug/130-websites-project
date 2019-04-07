@@ -320,3 +320,7 @@ document.querySelector('.container').addEventListener('click', setPointerElement
 const inputColor = document.querySelector('.controls input[type="color"]');
 inputColor.addEventListener('change', colorMe);
 ```
+
+Now when I refresh the page I get
+
+![color change demo](img/3.gif)
