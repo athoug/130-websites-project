@@ -384,3 +384,20 @@ and
 
 ![eyes bouned demo](img/6.gif)
 
+The next thing to takle is **fixing the style** and that's just a bit of css magic
+
+
+## Resources
+
+Bellow is a list of resources used for this project:
+
+* [Dribble inspires design](https://dribbble.com/shots/3982468-Say-Hi-to-Freddi) by Animagic Studios
+* [Codepen Eye forllow](https://codepen.io/J-Roel/pen/wWGNQN?editors=1010) by Jeremy
+* [You might not need jQuery](http://youmightnotneedjquery.com/) website
+* [Google fonts](https://fonts.google.com/)
+* [MDN:Array prototype .includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+* [MDN: data- attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+* [MDN: change event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+* [MDN: documentElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/documentElement)
+* [MDN: range element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+* [MDN: input radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)

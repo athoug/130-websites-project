@@ -13,6 +13,8 @@
     --ear-width: 30%;
     --ear-height: 30%;
     --eye-container-height: 20%;
+    --eye-top: 50%;
+    --eye-height: 39%;
 
     /* color variables */
     --skin-color: #FFC79E;
@@ -44,20 +46,56 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background: #F3EFEA;
+    font-family: Helvetica , Arial, sans-serif;
+}
+
+header {
+    max-width: 960px;
+    margin: 2rem auto;
+}
+
+header h1 {
+    font-family: 'Vibur', cursive;
+    font-size: 5rem;
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #bbb;
+    width: 30rem;
+    margin: auto;
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100%;
+    max-height: 90%;
+    max-width: 960px;
+    margin: 0 auto;
     padding: 3rem;
     flex: 2;
-    /* border: 1px solid salmon; */
 }
 
+/* controls styling */
+.controls {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    text-transform: uppercase;
+}
+
+.controls input {
+    margin-bottom: 1.5rem;
+}
 
 /* container stylling */
 .container {
@@ -166,10 +204,10 @@ main {
 }
 .eye-l {
     position: absolute;
-    top: 50%;
+    top: var(--eye-top);
     left: 18%;
     width: 12%;
-    height: 39%;
+    height: var(--eye-height);
     background: var(--eye-color);
     border-radius: 50%;
     transform-origin: center;
@@ -178,10 +216,10 @@ main {
 
 .eye-r {
     position: absolute;
-    top: 50%;
+    top: var(--eye-top);
     right: 18%;
     width: 12%;
-    height: 39%;
+    height: var(--eye-height);
     background: var(--eye-color);
     border-radius: 50%;
     transform-origin: center;
@@ -241,7 +279,6 @@ main {
     border-bottom: 0.5rem solid var(--mouth-color);
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    /* background: var(--mouth-color); */
 }
 
 
@@ -270,4 +307,11 @@ main {
     border-top-right-radius: 30%;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 30%;
+}
+
+@media (max-width: 500px) {
+ main {
+     background: red;
+     flex-direction: column;
+ }
 }

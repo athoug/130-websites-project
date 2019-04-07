@@ -4,6 +4,8 @@ let selectedFeature;
 const body = document.querySelector('body');
 const face = document.querySelector('.face');
 const eyes = document.querySelectorAll('.eye');
+
+const inputColor = document.querySelector('.controls input[type="color"]');
 const inputsRange = document.querySelectorAll('.controls input[type="range"]');
 const inputCheckBox = document.querySelectorAll('.controls input[type="checkbox"]');
 const inputRadio = document.querySelectorAll('.controls input[type="radio"]');
@@ -69,10 +71,8 @@ function eyeMovment(e) {
 // add lisner to container, and record the pointer
 document.querySelector('.container').addEventListener('click', setPointerElement);
 
-// select the color input and add a listner
-const inputColor = document.querySelector('.controls input[type="color"]');
+// set the listners of the control elements
 inputColor.addEventListener('change', colorMe);
-
 inputsRange.forEach(input => input.addEventListener('change', changeDismentions));
 inputCheckBox.forEach(input => input.addEventListener('click', checkBoxHandler));
 inputRadio.forEach(input => input.addEventListener('click', radioButtonHandler));
