@@ -386,6 +386,8 @@ and
 
 The next thing to takle is **fixing the style** and that's just a bit of css magic we get
 
+![face change complete app demo](img/7.gif)
+
 and with that we've completed the project for today :)
 
 ## Resources
