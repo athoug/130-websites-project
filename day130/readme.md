@@ -324,3 +324,31 @@ inputColor.addEventListener('change', colorMe);
 Now when I refresh the page I get
 
 ![color change demo](img/3.gif)
+
+Brilliant! Now following the same approach, I wanted to add a couple of customization such as eye size, face scale [individual width and height], ear size, hair..etc For this though, I used the name attribute to the input elements to help me with changing the css variable. Meaning my html looks as such
+
+``` html
+<div>
+    <label for="eye-scale">Eye size </label>
+    <!-- Note the attribute bale "eye-scale" which corresponds with the css variable name in the main.css file -->
+    <input id="eye-scale" type="range" value="1" name="eye-scale" min="0.1" max="2" step="0.1">
+</div>
+```
+
+with that, I did the same steps of selecting the inputs, attaching an event listner to them and changing the property through the root document by grabing the input value and name attribute so the JS code looks like
+
+``` javscript
+    // function to change the faces dismentions
+    function changeDismentions() {
+    const suffix = this.dataset.suffix || '';
+    // get the changed value [this.value] | get the name [this.name] of the variable to be changed
+    document.documentElement.style.setProperty(`--${this.name}`, `${this.value}${suffix}`);
+    }
+
+    const inputsRange = document.querySelectorAll('.controls input[type="range"]');
+    inputsRange.forEach(input => input.addEventListener('change', changeDismentions));
+```
+
+Same approach was taken with the rest of the inputs which makes us have controls that changes a couple of things so here's a demo of what we have so far
+
+![controlls working demo](img/4.gif)
