@@ -7,8 +7,13 @@
 }
 
 :root {
+    /* sizing variables */
     --face-width: 50%;
     --face-height: 75%;
+    --ear-width: 30%;
+    --ear-height: 30%;
+
+    /* color variables */
     --skin-color: #FFC79E;
     --ear-color: #F39570;
     --inner-ear-color: #C65745;
@@ -19,6 +24,16 @@
     --blush-color: #F39570;
     --hair-color: #1C1E20;
     --mouth-color: #E97660;
+
+    /* scale variables */
+    --eye-scale: 0.8;
+    --ear-scale: 1;
+    --face-scale: 1;
+
+    /* visibility variablles */
+    --blush: display;
+    --hair: display;
+    --hair-front: display;
 }
 
 html {
@@ -58,14 +73,14 @@ main {
 /* ear styling */
 .ear-left {
     position: absolute;
-    bottom: 30%;
-    left: 16%;
-    width: 16%;
-    height: 24%;
+    bottom: 35%;
+    left: -17%;
+    width: var(--ear-width);
+    height: var(--ear-height);
     background: var(--ear-color);
     border-radius: 50%;
     overflow: hidden;
-    transform: rotate(-15deg);
+    transform: rotate(-15deg) scale(var(--ear-scale));
 }
 
 .inner-ear-l {
@@ -80,14 +95,14 @@ main {
 
 .ear-right {
     position: absolute;
-    bottom: 30%;
-    right: 16%;
-    width: 16%;
-    height: 24%;
+    bottom: 35%;
+    right: -17%;
+    width: var(--ear-width);
+    height: var(--ear-height);
     background: var(--ear-color);
     border-radius: 50%;
     overflow: hidden;
-    transform: rotate(15deg);
+    transform: rotate(15deg) scale(var(--ear-scale));
 }
 
 .inner-ear-r {
@@ -108,6 +123,15 @@ main {
     left: 25%;
     width: var(--face-width);
     height: var(--face-height);
+    background: var(--skin-color);
+    border-radius: 48%;
+    transform: scale(var(--face-scale));
+}
+
+.face-copy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background: var(--skin-color);
     border-radius: 48%;
 }
@@ -140,7 +164,7 @@ main {
     height: 8%;
     background: var(--eye-color);
     border-radius: 50%;
-    transform: scale(0.8)
+    transform: scale(var(--eye-scale));
 }
 
 .eye-r {
@@ -151,7 +175,7 @@ main {
     height: 8%;
     background: var(--eye-color);
     border-radius: 50%;
-    transform: scale(0.8)
+    transform: scale(var(--eye-scale));
 }
 /* eye brows styling */
 .eye-brow-l {
@@ -175,6 +199,7 @@ main {
 }
 /* blush styling */
 .blush-l {
+    display: var(--blush);
     position: absolute;
     left: 8%;
     bottom: 31%;
@@ -186,6 +211,7 @@ main {
 }
 
 .blush-r {
+    display: var(--blush);
     position: absolute;
     right: 8%;
     bottom: 31%;
@@ -211,22 +237,24 @@ main {
 
 /* hair styling */
 .hair-back {
+    display: var(--hair);
     position: absolute;
-    left: 20%;
-    top: 5%;
-    width: 60%;
-    height: 70%;
+    left: -15%;
+    top: -19%;
+    width: 130%;
+    height: 85%;
     background: var(--hair-color);
    -webkit-clip-path: polygon(48% 19%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
            clip-path: polygon(48% 19%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
 
 .hair-front {
+    display: var(--hair-front);
     position: absolute;
-    left: 25%;
-    top: 5%;
-    width: 55%;
-    height: 30%;
+    left: 2%;
+    top: -20%;
+    width: 110%;
+    height: 40%;
     background: var(--hair-color);
     border-top-left-radius: 40%;
     border-top-right-radius: 30%;
