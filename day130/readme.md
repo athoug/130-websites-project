@@ -352,3 +352,35 @@ with that, I did the same steps of selecting the inputs, attaching an event list
 Same approach was taken with the rest of the inputs which makes us have controls that changes a couple of things so here's a demo of what we have so far
 
 ![controlls working demo](img/4.gif)
+
+okay now I'm officially done, but I do want to add some house keeping.
+
+first, **Eye Movment**: I want the eyes to move with the locatin of the mouse. To do so, I first need to target the document, get the coordenated and then try update the eyes wusing the `translate` property. I was following a pen by [Jeremey on codepen](https://codepen.io/J-Roel/pen/wWGNQN?editors=1010). It took me some time to convert the method to vanilla JS but managed to do so, however...
+
+![eyes not bounding demo](img/5.gif)
+
+Hummm so I need to bound the movment. Here's where I stumbled a bit. I wanted to keey it within a specific box I kept randomly experamenting by adding number, subtracting numbers but to no avail, but then when I devided it worked! so my JS looks as such
+
+``` javascript
+const eyes = document.querySelectorAll('.eye');
+
+// function to track eye movment
+function eyeMovment(e) {
+  // note: This function is based on the pen my Jeremy [https://codepen.io/J-Roel/pen/wWGNQN?editors=0010]
+  eyes.forEach((eye) => {
+    const x = (eye.getBoundingClientRect().left) + (eye.getBoundingClientRect().width / 2);
+    const y = (eye.getBoundingClientRect().top) + (eye.getBoundingClientRect().height / 2);
+    const xPage = (e.pageX - x) / 6;
+    const yPage = (e.pageY - y) / 5.5;
+
+    eye.style.setProperty('transform', `scale(var(--eye-scale)) translateX(${xPage}%) translateY(${yPage}%)`);
+  });
+}
+
+body.addEventListener('mousemove', eyeMovment);
+```
+
+and
+
+![eyes bouned demo](img/6.gif)
+
