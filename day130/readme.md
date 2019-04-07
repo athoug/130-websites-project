@@ -384,8 +384,9 @@ and
 
 ![eyes bouned demo](img/6.gif)
 
-The next thing to takle is **fixing the style** and that's just a bit of css magic
+The next thing to takle is **fixing the style** and that's just a bit of css magic we get
 
+and with that we've completed the project for today :)
 
 ## Resources
 

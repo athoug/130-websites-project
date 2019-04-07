@@ -68,6 +68,9 @@ function eyeMovment(e) {
   });
 }
 
+// update the year
+document.querySelector('.year').textContent = new Date().getFullYear();
+
 // add lisner to container, and record the pointer
 document.querySelector('.container').addEventListener('click', setPointerElement);
 
