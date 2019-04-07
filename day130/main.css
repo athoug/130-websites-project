@@ -12,6 +12,7 @@
     --face-height: 75%;
     --ear-width: 30%;
     --ear-height: 30%;
+    --eye-container-height: 20%;
 
     /* color variables */
     --skin-color: #FFC79E;
@@ -125,6 +126,7 @@ main {
     height: var(--face-height);
     background: var(--skin-color);
     border-radius: 48%;
+    transform-origin: center;
     transform: scale(var(--face-scale));
 }
 
@@ -156,25 +158,33 @@ main {
             clip-path: polygon(50% 0, 100% 100%, 50% 100%);
 }
 /* eyes styling */
+.move-area {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: var(--eye-container-height);
+}
 .eye-l {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 18%;
     width: 12%;
-    height: 8%;
+    height: 39%;
     background: var(--eye-color);
     border-radius: 50%;
+    transform-origin: center;
     transform: scale(var(--eye-scale));
 }
 
 .eye-r {
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 18%;
     width: 12%;
-    height: 8%;
+    height: 39%;
     background: var(--eye-color);
     border-radius: 50%;
+    transform-origin: center;
     transform: scale(var(--eye-scale));
 }
 /* eye brows styling */

@@ -1,7 +1,9 @@
 // --- Variables ---
 let selectedFeature;
 
+const body = document.querySelector('body');
 const face = document.querySelector('.face');
+const eyes = document.querySelectorAll('.eye');
 const inputsRange = document.querySelectorAll('.controls input[type="range"]');
 const inputCheckBox = document.querySelectorAll('.controls input[type="checkbox"]');
 const inputRadio = document.querySelectorAll('.controls input[type="radio"]');
@@ -51,6 +53,19 @@ function radioButtonHandler() {
   }
 }
 
+// function to track eye movment
+function eyeMovment(e) {
+  // note: This function is based on the pen my Jeremy [https://codepen.io/J-Roel/pen/wWGNQN?editors=0010]
+  eyes.forEach((eye) => {
+    const x = (eye.getBoundingClientRect().left) + (eye.getBoundingClientRect().width / 2);
+    const y = (eye.getBoundingClientRect().top) + (eye.getBoundingClientRect().height / 2);
+    const xPage = (e.pageX - x) / 6;
+    const yPage = (e.pageY - y) / 5.5;
+
+    eye.style.setProperty('transform', `scale(var(--eye-scale)) translateX(${xPage}%) translateY(${yPage}%)`);
+  });
+}
+
 // add lisner to container, and record the pointer
 document.querySelector('.container').addEventListener('click', setPointerElement);
 
@@ -59,7 +74,6 @@ const inputColor = document.querySelector('.controls input[type="color"]');
 inputColor.addEventListener('change', colorMe);
 
 inputsRange.forEach(input => input.addEventListener('change', changeDismentions));
-
 inputCheckBox.forEach(input => input.addEventListener('click', checkBoxHandler));
-
 inputRadio.forEach(input => input.addEventListener('click', radioButtonHandler));
+body.addEventListener('mousemove', eyeMovment);
