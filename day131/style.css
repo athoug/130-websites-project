@@ -1,0 +1,36 @@
+/* general styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #eee;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  max-width: 1100px;
+  width: 1100px;
+  margin: auto;
+  background: blue;
+}
+
+footer {
+  max-width: 960px;
+  text-align: center;
+  margin: auto;
+  background: red;
+}

@@ -1,0 +1,221 @@
+const data = [
+  {
+    name: 'Crime Junkie',
+    disc: 'dedicated to giving you a true crime fix. Every Monday, Ashley Flowers will tell you about whatever crime she’s been obsessing over that week in a way that sounds like you’re sitting around talking crime with your best friends.',
+    genre: 'crime',
+    link: 'https://crimejunkiepodcast.com/',
+  },
+  {
+    name: 'American Scandal',
+    disc: 'Every scandal begins with a lie. But the truth will come out. In American Scandal, we take you deep into the heart of America’s dark side to look at what drives someone to break the rules and what happens when they’re caught.',
+    genre: 'stories',
+    link: 'https://wondery.com/shows/american-scandal/',
+  },
+  {
+    name: 'The Secret History of The Future',
+    disc: 'Journey into the past and you\'ll discover the secret history of the future.From the world\'s first cyber-attack in 1834, to 19th-century virtual reality',
+    genre: 'education',
+    link: 'https://www.stitcher.com/podcast/slate/the-secret-history-of-the-future',
+  },
+  {
+    name: 'Twenty Thousand Hertz',
+    disc: 'Twenty Thousand Hertz is a highly-polished podcast that tells the stories behind the world\'s most recognizable & interesting sounds.Host: Dallas Taylor.',
+    genre: 'stories',
+    link: 'https://www.20k.org/',
+  },
+  {
+    name: 'Reveal',
+    disc: 'We engage and empower the public through investigative journalism and groundbreaking storytelling that sparks action, improves lives and protects our democracy.',
+    genre: 'stories',
+    link: 'https://www.revealnews.org/episodes',
+  },
+  {
+    name: 'Today Explained',
+    disc: 'Today, Explained is Vox\'s daily explainer podcast — bringing you the biggest news every day with guests, context, radio drama, and more. ',
+    genre: 'news',
+    link: 'https://www.vox.com/today-explained',
+  },
+  {
+    name: 'Code Newbie',
+    disc: 'CodeNewbie started as a weekly TwitterChat to connect people learning to code by Saron. Since then it\'s grown into a supportive, international community of people learning to code.',
+    genre: 'code',
+    link: 'https://www.codenewbie.org/',
+  },
+  {
+    name: 'Casefile',
+    disc: 'Casefile True Crime Podcast, or simply Casefile, is a weekly true crime themed podcast that first aired in Australia in January 2016 and hosted by an Australian man who remains anonymous.',
+    genre: 'crime',
+    link: 'https://casefilepodcast.com/',
+  },
+  {
+    name: 'You Must Remember This',
+    disc: 'You Must Remember This is the podcast dedicated to exploring the secret and/or forgotten histories of Hollywood\'s first century.The podcast was created and is written, produced and narrated by Karina Longworth.',
+    genre: 'stories',
+    link: 'http://www.youmustrememberthispodcast.com/',
+  },
+  {
+    name: 'invisibillia',
+    disc: 'Unseeable forces control human behavior and shape our ideas, beliefs, and assumptions. Invisibilia—Latin for invisible things—fuses narrative storytelling with science that will make you see your own life differently.',
+    genre: 'stories',
+    link: 'https://www.npr.org/podcasts/510307/invisibilia',
+  },
+  {
+    name: 'Ridiculous History',
+    disc: 'ver years of bizarre research on everything from ancient civilizations to previously undiscovered (and hilarious) antics of history’s most influential figures and institutions, Ben and his team have compiled the absolute best, weirdest and most ridiculous stories in human history.',
+    genre: 'history',
+    link: 'https://www.ridiculoushistoryshow.com/',
+  },
+  {
+    name: 'Hidden Brain',
+    disc: 'Shankar Vedantam uses science and storytelling to reveal the unconscious patterns that drive human behavior, shape our choices and direct our relationships.',
+    genre: 'education',
+    link: 'https://www.npr.org/podcasts/510308/hidden-brain',
+  },
+  {
+    name: 'Dan Carlin\'s Hardcore History',
+    disc: 'n "Hardcore History" journalist and broadcaster Dan Carlin takes his "Martian", unorthodox way of thinking and applies it to the past. Was Alexander the Great as bad a person as Adolf Hitler? What would Apaches with modern weapons be like? ',
+    genre: 'history',
+    link: 'https://www.dancarlin.com/hardcore-history-series/',
+  },
+  {
+    name: 'Philosophize This',
+    disc: 'Beginner friendly if listened to in order! For anyone interested in an educational podcast about philosophy where you don\'t need to be a graduate- level philosopher to understand it.',
+    genre: 'education',
+    link: 'http://philosophizethis.org/',
+  },
+  {
+    name: 'Stuff You Should Know',
+    disc: 'Stuff You Should Know, often abbreviated as SYSK, is an award-winning podcast and video series published by Stuff Media and hosted by Josh Clark and Charles W.',
+    genre: 'education',
+    link: 'https://www.stuffyoushouldknow.com/',
+  },
+  {
+    name: 'Developer Tea',
+    disc: 'Developer Tea exists to help driven developers connect to their ultimate purpose and excel at their work so that they can positively impact the people they influence.',
+    genre: 'code',
+    link: 'https://open.spotify.com/show/02fM1JHpt9HmHGp482K71b',
+  },
+  {
+    name: 'Hackable?',
+    disc: 'In a world where we obsess over staying connected, how can we be sure we’re not leaving ourselves vulnerable? Hackable? gives us a front row seat to explore where we’re susceptible in our daily routines, without even realizing it.',
+    genre: 'technology',
+    link: 'https://hackablepodcast.com/',
+  },
+  {
+    name: 'Note to Self',
+    disc: 'Is your phone watching you? Can wexting make you smarter? Are your kids real? These and other essential quandaries facing anyone trying to preserve their humanity in the digital age.',
+    genre: 'technology',
+    link: 'https://www.wnycstudios.org/shows/notetoself',
+  },
+  {
+    name: 'The Pitch',
+    disc: 'we take you behind closed doors to the critical moment when aspiring entrepreneurs put it all on the line. While it offers a glimpse into the high-stakes world of venture capital, it’s really a show about human relationships',
+    genre: 'business',
+    link: 'https://www.gimletmedia.com/the-pitch',
+  },
+  {
+    name: 'Startup',
+    disc: 'StartUp is a documentary series about entrepreneurial life. The show has been downloaded tens of millions of times since its launch in 2014. Its first season has been adapted into an ABC sitcom called Alex, Inc.',
+    genre: 'business',
+    link: 'https://www.gimletmedia.com/startup/',
+  },
+  {
+    name: 'Business Wars',
+    disc: 'Business Wars gives you the unauthorized, real story of what drives these companies and their leaders, inventors, investors and executives to new heights — or to ruin.',
+    genre: 'business',
+    link: 'https://wondery.com/shows/business-wars/',
+  },
+  {
+    name: 'How I built This',
+    disc: 'How I Built This is an American podcast about "innovators, entrepreneurs, idealists, and the stories behind the movements they built" produced by NPR',
+    genre: 'business',
+    link: 'https://www.npr.org/podcasts/510313/how-i-built-this',
+  },
+  {
+    name: 'Planet Money',
+    disc: 'Listening to the Planet Money podcast is like hanging out at a bar with friends, telling stories, and understanding the economy in the process.',
+    genre: 'business',
+    link: 'https://www.npr.org/sections/money/',
+  },
+  {
+    name: 'Ted Radio Hour',
+    disc: 'Based on Talks given by riveting speakers on the world-renowned TED stage, each show is centered on a common theme – such as the source of happiness, crowd-sourcing innovation, power shifts, or inexplicable connections',
+    genre: 'education',
+    link: 'https://www.npr.org/programs/ted-radio-hour/',
+  },
+  {
+    name: 'Reply All',
+    disc: '"\'A podcast about the internet\' that is actually an unfailingly original exploration of modern life and how to survive it." - The Guardian. Hosted by PJ Vogt and Alex Goldman, from Gimlet.',
+    genre: 'stories',
+    link: 'https://www.gimletmedia.com/reply-all',
+  },
+  {
+    name: 'Radio Lab',
+    disc: 'Inspiring curiosity. Each episode of the Radiolab podcast is a patchwork of people, sounds, stories, society and experiences.',
+    genre: 'education',
+    link: 'https://www.wnycstudios.org/shows/radiolab',
+  },
+  {
+    name: 'Household Names',
+    disc: 'These are the surprising stories behind our biggest, household name brands. Host Dan Bobkoff finds tales of tragedy, love, strange histories, unintended consequences, and accidental success.',
+    genre: 'business',
+    link: 'https://open.spotify.com/show/65jkyYyq6YvDt8uOZXubm6?si=vsSOMpxDTImBjoYCTbJnWg',
+  },
+  {
+    name: 'American Innovations',
+    disc: 'DNA science. Artificial intelligence. Smartphones and 3D printers. Science and technology have transformed the world we live in. But how did we get here? It wasn’t by accident. Well, sometimes it was.',
+    genre: 'history',
+    link: 'https://wondery.com/shows/american-innovations/',
+  },
+  {
+    name: 'Endless Thread',
+    disc: 'The front page of the Internet--also known as Reddit--is making noise. Hosts Ben Brock Johnson and Amory Sivertson dig into the site\'s vast and curious ecosystem of online communities',
+    genre: 'stories',
+    link: 'https://www.wbur.org/endlessthread',
+  },
+  {
+    name: 'Darknet Diaries',
+    disc: 'Explore the dark side of the Internet with host Jack Rhysider as he takes you on a journey through the chilling world of privacy hacks, data breaches, and cyber crime.',
+    genre: 'technology',
+    link: 'https://darknetdiaries.com/',
+  },
+  {
+    name: 'Syntax',
+    disc: 'Wes Bos and Scott Tolinski are two full stack web developers who like to break down complex topics and make them easy to understand.',
+    genre: 'code',
+    link: 'https://syntax.fm/',
+  },
+  {
+    name: 'Tech Stuff',
+    disc: 'TechStuff is a show about technology. And it’s not just how technology works. Join host Jonathan Strickland as he explores the people behind the tech, the companies that market it and how technology affects our lives and culture.',
+    genre: 'technology',
+    link: 'https://www.techstuffpodcast.com/',
+  },
+  {
+    name: 'Swindled',
+    disc: 'Utilizes narrative storytelling, archival audio, and immersive soundscapes to explore true stories of white-collar criminals, con artists, and corporate evil.',
+    genre: 'crime',
+    link: 'http://swindledpodcast.com/',
+  },
+];
+
+const icon = {
+  crime: '',
+  stories: '',
+  education: '',
+  news: '',
+  code: '',
+  technology: '',
+  business: '',
+  history: '',
+};
+
+/*
+  Data format:
+   {
+    name: '',
+    disc: '',
+    genre: '',
+    link: '',
+  },
+*/
