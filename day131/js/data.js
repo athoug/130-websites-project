@@ -61,7 +61,7 @@ const data = [
   },
   {
     name: 'Ridiculous History',
-    disc: 'ver years of bizarre research on everything from ancient civilizations to previously undiscovered (and hilarious) antics of history’s most influential figures and institutions, Ben and his team have compiled the absolute best, weirdest and most ridiculous stories in human history.',
+    disc: 'Years of bizarre research on everything from ancient civilizations to previously undiscovered (and hilarious) antics, Ben and his team have compiled the absolute best, weirdest and most ridiculous stories in human history.',
     genre: 'history',
     link: 'https://www.ridiculoushistoryshow.com/',
   },
@@ -73,7 +73,7 @@ const data = [
   },
   {
     name: 'Dan Carlin\'s Hardcore History',
-    disc: 'n "Hardcore History" journalist and broadcaster Dan Carlin takes his "Martian", unorthodox way of thinking and applies it to the past. Was Alexander the Great as bad a person as Adolf Hitler? What would Apaches with modern weapons be like? ',
+    disc: 'in "Hardcore History" journalist and broadcaster Dan Carlin takes his "Martian", unorthodox way of thinking and applies it to the past. Was Alexander the Great as bad a person as Adolf Hitler? What would Apaches with modern weapons be like? ',
     genre: 'history',
     link: 'https://www.dancarlin.com/hardcore-history-series/',
   },
