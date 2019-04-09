@@ -1,7 +1,7 @@
 const data = [
   {
     name: 'Crime Junkie',
-    disc: 'dedicated to giving you a true crime fix. Every Monday, Ashley Flowers will tell you about whatever crime she’s been obsessing over that week in a way that sounds like you’re sitting around talking crime with your best friends.',
+    disc: 'Dedicated to giving you a true crime fix. Every Monday, Ashley Flowers will tell you about whatever crime she’s been obsessing over that week in a way that sounds like you’re sitting around talking crime with your best friends.',
     genre: 'crime',
     link: 'https://crimejunkiepodcast.com/',
   },
@@ -200,14 +200,14 @@ const data = [
 ];
 
 const icon = {
-  crime: '',
-  stories: '',
-  education: '',
-  news: '',
-  code: '',
-  technology: '',
-  business: '',
-  history: '',
+  crime: '../svg/crime.svg',
+  stories: '../svg/stories.svg',
+  education: '../svg/education.svg',
+  news: '../svg/news.svg',
+  code: '../svg/code.svg',
+  technology: '../svg/technology.svg',
+  business: '../svg/business.svg',
+  history: '../svg/history.svg',
 };
 
 /*

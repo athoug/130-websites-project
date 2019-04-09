@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+
 /* general styling */
 * {
   margin: 0;
@@ -25,12 +27,106 @@ main {
   max-width: 1100px;
   width: 1100px;
   margin: auto;
-  background: blue;
 }
 
 footer {
   max-width: 960px;
   text-align: center;
-  margin: auto;
-  background: red;
+  margin: 1rem auto 1.5rem;
+  color: #888;
+  font-weight: 200;
+  font-size: 1.5rem;
 }
+
+/* 3d card styling */
+.scene {
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 1s;
+  transform-style: preserve-3d;
+}
+
+.scene:hover .card {
+  transform: rotateY(180deg);
+  transition: all 0.5s;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  color: #03446a;
+  font-size: 6rem;
+  font-family: 'Lily Script One', cursive;
+  text-align: center;
+  border-radius: 0.5rem;
+  backface-visibility: hidden;
+}
+
+.face-back {
+  background: #03446a;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  transform: rotateY(180deg);
+}
+
+.face-back p {
+  width: 90%;
+  line-height: 1.5;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #bbb;
+}
+
+.icon > * {
+  margin: 0.5rem;
+}
+
+.icon a {
+  text-decoration: none;
+  color: #7bb1cf;
+  transition: color 0.3s;
+}
+
+.icon a:hover {
+  color: #0ca1f1;
+}
+
+.icon-img {
+  margin-left: 1rem;
+  width: 30px;
+  height: 30px;
+}
+
