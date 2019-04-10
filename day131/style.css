@@ -23,9 +23,13 @@ body {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   flex: 1;
   max-width: 1100px;
   margin: auto;
+  padding: 1rem;
 }
 
 footer {
@@ -41,7 +45,7 @@ footer {
 .scene {
   width: 300px;
   height: 300px;
-  margin: 2rem auto;
+  margin: 1rem;
   perspective: 500px;
 }
 
@@ -95,13 +99,14 @@ footer {
   line-height: 1.5;
   padding: 1.5rem;
   text-align: left;
+  margin-bottom: 1.5rem;
 }
 
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   font-size: 1.25rem;
   line-height: 1.5;
   font-weight: 400;
@@ -130,3 +135,8 @@ footer {
   height: 30px;
 }
 
+/* hide */
+
+.hide {
+  display: none;
+}
