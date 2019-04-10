@@ -200,14 +200,14 @@ const data = [
 ];
 
 const icon = {
-  crime: '../svg/crime.svg',
-  stories: '../svg/stories.svg',
-  education: '../svg/education.svg',
-  news: '../svg/news.svg',
-  code: '../svg/code.svg',
-  technology: '../svg/technology.svg',
-  business: '../svg/business.svg',
-  history: '../svg/history.svg',
+  crime: './svg/crime.svg',
+  stories: './svg/stories.svg',
+  education: './svg/education.svg',
+  news: './svg/news.svg',
+  code: './svg/code.svg',
+  technology: './svg/technology.svg',
+  business: './svg/business.svg',
+  history: './svg/history.svg',
 };
 
 /*

@@ -12,7 +12,7 @@ function createCards(array, parentElement, icons) {
         <div class="card-face face-front">
           <p class="title">${item.name}</p>
           <div class="icon">
-            <img src="./${icons[item.genre]}" alt="${item.genre} genere" class="icon-img">
+            <img src="${icons[item.genre]}" alt="${item.genre} genere" class="icon-img">
             <span>${item.genre}</span>
           </div>
         </div>
