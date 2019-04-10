@@ -20,6 +20,47 @@ body {
   background: #eee;
 }
 
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  height: 250px;
+  margin: auto;
+  padding: 1rem;
+}
+
+input[id="search"] {
+  width: 30rem;
+  font-size: 2.5rem;
+  color: #03446a;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding-bottom: 1rem;
+  transition: all 0.3s;
+  background-image: url(./svg/search.svg);
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 50%;
+  background-size: 18px 18px;
+}
+
+input[id="search"]:focus {
+  border-bottom-color: #03446a;
+  background-image: url(./svg/search-active.svg);
+}
+
+input[id="search"]::placeholder {
+  font-weight: 100;
+  font-size: 1.6rem;
+  color: #ccc;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
