@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3D Dice</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div class="scene">
+      <div class="cube">
+        <div class="cube-face fact-1">
+          <div class="dice dice-1"></div>
+        </div>
+        <div class="cube-face fact-2">
+          <div class="dice dice-2-1"></div>
+          <div class="dice dice-2-2"></div>
+        </div>
+        <div class="cube-face fact-3">
+          <div class="dice dice-3-1"></div>
+          <div class="dice dice-3-2"></div>
+          <div class="dice dice-3-3"></div>
+        </div>
+        <div class="cube-face fact-4">
+          <div class="dice dice-4-1"></div>
+          <div class="dice dice-4-2"></div>
+          <div class="dice dice-4-3"></div>
+          <div class="dice dice-4-4"></div>
+        </div>
+        <div class="cube-face fact-5">
+          <div class="dice dice-5-1"></div>
+          <div class="dice dice-5-2"></div>
+          <div class="dice dice-5-3"></div>
+          <div class="dice dice-5-4"></div>
+          <div class="dice dice-5-5"></div>
+        </div>
+        <div class="cube-face fact-6">
+          <div class="dice dice-6-1"></div>
+          <div class="dice dice-6-2"></div>
+          <div class="dice dice-6-3"></div>
+          <div class="dice dice-6-4"></div>
+          <div class="dice dice-6-5"></div>
+          <div class="dice dice-6-6"></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="radio-group">
+      <label>
+        <input type="radio" name="rotate-cube-side" value="1" checked /> Roll 1
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="2" /> Roll 2
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="3" /> Roll 3
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="4" /> Roll 4
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="5" /> Roll 5
+      </label>
+      <label>
+        <input type="radio" name="rotate-cube-side" value="6" /> Roll 6
+      </label>
+      <p>
+        <label>
+          Spin cube
+          <input class="spin-cube-checkbox" type="checkbox" />
+        </label>
+      </p>
+    </p>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
