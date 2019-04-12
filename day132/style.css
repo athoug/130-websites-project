@@ -30,21 +30,38 @@ main {
   margin: 10em auto;
 }
 
-main > * {
-  /* border: 1px solid red; */
-}
 
 label {
-  margin-right: 1rem;
+  margin: 1rem;
 }
 
 .radio-group {
+  width: 360px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 20rem;
   color: #FAFAFF;
   font-family: Helvetica, sans-serif;
   font-weight: 200;
   font-size: 1.75rem;
   text-transform: uppercase;
+}
+
+.checkbox-container {
+  color: #FAFAFF;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+.rotate-cube-side {
+  flex: 1;
+}
+
+.spin-cube-checkbox {
+  flex: 2;
 }
 
 /* cube styling */

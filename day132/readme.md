@@ -5,7 +5,7 @@ the circles relative to their parents.
 
 This is how it ended up looking as:
 
-![]
+![Rotating 3d Dice](demo.gif)
 
 ## Resources
 
