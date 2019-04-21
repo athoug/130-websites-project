@@ -5,12 +5,25 @@ html {
   font-family: 'helvetica neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 200;
+  min-height: 100vh;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  margin: 4rem auto 1rem;
+  flex: 1;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 300;
+   color: #7E78D2;
 }
 
 /* --- Form styles --- */
