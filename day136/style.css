@@ -42,9 +42,40 @@ footer {
   font-size: 1.5rem;
 }
 
-/* --- Grid Styles --- */
-.grid {
+/* --- controls style --- */
+.controls {
+  max-width: 960px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
 }
+
+input {
+  border: 1px solid #e9ecef;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  flex: 1 0;
+  text-align: center;
+  line-height: 1.65;
+  height: 2.5em;
+  margin: 0 auto;
+}
+
+.generate-grid-btn {
+  width: 100px;
+  height: 30px;
+  margin-left: 1rem;
+  border-style: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #273469;
+  box-shadow: 0 5px 0 #1E2749;
+}
+
+/* --- Grid Styles --- */
 
 .block {
   width: 30px;

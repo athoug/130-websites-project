@@ -9,17 +9,22 @@
 </head>
 <body>
   <main>
-    <div class="controls">
-      <label>Rows <input type="number" value="20" max="50" class="grid-control row">
-      </label>
-      <label>Cols <input type="number" value="20" max="50" class="grid-control col">
-      </label>
-      <button class="generate-grid-btn">generate grid</button>
-      <input type="color" value="#f00060">
-    </div>
-    <table class="grid">
 
-    </table>
+    <div class="controls">
+      <div>
+        <label><input type="number" value="20" min="10" max="50" class="grid-control row">
+        </label>
+        <span>x</span>
+        <label><input type="number" value="20" min="10" max="50" class="grid-control col">
+        </label>
+        <button class="generate-grid-btn">generate grid</button>
+      </div>
+      <div>
+        <input type="color" value="#E4D9FF">
+      </div>
+    </div>
+
+    <table class="grid"></table>
   </main>
   <footer>
     <p>Athoug Alsoughayer &copy; <span class="year">2019</span></p>
