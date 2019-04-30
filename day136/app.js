@@ -1,8 +1,9 @@
-// select global variables
+// --- select global variables ---
 const gridGenerateBtn = document.querySelector('.generate-grid-btn');
 const grid = document.querySelector('.grid');
 
-// function
+// --- declare functions ---
+// function to generate the pixel grid
 function generateGrid() {
   // 1. get the number of rows and columns
   const rows = document.querySelector('input.row').value;
@@ -32,8 +33,25 @@ function generateGrid() {
   grid.appendChild(fragment);
 }
 
-// add the listeners
+function colorGrid(e) {
+  const color = document.querySelector('input[type="color"]').value;
+
+  if (e.target.classList.contains('grid')) return; // exit of you press on the table
+  e.target.style.background = color;
+}
+
+
+// --- add the listeners ---
+// grid bulder listner
 gridGenerateBtn.addEventListener('click', generateGrid);
+window.addEventListener('keypress', function(e) {
+  if (e.keyCode === 13) {
+    generateGrid();
+  }
+});
+
+// grid color listener
+grid.addEventListener('click', colorGrid);
 
 // run the initial state of the grid
 generateGrid();
