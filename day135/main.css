@@ -62,3 +62,14 @@ footer {
   height: 100%;
   transition: all 0.3s;
 }
+
+/* --- responsive --- */
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
+    width: 350px;
+    height: 350px;
+  }
+}
