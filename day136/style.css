@@ -1,0 +1,54 @@
+/* --- general styling --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #FAFAFF;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 1;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+footer {
+  max-width: 960px;
+  text-align: center;
+  margin: 1rem auto 1.5rem;
+  color: #888;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+/* --- Grid Styles --- */
+.grid {
+}
+
+.block {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0,0,0,0.05);
+  background: #fff;
+}
